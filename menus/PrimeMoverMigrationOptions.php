@@ -241,11 +241,7 @@ class PrimeMoverMigrationOptions
     protected function showUsersExportMarkup($blog_id = 0, $disabled = '')
     {
     ?>
-        <p class="prime-mover-migration-tools-p"><label <?php echo $this->returnFreeClass($disabled); ?>><input <?php echo $disabled; ?> autocomplete="off" id="js-prime-mover-userexport-<?php echo esc_attr($blog_id); ?>" <?php checked(1, 1); ?> class="js-prime-mover-userexport_class"
-		    type="checkbox" name="prime-mover-userexport-<?php echo esc_attr($blog_id); ?>" value="1"> 
-		    <?php esc_html_e('Export users (include current site users in migration / backup)', 'prime-mover');?>.
-		    <?php do_action('prime_mover_before_label_advanced_options', $disabled); ?>
-		    </label></p>		
+	
     <?php 
     }
     
@@ -286,14 +282,7 @@ class PrimeMoverMigrationOptions
     protected function displaySaveToGdriveMarkup($blog_id = 0, $disabled = '')
     {
     ?>
-        <p class="prime-mover-migration-tools-p">
-        <label <?php echo $this->returnFreeClass($disabled); ?>>
-        <input <?php echo $disabled; ?> autocomplete="off" id="js-prime-mover-savetogdrive-<?php echo esc_attr($blog_id); ?>" class="js-prime_mover_gdrive_class" type="checkbox"
-     name="prime-mover-savetogdrive-<?php echo esc_attr($blog_id); ?>" value="1">
-    <?php esc_html_e('Save a copy to Google Drive') ?>.
-    	<?php do_action('prime_mover_before_label_advanced_options', $disabled); ?>	
-    	</label>
-		</p>
+
 	<?php         
     }
     
@@ -327,14 +316,7 @@ class PrimeMoverMigrationOptions
     protected function displayDropBoxMarkup($blog_id = 0, $disabled = '')
     {
     ?>
-        <p class="prime-mover-migration-tools-p">
-        <label <?php echo $this->returnFreeClass($disabled); ?>>
-        <input <?php echo $disabled; ?> autocomplete="off" id="js-prime-mover-savetodropbox-<?php echo esc_attr($blog_id); ?>" class="js-prime_mover_dropbox_class" type="checkbox"
-     name="prime-mover-savetodropbox-<?php echo esc_attr($blog_id); ?>" value="1">
-    <?php esc_html_e('Save a copy to Dropbox') ?>.
-    <?php do_action('prime_mover_before_label_advanced_options', $disabled); ?>
-    		</label>
-		</p>
+
     <?php   
     }
     
@@ -359,24 +341,15 @@ class PrimeMoverMigrationOptions
         }
         if ($disabled) {
         ?>        
-            <h3 <?php echo $this->returnFreeClass($disabled); ?>><?php esc_html_e('PRO export options', 'prime-mover' )?></h3>
-                <p class="prime-mover-migration-tools-p">
-                    <span class="dashicons dashicons-unlock prime-mover-dashicon-unlock-migration-tools"></span>
-                    <a class="prime-mover-readable-link" href="<?php echo esc_url($upgrade_url); ?>"><?php esc_html_e('Upgrade to PRO', 'prime-mover'); ?></a>
-                </p>
+
         <?php 
         } else {
         ?>
-            <h3 <?php echo $this->returnFreeClass($disabled); ?>><?php esc_html_e('Advanced export options', 'prime-mover' )?></h3>  
+ 
         <?php
          } 
          ?>      
-		<p class="prime-mover-migration-tools-p">
-		    <label <?php echo $this->returnFreeClass($disabled); ?>><input <?php echo $disabled; ?> autocomplete="off" id="js-prime-mover-targetexportloc-<?php echo esc_attr($blog_id); ?>" <?php echo $checked; ?> class="js-prime_mover_target_export_location_class" type="checkbox" name="prime-mover-targetexportloc-<?php echo esc_attr($blog_id); ?>" value="1"> 
-		    <?php echo esc_html__('Generate package URL for direct site migration.', 'prime-mover'); ?>
-		    <?php do_action('prime_mover_before_label_advanced_options', $disabled); ?>
-		    </label>
-		</p>
+
 		<?php do_action('prime_mover_after_export_location', $blog_id); ?>		       
     <?php     
     }

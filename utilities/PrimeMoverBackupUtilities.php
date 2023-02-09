@@ -265,8 +265,7 @@ class PrimeMoverBackupUtilities
             $note = '(' . sprintf(esc_html__('blog ID : %d', 'prime-mover'), $blog_id) . ')';
         }
         ?>
-        <h3><?php echo sprintf( esc_html__('Manage packages %s', 'prime-mover'), $note );?></h3>	    
-	    <p class="prime-mover-managebackups-<?php echo esc_attr($blog_id); ?>"><a href="<?php echo esc_url($backups_menu_url);?>" class="button button-secondary"><?php esc_html_e('Go to Package Manager', 'prime-mover'); ?></a></p> 	
+	
     <?php    
     }
 }

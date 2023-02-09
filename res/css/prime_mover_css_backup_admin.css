@@ -6,7 +6,7 @@
 .wrap .prime-mover-upgrade-button:hover
  {
     color: #ffffff;
-    background-color: #29ABE1;
+    background-color: #6B8B81;
     box-shadow: inset 0 -5px 0 rgba(0,0,0,0.1);
     border: none; 	
     padding-left: 15px;
@@ -35,7 +35,7 @@
 .wrap .prime-mover-upgrade-button-simple:hover
  {
     color: #ffffff;
-    background-color: #29ABE1;
+    background-color: #6B8B81;
     box-shadow: inset 0 -5px 0 rgba(0,0,0,0.1);
     border: none; 		
     white-space: normal;
@@ -103,14 +103,14 @@ input::-webkit-calendar-picker-indicator {
 }
 
 .prime-mover-user-dialog .ui-dialog-titlebar {
-	background: #29ABE1;
+	background: #6B8B81;
 	color: rgba(255,255,255,0.87);
 }
 .prime-mover-user-dialog .ui-dialog-titlebar-close {
 	color: rgba(255,255,255,0.87);
 }
 .prime-mover-user-dialog h3 {
-	color: #29ABE1;
+	color: #6B8B81;
 	line-height: 1.5
 }
 .prime-mover-backup-menu-wrap .prime-mover-edit-site-actions {

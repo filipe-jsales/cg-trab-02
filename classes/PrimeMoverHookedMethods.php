@@ -539,10 +539,10 @@ class PrimeMoverHookedMethods
     {
         $backups_menu_url = $this->getSystemFunctions()->getBackupMenuUrl();
     ?>
-        <div class="wrap">
-           <h1 class="wp-heading-inline"><?php esc_html_e( 'Migration Tools', 'prime-mover' ); ?></h1>
-           <a title="<?php esc_attr_e('Go to package manager', 'prime-mover');?>" href="<?php echo esc_url($backups_menu_url);?>" class="page-title-action"><?php esc_html_e('Go to Package Manager', 'prime-mover');?></a>
-           <div class="card">              
+        <div class="wrap" style="margin: 0 auto;">
+           <h1 class="wp-heading-inline" style="text-align: center;"><?php esc_html_e( 'GM Migration Tools', 'prime-mover' ); ?></h1>
+
+           <div class="" >              
                  <div class="prime_mover_exporter_block">  
                  <h2><?php esc_html_e( 'Export site', 'prime-mover' ); ?></h2>             
                      <div class="notice-large highlight prime-mover-helper-export-text">
@@ -555,9 +555,9 @@ class PrimeMoverHookedMethods
                      ?>
                  </div>
           </div>    
-          <div class="card">             
+          <div class="">             
                  <div class="prime_mover_importer_block">    
-                 <h2><?php esc_html_e( 'Import package', 'prime-mover' ); ?></h2> 
+                 <h2><?php esc_html_e( 'Migrate wordpress', 'prime-mover' ); ?></h2> 
                      <div class="notice-large highlight prime-mover-helper-export-text">
                         <p><em><?php echo esc_html__( 'Migrate a site package. Please do not refresh or navigate away from this page while import is ongoing.', 
                              'prime-mover' ); 
@@ -568,17 +568,7 @@ class PrimeMoverHookedMethods
                       ?>
                 </div>       
 	       </div>
-          <div class="card">             
-                 <div class="prime_mover_contact_block">    
-                 <h2><?php esc_html_e( 'Contact Developers', 'prime-mover' ); ?></h2> 
-                     <div class="notice-large highlight prime-mover-helper-export-text">
-                        <p><em><?php echo esc_html__( 'Any suggestions for improvement? Found a bug?', 
-                             'prime-mover' ); 
-                         ?></em></p>                                               
-                     </div>                                                                        
-                     <a href="<?php echo esc_url($this->getSystemInitialization()->getContactUsPage()); ?>" class="button button-primary js-prime-mover-contact-dev"><?php esc_html_e('Contact us', 'prime-mover')?></a>
-                </div>       
-	       </div>	        
+	        
 	   </div>
    <?php      
     }

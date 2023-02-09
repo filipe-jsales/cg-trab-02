@@ -4,7 +4,7 @@
  * This is the WP core version dependency class, purpose is to manage required WP core version dependency checks.
  *
  */
-class PrimeMoverWPCoreDependencies
+class GMMoverWPCoreDependencies
 {
     /**
      * WP Version

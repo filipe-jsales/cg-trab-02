@@ -145,5 +145,5 @@ return array(
     'GMMoverPHPVersionDependencies' => $baseDir . '/dependency-checks/GMMoverPHPVersionDependencies.php',
     'GMMoverPluginSlugDependencies' => $baseDir . '/dependency-checks/GMMoverPluginSlugDependencies.php',
     'GMMoverRequirementsCheck' => $baseDir . '/dependency-checks/GMMoverRequirementsCheck.php',
-    'PrimeMoverWPCoreDependencies' => $baseDir . '/dependency-checks/GMMoverWPCoreDepedencies.php',
+    'GMMoverWPCoreDependencies' => $baseDir . '/dependency-checks/GMMoverWPCoreDepedencies.php',
 );

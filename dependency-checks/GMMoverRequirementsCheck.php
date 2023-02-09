@@ -8,7 +8,7 @@ class GMMoverRequirementsCheck
 {    
     /**
      * 
-     * @var PrimeMoverWPCoreDependencies
+     * @var GMMoverWPCoreDependencies
      */
     private $corewpdependencies;
     
@@ -45,7 +45,7 @@ class GMMoverRequirementsCheck
     /**
      * 
      * @param GMMoverPHPVersionDependencies $phpversiondependencies
-     * @param PrimeMoverWPCoreDependencies $corewpdependencies
+     * @param GMMoverWPCoreDependencies $corewpdependencies
      * @param GMMoverPHPCoreFunctionDependencies $phpfuncdependency
      * @param GMMoverFileSystemDependencies $filesystem_dependency
      * @param GMMoverPluginSlugDependencies $foldernamedependency
@@ -90,7 +90,7 @@ class GMMoverRequirementsCheck
     
     /**
      * @compatible 5.6
-     * @return PrimeMoverWPCoreDependencies
+     * @return GMMoverWPCoreDependencies
      */
     public function getCoreWPDependencies() 
     {

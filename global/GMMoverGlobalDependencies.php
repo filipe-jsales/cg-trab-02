@@ -33,7 +33,7 @@ class GMMoverGlobalDependencies
         $phprequirement = '5.6';
         
         $phpverdependency = new GMMoverPHPVersionDependencies($phprequirement);
-        $wpcoredependency = new PrimeMoverWPCoreDependencies('4.9.8');
+        $wpcoredependency = new GMMoverWPCoreDependencies('4.9.8');
         $phpfuncdependency = new GMMoverPHPCoreFunctionDependencies();
         $foldernamedependency = new GMMoverPluginSlugDependencies(array(PRIME_MOVER_DEFAULT_FREE_BASENAME, PRIME_MOVER_DEFAULT_PRO_BASENAME));
         $coresaltdependency = new GMMoverCoreSaltDependencies();

@@ -146,7 +146,7 @@ class ComposerStaticInitbdcf04d85afd14ec6f671635ef2d48dd
         'GMMoverPHPVersionDependencies' => __DIR__ . '/../..' . '/dependency-checks/GMMoverPHPVersionDependencies.php',
         'GMMoverPluginSlugDependencies' => __DIR__ . '/../..' . '/dependency-checks/GMMoverPluginSlugDependencies.php',
         'GMMoverRequirementsCheck' => __DIR__ . '/../..' . '/dependency-checks/GMMoverRequirementsCheck.php',
-        'PrimeMoverWPCoreDependencies' => __DIR__ . '/../..' . '/dependency-checks/GMMoverWPCoreDepedencies.php',
+        'GMMoverWPCoreDependencies' => __DIR__ . '/../..' . '/dependency-checks/GMMoverWPCoreDepedencies.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

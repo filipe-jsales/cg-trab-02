@@ -586,7 +586,7 @@ class PrimeMoverSystemUtilities
      */
     public function getThemeAbsolutePath($source_theme = '')
     {
-        return PRIME_MOVER_THEME_CORE_PATH . $source_theme;
+        return GM_MOVER_THEME_CORE_PATH . $source_theme;
     }
     
     /**

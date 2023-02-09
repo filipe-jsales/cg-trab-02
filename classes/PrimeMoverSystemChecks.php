@@ -324,8 +324,8 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
        
         $stylesheet = $this->getSystemFunctions()->getBlogOption($blogid_to_export, 'stylesheet');
         $theme_template = $this->getSystemFunctions()->getBlogOption($blogid_to_export, 'template');
-        $stylesheet_info = wp_get_theme($stylesheet, PRIME_MOVER_THEME_CORE_PATH);
-        $theme_template_info = wp_get_theme($theme_template, PRIME_MOVER_THEME_CORE_PATH);        
+        $stylesheet_info = wp_get_theme($stylesheet, GM_MOVER_THEME_CORE_PATH);
+        $theme_template_info = wp_get_theme($theme_template, GM_MOVER_THEME_CORE_PATH);        
         $using_child_theme = $this->getSystemFunctions()->isUsingChildTheme($blogid_to_export);         
         
         $stylesheet_version = $stylesheet_info->get('Version');

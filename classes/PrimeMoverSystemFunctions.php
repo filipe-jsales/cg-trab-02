@@ -3188,11 +3188,11 @@ class PrimeMoverSystemFunctions
             return $fullpath;
         }
         global $wp_filesystem;
-        if ($exist_check && ! $wp_filesystem->exists(PRIME_MOVER_THEME_CORE_PATH . DIRECTORY_SEPARATOR . $theme)) {
+        if ($exist_check && ! $wp_filesystem->exists(GM_MOVER_THEME_CORE_PATH . DIRECTORY_SEPARATOR . $theme)) {
             return $fullpath;
         }
         
-        $fullpath =  PRIME_MOVER_THEME_CORE_PATH . DIRECTORY_SEPARATOR . $theme . DIRECTORY_SEPARATOR;
+        $fullpath =  GM_MOVER_THEME_CORE_PATH . DIRECTORY_SEPARATOR . $theme . DIRECTORY_SEPARATOR;
         return $fullpath;
     }
     

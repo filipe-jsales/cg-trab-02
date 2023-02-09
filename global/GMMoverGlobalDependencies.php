@@ -41,7 +41,7 @@ class GMMoverGlobalDependencies
         $required_paths = array(
             GM_MOVER_PLUGIN_CORE_PATH,
             PRIME_MOVER_PLUGIN_PATH,
-            PRIME_MOVER_THEME_CORE_PATH,
+            GM_MOVER_THEME_CORE_PATH,
             get_stylesheet_directory(),
             WPMU_PLUGIN_DIR
         );

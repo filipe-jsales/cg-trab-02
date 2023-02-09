@@ -25,7 +25,7 @@ if ( function_exists( 'pm_fs' ) ) {
     pm_fs()->set_basename( true, GM_MOVER_MAINPLUGIN_FILE );
 } else {
     require_once GM_MOVER_MAINDIR . '/global/GMMoverGlobalFunctions.php';
-    if ( defined( 'PRIME_MOVER_PLUGIN_PATH' ) || defined( 'GM_MOVER_PLUGIN_UTILITIES_PATH' ) || defined( 'GM_MOVER_PLUGIN_CORE_PATH' ) || defined( 'PRIME_MOVER_THEME_CORE_PATH' ) ) {
+    if ( defined( 'PRIME_MOVER_PLUGIN_PATH' ) || defined( 'GM_MOVER_PLUGIN_UTILITIES_PATH' ) || defined( 'GM_MOVER_PLUGIN_CORE_PATH' ) || defined( 'GM_MOVER_THEME_CORE_PATH' ) ) {
         return;
     }
     include GM_MOVER_MAINDIR . '/global/GMMoverGlobalConstants.php';

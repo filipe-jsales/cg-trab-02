@@ -470,7 +470,7 @@ class PrimeMoverExporter implements PrimeMoverExport
         }
         
         $mode = 'exporting_theme';
-        $archive_alias = apply_filters('prime_mover_filter_basezip_folder', basename(PRIME_MOVER_THEME_CORE_PATH), $ret, $mode, PRIME_MOVER_THEME_CORE_PATH, false);
+        $archive_alias = apply_filters('prime_mover_filter_basezip_folder', basename(GM_MOVER_THEME_CORE_PATH), $ret, $mode, GM_MOVER_THEME_CORE_PATH, false);
         $tar_archiving_params = [];
         $tar_archiving_params[] = $archive_alias;
         $tar_archiving_params[] = [];
@@ -500,7 +500,7 @@ class PrimeMoverExporter implements PrimeMoverExport
         }
         
         $this->doArchivingFilesProgress($ret, $counted, $copying_media_started, 'theme', $bytes_written);
-        $ret = apply_filters('prime_mover_add_directory_to_tar_archive', $ret, $zippath, $ret['copymedia_shell_tmp_list'], PRIME_MOVER_THEME_CORE_PATH, $start_time, 
+        $ret = apply_filters('prime_mover_add_directory_to_tar_archive', $ret, $zippath, $ret['copymedia_shell_tmp_list'], GM_MOVER_THEME_CORE_PATH, $start_time, 
             $resume_positions, false, $blogid_to_export, $tar_archiving_params, 'ab', $encryption_key);
         if (empty($ret['tar_add_dir_offsets'])) {
             $ret = $this->cleanUpMediaTmpList($ret);

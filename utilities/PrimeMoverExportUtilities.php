@@ -974,7 +974,7 @@ class PrimeMoverExportUtilities
      */
     public function getThemeFoldername()
     {
-        return basename(PRIME_MOVER_THEME_CORE_PATH);
+        return basename(GM_MOVER_THEME_CORE_PATH);
     }
     
     /**

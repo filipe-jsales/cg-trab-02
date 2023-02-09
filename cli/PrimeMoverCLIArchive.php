@@ -274,7 +274,7 @@ class PrimeMoverCLIArchive
         }
 
         $script = realpath($given_script);            
-        if ( ! $this->getSystemFunctions()->fileIsInsideGivenDirectory($given_script, PRIME_MOVER_PLUGIN_CORE_PATH)) {
+        if ( ! $this->getSystemFunctions()->fileIsInsideGivenDirectory($given_script, GM_MOVER_PLUGIN_CORE_PATH)) {
             do_action('prime_mover_log_processed_events', "ERROR: Exec Files inside given directory fails.", $blog_id, 'export', 'validateExecCall', $this);
             return false;
         }

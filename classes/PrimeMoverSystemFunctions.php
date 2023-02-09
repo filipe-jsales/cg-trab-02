@@ -2297,13 +2297,13 @@ class PrimeMoverSystemFunctions
         if ( ! $this->isWpFileSystemUsable($wp_filesystem)) {
             return $fullpath;
         }
-        if ($exist_check && ! $wp_filesystem->exists(PRIME_MOVER_PLUGIN_CORE_PATH . $plugin)) {
+        if ($exist_check && ! $wp_filesystem->exists(GM_MOVER_PLUGIN_CORE_PATH . $plugin)) {
             return $fullpath;
         }
         
-        $fullpath = dirname(PRIME_MOVER_PLUGIN_CORE_PATH . $plugin) . DIRECTORY_SEPARATOR;
-        if ( $fullpath === PRIME_MOVER_PLUGIN_CORE_PATH ) {
-            return PRIME_MOVER_PLUGIN_CORE_PATH . $plugin;
+        $fullpath = dirname(GM_MOVER_PLUGIN_CORE_PATH . $plugin) . DIRECTORY_SEPARATOR;
+        if ( $fullpath === GM_MOVER_PLUGIN_CORE_PATH ) {
+            return GM_MOVER_PLUGIN_CORE_PATH . $plugin;
         }
         return $fullpath;
     }

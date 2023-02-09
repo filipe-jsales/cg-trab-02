@@ -45,7 +45,7 @@ class PrimeMoverElementorCompat
     public function getElementorPlugin()
     {
         if (defined('PRIME_MOVER_CUSTOM_ELEMENTOR_PATH') && PRIME_MOVER_CUSTOM_ELEMENTOR_PATH && 
-            $this->getSystemFunctions()->nonCachedFileExists(PRIME_MOVER_PLUGIN_CORE_PATH . PRIME_MOVER_CUSTOM_ELEMENTOR_PATH)) {
+            $this->getSystemFunctions()->nonCachedFileExists(GM_MOVER_PLUGIN_CORE_PATH . PRIME_MOVER_CUSTOM_ELEMENTOR_PATH)) {
                 return PRIME_MOVER_CUSTOM_ELEMENTOR_PATH;
         }
         return $this->elementor_plugin;
@@ -134,7 +134,7 @@ class PrimeMoverElementorCompat
         if (!$this->getSystemFunctions()->isPluginActive($this->getElementorPlugin())) {            
             return null;
         }         
-        $elementor = PRIME_MOVER_PLUGIN_CORE_PATH . $this->getElementorPlugin();
+        $elementor = GM_MOVER_PLUGIN_CORE_PATH . $this->getElementorPlugin();
         if (!$this->getSystemFunctions()->nonCachedFileExists($elementor, true)) {
             return null;
         }

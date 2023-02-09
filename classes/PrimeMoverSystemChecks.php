@@ -308,7 +308,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
         global $wp_filesystem;
         
         foreach ($activated_plugins_list as $plugin_to_check) {
-            $plugin_full_path = PRIME_MOVER_PLUGIN_CORE_PATH . $plugin_to_check;
+            $plugin_full_path = GM_MOVER_PLUGIN_CORE_PATH . $plugin_to_check;
             
             if (! $wp_filesystem->exists($plugin_full_path)) {
                 continue;

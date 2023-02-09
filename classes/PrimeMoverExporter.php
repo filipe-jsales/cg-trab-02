@@ -617,7 +617,7 @@ class PrimeMoverExporter implements PrimeMoverExport
         
         if (!empty($ret['copymedia_shell_tmp_list'])) {
             $mode = 'exporting_plugins';
-            $archive_alias = apply_filters('prime_mover_filter_basezip_folder', basename(PRIME_MOVER_PLUGIN_CORE_PATH), $ret, $mode, PRIME_MOVER_PLUGIN_CORE_PATH, false);
+            $archive_alias = apply_filters('prime_mover_filter_basezip_folder', basename(GM_MOVER_PLUGIN_CORE_PATH), $ret, $mode, GM_MOVER_PLUGIN_CORE_PATH, false);
             $tar_archiving_params = [];
             $tar_archiving_params[] = $archive_alias;
             $tar_archiving_params[] = [];
@@ -643,7 +643,7 @@ class PrimeMoverExporter implements PrimeMoverExport
                 $encryption_key = $this->getSystemInitialization()->getDbEncryptionKey();
             }
             
-            $ret = apply_filters('prime_mover_add_directory_to_tar_archive', $ret, $zippath, $ret['copymedia_shell_tmp_list'], PRIME_MOVER_PLUGIN_CORE_PATH, 
+            $ret = apply_filters('prime_mover_add_directory_to_tar_archive', $ret, $zippath, $ret['copymedia_shell_tmp_list'], GM_MOVER_PLUGIN_CORE_PATH, 
                 $start_time, $resume_positions, false, $blogid_to_export, $tar_archiving_params, 'ab', $encryption_key);
             if (empty($ret['tar_add_dir_offsets'])) {
                 $ret = $this->cleanUpMediaTmpList($ret);
@@ -654,8 +654,8 @@ class PrimeMoverExporter implements PrimeMoverExport
                 return apply_filters('prime_mover_save_return_export_progress', $ret, $blogid_to_export, $process_methods['current'], $process_methods['previous']);
             }           
         } else {
-            $localname = trailingslashit(basename($ret['temp_folder_path'])) . basename(PRIME_MOVER_PLUGIN_CORE_PATH);
-            $ret = apply_filters('prime_mover_add_file_to_tar_archive', $ret, $zippath, 'ab', PRIME_MOVER_PLUGIN_CORE_PATH, $localname, 0, 0, $blogid_to_export, false, false); 
+            $localname = trailingslashit(basename($ret['temp_folder_path'])) . basename(GM_MOVER_PLUGIN_CORE_PATH);
+            $ret = apply_filters('prime_mover_add_file_to_tar_archive', $ret, $zippath, 'ab', GM_MOVER_PLUGIN_CORE_PATH, $localname, 0, 0, $blogid_to_export, false, false); 
             return apply_filters('prime_mover_save_return_export_progress', $ret, $blogid_to_export, $process_methods['next'], $process_methods['current']);
         }
     }

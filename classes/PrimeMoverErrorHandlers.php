@@ -250,7 +250,7 @@ class PrimeMoverErrorHandlers
         $keys = array_keys($network_active);
         
         foreach ($keys as $plugin) {
-            $plugin_full_path	= PRIME_MOVER_PLUGIN_CORE_PATH . $plugin;            
+            $plugin_full_path	= GM_MOVER_PLUGIN_CORE_PATH . $plugin;            
             if ( ! file_exists($plugin_full_path)) {
                 continue;
             }            

@@ -2088,7 +2088,7 @@ class PrimeMoverImporter implements PrimeMoverImport
             if (empty($plugin)) {
                 continue;
             }
-            if (! $wp_filesystem->exists(PRIME_MOVER_PLUGIN_CORE_PATH . $plugin)) {
+            if (! $wp_filesystem->exists(GM_MOVER_PLUGIN_CORE_PATH . $plugin)) {
                 continue;
             }            
            

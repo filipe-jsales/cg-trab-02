@@ -39,7 +39,7 @@ class GMMoverGlobalDependencies
         $coresaltdependency = new GMMoverCoreSaltDependencies();
         
         $required_paths = array(
-            PRIME_MOVER_PLUGIN_CORE_PATH,
+            GM_MOVER_PLUGIN_CORE_PATH,
             PRIME_MOVER_PLUGIN_PATH,
             PRIME_MOVER_THEME_CORE_PATH,
             get_stylesheet_directory(),

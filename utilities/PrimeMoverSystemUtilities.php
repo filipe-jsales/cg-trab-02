@@ -574,7 +574,7 @@ class PrimeMoverSystemUtilities
      */
     public function getPluginAbsolutePath($source_plugin_name = '')
     {
-        return PRIME_MOVER_PLUGIN_CORE_PATH . $source_plugin_name;
+        return GM_MOVER_PLUGIN_CORE_PATH . $source_plugin_name;
     }
     
     /**
@@ -733,7 +733,7 @@ class PrimeMoverSystemUtilities
         }
         
         $plugin_file = wp_normalize_path($plugin_file);
-        $plugin_core = wp_normalize_path(trailingslashit(PRIME_MOVER_PLUGIN_CORE_PATH));
+        $plugin_core = wp_normalize_path(trailingslashit(GM_MOVER_PLUGIN_CORE_PATH));
         $relative_full = str_replace($plugin_core, '', $plugin_file);
         
         $basename = basename($relative_full);
@@ -749,7 +749,7 @@ class PrimeMoverSystemUtilities
             $relative_dir = untrailingslashit($exploded[0]);
         }
        
-        $relative_plugin = wp_normalize_path(trailingslashit(PRIME_MOVER_PLUGIN_CORE_PATH) . $relative_dir);        
+        $relative_plugin = wp_normalize_path(trailingslashit(GM_MOVER_PLUGIN_CORE_PATH) . $relative_dir);        
         if (isset($activated_plugins_list[$relative_plugin])) {
             return $activated_plugins_list[$relative_plugin];
         }
@@ -780,7 +780,7 @@ class PrimeMoverSystemUtilities
             } else {
                 $plugindir = dirname($plugin);
             }
-            $plugindir = wp_normalize_path(trailingslashit(PRIME_MOVER_PLUGIN_CORE_PATH) . $plugindir); 
+            $plugindir = wp_normalize_path(trailingslashit(GM_MOVER_PLUGIN_CORE_PATH) . $plugindir); 
             $plugin_processor[$plugindir] = $plugin;
         }
         

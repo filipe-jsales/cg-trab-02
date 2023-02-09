@@ -964,7 +964,7 @@ class PrimeMoverExportUtilities
      */
     public function getPluginFoldername()
     {
-        return basename(PRIME_MOVER_PLUGIN_CORE_PATH);
+        return basename(GM_MOVER_PLUGIN_CORE_PATH);
     }
     
     /**

@@ -92,7 +92,7 @@ class PrimeMoverDisplayExcludedPluginsSettings
                 if ('prime-mover.php' === $plugin_file) {
                     continue;    
                 }
-                $plugin_full_path = PRIME_MOVER_PLUGIN_CORE_PATH . $plugin_basename;
+                $plugin_full_path = GM_MOVER_PLUGIN_CORE_PATH . $plugin_basename;
                 
                 if (! $wp_filesystem->exists($plugin_full_path)) {
                     continue;

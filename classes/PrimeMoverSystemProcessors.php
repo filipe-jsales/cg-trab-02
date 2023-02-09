@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
-use Codexonics\PrimeMoverFramework\interfaces\PrimeMoverSystemProcessor;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverExportUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadUtilities;
+use GreenMainframe\GMMoverFramework\interfaces\PrimeMoverSystemProcessor;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverExportUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadUtilities;
 if (! defined('ABSPATH')) {
     exit();
 }
@@ -45,7 +45,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
     /**
      * Get progress handlers
      *
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      * @compatible 5.6
      */
     public function getProgressHandlers()
@@ -56,7 +56,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
     /**
      * Get export utilities
      *
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverExportUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverExportUtilities
      * @compatible 5.6
      */
     public function getExportUtilities()
@@ -68,9 +68,9 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      *
      * Get upload utilities
      *
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadUtilities
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
      */
     public function getUploadUtilities()
     {
@@ -81,7 +81,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      *
      * Get Importer
      *
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter
      * @compatible 5.6
      */
     public function getImporter()
@@ -93,7 +93,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      *
      * Get system functions
      *
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -106,7 +106,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      * Get System Initialization
      *
      * @compatible 5.6
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -115,7 +115,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
 
     /**
      * Get System checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      */
     public function getSystemChecks()
     {
@@ -126,7 +126,7 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      *
      * Get System authorization
      *
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -320,12 +320,12 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      * AJAX Processor for "chunk" uploading
      *
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotAuthorized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotReallyUploaded()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotCorrectMimeType()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessMissingChunks()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotAuthorized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotReallyUploaded()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotCorrectMimeType()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessMissingChunks()
      */
     public function primeMoverUploadsProcessor()
     {
@@ -482,11 +482,11 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      * {@inheritdoc}
      * @see PrimeMoverSystemProcessor::primeMoverImportProcessor()
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverImportProcessorIfAllClear()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotRunImportProcessorIfNotAuthorized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsErrorIfImportProcessorFails()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsGenericErrorIfImportReturnsUndefined()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotRunImportProcessorIfNonceFailed()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverImportProcessorIfAllClear()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotRunImportProcessorIfNotAuthorized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsErrorIfImportProcessorFails()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsGenericErrorIfImportReturnsUndefined()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotRunImportProcessorIfNonceFailed()
      */
     public function primeMoverImportProcessor()
     {
@@ -770,12 +770,12 @@ class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
      * Process export request via AJAX
      *
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverExportProcessorIfAllClear()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsErrorIfDetectedOnExportProcessor()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfNonceFailed()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfOptionInvalid()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverExportProcessorIfAlreadyInitiated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverExportProcessorIfAllClear()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itReturnsErrorIfDetectedOnExportProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfNonceFailed()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotAllowExportProcessorCallIfOptionInvalid()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverExportProcessorIfAlreadyInitiated()
      */
     public function primeMoverExportProcessor()
     {

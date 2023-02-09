@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\streams;
+namespace GreenMainframe\GMMoverFramework\streams;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -13,7 +13,7 @@ namespace Codexonics\PrimeMoverFramework\streams;
 
 use SplHeap;
 use SplFixedArray;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -37,7 +37,7 @@ class PrimeMoverIterators extends SplHeap
 
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -46,7 +46,7 @@ class PrimeMoverIterators extends SplHeap
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -55,7 +55,7 @@ class PrimeMoverIterators extends SplHeap
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

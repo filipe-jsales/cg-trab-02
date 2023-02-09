@@ -1,14 +1,14 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\menus;
+namespace GreenMainframe\GMMoverFramework\menus;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverComponentAuxiliary;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverComponentAuxiliary;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -39,7 +39,7 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Get backup utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverComponentAuxiliary
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverComponentAuxiliary
      */
     public function getComponentUtilities()
     {
@@ -48,8 +48,8 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Added init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itChecksIfHooksAreOutdated() 
      */
     public function initHooks()
     {
@@ -70,8 +70,8 @@ class PrimeMoverGearBoxScreenOptions
      * @param string $hash
      * @param number $blogid_to_export
      * @param boolean $export_directory_on
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotMarkSitesWithBackupsIfExportDirDisabled()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotMarkSitesWithBackupsIfExportDirDisabled()
      */
     public function markSiteWithBackups($results = '', $hash = '', $blogid_to_export = 0, $export_directory_on = false, $ret = [])
     {
@@ -132,7 +132,7 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Add sites query filter
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itAddsQuerySitesFilterHook()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itAddsQuerySitesFilterHook()
      */
     public function addSitesQueryFilter()
     {
@@ -143,11 +143,11 @@ class PrimeMoverGearBoxScreenOptions
      * Query sites containing only backups
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNotSitesPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNotAuthorized() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNoSetting()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNotSitesPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotShowSitesContainingBackupsNoSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups() 
      */
     public function showOnlySitesContainingBackups($args = [])
     {        
@@ -179,8 +179,8 @@ class PrimeMoverGearBoxScreenOptions
     /**
      * Remove site with backup on records
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotRemoveSitesWithBackupRecords()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotRemoveSitesWithBackupRecords()
      */
     public function removeSiteWithNoBackupsRecords($blog_id = 0)
     {
@@ -199,10 +199,10 @@ class PrimeMoverGearBoxScreenOptions
      * @param string $mode
      * @param number $blog_id
      * @return void|number[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
      */
     private function doScreenOptionSettings($mode = 'get', $blog_id = 0)
     {
@@ -211,12 +211,12 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Save screen option settings
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNotAuthorized() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNotNetworkAdmin()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNonceFailed() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNoSetting()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDeleteUserSettingsIfNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNotNetworkAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNonceFailed() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotSaveSettingIfNoSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDeleteUserSettingsIfNotSet()
      */
     public function saveScreenOptionSetting()
     {
@@ -236,7 +236,7 @@ class PrimeMoverGearBoxScreenOptions
 
     /**
      * Set user setting
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDeleteUserSettingsIfNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDeleteUserSettingsIfNotSet()
      */
     private function deleteUserSetting()
     {
@@ -250,7 +250,7 @@ class PrimeMoverGearBoxScreenOptions
     /**
      * Set user setting
      * @param array $setting
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
      */
     private function setUserSetting($setting = [])
     {
@@ -270,7 +270,7 @@ class PrimeMoverGearBoxScreenOptions
     /**
      * Define settings args
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
      */
     private function getSettingsArgs()
     {
@@ -287,7 +287,7 @@ class PrimeMoverGearBoxScreenOptions
     /**
      * Validate and check for settings
      * @return array|mixed|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itSavesScreenOptionSettings()
      */
     protected function maybeSaveSetting()
     {
@@ -319,9 +319,9 @@ class PrimeMoverGearBoxScreenOptions
      * Display screen option settings
      * @param string $setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDisplaysSettingsInScreenOptions()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotDisplaySettingsIfNotNetworkSites()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotDisplaySettingsIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDisplaysSettingsInScreenOptions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotDisplaySettingsIfNotNetworkSites()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itDoesNotDisplaySettingsIfNotAuthorized()
      */
     public function screenOptions($setting = '')
     {
@@ -344,7 +344,7 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

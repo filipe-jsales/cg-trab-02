@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -37,7 +37,7 @@ class PrimeMoverSettingsMarkups
 
     /**
      * Get multisite migration
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

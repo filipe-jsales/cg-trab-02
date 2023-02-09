@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -42,7 +42,7 @@ class PrimeMoverHookedMethods
 
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -51,7 +51,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -61,7 +61,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Get System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -71,7 +71,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Get System checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      * @compatible 5.6
      */
     public function getSystemChecks()
@@ -81,7 +81,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()
@@ -94,7 +94,7 @@ class PrimeMoverHookedMethods
      * @param array $column_headers
      * @return array $column_headers
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsPrimeMoverNetworkColumn() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsPrimeMoverNetworkColumn() 
      */
     public function primeMoverAddNetworkColumn($column_headers = [])
     {
@@ -116,7 +116,7 @@ class PrimeMoverHookedMethods
      * Get blog address
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itGetsBlogAddress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itGetsBlogAddress()
      */
     protected function getBlogAddress($blog_id = 0)
     {
@@ -133,7 +133,7 @@ class PrimeMoverHookedMethods
      * @param string $column_name
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfColumnMatched()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfColumnMatched()
      */
     protected function isColumnsMatched($mode = 'export', $column_name = '', $blog_id = 0)
     {
@@ -153,8 +153,8 @@ class PrimeMoverHookedMethods
      * @param string $column_name
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itFiltersLoadMigrationSection()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsTrueIfSingleSiteLoadMigrationSection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itFiltersLoadMigrationSection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsTrueIfSingleSiteLoadMigrationSection()
      */
     protected function maybeLoadMigrationSection($column_name = '', $blog_id = 0, $mode = 'export')
     {
@@ -178,8 +178,8 @@ class PrimeMoverHookedMethods
      * @param string $column_name
      * @param number $blog_id
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itOutputsPrimeMoverExportSection()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputExportSectionNotOnExportColumn()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itOutputsPrimeMoverExportSection()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputExportSectionNotOnExportColumn()
      * @mainsitesupport_affected
      */
     public function primeMoverExportSection($column_name = '', $blog_id = 0)
@@ -234,7 +234,7 @@ class PrimeMoverHookedMethods
      * Generate export button text
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itGeneratesExportButtonText()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itGeneratesExportButtonText()
      */
     protected function generateExportButtonText($blog_id = 0)
     {
@@ -256,8 +256,8 @@ class PrimeMoverHookedMethods
      * Renders the export section of the plugin in Network -> Sites
      * @param string $column_name
      * @param number $blog_id
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itOutputsPrimeMoverImportSection()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputImportSectionIfNotImportColumn()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itOutputsPrimeMoverImportSection()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputImportSectionIfNotImportColumn()
      * @compatible 5.6
      * @mainsitesupport_affected
      */
@@ -300,9 +300,9 @@ class PrimeMoverHookedMethods
      * Add js body class
      * @param string $classes
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
      */
     public function addJsBodyClassOnNetworkSitesPage($classes = '')
     {       
@@ -332,8 +332,8 @@ class PrimeMoverHookedMethods
      * Checks if we are not on network sites page
      * @param string $hook
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfNotSitesPageOnMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfNotSitesPageOnSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfNotSitesPageOnMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itChecksIfNotSitesPageOnSingleSite()
      */
     protected function maybeWeAreNotOnSitesPage($hook = '')
     {
@@ -351,9 +351,9 @@ class PrimeMoverHookedMethods
      * Enqueue plugin JS on Network -> Sites.
      * @param string $hook
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itEnqueuesStandardPrimeMoverScripts() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itEnqueuesMinifiedJsOnNonDebugMode() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotEnqueueScriptNotOnSitesPage()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itEnqueuesStandardPrimeMoverScripts() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itEnqueuesMinifiedJsOnNonDebugMode() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotEnqueueScriptNotOnSitesPage()
      */
     public function primeMoverEnqueueScripts($hook = '')
     {
@@ -476,14 +476,14 @@ class PrimeMoverHookedMethods
      * Show an update nag to network administrator
      * that the plugin was not been able to initialize due to unmeet dependencies
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itShowsAdminNoticeErrorWhenNoOpenSSLSupport()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputAnyErrorWhenAllRequisitesMeet()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenFolderIsNotCreated()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenFileSystemIsNotInitialized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenZipDisabled()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNotCompliedWithMinimumRequirement()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNotAllSystemsFunctionsEnabled() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNoMbStringEnabled()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itShowsAdminNoticeErrorWhenNoOpenSSLSupport()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotOutputAnyErrorWhenAllRequisitesMeet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenFolderIsNotCreated()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenFileSystemIsNotInitialized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenZipDisabled()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNotCompliedWithMinimumRequirement()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNotAllSystemsFunctionsEnabled() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsErrorWhenNoMbStringEnabled()
      */
     public function multisiteShowNetworkAdminNotice()
     {
@@ -585,7 +585,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Callback for single site Tools sub-menu
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMigrationToolsToSingleSiteMenu()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMigrationToolsToSingleSiteMenu()
      */
     public function addExportImportOptionsSingleSite()
     {
@@ -596,7 +596,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Add menu page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMenuPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMenuPage()
      */
     public function addMenuPage()
     {
@@ -618,7 +618,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Add menu page callback
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMenuPageCallBack()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsMenuPageCallBack()
      */
     public function addMenuPageCallBack()
     {
@@ -632,9 +632,9 @@ class PrimeMoverHookedMethods
     
     /**
      * Remove distractions on Getting Started / Settings page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itRemovesDistractionsOnSettingsPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotRemoveDistractionsAnywhere()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotRemoveDistractionsNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itRemovesDistractionsOnSettingsPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotRemoveDistractionsAnywhere()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotRemoveDistractionsNotAuthorized() 
      */
     public function removeDistractionsOnSettingsPage()
     {
@@ -658,7 +658,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Load plugin text domain
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itLoadsPluginTextDomain()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itLoadsPluginTextDomain()
      */
     public function loadPluginTextdomain()
     {

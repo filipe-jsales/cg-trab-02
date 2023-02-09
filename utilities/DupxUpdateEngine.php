@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -458,10 +458,10 @@ class DupxUpdateEngine
 				$serial_string	 = preg_match('/^s:[0-9]+:"(.*$)/s', trim($data), $matches);
 				//Nested serial string
 				if ($serial_string) {
-					$inner				 = preg_replace_callback($regex, 'Codexonics\PrimeMoverFramework\utilities\DupxUpdateEngine::fixStringCallback', rtrim($matches[1], '";'));
+					$inner				 = preg_replace_callback($regex, 'GreenMainframe\GMMoverFramework\utilities\DupxUpdateEngine::fixStringCallback', rtrim($matches[1], '";'));
 					$serialized_fixed	 = 's:'.strlen($inner).':"'.$inner.'";';
 				} else {
-					$serialized_fixed = preg_replace_callback($regex, 'Codexonics\PrimeMoverFramework\utilities\DupxUpdateEngine::fixStringCallback', $data);
+					$serialized_fixed = preg_replace_callback($regex, 'GreenMainframe\GMMoverFramework\utilities\DupxUpdateEngine::fixStringCallback', $data);
 				}
 
 				if (self::isSerialized($serialized_fixed)) {

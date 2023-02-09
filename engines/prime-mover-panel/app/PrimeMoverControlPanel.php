@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -59,7 +59,7 @@ class PrimeMoverControlPanel
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -68,8 +68,8 @@ class PrimeMoverControlPanel
     
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itChecksIfHooksAreOutdated() 
      */
     public function initHooks() 
     {
@@ -250,7 +250,7 @@ class PrimeMoverControlPanel
      * Add Control Panel version to error log
      * @param array $error_output
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itAddsControlPanelVersionToErrorLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itAddsControlPanelVersionToErrorLog()
      */
     public function addControlPanelVersionToErrorLog($error_output = []) {
         if ( ! is_array( $error_output ) || isset( $error_output['control_panel_version']) ) {
@@ -303,10 +303,10 @@ class PrimeMoverControlPanel
 
     /**
      * Enqueue panel style and script
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itEnqueuesControlPanelAssetsWhenAllSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itDoesNotEnqueueAssetWhenNotOnSitesPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itDoesNotEnqueueIconCSSIfNotNetworkAdmin() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverControlPanel::itEnqueuesNonMinifiedWhenOnScriptDebug()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itEnqueuesControlPanelAssetsWhenAllSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itDoesNotEnqueueAssetWhenNotOnSitesPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itDoesNotEnqueueIconCSSIfNotNetworkAdmin() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverControlPanel::itEnqueuesNonMinifiedWhenOnScriptDebug()
      */
     public function controlPanelEnqueueScripts() 
     {
@@ -435,7 +435,7 @@ class PrimeMoverControlPanel
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

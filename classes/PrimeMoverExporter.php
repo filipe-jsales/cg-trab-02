@@ -1,22 +1,22 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\interfaces\PrimeMoverExport;
-use Codexonics\PrimeMoverFramework\build\Ifsnop\Mysqldump as IMysqldump;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverStreamFilters;
+use GreenMainframe\GMMoverFramework\interfaces\PrimeMoverExport;
+use GreenMainframe\GMMoverFramework\build\Ifsnop\Mysqldump as IMysqldump;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverStreamFilters;
 use Exception;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverIterators;
-use Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverIterators;
+use GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -59,7 +59,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get users object
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverUsers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverUsers
      */
     public function getUsersObject()
     {
@@ -211,7 +211,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get CLI archiver object
-     * @return \Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive
+     * @return \GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive
      */
     public function getCliArchiver()
     {
@@ -220,7 +220,7 @@ class PrimeMoverExporter implements PrimeMoverExport
 
     /**
      * Get iterators
-     * @return \Codexonics\PrimeMoverFramework\streams\PrimeMoverIterators
+     * @return \GreenMainframe\GMMoverFramework\streams\PrimeMoverIterators
      */
     public function getIterators()
     {
@@ -239,7 +239,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get stream filters
-     * @return \Codexonics\PrimeMoverFramework\streams\PrimeMoverStreamFilters
+     * @return \GreenMainframe\GMMoverFramework\streams\PrimeMoverStreamFilters
      * 
      */
     public function getStreamFilters()
@@ -249,7 +249,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      * 
      */
@@ -260,7 +260,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      * 
      */
@@ -271,7 +271,7 @@ class PrimeMoverExporter implements PrimeMoverExport
  
     /**
      * Get System checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      * @compatible 5.6
      * 
      */
@@ -283,8 +283,8 @@ class PrimeMoverExporter implements PrimeMoverExport
     /**
      * Exporter hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itAddsExporterHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itAddsExporterHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itChecksIfHooksAreOutdated()
      * 
      */
     public function exporterHooks()
@@ -305,7 +305,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Returns TRUE if we need to skip plugins/themes otherwise FALSE
      * @param array $ret
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itExportsPluginsAndThemes()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itExportsPluginsAndThemes()
      */
     public function maybeSkipPluginsThemesExport($ret = [])
     {
@@ -390,7 +390,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Get themes to export
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsThemesToExport()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsThemesToExport()
      */
     public function getThemesToExport($ret = [])
     {
@@ -689,7 +689,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Get plugins to export
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsPluginsToExport() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsPluginsToExport() 
      */
     public function getPluginsToExport($ret = [])
     {
@@ -698,7 +698,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     
     /**
      * Get System Authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      * 
      */
@@ -709,7 +709,7 @@ class PrimeMoverExporter implements PrimeMoverExport
  
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      * @compatible 5.6
      * 
      */
@@ -801,9 +801,9 @@ class PrimeMoverExporter implements PrimeMoverExport
     /**
      * Create unique folder name
      * {@inheritDoc}
-     * @see \Codexonics\PrimeMoverFramework\interfaces\PrimeMoverExport::multisiteCreateFoldername()
+     * @see \GreenMainframe\GMMoverFramework\interfaces\PrimeMoverExport::multisiteCreateFoldername()
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itCreatesFolderName() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itCreatesFolderName() 
      * 
      */
     public function multisiteCreateFoldername($blogid_to_export = 0, $original_id = 0)
@@ -857,8 +857,8 @@ class PrimeMoverExporter implements PrimeMoverExport
      * {@inheritDoc}
      * @see PrimeMoverExport::dumpDbForExport()
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotDumpWhenNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itReturnsErrorWhenExporterDetectsError()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotDumpWhenNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itReturnsErrorWhenExporterDetectsError()
      * @audited
      * @mainsite_compatible
      * 
@@ -1025,7 +1025,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itChecksWhetherToUseMySQLDumpPHP() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itChecksWhetherToUseMySQLDumpPHP() 
      * Maybe use MySQL Dump PHP if shell isn't supported
      * @param array $ret
      * @return boolean
@@ -1052,7 +1052,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Checks if dump is in progress
      * @param array $ret
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itChecksIfDumpIsInProgress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itChecksIfDumpIsInProgress()
      */
     protected function maybeDumpInProgress($ret = [])
     {
@@ -1447,8 +1447,8 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Count all table rows
      * @param array $tables
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itCountsAllTableRows() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itReturnsZeroCountWhenNoTables() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itCountsAllTableRows() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itReturnsZeroCountWhenNoTables() 
      */
     protected function countAllTableRowsDb($tables = [])
     {
@@ -1468,7 +1468,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Checks if dump should be encrypted
      * @param array $ret
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsTargetDbDump()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsTargetDbDump()
      */
     private function maybeEncryptDatabaseDump($ret = [])
     {
@@ -1486,7 +1486,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * @param array $ret
      * @param number $blogid_to_export
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsTargetDbDump() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsTargetDbDump() 
      */
     protected function getTargetDumpPath($ret = [], $blogid_to_export = 0)
     {
@@ -1506,7 +1506,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Clean Tables to export
      * @param number $blogid_to_export
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetTablesForExport() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetTablesForExport() 
      */
     protected function getTablesToExport($blogid_to_export = 0)
     {
@@ -1538,7 +1538,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Encrypt dB on export if requested or applicable
      * @param string $db_encryption_key
      * @param array $ret
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itMaybeEncryptDbIfRequested() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itMaybeEncryptDbIfRequested() 
      * 
      */
     protected function maybeEncryptDbIfRequested($db_encryption_key = '', $ret = [])
@@ -1589,7 +1589,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Get MySQL dump - PHP parameters
      * @param array $clean_tables
      * @return array[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsMySQLDumpPHPParameters() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsMySQLDumpPHPParameters() 
      */
     protected function getMySQLDumpPHPParameters($clean_tables = [])
     {
@@ -2099,7 +2099,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Write other files on footprint config
      * @param array $ret
      * @param number $blogid_to_export
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itWritesOtherFiles()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itWritesOtherFiles()
      */
     public function writeOtherFiles($ret = [], $blogid_to_export = 0)
     {
@@ -2116,7 +2116,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * Footprint archiving helper
      * @param array $ret
      * @param string $tmp_folderpath
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesExportFootPrintHelper()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesExportFootPrintHelper()
      */
     public function generateExportFootPrintHelper($ret = [], $source = '', $blogid_to_export = 0)
     {
@@ -2133,8 +2133,8 @@ class PrimeMoverExporter implements PrimeMoverExport
      * @param number $blogid_to_export
      * @return array
      * @mainsite_compatible
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itFinalizesMediaArchive()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotFinalizeMediaIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itFinalizesMediaArchive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotFinalizeMediaIfUnauthorized()
      */
     public function finalizingMediaArchive($ret = [], $blogid_to_export = 0, $start_time = 0)
     {        
@@ -2157,7 +2157,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * @see PrimeMoverExport::zippedFolder()
      * @compatible 5.6
      * @mainsite_compatible
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itZipsFolder() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itZipsFolder() 
      */
     public function zippedFolder($ret = [], $blogid_to_export = 0, $start_time = 0)
     {        
@@ -2224,10 +2224,10 @@ class PrimeMoverExporter implements PrimeMoverExport
      * {@inheritDoc}
      * @see PrimeMoverExport::generateDownloadUrl()
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenAllSet()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGenerateDownloadURLNotAuthorized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenExportDirectoryOn()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadUrlWhenExportDirectoryOff()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGenerateDownloadURLNotAuthorized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenExportDirectoryOn()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadUrlWhenExportDirectoryOff()
      * @mainsite_compatible
      */
     public function generateDownloadUrl($ret = [], $blogid_to_export = 0, $start_time = 0)
@@ -2292,8 +2292,8 @@ class PrimeMoverExporter implements PrimeMoverExport
      * @param array $ret
      * @return boolean
      * 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingCustomExportDir()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingDefaultDir(
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingCustomExportDir()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingDefaultDir(
      */
     private function isExportDirectoryOn($ret = [])
     {
@@ -2309,8 +2309,8 @@ class PrimeMoverExporter implements PrimeMoverExport
      * 
      * @param number $blogid_to_export
      * @return mixed|NULL|array
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingCustomExportDir()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingDefaultDir()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingCustomExportDir()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDoPostExportProcessingWhenUsingDefaultDir()
      * @audited
      */
     public function doPostExportProcessing($ret = [], $blogid_to_export = 0, $start_time = 0)
@@ -2339,7 +2339,7 @@ class PrimeMoverExporter implements PrimeMoverExport
     }   
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itSavesExportProgressData() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itSavesExportProgressData() 
      * Save and return export progress data
      * 
      * @param array $ret
@@ -2380,9 +2380,9 @@ class PrimeMoverExporter implements PrimeMoverExport
      * @param number $blogid_to_export
      * 
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGetsExportProgressData()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGetProgressExportDataBlogIdNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGetProgressExportDataNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itGetsExportProgressData()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGetProgressExportDataBlogIdNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itDoesNotGetProgressExportDataNotAuthorized()
      */
     public function getExportProgressData($ret = [], $blogid_to_export = 0)
     {
@@ -2401,7 +2401,7 @@ class PrimeMoverExporter implements PrimeMoverExport
      * 
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExporter::itCleansUpProgressForFinalReturn()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExporter::itCleansUpProgressForFinalReturn()
      */
     protected function cleanUpProgressForFinalReturn($ret = [])
     {        

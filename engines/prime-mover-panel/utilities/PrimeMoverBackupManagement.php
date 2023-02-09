@@ -1,19 +1,19 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\app\PrimeMoverSettings;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\app\PrimeMoverSettings;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -52,7 +52,7 @@ class PrimeMoverBackupManagement
     
     /**
      * Get backup dir size instance
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverBackupDirectorySize
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverBackupDirectorySize
      */
     public function getBackupDirSize()
     {
@@ -61,7 +61,7 @@ class PrimeMoverBackupManagement
     
     /**
      * Get Delete utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverDeleteUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverDeleteUtilities
      */
     public function getDeleteUtilities()
     {
@@ -70,7 +70,7 @@ class PrimeMoverBackupManagement
     
     /**
      * Get Prime Mover settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
     {
@@ -79,8 +79,8 @@ class PrimeMoverBackupManagement
 
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupManagement::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupManagement::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupManagement::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupManagement::itChecksIfHooksAreOutdated()
      */
     public function initHooks() 
     {
@@ -160,8 +160,8 @@ class PrimeMoverBackupManagement
     
     /**
      * Show backup management setting
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupManagement::itShowsBackupManagementSetting();
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupManagement::itDoesNotShowBackupManagementWhenGearBoxDeactivated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupManagement::itShowsBackupManagementSetting();
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupManagement::itDoesNotShowBackupManagementWhenGearBoxDeactivated()
      */
     public function showBackupManagementSetting()
     {  
@@ -174,7 +174,7 @@ class PrimeMoverBackupManagement
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

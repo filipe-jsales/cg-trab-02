@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -37,7 +37,7 @@ class PrimeMoverMigrationOptions
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -46,7 +46,7 @@ class PrimeMoverMigrationOptions
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -55,7 +55,7 @@ class PrimeMoverMigrationOptions
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -64,8 +64,8 @@ class PrimeMoverMigrationOptions
         
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverMigrationOptions::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverMigrationOptions::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverMigrationOptions::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverMigrationOptions::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -154,7 +154,7 @@ class PrimeMoverMigrationOptions
 
     /**
      * Get users object
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverUsers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverUsers
      */
     public function getUsersObject()
     {
@@ -178,8 +178,8 @@ class PrimeMoverMigrationOptions
     /**
      * Added checkbox for dB encryption
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxExport::itRendersMarkupForAddingCheckBoxDbEncryption()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxExport::itDoesNotRenderMarkupWhenNoEncryptionKey()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxExport::itRendersMarkupForAddingCheckBoxDbEncryption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxExport::itDoesNotRenderMarkupWhenNoEncryptionKey()
      */
     public function addCheckBoxForDbEncryption($blog_id = 0) {
         if (!$blog_id) {
@@ -252,7 +252,7 @@ class PrimeMoverMigrationOptions
     /**
      * Display save to Google Drive option
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGoogleDrive::itDisplaysSaveToGDriveOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGoogleDrive::itDisplaysSaveToGDriveOption()
      */
     public function displaySaveToGDriveOption($blog_id = 0)
     {
@@ -300,7 +300,7 @@ class PrimeMoverMigrationOptions
     /**
      * Display save to dropbox option
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDropBox::itDisplaySaveToDropBoxOptionWhenAllSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDropBox::itDisplaySaveToDropBoxOptionWhenAllSet()
      */
     public function displaySaveToDropBoxOption($blog_id = 0)
     {        
@@ -342,7 +342,7 @@ class PrimeMoverMigrationOptions
      * Markup for customized export path
      * @param number $blog_id
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverGearBoxExport::itAddsCheckBoxExportInsideServer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverGearBoxExport::itAddsCheckBoxExportInsideServer()
      */
     public function addCheckBoxExportInsideServer($blog_id = 0)
     {

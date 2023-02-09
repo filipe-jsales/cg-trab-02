@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
 use WP_Error;
 use ZipArchive;
 use RecursiveIteratorIterator;
@@ -46,7 +46,7 @@ class PrimeMoverSystemCheckUtilities
     
     /**
      * Get system utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemUtilities
      */
     public function getSystemUtilities()
     {
@@ -55,7 +55,7 @@ class PrimeMoverSystemCheckUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -65,7 +65,7 @@ class PrimeMoverSystemCheckUtilities
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -74,7 +74,7 @@ class PrimeMoverSystemCheckUtilities
     
     /**
      * Get System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -84,8 +84,8 @@ class PrimeMoverSystemCheckUtilities
     /**
      * Initialize hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itAddsInitHoooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itAddsInitHoooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks() 
     {
@@ -417,9 +417,9 @@ class PrimeMoverSystemCheckUtilities
      * Return MySQL executable based on base directory location
      * @param string $command
      * @return void|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itGetsMySQLBaseDirExecutablePath() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itReturnsNullWhenThereIsNoResult()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itReturnsEmptyWhenExecutableDoesNotExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itGetsMySQLBaseDirExecutablePath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itReturnsNullWhenThereIsNoResult()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itReturnsEmptyWhenExecutableDoesNotExist()
      */
     public function getMySQLBaseDirExecutablePath($command = 'mysql', $is_windows = false)
     {
@@ -1017,7 +1017,7 @@ class PrimeMoverSystemCheckUtilities
      * @param string $name
      * @param resource $resource
      * @return string[]|boolean[]|resource[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itGetsResource() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itGetsResource() 
      */
     protected function getResource($use_extract_to = false, ZipArchive $zip = null, $name = '', $resource = null)
     {
@@ -1234,7 +1234,7 @@ class PrimeMoverSystemCheckUtilities
     
     /**
      * Extract zip by parts
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itExtractZipByParts()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemCheckUtilities::itExtractZipByParts()
      * @param string $media_path
      * @param array $ret
      * @param string $extraction_path

@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\scripts;
+namespace GreenMainframe\GMMoverFramework\scripts;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -224,7 +224,7 @@ function loadCoreEnvironment($loader_array_tmp = '', $script_path = '', $error_l
     }
     maybeSetMissingHeaders($loader_array);    
     defineRunTimeConstants($script_user, $ip, $user_agent, $tmp_file, $error_log, $shell_process_mode);
-    register_shutdown_function('Codexonics\PrimeMoverFramework\scripts\shutDownFunction');
+    register_shutdown_function('GreenMainframe\GMMoverFramework\scripts\shutDownFunction');
     
     @error_log('Everything ready, loading core..' . PHP_EOL, 3, $error_log);
     require($loader);   

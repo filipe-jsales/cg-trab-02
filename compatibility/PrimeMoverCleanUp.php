@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 use WP_Site;
 
 if (! defined('ABSPATH')) {
@@ -56,7 +56,7 @@ class PrimeMoverCleanUp
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -65,7 +65,7 @@ class PrimeMoverCleanUp
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -74,7 +74,7 @@ class PrimeMoverCleanUp
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -83,7 +83,7 @@ class PrimeMoverCleanUp
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -92,8 +92,8 @@ class PrimeMoverCleanUp
         
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCleanUp::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCleanUp::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCleanUp::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCleanUp::itAddsInitHooks()
      */
     public function initHooks()
     {

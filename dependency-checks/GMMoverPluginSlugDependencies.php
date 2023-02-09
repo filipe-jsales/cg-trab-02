@@ -34,8 +34,8 @@ class GMMoverPluginSlugDependencies
     /**
      * Checks if minimum PHP version is meet
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
      */
     public function slugPasses()
     {

@@ -1,20 +1,20 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\advance;
+namespace GreenMainframe\GMMoverFramework\advance;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\app\PrimeMoverSettings;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverTroubleshootingMarkup;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\app\PrimeMoverSettings;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverTroubleshootingMarkup;
 use WP_Debug_Data;
 
 if (! defined('ABSPATH')) {
@@ -57,7 +57,7 @@ class PrimeMoverTroubleshooting
     
     /**
      * Get troubleshooting markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverTroubleshootingMarkup
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverTroubleshootingMarkup
      */
     public function getTroubleShootingMarkup()
     {
@@ -66,7 +66,7 @@ class PrimeMoverTroubleshooting
 
     /**
      * Get Prime Mover settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
     {
@@ -75,8 +75,8 @@ class PrimeMoverTroubleshooting
 
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverTroubleshooting::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverTroubleshooting::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverTroubleshooting::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverTroubleshooting::itAddsInitHooks()
      */
     public function initHooks() 
     {
@@ -466,7 +466,7 @@ class PrimeMoverTroubleshooting
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

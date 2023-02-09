@@ -1,19 +1,19 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverSettingsMarkups;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverSettingsMarkups;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -78,7 +78,7 @@ class PrimeMoverSettings
     
     /**
      * Get settings markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSettingsMarkups
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSettingsMarkups
      */
     public function getSettingsMarkup()
     {
@@ -96,9 +96,9 @@ class PrimeMoverSettings
     
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotAddInitHooksWhenNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotAddInitHooksWhenNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -194,8 +194,8 @@ class PrimeMoverSettings
     
     /**
      * Get setting API for other plugins
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetSettingsApiWhenSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueWhenSettingNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetSettingsApiWhenSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueWhenSettingNotSet()
      * @param mixed $value
      * @param string $setting
      * @param boolean $decrypt
@@ -214,7 +214,7 @@ class PrimeMoverSettings
     /**
      * Get control panel settings name
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesSettingWhenAllIsSet
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesSettingWhenAllIsSet
      */
     private function getControlPanelSettingsName()
     {        
@@ -223,8 +223,8 @@ class PrimeMoverSettings
     
     /**
      * Check if we load gearbox related settings
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsFalseIfGearBoxPluginIsDeactivated() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsTrueIfGearBoxPluginIsActivated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsFalseIfGearBoxPluginIsDeactivated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsTrueIfGearBoxPluginIsActivated()
      * @return boolean
      */
     public function maybeLoadGearBoxRelatedSettings()
@@ -338,7 +338,7 @@ class PrimeMoverSettings
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()
@@ -349,14 +349,14 @@ class PrimeMoverSettings
     /**
      * Get a specific Prime Mover setting
      * 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsFalseIfSettingDoesNotExists()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsSettingIfItExists()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsFalseIfSettingDoesNotExists()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsSettingIfItExists()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
      * 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfValueIsNotEncoded()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedArraySetting() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfValueIsNotEncoded()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedArraySetting() 
      * @param string $setting
      * @param boolean $decrypt
      * @param string $default
@@ -388,8 +388,8 @@ class PrimeMoverSettings
     /**
      * Get all Prime Mover settings
      * @return mixed|boolean|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
      */
     public function getAllPrimeMoverSettings() 
     {
@@ -430,8 +430,8 @@ class PrimeMoverSettings
      * @param $value
      * @param boolean $decrypt
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
      */
     protected function maybeDecryptSetting($value, $decrypt = false)
     {
@@ -443,7 +443,7 @@ class PrimeMoverSettings
      * @param array $value
      * @param string $encryption_key
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
      */
     private function encryptArraySetting($value = [], $encryption_key = '')
     {
@@ -455,9 +455,9 @@ class PrimeMoverSettings
      * @param $value
      * @param boolean $encrypt
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
      */
     protected function maybeEncryptSetting($value, $encrypt = false) 
     {        
@@ -467,12 +467,12 @@ class PrimeMoverSettings
     /**
      * Save setting
      * 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesSettingWhenAllIsSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnFalseIfSettingDoesNotExist()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesNewSettings()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesSettingWhenAllIsSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnFalseIfSettingDoesNotExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesNewSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings() 
      * 
      * @param string $setting
      * @param $value

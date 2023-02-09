@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 use SplFixedArray;
 
 if (! defined('ABSPATH')) {
@@ -79,7 +79,7 @@ class PrimeMoverWooCommerceCompat
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -88,7 +88,7 @@ class PrimeMoverWooCommerceCompat
     
     /**
      * Get hooked methods
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverHookedMethods
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverHookedMethods
      */
     public function getPrimeMoverHookedMethods()
     {
@@ -97,7 +97,7 @@ class PrimeMoverWooCommerceCompat
     
     /**
      * Get progess handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -106,7 +106,7 @@ class PrimeMoverWooCommerceCompat
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -115,7 +115,7 @@ class PrimeMoverWooCommerceCompat
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -124,7 +124,7 @@ class PrimeMoverWooCommerceCompat
  
     /**
      * Get user queries
-     * @return \Codexonics\PrimeMoverFramework\users\PrimeMoverUserQueries
+     * @return \GreenMainframe\GMMoverFramework\users\PrimeMoverUserQueries
      */
     public function getUserQueries()
     {

@@ -1,20 +1,20 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\archiver;
+namespace GreenMainframe\GMMoverFramework\archiver;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive;
-use Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\Tar;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverUsers;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverOpenSSLUtilities;
+use GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive;
+use GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive\Tar;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverUsers;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverOpenSSLUtilities;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -47,7 +47,7 @@ class PrimeMoverArchiver
     
     /**
      * Get openSSL utilities object
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverOpenSSLUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverOpenSSLUtilities
      */
     public function getOpenSSLUtilities()
     {
@@ -56,7 +56,7 @@ class PrimeMoverArchiver
     
     /**
      * Get users object
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverUsers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverUsers
      */
     public function getUsersObject()
     {
@@ -65,8 +65,8 @@ class PrimeMoverArchiver
     
     /**
      * Get CLI archiver
-     * @return \Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
+     * @return \GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
      */
     public function getCliArchiver()
     {
@@ -75,8 +75,8 @@ class PrimeMoverArchiver
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
      */
     public function getSystemAuthorization()
     {
@@ -85,8 +85,8 @@ class PrimeMoverArchiver
     
     /**
      * Get system checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeToExportPathJs()
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeToExportPathJs()
      */
     public function getSystemChecks()
     {
@@ -95,9 +95,9 @@ class PrimeMoverArchiver
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itDoesNotAddInitHooksWhenNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itDoesNotAddInitHooksWhenNotAuthorized()
      */
     public function initHooks()
     {
@@ -125,7 +125,7 @@ class PrimeMoverArchiver
      * WPRIME archive should be excluded inside any WPRIME archive by default to save space and bandwidth
      * @param array $ext
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itExcludesWprimeFromAnyArchive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itExcludesWprimeFromAnyArchive()
      */
     public function excludeWprimeFromAnyArchive($ext = [])
     {
@@ -141,7 +141,7 @@ class PrimeMoverArchiver
      * @param array $ret
      * @param number $blogid_to_export
      * @return []
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsMediaFilesCountToFootPrint()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsMediaFilesCountToFootPrint()
      */
     public function addMediaFilesCountToFootPrint($export_system_footprint = [], $ret = [], $blogid_to_export = 0)
     {
@@ -156,7 +156,7 @@ class PrimeMoverArchiver
      * Formulate wprime export paths to JS usage
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeToExportPathJs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeToExportPathJs()
      */
     public function wPrimeExportPathToJs($args = [])
     {        
@@ -169,7 +169,7 @@ class PrimeMoverArchiver
      * @param boolean $clean
      * @param string $tar_path
      * @return boolean|string|boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itChecksIfArchiveIsClean()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itChecksIfArchiveIsClean()
      */
     public function isArchiveClean($clean = false, $tar_path = '')
     {        
@@ -188,13 +188,13 @@ class PrimeMoverArchiver
      * @param array $ret
      * @param int $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfReadmeIsNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfFileDoesntExist()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfTmpFolderDoesntExist()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfReadMeDoesntExist()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsTrueWhenClosingArchiveIfAlreadyClosed()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsFalseWhenClosingArchiveIfTarInstanceNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsTrueWhenArchiveSuccessfullyClosed() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfReadmeIsNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfFileDoesntExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfTmpFolderDoesntExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itRetunsFalseWhenClosingArchiveIfReadMeDoesntExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsTrueWhenClosingArchiveIfAlreadyClosed()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsFalseWhenClosingArchiveIfTarInstanceNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsTrueWhenArchiveSuccessfullyClosed() 
      */
     public function closeArchive($close_result = false, $tar_file = '', $ret = [], $blog_id = 0)
     {
@@ -234,7 +234,7 @@ class PrimeMoverArchiver
      * Add WPrime Config file
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeConfigToJs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeConfigToJs()
      */
     public function addWPrimeConfigToJs($args = [])
     {
@@ -246,7 +246,7 @@ class PrimeMoverArchiver
      * Add tarball mime type
      * @param array $mimes
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsTarMimeType()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsTarMimeType()
      */
     public function addTarMimeType($mimes = [])
     {
@@ -269,9 +269,9 @@ class PrimeMoverArchiver
      * @param number $index
      * @param string $key
      * @param string $iv
-     * @return \Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\FileInfo|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsErrorWhenExtractingIncompleteTarData()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsErrorWhenUnableToOpenTar()
+     * @return \GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive\FileInfo|array
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsErrorWhenExtractingIncompleteTarData()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itReturnsErrorWhenUnableToOpenTar()
      */
     public function extractTar($ret = [], $blog_id = 0, $tar_path = '', $extraction_path = '', $base_read_offset = 0, $start = 0, $offset = 0, $index = 0, $key = '', $iv = '')
     {
@@ -303,7 +303,7 @@ class PrimeMoverArchiver
      * @param string $tar_path
      * @param number $base_read_offset
      * @param boolean $source_is_url
-     * @return \Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\Tar
+     * @return \GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive\Tar
      */
     protected function openTar($tar_path = '', $base_read_offset = 0, $source_is_url = false)
     {
@@ -317,7 +317,7 @@ class PrimeMoverArchiver
      * Clean up extraction ret array
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itCLeanUpExtractionRetArray()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itCLeanUpExtractionRetArray()
      */
     protected function cleanUpExtractionRetArray($ret = [])
     {
@@ -462,7 +462,7 @@ class PrimeMoverArchiver
         }
         
         $closed_identifier = wp_normalize_path(trailingslashit($temp_folder_path) . PRIME_MOVER_WPRIME_CLOSED_IDENTIFIER);
-        $wp_filesystem->put_contents($closed_identifier, esc_html__('This is a WPRIME archive created by WordPress Prime Mover Plugin (developer: Codexonics Ltd). This is not designed to be read or extracted by any third party software. Attempting to manually read and write this archive will result in data corruption errors.'));
+        $wp_filesystem->put_contents($closed_identifier, esc_html__('This is a WPRIME archive created by WordPress Prime Mover Plugin (developer: GreenMainframe Ltd). This is not designed to be read or extracted by any third party software. Attempting to manually read and write this archive will result in data corruption errors.'));
         $ret['wprime_readme_path'] = $closed_identifier;
         
         $local_name = trailingslashit(basename($temp_folder_path)) . PRIME_MOVER_WPRIME_CONFIG;
@@ -473,7 +473,7 @@ class PrimeMoverArchiver
      * Create tarball instance
      * @param string $tar_path
      * @param string $mode
-     * @return NULL|\Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive\Tar
+     * @return NULL|\GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive\Tar
      */
     protected function createTarInstance($tar_path = '', $mode = 'wb')
     {
@@ -507,7 +507,7 @@ class PrimeMoverArchiver
      * $ret['tar_add_file_offset'] in case a retry is needed if requested
      * 
      * $ret unchanged array if success
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itAddsFileToArchive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsFileToArchive()
      */
     public function addFile($ret = [], $tar_path = '', $mode = 'wb', $entity_to_add = '', $local_name = '', $start = 0, $file_position = 0, 
         $blog_id = 0, $enable_retry = false, $close = false, $key = '', $iv = '')
@@ -559,7 +559,7 @@ class PrimeMoverArchiver
      * Clean up add file ret array
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itCleanUpAddFileRet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itCleanUpAddFileRet()
      */
     protected function cleanUpAddFileRet($ret = [])
     {
@@ -576,7 +576,7 @@ class PrimeMoverArchiver
      * Get resume positions
      * @param array $resume_positions
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itGetsResumePositions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itGetsResumePositions()
      */
     protected function getResumePositions($resume_positions = [])
     {
@@ -731,7 +731,7 @@ class PrimeMoverArchiver
      * @param string $rootpath
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverArchiver::itMaybeExcludeMedia() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itMaybeExcludeMedia() 
      */
     protected function maybeExcludeMedia($exporting_mode = '', $line = '', $exclusion_rules = [], $rootpath = '', $blog_id = 0)
     {

@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -63,7 +63,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get backup utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverBackupUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverBackupUtilities
      */
     public function getBackupUtilities()
     {
@@ -80,7 +80,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get import utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverImportUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverImportUtilities
      */
     public function getImportUtilities()
     {
@@ -89,7 +89,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get exporter
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter
      */
     public function getExporter()
     {
@@ -98,7 +98,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get importer
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter
      */
     public function getImporter()
     {
@@ -107,7 +107,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -116,7 +116,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -125,7 +125,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -134,8 +134,8 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Init hook class
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -278,7 +278,7 @@ class PrimeMoverComponentAuxiliary
      * Restore all Prime Mover settings
      * @param array $settings
      * @moved
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoresAllPrimeMoverSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoresAllPrimeMoverSettings()
      */
     public function restoreAllPrimeMoverSettings($settings = [])
     {
@@ -296,8 +296,8 @@ class PrimeMoverComponentAuxiliary
      * Delete all settings
      * @return boolean
      * @moved
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDeletesAllPrimeMoverSettings() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDoesNotDeletesAllPrimeMoverSettingsIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDeletesAllPrimeMoverSettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDoesNotDeletesAllPrimeMoverSettingsIfNotAuthorized() 
      */
     public function deleteAllPrimeMoverSettings()
     {
@@ -312,10 +312,10 @@ class PrimeMoverComponentAuxiliary
     /**
      * Restore control panel settings after dB processing
      * @moved
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoreControlPanelSettingsInSingleSite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSkipsRestorationControlPanelSettingsInMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSkipsRestorationControlPanelSettingsNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDoesNotDeleteControlPanelSettingsIfNotExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoreControlPanelSettingsInSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSkipsRestorationControlPanelSettingsInMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSkipsRestorationControlPanelSettingsNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itDoesNotDeleteControlPanelSettingsIfNotExist()
      * 
      */
     public function restoreControlPanelSettings()
@@ -339,7 +339,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Sanitize prime mover setting before dumping database
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSanitizesPrimeMoverSettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itSanitizesPrimeMoverSettings() 
      */
     public function sanitizePrimeMoverSetting()
     {
@@ -356,7 +356,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Restore gearbox packages after dB processing
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoreGearBoxPackages() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoreGearBoxPackages() 
      * @moved
      */
     public function restoreGearBoxPackages()
@@ -382,8 +382,8 @@ class PrimeMoverComponentAuxiliary
      /**
      * Get all Prime Mover settings
      * @return mixed|boolean|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
      * @moved
      */
     public function getAllPrimeMoverSettings() 
@@ -395,7 +395,7 @@ class PrimeMoverComponentAuxiliary
     /**
      * Backup control panel settings before dB processing
      * @moved
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itBackupsControlPanelSettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itBackupsControlPanelSettings() 
      */
     public function backupControlPanelSettings()
     {
@@ -417,7 +417,7 @@ class PrimeMoverComponentAuxiliary
      * @param number $blog_id
      * @return string[]|number[]
      * @moved
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGeneratesDownloadUrlArgs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGeneratesDownloadUrlArgs()
      */
     public function generateDownloadURLArgs($hash = '', $blog_id = 0)
     {
@@ -429,7 +429,7 @@ class PrimeMoverComponentAuxiliary
     
     /**
      * Get download URL of zip for clipboard copying purposes
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGeneratesDownloadUrlForClipboard()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGeneratesDownloadUrlForClipboard()
      * @param string $sanitized_name
      * @param number $blog_id
      * @param boolean $ret_array
@@ -623,7 +623,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
      * @param number $blog_id
      * @param string $dir
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGetsValidatedBackupsInExportDirectoryCached() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGetsValidatedBackupsInExportDirectoryCached() 
      */
     public function getValidatedBackupsInExportDirectoryCached($blog_id = 0, $dir = '')
     {
@@ -710,7 +710,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
     
     /**
      * Get user functions
-     * @return \Codexonics\PrimeMoverFramework\users\PrimeMoverUserFunctions
+     * @return \GreenMainframe\GMMoverFramework\users\PrimeMoverUserFunctions
      */
     public function getUsersFunction()
     {
@@ -733,7 +733,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
     
     /**
      * Backup gearbox packages before dB processing
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itBackupsGearBoxPackages()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itBackupsGearBoxPackages()
      * @moved
      * @mainsitesupport_affected
      */
@@ -841,7 +841,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
      * @param string $sanitized_name
      * @param string $db_option
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::generateEncryptionStatusTestData() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::generateEncryptionStatusTestData() 
      */
     public function getEncryptionStatusGivenOption($blog_id = 0, $sanitized_name = '', $db_option = 'encrypted_db')
     {
@@ -859,7 +859,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
     
     /**
      * Enqueue clipboard js
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itEnqueuesClipboardJs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itEnqueuesClipboardJs()
      */
     public function enqueueClipBoardJs($backup_menu = false)
     {
@@ -885,7 +885,7 @@ If you no longer need %s - please delete this via FTP or any file manager.', 'pr
     /**
      * Get sites with backups in multisite
      * @return void|array|mixed|boolean|NULL
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGetSitesWithBackupsInMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itGetSitesWithBackupsInMultisite() 
      */
     public function getSitesWithBackupsInMultisite()
     {

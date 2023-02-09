@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
-use Codexonics\PrimeMoverFramework\general\PrimeMoverMustUsePluginManager;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\general\PrimeMoverMustUsePluginManager;
 
 if (!defined('ABSPATH')) {
     exit;
@@ -186,7 +186,7 @@ class PrimeMoverLockUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -195,7 +195,7 @@ class PrimeMoverLockUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -204,7 +204,7 @@ class PrimeMoverLockUtilities
     
     /**
      * Get system authorizations
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {

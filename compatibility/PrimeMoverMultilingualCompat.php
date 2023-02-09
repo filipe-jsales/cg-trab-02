@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -78,7 +78,7 @@ class PrimeMoverMultilingualCompat
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -123,7 +123,7 @@ class PrimeMoverMultilingualCompat
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -503,7 +503,7 @@ class PrimeMoverMultilingualCompat
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -512,7 +512,7 @@ class PrimeMoverMultilingualCompat
  
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -521,7 +521,7 @@ class PrimeMoverMultilingualCompat
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

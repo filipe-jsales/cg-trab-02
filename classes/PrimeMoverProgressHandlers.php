@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -45,9 +45,9 @@ class PrimeMoverProgressHandlers
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsSystemfunctions() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsSystemfunctions() 
      */
     public function getSystemFunctions()
     {
@@ -57,7 +57,7 @@ class PrimeMoverProgressHandlers
     /**
      * Get active processess
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDuplicateActiveProcessesIfAlreadySet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDuplicateActiveProcessesIfAlreadySet() 
      */
     public function getActiveProcesses()
     {
@@ -68,8 +68,8 @@ class PrimeMoverProgressHandlers
      * Get active process ID
      * @param string $process_id
      * @return number|mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReturnsBlogIdOfActiveProcessIfSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDuplicateActiveProcessesIfAlreadySet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReturnsBlogIdOfActiveProcessIfSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDuplicateActiveProcessesIfAlreadySet() 
      */
     public function getActiveProcessBlogId($process_id = '')
     {
@@ -85,7 +85,7 @@ class PrimeMoverProgressHandlers
      * Set active processes
      * @param string $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReturnsBlogIdOfActiveProcessIfSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReturnsBlogIdOfActiveProcessIfSet() 
      */
     public function setActiveProcesses($process_id = '', $blog_id = 0)
     {
@@ -98,12 +98,12 @@ class PrimeMoverProgressHandlers
     /**
      * Initialize hooks
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsShutdownProgressInitHooks() (1.0.4 updated)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsBootUpProgressHooks() (1.0.4 updated)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsOtherProgressHooks() (1.0.4 updated)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsMaintenanceHooksWhenEnabled() (1.0.4 updated)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotAddMaintenanceHooksWhenDisabled() (1.0.4 updated)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsShutdownProgressInitHooks() (1.0.4 updated)
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsBootUpProgressHooks() (1.0.4 updated)
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsOtherProgressHooks() (1.0.4 updated)
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itAddsMaintenanceHooksWhenEnabled() (1.0.4 updated)
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotAddMaintenanceHooksWhenDisabled() (1.0.4 updated)
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itChecksIfHooksAreOutdated()
      */
     public function initHooks() 
     {
@@ -243,7 +243,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Maintenance mode control
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itImplementsMaintenanceModeControl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itImplementsMaintenanceModeControl() 
      */
     public function maintenanceModeControl()
     {
@@ -274,7 +274,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Checks status of public maintenance
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itChecksIfNowPublicMaintenance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itChecksIfNowPublicMaintenance()
      * @param number $blog_id
      * @return boolean
      */
@@ -295,7 +295,7 @@ class PrimeMoverProgressHandlers
      * Delete maintenance option
      * @param number $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesMaintenanceOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesMaintenanceOption()
      */
     public function primeMoverDeleteMaintenanceOption($process_id = 0, $blog_id = 0)
     {
@@ -306,7 +306,7 @@ class PrimeMoverProgressHandlers
      * Delete assembly option on boot
      * @param number $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesAssemblyOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesAssemblyOption()
      */
     public function primeMoverDeleteAssemblyOption($process_id = 0, $blog_id = 0)
     {
@@ -329,7 +329,7 @@ class PrimeMoverProgressHandlers
      * Delete assembled option on boot
      * @param number $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesAssembledOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesAssembledOption()
      */
     public function primeMoverDeleteAssembledOption($process_id = 0, $blog_id = 0)
     {
@@ -338,7 +338,7 @@ class PrimeMoverProgressHandlers
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesUploadProgressOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesUploadProgressOption()
      * Delete upload progress option on boot
      * @param number $process_id
      * @param number $blog_id
@@ -351,7 +351,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Remove public maintenance mode on runtime errors
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itRemovesPublicMaintenanceOnRuntimeErrors()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itRemovesPublicMaintenanceOnRuntimeErrors()
      */
     public function removePublicMaintenanceOnRunTimeErrors()
     {
@@ -362,7 +362,7 @@ class PrimeMoverProgressHandlers
     /**
      * Delete maintenance option
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesMaintenanceOptionInDb() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesMaintenanceOptionInDb() 
      */
     public function deleteMaintenanceOption($blog_id = 0)
     {
@@ -375,7 +375,7 @@ class PrimeMoverProgressHandlers
      * When doing migrations or site restoration.
      * Make sure the public page of the site is showing its under maintenance
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itPutsPublicSiteToMaintenance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itPutsPublicSiteToMaintenance()
      */
     public function putPublicSiteToMaintenance($blog_id = 0)
     {
@@ -389,7 +389,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Reactivate all plugins when user rejects diff
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReactivatesAllPlugins() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itReactivatesAllPlugins() 
      */
     public function primeMoverReactivateAllPlugins($delete_tmpfile_post = [])
     {
@@ -422,7 +422,7 @@ class PrimeMoverProgressHandlers
      * Deactivate all plugins before import
      * @param number $blogid_to_import
      * @param boolean $import_initiated
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeactivatesAllPlugins()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeactivatesAllPlugins()
      */
     public function primeMoverDeactivateAllPlugins($blogid_to_import = 0, $import_initiated = false)
     {
@@ -456,7 +456,7 @@ class PrimeMoverProgressHandlers
      * Delete runtime error log on fresh boot
      * @param string $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesRunTimeErrorLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesRunTimeErrorLog()
      */
     public function primeMoverDeleteRunTimeErrorLog($process_id = '', $blog_id = 0)
     {
@@ -465,7 +465,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Get shutdown utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities
      */
     public function getShutDownUtilities()
     {
@@ -476,7 +476,7 @@ class PrimeMoverProgressHandlers
      * Catch fatal runtime errors on progress handlers
      * @param number $blog_id
      * @return array|boolean[]|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsFatalRunTimeErrors() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsFatalRunTimeErrors() 
      */
     public function getFatalRunTimeErrors($blog_id = 0)
     {        
@@ -501,7 +501,7 @@ class PrimeMoverProgressHandlers
      * @param number $blog_id
      * @param boolean $diffmode
      * @param string $mode
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsPrimeMoverBooted()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsPrimeMoverBooted()
      */
     public function primeMoverBooted($process_id = '', $blog_id = 0, $diffmode = false, $mode = 'import')
     {
@@ -515,7 +515,7 @@ class PrimeMoverProgressHandlers
      * Setup progress error
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsProgressError() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsProgressError() 
      */
     public function setProgressError( array $args )
     {
@@ -528,7 +528,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -537,7 +537,7 @@ class PrimeMoverProgressHandlers
     
     /**
      * Get System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -547,7 +547,7 @@ class PrimeMoverProgressHandlers
     /**
      * Set Shutdown nonces
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsProgressShutdownNonces()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsProgressShutdownNonces()
      */
     public function setProgressShutDownNonces( array $args )
     {
@@ -758,7 +758,7 @@ class PrimeMoverProgressHandlers
      * @param number $blog_id
      * @param string $mode
      * @return string|mixed|boolean|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsTrackerProgressNonCached()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGetsTrackerProgressNonCached()
      */
     public function getTrackerProgressNonCached($blog_id = 0, $mode = 'import')
     {
@@ -786,7 +786,7 @@ class PrimeMoverProgressHandlers
      * @param string $mode
      * @return number|string
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGeneratesTrackerId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itGeneratesTrackerId()
      */
     public function generateTrackerId( $blog_id = 0, $mode = 'import')
     {
@@ -814,7 +814,7 @@ class PrimeMoverProgressHandlers
      * @param int $blog_id
      * @param string $mode
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itInitializesProgressTrackers() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itInitializesProgressTrackers() 
      */
     public function initializeProgressTracker( $blog_id = 0, $mode = 'import')
     {
@@ -844,7 +844,7 @@ class PrimeMoverProgressHandlers
      * @param string $progress
      * @param string $mode
      * @param string $process_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itUpdatesTrackerProgress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itUpdatesTrackerProgress()
      */
     public function updateTrackerProgress($progress = '', $mode = 'import', $process_id = '')
     {        
@@ -873,7 +873,7 @@ class PrimeMoverProgressHandlers
     /**
      * Dont cache tracker progress for reporting accuracy
      * @param string $option
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDontCache() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDontCache() 
      */
     public function dontCache($option = '')
     {
@@ -887,7 +887,7 @@ class PrimeMoverProgressHandlers
      * Delete download result ID on PHP shutdown
      * @param number $import_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadResultId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadResultId()
      */
     public function primeMoverDeleteDownloadResultId($import_id = 0, $blog_id = 0)
     {
@@ -901,7 +901,7 @@ class PrimeMoverProgressHandlers
      * Delete export result ID on PHP shutdown
      * @param number $export_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesExportResultId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesExportResultId()
      */
     public function primeMoverDeleteExportResultId($export_id = 0, $blog_id = 0)
     {
@@ -915,7 +915,7 @@ class PrimeMoverProgressHandlers
      * Delete import result ID on PHP shutdown
      * @param number $import_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesImportResultId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesImportResultId()
      */
     public function primeMoverDeleteImportResultId($import_id = 0, $blog_id = 0)
     {
@@ -929,7 +929,7 @@ class PrimeMoverProgressHandlers
      * @compatibility 5.6
      * @param number $import_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesImportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesImportId()
      */
     public function primeMoverDeleteImportId($import_id = 0, $blog_id = 0)
     {
@@ -943,7 +943,7 @@ class PrimeMoverProgressHandlers
      * @compatibility 5.6
      * @param number $export_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesExportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesExportId()
      */
     public function primeMoverDeleteExportId($export_id = 0, $blog_id = 0)
     {        
@@ -955,7 +955,7 @@ class PrimeMoverProgressHandlers
      * Delete download size ID
      * @param number $import_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadSizeId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadSizeId()
      */
     public function primeMoverDeleteDownloadSizeId($import_id = 0, $blog_id = 0)
     {
@@ -969,7 +969,7 @@ class PrimeMoverProgressHandlers
      * Delete dropbox upload size ID
      * @param number $export_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeleteDropBoxUploadSizeOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeleteDropBoxUploadSizeOption()
      */
     public function primeMoverDeleteUploadDropBoxSize($export_id = 0, $blog_id = 0)
     {
@@ -996,7 +996,7 @@ class PrimeMoverProgressHandlers
      * Delete download tmp file ID
      * @param number $import_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadTmpFileId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesDownloadTmpFileId()
      */
     public function primeMoverDeleteDownloadTmpFileId($import_id = 0, $blog_id = 0)
     {
@@ -1010,7 +1010,7 @@ class PrimeMoverProgressHandlers
      * Set downloaded package
      * @param string $process_id
      * @param number $content_length
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsDownloadPackageSize()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsDownloadPackageSize()
      */
     public function setDownloadedPackageSize($process_id = '', $content_length = 0)
     {
@@ -1032,7 +1032,7 @@ class PrimeMoverProgressHandlers
      * @param string $process_id
      * @param number $content_length
      * @param number $fileSize
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsUploadSizeDropbox() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsUploadSizeDropbox() 
      */
     public function setUploadSizeDropBox($process_id = '', $content_length = 0, $fileSize = 0) 
     {
@@ -1083,7 +1083,7 @@ class PrimeMoverProgressHandlers
     /**
      * Set temp file path
      * @param array $r
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsTmpFilePath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itSetsTmpFilePath()
      */
     public function setTempFilePath($r = [])
     {
@@ -1110,8 +1110,8 @@ class PrimeMoverProgressHandlers
      * Delete user progress meta
      * @param number $process_id
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesUserProgressMetaWhenUserIsSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDeletesUserProgressMetaWhenUserIsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeletesUserProgressMetaWhenUserIsSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDoesNotDeletesUserProgressMetaWhenUserIsNotSet() 
      */
     public function primeMoverDeleteUserProgressMeta($process_id = 0, $blog_id = 0)
     {

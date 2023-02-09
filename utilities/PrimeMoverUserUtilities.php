@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\users\PrimeMoverUserFunctions;
+use GreenMainframe\GMMoverFramework\users\PrimeMoverUserFunctions;
 use stdclass;
 use SplFixedArray;
 
@@ -39,7 +39,7 @@ class PrimeMoverUserUtilities
     
     /**
      * Get user functions
-     * @return \Codexonics\PrimeMoverFramework\users\PrimeMoverUserFunctions
+     * @return \GreenMainframe\GMMoverFramework\users\PrimeMoverUserFunctions
      */
     public function getUserFunctions()
     {
@@ -48,7 +48,7 @@ class PrimeMoverUserUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -57,7 +57,7 @@ class PrimeMoverUserUtilities
   
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -66,7 +66,7 @@ class PrimeMoverUserUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -107,7 +107,7 @@ class PrimeMoverUserUtilities
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {

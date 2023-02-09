@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
 use WP_Hook;
 use ReflectionMethod;
 use ReflectionFunction;
@@ -47,8 +47,8 @@ class PrimeMoverSystemUtilities
     /**
      * Given a blog id, delete all backup files created and clean up the options table.
      * @param number $blog_id
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests()
      */
     public function cleanBackupDirectoryUponRequest($blog_id = 0, $clean_all = false) 
     {
@@ -81,8 +81,8 @@ class PrimeMoverSystemUtilities
      * Clean options when a backup is deleted
      * @param string $filepath
      * @param number $blog_id
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests() 
      */
     public function cleanOptionsRelatedToThisBackup($filepath = '', $blog_id = 0)
     {
@@ -107,7 +107,7 @@ class PrimeMoverSystemUtilities
     /**
      *
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -118,8 +118,8 @@ class PrimeMoverSystemUtilities
     /**
      * Initialized hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -219,9 +219,9 @@ class PrimeMoverSystemUtilities
      * @param string $msg
      * @param array $diff
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsNoErrorMsgIfChildThemeExist() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsErrorIfChildThemeDoesNotExist()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsEmptylIfNotUsingChildTheme() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsNoErrorMsgIfChildThemeExist() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsErrorIfChildThemeDoesNotExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itReturnsEmptylIfNotUsingChildTheme() 
      */
     public function ifNotUsingChildDoesItExist($msg = '', array $diff = [])
     {
@@ -570,7 +570,7 @@ class PrimeMoverSystemUtilities
      * @param string $source_plugin_name
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itGetsPluginAbsolutePath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itGetsPluginAbsolutePath()
      */
     public function getPluginAbsolutePath($source_plugin_name = '')
     {
@@ -582,7 +582,7 @@ class PrimeMoverSystemUtilities
      * @param string $source_plugin_name
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itGetsAbsoluteThemePath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itGetsAbsoluteThemePath() 
      */
     public function getThemeAbsolutePath($source_theme = '')
     {
@@ -596,7 +596,7 @@ class PrimeMoverSystemUtilities
      * @param string $source_plugin_name
      * @param string $source_version
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itComputesTargetPluginStatus()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itComputesTargetPluginStatus()
      */
     public function computeTargetPluginStatus($status = '', $source_plugin_name = '', $source_version = '')
     {

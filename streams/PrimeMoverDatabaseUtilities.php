@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\streams;
+namespace GreenMainframe\GMMoverFramework\streams;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 use wpdb;
 
 if (! defined('ABSPATH')) {
@@ -60,7 +60,7 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Get Prime Mover object
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -69,7 +69,7 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -78,9 +78,9 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itDoesNotAddInitHooksWhenNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itAddsInitHooksWhenAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itDoesNotAddInitHooksWhenNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itAddsInitHooksWhenAuthorized()
      */
     public function initHooks()
     {
@@ -425,7 +425,7 @@ class PrimeMoverDatabaseUtilities
      * @param number $port
      * @param array $ret
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializesPortForPdo()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializesPortForPdo()
      */
     public function initializePortForPDO($port = 0, $ret = [])
     {        
@@ -462,7 +462,7 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Clean up large array after dB dump.
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itCleansUpDbRetArrayDump()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itCleansUpDbRetArrayDump()
      * @param array $ret
      * @return array
      */
@@ -480,7 +480,7 @@ class PrimeMoverDatabaseUtilities
      * @param array $ret
      * @param string $table
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itDumpsDbPrimaryKeys()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itDumpsDbPrimaryKeys()
      */
     public function dBPrimaryKeysDump($keys = [], $ret = [], $table = '')
     {
@@ -530,7 +530,7 @@ class PrimeMoverDatabaseUtilities
      * Query primary keys given table
      * @param string $table
      * @return array|object|NULL
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itQueriesPrimaryKeys()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itQueriesPrimaryKeys()
      */
     protected function queryPrimaryKeys($table = '')
     {
@@ -623,7 +623,7 @@ class PrimeMoverDatabaseUtilities
      * Hooked to `prime_mover_before_mysqldump_php` ACTION executed before PHP-MySQL dump process to set reusable object properties
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeGetDbPrefixOfSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeGetDbPrefixOfSite()
      */
     public function initializeGetDbPrefixOfSite($ret = [])
     {
@@ -639,7 +639,7 @@ class PrimeMoverDatabaseUtilities
     /**
      * Initialize random prefix
      * @param array $ret
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeRandomPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeRandomPrefix()
      * Hooked to `prime_mover_before_mysqldump_php` ACTION executed before PHP-MySQL dump process to set reusable object properties
      * @return array
      */
@@ -741,7 +741,7 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -769,7 +769,7 @@ class PrimeMoverDatabaseUtilities
     /**
      * Get db prefix of current site
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeGetDbPrefixOfSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeGetDbPrefixOfSite()
      */
     public function getDbPrefixOfSite()
     {
@@ -779,7 +779,7 @@ class PrimeMoverDatabaseUtilities
     /**
      * Get random prefix
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeRandomPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDatabaseUtilities::itInitializeRandomPrefix()
      */
     public function getRandomPrefix()
     {
@@ -788,7 +788,7 @@ class PrimeMoverDatabaseUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

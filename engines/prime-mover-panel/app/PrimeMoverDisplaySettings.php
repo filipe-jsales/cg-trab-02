@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -68,7 +68,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get Prime Mover runtime settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayRunTimeSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayRunTimeSettings
      */
     public function getPrimeMoverRunTimeSettings()
     {
@@ -77,7 +77,7 @@ class PrimeMoverDisplaySettings
 
     /**
      * Display Gdrive settings instance
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayGDriveSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayGDriveSettings
      */
     public function getPrimeMoverDisplayGdriveSettings()
     {
@@ -86,7 +86,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Display encryption settings instance
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayEncryptionSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayEncryptionSettings
      */
     public function getPrimeMoverDisplayEncryptionSettings()
     {
@@ -95,7 +95,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Custom dir settings instance
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayCustomDirSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayCustomDirSettings
      */
     public function getPrimeMoverCustomDirSettings()
     {
@@ -104,7 +104,7 @@ class PrimeMoverDisplaySettings
 
     /**
      * Display exclude plugin settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayExcludedPluginsSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayExcludedPluginsSettings
      */
     public function getPrimeMoverExcludePluginSetings()
     {
@@ -113,7 +113,7 @@ class PrimeMoverDisplaySettings
 
     /**
      * Get Prime Mover exclude uplaods
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayExcludedUploadSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayExcludedUploadSettings
      */
     public function getPrimeMoverExcludedUploads()
     {
@@ -122,7 +122,7 @@ class PrimeMoverDisplaySettings
  
     /**
      * Get display maintenace mode settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayMaintenanceSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayMaintenanceSettings
      */
     public function getPrimeMoverDisplayMaintenanceSettings()
     {
@@ -131,7 +131,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get display security settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplaySecuritySettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplaySecuritySettings
      */
     public function getDisplaySecuritySettings()
     {
@@ -140,7 +140,7 @@ class PrimeMoverDisplaySettings
  
     /**
      * Get display Dropbox settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverDisplayDropBoxSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayDropBoxSettings
      */
     public function getDisplayDropBoxSettings()
     {
@@ -149,7 +149,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -158,7 +158,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get Prime Mover settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings()
     {
@@ -167,7 +167,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get settings markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSettingsMarkups
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSettingsMarkups
      */
     public function getSettingsMarkup()
     {
@@ -176,7 +176,7 @@ class PrimeMoverDisplaySettings
     
     /**
      * Get authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {

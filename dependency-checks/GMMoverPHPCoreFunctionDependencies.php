@@ -36,7 +36,7 @@ class GMMoverPHPCoreFunctionDependencies
      * Gets required core functions
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itGetsAllRequiredCoreFunctions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itGetsAllRequiredCoreFunctions()
      */
     public function getRequiredCoreFunctions()
     {
@@ -46,7 +46,7 @@ class GMMoverPHPCoreFunctionDependencies
     /**
      * Gets required core extensions
      * @return array|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itGetsAllRequiredCoreExtensions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itGetsAllRequiredCoreExtensions()
      */
     public function getRequiredCoreExtensions()
     {
@@ -57,7 +57,7 @@ class GMMoverPHPCoreFunctionDependencies
      * Gets missing functions
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite() 
      */
     public function getMissingFunctions()
     {
@@ -67,7 +67,7 @@ class GMMoverPHPCoreFunctionDependencies
     /**
      * get missing extensions
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
      */
     public function getMissingExtensions()
     {
@@ -79,7 +79,7 @@ class GMMoverPHPCoreFunctionDependencies
      * @param string $function
      * @compatible 5.6
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itChecksIfFunctionsExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itChecksIfFunctionsExist()
      */
     protected function isFunctionExist($function = '')
     {
@@ -94,7 +94,7 @@ class GMMoverPHPCoreFunctionDependencies
      * Check if extension exist
      * @param string $extension
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itChecksIfExtensionsLoaded() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestGMMoverPHPCoreFunctionDependencies::itChecksIfExtensionsLoaded() 
      */
     protected function doExtensionExist($extension = '')
     {        
@@ -108,7 +108,7 @@ class GMMoverPHPCoreFunctionDependencies
     /**
      * Sets missing functions
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
      */
     private function checkMissingFunctions()
     {
@@ -121,7 +121,7 @@ class GMMoverPHPCoreFunctionDependencies
     
     /**
      * Check missing extensions
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
      */
     private function checkMissingExtensions()
     {
@@ -136,8 +136,8 @@ class GMMoverPHPCoreFunctionDependencies
      * Checks all internal PHP core functions and if enabled
      * @return boolean
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
      */
     public function functionRequisiteCheck()
     {
@@ -158,7 +158,7 @@ class GMMoverPHPCoreFunctionDependencies
     /**
      * Check required extensions
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
      */
     public function extensionsRequisiteCheck()
     {

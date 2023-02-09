@@ -1,68 +1,68 @@
 <?php
-namespace Codexonics;
+namespace GreenMainframe;
 
 /*
- * This file is part of the Codexonics package.
+ * This file is part of the GreenMainframe package.
  *
- * (c) Codexonics
+ * (c) GreenMainframe
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverExportUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemProcessors;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverHookedMethods;
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverErrorHandlers;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverImportUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverDownloadUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverSearchReplaceUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverLockUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverOpenSSLUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverValidationHandlers;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverValidationUtilities;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverStreamFilters;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverConfigUtilities;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverComponentAuxiliary;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverFreemiusIntegration;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverCompatibility;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverResumableDownloadStream;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverIterators;
-use Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIShellArchiver;
-use Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive;
-use Codexonics\PrimeMoverFramework\menus\PrimeMoverBackupMenus;
-use Codexonics\PrimeMoverFramework\menus\PrimeMoverGearBoxScreenOptions;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverBackupUtilities;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverUsers;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverUserUtilities;
-use Codexonics\PrimeMoverFramework\users\PrimeMoverUserFunctions;
-use Codexonics\PrimeMoverFramework\users\PrimeMoverUserQueries;
-use Codexonics\PrimeMoverFramework\archiver\PrimeMoverArchiver;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverElementorCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverCachingCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverCleanUp;
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverDatabaseUtilities;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverFreemiusCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverCustomMultisite;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverWooCommerceCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverMultilingualCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverHotFix;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverMigrationOptions;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverPageBuilderCompat;
-use Codexonics\PrimeMoverFramework\compatibility\PrimeMoverCustomConfig;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverExportUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemProcessors;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverHookedMethods;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverErrorHandlers;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverImportUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverDownloadUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverSearchReplaceUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverLockUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverOpenSSLUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverValidationHandlers;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverValidationUtilities;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverStreamFilters;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverConfigUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverComponentAuxiliary;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverFreemiusIntegration;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCompatibility;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverResumableDownloadStream;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverIterators;
+use GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIShellArchiver;
+use GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive;
+use GreenMainframe\GMMoverFramework\menus\PrimeMoverBackupMenus;
+use GreenMainframe\GMMoverFramework\menus\PrimeMoverGearBoxScreenOptions;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverBackupUtilities;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverUsers;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUserUtilities;
+use GreenMainframe\GMMoverFramework\users\PrimeMoverUserFunctions;
+use GreenMainframe\GMMoverFramework\users\PrimeMoverUserQueries;
+use GreenMainframe\GMMoverFramework\archiver\PrimeMoverArchiver;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverElementorCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCachingCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCleanUp;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverDatabaseUtilities;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverFreemiusCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCustomMultisite;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverWooCommerceCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverMultilingualCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverHotFix;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverMigrationOptions;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverPageBuilderCompat;
+use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCustomConfig;
 use wpdb;
 
 if (! defined('ABSPATH')) {
@@ -540,7 +540,7 @@ class PrimeMoverFactory
 
 /**
  * Instantiate
- * @var \PrimeMoverFramework\PrimeMoverFactory $loaded_instance
+ * @var \GMMoverFramework\PrimeMoverFactory $loaded_instance
  */
 $cli = false;
 $parameters = [];

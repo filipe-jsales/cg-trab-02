@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -59,7 +59,7 @@ class PrimeMoverCustomConfig
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -68,7 +68,7 @@ class PrimeMoverCustomConfig
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -77,7 +77,7 @@ class PrimeMoverCustomConfig
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -86,7 +86,7 @@ class PrimeMoverCustomConfig
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -95,8 +95,8 @@ class PrimeMoverCustomConfig
         
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCustomConfig::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCustomConfig::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCustomConfig::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCustomConfig::itChecksIfHooksAreOutdated() 
      */
     public function initHooks()
     {

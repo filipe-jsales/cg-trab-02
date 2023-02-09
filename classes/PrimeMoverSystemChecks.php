@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\interfaces\PrimeMoverSystemCheck;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities;
+use GreenMainframe\GMMoverFramework\interfaces\PrimeMoverSystemCheck;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities;
 use Generator;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
@@ -45,7 +45,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     
     /**
      * @compatible 5.6
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities
      */
     public function getSystemCheckUtilities() 
     {
@@ -55,7 +55,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * Get system functions
      * @compatible 5.6
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -65,7 +65,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * Get System Initialization
      * @compatible 5.6
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -75,7 +75,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * Get System authorization
      * @compatible 5.6
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -85,8 +85,8 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * System hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itChecksIfHooksAreOutdated()
      */
     public function systemCheckHooks()
     {
@@ -106,7 +106,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * We should normalize the path under Windows
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itNormalizesPathForWindows()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itNormalizesPathForWindows()
      */
     public function normalizePathForWindows($ret = [])
     {
@@ -223,9 +223,9 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * @param array $footprint
      * @param int $blogid_to_export
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddSchemeToSystemFootprintIfSsl() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddSchemeToSystemFootprintIfNonSsl() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemChecks::itDoesNotAddSchemeToSystemFootprintIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddSchemeToSystemFootprintIfSsl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itAddSchemeToSystemFootprintIfNonSsl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemChecks::itDoesNotAddSchemeToSystemFootprintIfUnauthorized()
      */
     public function addSchemeToSystemFootprint(array $footprint, $blogid_to_export = 0)
     {
@@ -246,13 +246,13 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * {@inheritDoc}
      * @see PrimeMoverSystemCheck::primeMoverEssentialRequisites()
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsTrueWhenAllRequirementsMeet()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenFolderNotCreated() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenFileSystemNotInitialized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenItDoesNotHaveSystem()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenItDoesNotHaveOpenSSLSupport()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsTrueWhenAllRequirementsMeet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenFolderNotCreated() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenFileSystemNotInitialized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenItDoesNotHaveSystem()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itReturnsFalseWhenItDoesNotHaveOpenSSLSupport()
      * {@inheritDoc}
-     * @see \Codexonics\PrimeMoverFramework\interfaces\PrimeMoverSystemCheck::primeMoverEssentialRequisites()
+     * @see \GreenMainframe\GMMoverFramework\interfaces\PrimeMoverSystemCheck::primeMoverEssentialRequisites()
      */
     public function primeMoverEssentialRequisites($doing_import = false)
     {
@@ -660,7 +660,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * Zip Directory
      * @compatible 5.6
      * {@inheritDoc}
-     * @see \Codexonics\PrimeMoverFramework\interfaces\PrimeMoverSystemCheck::primeMoverZipDirectory()
+     * @see \GreenMainframe\GMMoverFramework\interfaces\PrimeMoverSystemCheck::primeMoverZipDirectory()
      * $exporting_mode is either of these: 'exporting_plugins', 'exporting_media', 'exporting_theme'
      */
     public function primeMoverZipDirectory($source = '', $destination = '', $encrypt = false, $files = [], $resume_mode = false,
@@ -884,9 +884,9 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * @param number $network_id
      * @return string
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itAddsZipFileTypeSupportWhenSet()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itAddsZipFileTypeSupportWhenNotSet()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itDoesNotAnymoreAddsZipIfAlreadySupported()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itAddsZipFileTypeSupportWhenSet()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itAddsZipFileTypeSupportWhenNotSet()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itDoesNotAnymoreAddsZipIfAlreadySupported()
      */
     public function addZipFileTypeSupport($value = '', $option = '', $network_id = 0)
     {
@@ -919,8 +919,8 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * @param string $context
      * @return array
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itAddsPluginActionLinksWhenMatched() 
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itDoesNotAddpluginactionlinksWhenNotMatched() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itAddsPluginActionLinksWhenMatched() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itDoesNotAddpluginactionlinksWhenNotMatched() 
      */
     public function addPluginActionLinks($actions = [], $plugin_file = '', $plugin_data = [], $context ='')
     {
@@ -943,12 +943,12 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
      * Inspired by https://wordpress.org/plugins/duplicator/
      * @return boolean|string|
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itGetsMySQLDumpPath() 
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNoSystemForMySQLDump() 
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsNullIfNotAuthorizedToDump()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseWhenNoMySQLDumpHandler() 
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itGetsMySQLDumpPathInWindows()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseWhenNoMySQLDumpHandlerInWindows()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itGetsMySQLDumpPath() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNoSystemForMySQLDump() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsNullIfNotAuthorizedToDump()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseWhenNoMySQLDumpHandler() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itGetsMySQLDumpPathInWindows()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseWhenNoMySQLDumpHandlerInWindows()
      */
     public function getMySqlDumpPath()
     {
@@ -1028,9 +1028,9 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * Checks if WAMP server
      * @return boolean
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsTrueIfWampServer
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNotWampServer
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNotOnWindows()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsTrueIfWampServer
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNotWampServer
+     * @tested GMMoverFramework\Tests\TestMigrationSystemChecks::itReturnsFalseIfNotOnWindows()
      */
     public function isWampServer()
     {

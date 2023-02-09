@@ -5,7 +5,7 @@ Plugin Name: Prime Mover
 Plugin URI: https://codexonics.com/
 Description: The simplest all-around WordPress migration tool/backup plugin. These support multisite backup/migration or clone WP site/multisite subsite.
 Version: 1.8.0
-Author: Codexonics
+Author: GreenMainframe
 Author URI: https://codexonics.com/
 Text Domain: prime-mover
 Network: True

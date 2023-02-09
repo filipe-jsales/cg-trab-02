@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\streams;
+namespace GreenMainframe\GMMoverFramework\streams;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -13,7 +13,7 @@ namespace Codexonics\PrimeMoverFramework\streams;
  * ORIGINAL CREDITS: kosinix: https://gist.github.com/kosinix/4cf0d432638817888149
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
 
 if (! defined('ABSPATH')) {
     exit;

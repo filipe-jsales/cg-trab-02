@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\menus;
+namespace GreenMainframe\GMMoverFramework\menus;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -66,7 +66,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -84,7 +84,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -93,7 +93,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -102,7 +102,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -111,8 +111,8 @@ class PrimeMoverBackupMenus
     
     /**
     * Initialize hooks
-    * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsInitHooks() 
-    * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itChecksIfHooksAreOutdated()
+    * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsInitHooks() 
+    * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itChecksIfHooksAreOutdated()
     */
     public function initHooks()
     {
@@ -228,10 +228,10 @@ class PrimeMoverBackupMenus
      * Only shows sites that exists for backups
      * @param array $sites
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itOnlyShowsSitesThatExistsForBackup() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNotMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNoSitesInBackup()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNotArray() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itOnlyShowsSitesThatExistsForBackup() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNotMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNoSitesInBackup()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotFilterWhenNotArray() 
      */
     public function onlyShowsSitesThatExistsForBackups($sites = [])
     {
@@ -253,7 +253,7 @@ class PrimeMoverBackupMenus
      * Set migration tools URL
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itSetsMigrationToolssUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itSetsMigrationToolssUrl()
      */
     public function setMigrationTools( array $args )
     {
@@ -263,9 +263,9 @@ class PrimeMoverBackupMenus
     
     /**
      * Remove distractions on backup page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itRemovesDistractionsOnBackupsPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotRemoveDistractionIfNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotRemoveDistractionIfNotBackupPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itRemovesDistractionsOnBackupsPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotRemoveDistractionIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotRemoveDistractionIfNotBackupPage() 
      */
     public function removeDistractionsOnBackupsPage()
     {
@@ -282,9 +282,9 @@ class PrimeMoverBackupMenus
      * Checks if we are on backup menu page by using page hook
      * @param string $hook
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsFalseIfNotBackupMenu()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsFalseIfNotBackupMenu()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInSingleSite()
      */
     public function isBackupsMenuPage($hook = '')
     {
@@ -299,9 +299,9 @@ class PrimeMoverBackupMenus
     /**
      * Checks if really backup menu page
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsFalseIfNotBackupMenu()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsFalseIfNotBackupMenu()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itReturnsTrueIfBackupMenuPageInSingleSite()
      */
     public function isReallyBackupMenuPage()
     {
@@ -325,9 +325,9 @@ class PrimeMoverBackupMenus
     /**
      * Enqueue backup menu assets
      * @param string $hook
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itEnqueuesScriptsOnBackupPage() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotEnqueueNotOnBackupPage() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotEnqueueIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itEnqueuesScriptsOnBackupPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotEnqueueNotOnBackupPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itDoesNotEnqueueIfNotAuthorized() 
      */
     public function enqueueScripts($hook = '')
     {
@@ -432,7 +432,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Added menu page for backups
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageCallBack()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageCallBack()
      */
     public function addBackupsMenuPageCallBack()
     {
@@ -577,7 +577,7 @@ class PrimeMoverBackupMenus
     }
     /**
      * Get menu list table instance
-     * @return \Codexonics\PrimeMoverFramework\menus\PrimeMoverBackupMenuListTable
+     * @return \GreenMainframe\GMMoverFramework\menus\PrimeMoverBackupMenuListTable
      */
     protected function getBackupsMenuListTableInstance()
     {
@@ -591,8 +591,8 @@ class PrimeMoverBackupMenus
     
     /**
      * Added menu page for backups
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageOnSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageOnSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupMenus::itAddsBackupMenuPageOnMultisite()
      */
     public function addBackupsMenuPage()
     {

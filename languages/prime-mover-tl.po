@@ -481,7 +481,7 @@ msgid "Click to expand"
 msgstr ""
 
 #. Author of the plugin
-msgid "Codexonics"
+msgid "GreenMainframe"
 msgstr ""
 
 #: classes/PrimeMoverImporter.php:431

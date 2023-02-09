@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverUserUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUserUtilities;
 use WP_User_Query;
 
 if (! defined('ABSPATH')) {
@@ -112,7 +112,7 @@ class PrimeMoverUsers
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itAddsInitHooks()
      */
     public function initHooks()
     {
@@ -265,7 +265,7 @@ class PrimeMoverUsers
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itExcludesUsersInSearchReplace()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itExcludesUsersInSearchReplace()
      * Exclude users table in search replace
      * @param array $all_tables
      * @return array
@@ -293,7 +293,7 @@ class PrimeMoverUsers
     
     /**
      * Maybe save user taxonomy if its implemented
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itMaybeSavesUserTaxonomy() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itMaybeSavesUserTaxonomy() 
      */
     public function maybeSaveUserTaxonomy()
     {
@@ -304,7 +304,7 @@ class PrimeMoverUsers
      * Write special user metas to json file
      * @param array $ret
      * Hooked to `prime_mover_after_user_export`
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itWritesSpecialUserMetasToJson() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itWritesSpecialUserMetasToJson() 
      */
     public function writeSpecialUserMetasToJson($ret = [])
     {
@@ -518,7 +518,7 @@ class PrimeMoverUsers
      * @param number $blog_id
      * @param number $start_time
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itUpdatesPostAuthors()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itUpdatesPostAuthors()
      */
     public function updatePostAuthors($ret = [], $blog_id = 0, $start_time = 0)
     {
@@ -649,7 +649,7 @@ class PrimeMoverUsers
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -663,7 +663,7 @@ class PrimeMoverUsers
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -672,7 +672,7 @@ class PrimeMoverUsers
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -681,7 +681,7 @@ class PrimeMoverUsers
     
     /**
      * Get user utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverUserUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverUserUtilities
      */
     public function getUserUtilities()
     {
@@ -740,7 +740,7 @@ class PrimeMoverUsers
         
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -834,7 +834,7 @@ class PrimeMoverUsers
     
     /**
      * Get site users
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itGetsSiteUsers() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itGetsSiteUsers() 
      * @param number $offset
      * @param number $blog_id
      * @param number $left_off
@@ -864,7 +864,7 @@ class PrimeMoverUsers
      * Helper method for WordPress get_users function
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itGetsSiteUsers()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itGetsSiteUsers()
      */
     protected function getUsers($args = [], $left_off = 0)
     {
@@ -928,7 +928,7 @@ class PrimeMoverUsers
      * @param number $blog_id
      * @param number $start_time
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itImportSiteUsers()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itImportSiteUsers()
      */
     public function importSiteUsers($ret = [], $blog_id = 0, $start_time = 0)
     {
@@ -947,7 +947,7 @@ class PrimeMoverUsers
      * Checks if user export is disabled in wp-config.php
      * Returns TRUE if disabled, otherwise FALSE
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itChecksUserConfigDisabled() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itChecksUserConfigDisabled() 
      */
     public function isExportUserDisabledInConfig()
     {        
@@ -958,7 +958,7 @@ class PrimeMoverUsers
      * Check if maybe we need to export users
      * @param array $ret
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUsers::itMaybeExportUsers() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUsers::itMaybeExportUsers() 
      */
     public function maybeExportUsers($ret = [])
     {

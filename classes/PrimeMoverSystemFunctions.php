@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -47,8 +47,8 @@ class PrimeMoverSystemFunctions
      * @param number $blog_id
      * @param string $custom_path
      * @return array|string[][]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFilesToRestore()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyIfDirectoryNotDefined()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFilesToRestore()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyIfDirectoryNotDefined()
      */
     public function getFilesToRestore($blog_id = 0, $custom_path = '')
     {
@@ -91,7 +91,7 @@ class PrimeMoverSystemFunctions
      * Has WPRIME extension
      * @param string $filename
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHasTarExtension() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHasTarExtension() 
      */
     public function hasTarExtension($filename = '')
     {
@@ -110,7 +110,7 @@ class PrimeMoverSystemFunctions
      * Get package creation date time
      * @param number $timestamp
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPackageCreationDateTime() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPackageCreationDateTime() 
      */
     public function getPackageCreationDateTime($timestamp = 0)
     {
@@ -187,9 +187,9 @@ class PrimeMoverSystemFunctions
      * Check if has zip extension
      * @param string $filename
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfFileHasZipExtension()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfFileHasNoZipExtension() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNoFileIsProvided()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfFileHasZipExtension()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfFileHasNoZipExtension() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNoFileIsProvided()
      */
     public function hasZipExtension($filename = '')
     {
@@ -209,7 +209,7 @@ class PrimeMoverSystemFunctions
      * @param $bytes
      * @param number $decimals
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsHumanFileSize()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsHumanFileSize()
      * Credits: original code improved by Sucuri Scanner plugin
      */
     public function humanFileSize($bytes, $decimals = 1)
@@ -226,7 +226,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Get System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -235,7 +235,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()
@@ -246,8 +246,8 @@ class PrimeMoverSystemFunctions
     /**
      * System hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsSystemhooks())
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsSystemhooks())
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHooksAreOutdated()
      */
     public function systemHooks()
     {
@@ -272,11 +272,11 @@ class PrimeMoverSystemFunctions
      * @param array $replaceables
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGeneratesReplaceableForUploadInfoAdjustment()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfNotAuthorized() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfRetUrlsNotSet() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfBlogIdNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGeneratesReplaceableForUploadInfoAdjustment()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfRetUrlsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGenerateReplaceablesIfBlogIdNotSet() 
      */
     public function generateReplaceableForUploadInfoAdjustment(array $replaceables, array $ret)
     {
@@ -364,8 +364,8 @@ class PrimeMoverSystemFunctions
      * @param array $footprint
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotAddFootPrintKeyIfUnAuthorized() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsUploadInfoFootprintKey()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotAddFootPrintKeyIfUnAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsUploadInfoFootprintKey()
      */
     public function addUploadinfoFootprintKey(array $footprint_keys, array $footprint)
     {
@@ -388,8 +388,8 @@ class PrimeMoverSystemFunctions
      * @param array $footprint_temp
      * @return boolean
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfIfFootPrintHasUploadInfo()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfFootPrintDoesNotHaveUploadInfo() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfIfFootPrintHasUploadInfo()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfFootPrintDoesNotHaveUploadInfo() 
      */
     public function validateIfFootprintHasUploadInfo($overall_valid = true, array $footprint_temp = [])
     {
@@ -408,8 +408,8 @@ class PrimeMoverSystemFunctions
      * @param array $footprint
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsSchemeToFootPrintKey()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotAddSchemeToFootPrintKeyNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsSchemeToFootPrintKey()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotAddSchemeToFootPrintKeyNotAuthorized()
      */
     public function addSchemeFootprintKey(array $footprint_keys, array $footprint)
     {
@@ -523,7 +523,7 @@ class PrimeMoverSystemFunctions
      * @param array $footprint_temp
      * @return bool
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itValidatesIfFootPrintHasScheme()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itValidatesIfFootPrintHasScheme()
      */
     public function validateIfFootprintHasScheme($overall_valid = true, array $footprint_temp = [])
     {
@@ -990,7 +990,7 @@ class PrimeMoverSystemFunctions
      * @param number $blog_id
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfUsingChildTheme()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfUsingChildTheme()
      */
     public function isUsingChildTheme($blog_id = 0)
     {
@@ -1288,8 +1288,8 @@ class PrimeMoverSystemFunctions
      * @compatible 5.6
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsExportPathofSubsite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGetExportPathIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsExportPathofSubsite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotGetExportPathIfNotAuthorized() 
      */
     public function getExportPathOfThisSubsite($blog_id = 0)
     {
@@ -1401,10 +1401,10 @@ class PrimeMoverSystemFunctions
      * The return value is in bytes
      * @return number
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetRetrievesPostMaxSizeInPhpiniCorrectlyIfMbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfGbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfKbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfBytesNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetRetrievesPostMaxSizeInPhpiniCorrectlyIfMbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfGbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfKbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesPostMaxSizeInPhpiniCorrectlyIfBytesNotated()
      */
     public function getPostMaxSizeInPhpini()
     {
@@ -1456,11 +1456,11 @@ class PrimeMoverSystemFunctions
      * The return value is in Megabytes already.
      * @return number
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfMbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfGbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfKbNotated() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfKbNotated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfBytesNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfMbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfGbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfKbNotated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfKbNotated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRetrievesUploadMaxsizeInPhpiniCorrectlyIfBytesNotated()
      */
     public function getUploadmaxFilesizeInPhpini()
     {
@@ -1524,7 +1524,7 @@ class PrimeMoverSystemFunctions
      * https://stackoverflow.com/questions/1336581/is-there-an-easy-way-in-php-to-convert-from-strings-like-256m-180k-4g-to
      * @param string $byte_data
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBytes()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBytes()
      */
     public function getBytes($str = '')
     {
@@ -1576,7 +1576,7 @@ class PrimeMoverSystemFunctions
      * @param number $blog_id
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsDbPrefixOfSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsDbPrefixOfSite()
      */
     public function getDbPrefixOfSite($blog_id = 0)
     {
@@ -1602,7 +1602,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Clean dB tables for exporting
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itDumpsDbforExportWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itDumpsDbforExportWhenAllSet()
      * @param array $inputs
      * @param number $blog_id
      * @param \wpdb $wpdb
@@ -1661,7 +1661,7 @@ class PrimeMoverSystemFunctions
      * 
      * @param string $path
      * @return boolean
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverImportProcessorIfAllClear()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itRunsPrimeMoverImportProcessorIfAllClear()
      */
     public function fileExists($path = '')
     {
@@ -1740,7 +1740,7 @@ class PrimeMoverSystemFunctions
      * @param string $string
      * @param boolean $double_hash
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itHashString()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itHashString()
      */
     public function hashString($string = '', $double_hash = false)
     {
@@ -1786,7 +1786,7 @@ class PrimeMoverSystemFunctions
      * Get file size
      * @param string $path
      * @return int
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFileSize() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFileSize() 
      */
     public function getFileSize($path = '')
     {
@@ -1815,8 +1815,8 @@ class PrimeMoverSystemFunctions
      * Single-site compatible getBlogOption
      * @param number $blog_id
      * @param string $option
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBlogOptionOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBlogOptionOnSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBlogOptionOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBlogOptionOnSingleSite() 
      * 
      */
     public function getBlogOption($blog_id = 0, $option = '')
@@ -1832,9 +1832,9 @@ class PrimeMoverSystemFunctions
 
     /**
      * Single-site compatible update blog option
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesBlogOptionInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesBlogOptionInSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotUpdateBlogOptionUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesBlogOptionInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesBlogOptionInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotUpdateBlogOptionUnauthorized()
      * @param number $blog_id
      * @param string $option
      * @param mixed $value
@@ -1889,10 +1889,10 @@ class PrimeMoverSystemFunctions
      * @param string $option
      * @param boolean $force_delete_cache
      * @param boolean $multisite
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itForcesDeleteOptionCachesInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itForcesDeleteOptionCachesSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotForcesDeleteOptionCachesUnauthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotForceDeleteCacheWhenFalse()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itForcesDeleteOptionCachesInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itForcesDeleteOptionCachesSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotForcesDeleteOptionCachesUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotForceDeleteCacheWhenFalse()
      */
     public function maybeForceDeleteOptionCaches($option = '', $force_delete_cache = false, $multisite = false )
     {
@@ -1923,8 +1923,8 @@ class PrimeMoverSystemFunctions
      * @param boolean $use_cache
      * @param boolean $force_delete_cache
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteOptionWhenMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteOptionWhenSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteOptionWhenMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteOptionWhenSingleSite() 
      */
     public function getSiteOption($option = '', $default = false, $use_cache = true, $force_delete_cache = false)
     {        
@@ -1945,9 +1945,9 @@ class PrimeMoverSystemFunctions
      * @param $value
      * @param boolean $force_delete_cache
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesSiteOptionWhenMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesSiteOptionWhenSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotUpdatesSiteOptionWhenUnauthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesSiteOptionWhenMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itUpdatesSiteOptionWhenSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotUpdatesSiteOptionWhenUnauthorized() 
      */
     public function updateSiteOption($key = '', $value = null, $force_delete_cache = false) 
     {
@@ -2023,10 +2023,10 @@ class PrimeMoverSystemFunctions
     /**
      * Checks if maybe we need to load menu assets
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsMenuAssetsIfMultisiteAndNetworkAdmin() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsMenuAssetsIfSingleSiteAndAdmin()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotLoadMenuAssetsIfMultisiteNotNetworkAdmin()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotLoadMenuAssetsIfSingleSiteNotAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsMenuAssetsIfMultisiteAndNetworkAdmin() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsMenuAssetsIfSingleSiteAndAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotLoadMenuAssetsIfMultisiteNotNetworkAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotLoadMenuAssetsIfSingleSiteNotAdmin()
      */
     public function maybeLoadMenuAssets()
     {
@@ -2179,9 +2179,9 @@ class PrimeMoverSystemFunctions
      * Get libzip version
      * @param array $phpinfo
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsLibZipVersion() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyLibZipVersionIfNoZipInstalled() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyLibZipVersionIfCannotDetermine()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsLibZipVersion() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyLibZipVersionIfNoZipInstalled() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsEmptyLibZipVersionIfCannotDetermine()
      */
     public function getLibZipversion($phpinfo = [])
     {
@@ -2203,7 +2203,7 @@ class PrimeMoverSystemFunctions
      * Check if we need to load asset on settings page
      * @param WP_Screen $current_screen
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsAssetsProperlyOnBasicAndAdvancesettings() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsAssetsProperlyOnBasicAndAdvancesettings() 
      */
     public function maybeLoadAssets(WP_Screen $current_screen)
     {
@@ -2222,7 +2222,7 @@ class PrimeMoverSystemFunctions
      * Check if we need to load asset on dashboard
      * @param WP_Screen $current_screen
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsAssetsOnDashboardIfItsPanelSettingsPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLoadsAssetsOnDashboardIfItsPanelSettingsPage() 
      */
     public function maybeLoadAssetsOnDashboard(WP_Screen $current_screen)
     {
@@ -2247,7 +2247,7 @@ class PrimeMoverSystemFunctions
     /**
      * Parse DB_HOST for PDO
      * @return boolean|string[]|
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itParsesDbHostForPdo() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itParsesDbHostForPdo() 
      */
     public function parsedBHostForPDO()
     {
@@ -2283,9 +2283,9 @@ class PrimeMoverSystemFunctions
      * @param string $plugin
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPluginFullPath() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNullIfWpFileSystemNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNullIfPluginsNotExist()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPluginFullPath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNullIfWpFileSystemNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNullIfPluginsNotExist()
      */
     public function getPluginFullPath($plugin = '', $exist_check = true)
     {
@@ -2312,9 +2312,9 @@ class PrimeMoverSystemFunctions
      * Activate Prime Mover Plugin Only (in cases when restoring a site and we are deactivating all plugins)
      * @param number $blog_id
      * @return void|boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsPrimeMoverPluginActivationOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsPrimeMoverActivationNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itActivatesPrimeMoverOnlySingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsPrimeMoverPluginActivationOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsPrimeMoverActivationNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itActivatesPrimeMoverOnlySingleSite()
      */
     public function activatePrimeMoverPluginOnly($blog_id = 0)
     {
@@ -2354,7 +2354,7 @@ class PrimeMoverSystemFunctions
      * Checks if zip package is encrypted
      * @param string $tmp_path
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfZipPackageHasEntityEncrypted() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfZipPackageHasEntityEncrypted() 
      */
     public function isZipPackageHasEntityEncrypted($tmp_path = '', $signature_file = '')
     {
@@ -2530,8 +2530,8 @@ class PrimeMoverSystemFunctions
     }
   
     /**
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itCreatesFriendlyName()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itUsesFilenaNameWhenBlogIdNotSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itCreatesFriendlyName()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itUsesFilenaNameWhenBlogIdNotSet()
      * @param number $blogid_to_export
      * @param string $download_path
      * @param boolean $is_wprime
@@ -2555,7 +2555,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Testable wp_die() for non-ajax requests
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
      */
     public function wpDie()
     {        
@@ -2604,8 +2604,8 @@ class PrimeMoverSystemFunctions
      * Checks if the download URL is a default Prime Mover download zip URL format
      * @param string $url
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotPrimeMoverDownloadUrl()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPrimeMoverDownloadZipUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotPrimeMoverDownloadUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPrimeMoverDownloadZipUrl()
      */
     public function isPrimeMoverDownloadZipURLFormat($url = '', $return_params = false)
     {
@@ -2627,8 +2627,8 @@ class PrimeMoverSystemFunctions
     /**
      * Get upgrade URL
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInSingleSite()
      */
     public function getUpgradeUrl()
     {
@@ -2663,7 +2663,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Get zip archive instance
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsZipArchiveInstance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsZipArchiveInstance()
      * @param boolean $return_wp_error
      * @return WP_Error|ZipArchive
      */
@@ -2676,7 +2676,7 @@ class PrimeMoverSystemFunctions
      * Checks if valid format
      * @param string $filename
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfReallyValidFormat() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfReallyValidFormat() 
      */
     public function isReallyValidFormat($filename = '')
     {
@@ -2692,9 +2692,9 @@ class PrimeMoverSystemFunctions
     /**
      * Do low-level checks if the file is really zip.
      * Check if the uploaded file is really zip (no WP filters here to be sure)
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfReallyZip()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotZip()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotZipByMime() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsTrueIfReallyZip()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotZip()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotZipByMime() 
      * @param string $filePath
      * @param boolean $return_wp_error
      * @return boolean|\ZipArchive
@@ -2725,7 +2725,7 @@ class PrimeMoverSystemFunctions
      * @param boolean $config_check_only
      * @param boolean $source_is_url
      * @return boolean|mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfReallyTar()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfReallyTar()
      */
     public function isReallyTar($filename = '', $config_check_only = false, $source_is_url = false)
     {
@@ -2743,8 +2743,8 @@ class PrimeMoverSystemFunctions
     
     /**
      * Initialize site export directory
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesSiteExportDirectoryInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesSiteExportDirectoryInSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesSiteExportDirectoryInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesSiteExportDirectoryInSingleSite() 
      * @mainsitesupport_detected
      */
     public function initializeSiteExportDirectory()
@@ -2759,9 +2759,9 @@ class PrimeMoverSystemFunctions
     /**
      * Create site export directory
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesSiteExportDirectory()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotCreateDirectoryIfNoBlogId()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotCreateSiteExportDirectoryWhenWpFileSystemUnusable()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesSiteExportDirectory()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotCreateDirectoryIfNoBlogId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotCreateSiteExportDirectoryWhenWpFileSystemUnusable()
      */
     public function createSiteExportDirectory($blog_id = 0) {
         if ( ! $blog_id ) {
@@ -2799,10 +2799,10 @@ class PrimeMoverSystemFunctions
      * @param string $mode
      * @param number $blog_id
      * @return void|number[]
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itShowsOnlySitesContainingBackups()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itReturnsNoSitesIfNoSitesContainingBackups()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itRemovesSitesWithNoBackupRecords()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverGearBoxScreenOptions::itMarkSitesWithBackups()
      */
     public function doScreenOptionSettings($mode = 'get', $blog_id = 0)
     {
@@ -2838,8 +2838,8 @@ class PrimeMoverSystemFunctions
     
     /**
      * Get backup menu URL
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBackupMenuUrlOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBackupMenuUrlInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBackupMenuUrlOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsBackupMenuUrlInSingleSite()
      * @param number $blog_id
      * @return string
      */
@@ -2860,7 +2860,7 @@ class PrimeMoverSystemFunctions
     /**
      * Get peak memory usage
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPeakMemoryUsage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsPeakMemoryUsage()
      */
     public function getPeakMemoryUsage()
     {
@@ -2874,7 +2874,7 @@ class PrimeMoverSystemFunctions
      * @param string $mode
      * @param number $blog_id
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoMemoryLogs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoMemoryLogs()
      */
     public function doMemoryLogs($ret = [], $method = '', $mode = 'export', $blog_id = 0)
     {
@@ -2890,7 +2890,7 @@ class PrimeMoverSystemFunctions
      * Returns true if referer is backup menu
      * @param string $referer
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRefererBackupMenu() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRefererBackupMenu() 
      */
     public function isRefererBackupMenu($referer = '')
     {
@@ -2914,7 +2914,7 @@ class PrimeMoverSystemFunctions
      * Log cli re-processing array
      * @param array $ret
      * @param array $pending_to_process
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLogsCliReprocessingArray() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itLogsCliReprocessingArray() 
      */
     public function logCliReProcessingArray($ret = [], $pending_to_process = [])
     {
@@ -3057,7 +3057,7 @@ class PrimeMoverSystemFunctions
      * @param string $prefix
      * @param string $str
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRemovesDbPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRemovesDbPrefix()
      */
     public function removePrefix($prefix = '', $str = '')
     {
@@ -3075,7 +3075,7 @@ class PrimeMoverSystemFunctions
      * Checks if its a HEAD request
      * @param array $input_server
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHeadRequest() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfHeadRequest() 
      */
     public function isHeadRequest($input_server = [])
     {
@@ -3092,7 +3092,7 @@ class PrimeMoverSystemFunctions
      * @param boolean $dashboard_mode
      * @param string $backup_filepath
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsCreateExportUrl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsCreateExportUrl() 
      */
     public function getCreateExportUrl($blog_id = 0, $dashboard_mode = false, $backup_filepath = '')
     {
@@ -3129,7 +3129,7 @@ class PrimeMoverSystemFunctions
      * This does not do realpath check.
      * Use fileIsInsideGivenDirectory() if realpath check is needed.
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfFileResidesInExportDir()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfFileResidesInExportDir()
      */
     public function isFileResideInExportDir($filepath = '', $given = '')
     {
@@ -3156,7 +3156,7 @@ class PrimeMoverSystemFunctions
      * @param number $index
      * @param number $data
      * @return SplFixedArray
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsNewElementToSplFixedArray()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsNewElementToSplFixedArray()
      */
     public function addNewElement(SplFixedArray $array, $index = 0, $data = 0)
     {
@@ -3179,7 +3179,7 @@ class PrimeMoverSystemFunctions
      * @param string $theme
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsThemeFullPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsThemeFullPath()
      */
     public function getThemeFullPath($theme = '', $exist_check = true)
     {
@@ -3200,7 +3200,7 @@ class PrimeMoverSystemFunctions
      * Get site title given blog ID
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteTitleGivenBlogId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsSiteTitleGivenBlogId()
      */
     public function getSiteTitleGivenBlogId($blog_id = 0)
     {
@@ -3215,7 +3215,7 @@ class PrimeMoverSystemFunctions
      * Check if sha256 string
      * @param string $string
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfShaString()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfShaString()
      */
     public function isShaString($string = '', $mode = 256)
     {
@@ -3239,7 +3239,7 @@ class PrimeMoverSystemFunctions
      * It checks if multisite main site 
      * When $force_one is TRUE - returns true for original main site (usually blog id of 1 for default/standard multisite compatibility)
      * When $force_domain_current_site is TRUE - returns TRUE if $blog_id is the current DOMAIN_CURRENT_SITE
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfMultisiteMainSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfMultisiteMainSite()
      * @param number $blog_id
      * @param boolean $force_one
      * @param boolean $force_domain_current_site
@@ -3281,7 +3281,7 @@ class PrimeMoverSystemFunctions
      * @param mixed $export_type
      * @return string
      * Possible values, non-translatable: single-site / multisite
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGeneralizeExportTypeBasedOnGiven()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGeneralizeExportTypeBasedOnGiven()
      */
     public function generalizeExportTypeBasedOnGiven($export_type)
     {
@@ -3298,8 +3298,8 @@ class PrimeMoverSystemFunctions
     /**
      * Get tables for replacement
      * @mainsitesupport_affected
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTableForReplacement()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsTableForReplaceOnMainSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTableForReplacement()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsTableForReplaceOnMainSite() 
      * @param number $blog_id
      * @return mixed|NULL|array
      */
@@ -3332,7 +3332,7 @@ class PrimeMoverSystemFunctions
      * Multisite Main site Table Query
      * @param string $db
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetstMultisiteMainSiteTableQuery()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetstMultisiteMainSiteTableQuery()
      */
     public function getMultisiteMainSiteTableQuery($db = '')
     {
@@ -3343,7 +3343,7 @@ class PrimeMoverSystemFunctions
      * Checks if valid JSON
      * @param string $input_data
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfValidJson()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfValidJson()
      */
     public function isValidJson($input_data = '')
     {
@@ -3358,7 +3358,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Returns TRUE if its a Prime Mover settings page OR migration tools/Sites page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPrimeMoverPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPrimeMoverPage()
      */
     public function isPrimeMoverPage()
     {
@@ -3431,7 +3431,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Activate plugin - Low level version and multisite compat.
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itActivatesPlugin() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itActivatesPlugin() 
      * @param number $blog_id
      * @param string $plugin_path_target
      * @param string $plugin
@@ -3499,7 +3499,7 @@ class PrimeMoverSystemFunctions
      * File get contents wrapper for reading small strings.
      * @param string $path
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFileContents()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsFileContents()
      */
     public function fileGetContents($path = '')
     {
@@ -3511,7 +3511,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Checks if resource is directory
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfDirectoryIsResource()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfDirectoryIsResource()
      */
     public function isDir($path = '')
     {
@@ -3527,7 +3527,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Multisite/single-site compatible way of getting user meta table name
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUserMetaTableName()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUserMetaTableName()
      * @param boolean $users_table
      * @return string
      */
@@ -3615,7 +3615,7 @@ class PrimeMoverSystemFunctions
     /**
      * Get URL scheme of this site
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUrlSchemeOfThisSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUrlSchemeOfThisSite()
      */
     public function getUrlSchemeOfThisSite()
     {
@@ -3629,7 +3629,7 @@ class PrimeMoverSystemFunctions
     /**
      * Initialize WP Filesystem during cleanup
      * @param boolean $admin_check
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesFs()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itInitializesFs()
      */
     public function initializeFs($admin_check = true)
     {
@@ -3739,7 +3739,7 @@ class PrimeMoverSystemFunctions
      * @param string $test
      * @return boolean
      * Credits: https://stackoverflow.com/questions/619610/whats-the-most-efficient-test-of-whether-a-php-string-ends-with-another-string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itEndsWith()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itEndsWith()
      */
     public function endsWith($string = '', $test = '') {
         $strlen = strlen($string);
@@ -3768,7 +3768,7 @@ class PrimeMoverSystemFunctions
      * @param mixed $plugins
      * @param boolean $silent
      * @param mixed $network_wide
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeactivatesAllPlugins() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverProgressHandlers::itDeactivatesAllPlugins() 
      */
     public function deactivatePlugins($plugins = null, $silent = true, $network_wide = null)
     {
@@ -3785,7 +3785,7 @@ class PrimeMoverSystemFunctions
      * @param string $plugin
      * @param boolean $network_check
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPluginActive() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPluginActive() 
      */
     public function isPluginActive($plugin = '', $network_check = false)
     {
@@ -3804,7 +3804,7 @@ class PrimeMoverSystemFunctions
     /**
      * Add nonce filters
      * @param boolean $skip
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsPrimeMoverNonceFilters()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itAddsPrimeMoverNonceFilters()
      */
     protected function addPrimeMoverNonceFilters($skip = false)
     {
@@ -3819,7 +3819,7 @@ class PrimeMoverSystemFunctions
     /**
      * Prime Mover nonce life - default
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsNonceLife() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsNonceLife() 
      */
     public function primeMoverNonceLife($life = 0)
     {
@@ -3831,7 +3831,7 @@ class PrimeMoverSystemFunctions
      * @param string $salt
      * @param string $scheme
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNonceSalt()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsNonceSalt()
      */
     public function primeMoverNonceSalt($salt = '', $scheme = '')
     {
@@ -3862,7 +3862,7 @@ class PrimeMoverSystemFunctions
     /**
      * Remove Prime Mover nonce filters
      * @param boolean $skip
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRemovesPrimeMoverNonceFilters()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRemovesPrimeMoverNonceFilters()
      */
     protected function removePrimeMoverNonceFilters($skip = false)
     {
@@ -3880,7 +3880,7 @@ class PrimeMoverSystemFunctions
      * @param string $name
      * @param boolean $skip
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonceUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonceUrl()
      */
     public function primeMoverNonceUrl($actionurl, $action = -1, $name = '_wpnonce', $skip = false)
     {
@@ -3898,7 +3898,7 @@ class PrimeMoverSystemFunctions
      * @param boolean $referer
      * @param boolean $echo
      * @param boolean $skip
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonceField() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonceField() 
      */
     public function primeMoverNonceField($action = -1, $name = '_wpnonce', $referer = true, $echo = true, $skip = false)
     {
@@ -3912,7 +3912,7 @@ class PrimeMoverSystemFunctions
      * @param mixed $action
      * @param boolean $skip
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonce()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itCreatesNonce()
      */
     public function primeMoverCreateNonce($action = -1, $skip = false)
     {
@@ -3961,7 +3961,7 @@ class PrimeMoverSystemFunctions
      * @param mixed $action
      * @param boolean $skip
      * @return number|false
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itVerifiesNonce() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itVerifiesNonce() 
      */
     public function primeMoverVerifyNonce($nonce = '', $action = -1, $skip = false)
     {
@@ -3978,7 +3978,7 @@ class PrimeMoverSystemFunctions
      * @param string $query_arg
      * @param boolean $skip
      * @return number|false
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksAdminReferer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksAdminReferer()
      */
     public function primeMoverCheckAdminReferer($action = -1, $query_arg = '_wpnonce', $skip = false)
     {
@@ -4029,7 +4029,7 @@ class PrimeMoverSystemFunctions
      * Checks if blog is usable provided by blog ID
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfBlogIdIsUsable()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfBlogIdIsUsable()
      * @mainsitesupport_affected
      *
      * Since 1.2.0, its possible to have blog ID of 1 and that is on a multisite main site.

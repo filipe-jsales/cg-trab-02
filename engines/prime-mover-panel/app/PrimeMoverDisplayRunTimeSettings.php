@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -81,7 +81,7 @@ class PrimeMoverDisplayRunTimeSettings
     
     /**
      * Settings instance
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings()
     {
@@ -90,7 +90,7 @@ class PrimeMoverDisplayRunTimeSettings
         
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -99,7 +99,7 @@ class PrimeMoverDisplayRunTimeSettings
     
     /**
      * Get settings markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSettingsMarkups
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSettingsMarkups
      */
     public function getSettingsMarkup()
     {

@@ -2669,7 +2669,7 @@ msgid "https://codexonics.com/"
 msgstr ""
 
 #. Author of the plugin
-msgid "Codexonics"
+msgid "GreenMainframe"
 msgstr ""
 
 #. Author URI of the plugin

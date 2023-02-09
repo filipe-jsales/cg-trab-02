@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\cli;
+namespace GreenMainframe\GMMoverFramework\cli;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -16,7 +16,7 @@ namespace Codexonics\PrimeMoverFramework\cli;
  * @since 1.0.7
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -66,7 +66,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * 
-     * @return \Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive
+     * @return \GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive
      */
     public function getCliArchiver()
     {
@@ -75,7 +75,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get importer
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter
      */
     public function getImporter()
     {
@@ -101,7 +101,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -110,7 +110,7 @@ class PrimeMoverCLIShellArchiver
  
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -119,7 +119,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get exporter
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter
      */
     public function getExporter()
     {
@@ -128,7 +128,7 @@ class PrimeMoverCLIShellArchiver
  
     /**
      * Get system checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      */
     public function getSystemChecks()
     {
@@ -137,7 +137,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -146,7 +146,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -173,7 +173,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -182,7 +182,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get system check utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities
      */
     public function getSystemCheckUtilities()
     {
@@ -231,7 +231,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get exporter array on export and importer array on import
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
      */
     public function getImporterExporterArray()
     {
@@ -240,7 +240,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get aux array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
      */
     public function getAuxArray()
     {
@@ -258,7 +258,7 @@ class PrimeMoverCLIShellArchiver
     /**
      * Get mode
      * @return string|mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
      */
     public function getMode()
     {
@@ -267,8 +267,8 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itAddsInitHooks() 
      */
     public function initHooks()
     {
@@ -277,7 +277,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Hooked in `wp_loaded`
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itRunsCliArchiver()
      */
     public function maybeRunCLIArchiver()
     {
@@ -383,7 +383,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Import plugins import
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessPluginsImport()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessPluginsImport()
      */
     protected function processPluginsImport()
     {
@@ -403,7 +403,7 @@ class PrimeMoverCLIShellArchiver
  
     /**
      * Process plugins for export archiving
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessPluginsForArchiving()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessPluginsForArchiving()
      */
     protected function processPluginsForArchiving()
     {
@@ -420,7 +420,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Process themes for export archiving
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessThemesForArchiving() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itProcessThemesForArchiving() 
      */
     protected function processThemesForArchiving()
     {
@@ -438,7 +438,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Extract Prime Mover main package
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itDoExtractionWork()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itDoExtractionWork()
      */
     protected function doExtractionWork()
     {

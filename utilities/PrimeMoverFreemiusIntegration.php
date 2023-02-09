@@ -1,12 +1,12 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 use Freemius;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -54,7 +54,7 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Get shutdown utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities
      */
     public function getShutdownUtilities()
     {
@@ -63,7 +63,7 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -90,7 +90,7 @@ class PrimeMoverFreemiusIntegration
         
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -99,8 +99,8 @@ class PrimeMoverFreemiusIntegration
         
     /**
      * Init hook class
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {      
@@ -137,7 +137,7 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Add Freemius customization hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsInitHooks()
      */
     protected function injectFreemiusHooks()
     {
@@ -326,9 +326,9 @@ class PrimeMoverFreemiusIntegration
      * Always Exclude Prime Mover Plugin in Diffs
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAlwaysExcludePrimeMoverItselfInDiff()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotExcludePluginsNotAuthorized() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotExcludePluginsIfNotPrimeMover() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAlwaysExcludePrimeMoverItselfInDiff()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotExcludePluginsNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotExcludePluginsIfNotPrimeMover() 
      */
     public function primeMoverAlwaysExcludeItselfInDiff($ret = [])
     {
@@ -355,9 +355,9 @@ class PrimeMoverFreemiusIntegration
      * Returns TRUE if logged-in customer, otherwise FALSE
      * @param boolean $ret
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsTrueIfLoggedInCustomer()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonAuthorizedUser()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonCustomer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsTrueIfLoggedInCustomer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonAuthorizedUser()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonCustomer()
      */
     public function primeMoverCheckIfLoggedInCustomer($ret = false)
     {
@@ -376,13 +376,13 @@ class PrimeMoverFreemiusIntegration
      * restore based on customer information
      * This should work in both single-site and multisite.
      * Since version 1.4.4, blog ID is switched to make sure this is correctly handled on a correct subsite (if multisite).
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itSkipsDeactivationIfCoreExistAndActive()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itSkipsDeactivationIfProExistAndActive()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itActivatesProVersionOnlyIfCustomer() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itActivatesFreeVersionOnlyIfNotCustomer()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsRunTimeErrorIfNoVersionsExists()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsRunTimeErrorIfBothDeactivatedButExists()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotDoAnythingWhenNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itSkipsDeactivationIfCoreExistAndActive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itSkipsDeactivationIfProExistAndActive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itActivatesProVersionOnlyIfCustomer() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itActivatesFreeVersionOnlyIfNotCustomer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsRunTimeErrorIfNoVersionsExists()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsRunTimeErrorIfBothDeactivatedButExists()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotDoAnythingWhenNotAuthorized()
      * @param array $ret
      * @param number $blogid_to_import
      * @return void
@@ -496,8 +496,8 @@ class PrimeMoverFreemiusIntegration
      * is activated after import due to differing versions.
      * @param array $export_system_footprint
      * @return void|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsBothPrimeMoverVersionsToPlugins()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotAddAnythingIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAddsBothPrimeMoverVersionsToPlugins()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotAddAnythingIfNotAuthorized()
      */
     public function addBothPrimeMoverVersionsToPlugins($export_system_footprint = [])
     {
@@ -515,9 +515,9 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Redirect to external contact page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itRedirectsToExternalContactPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotRedirectIfNotContactPage()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotProcessRedirectionsIfNotAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itRedirectsToExternalContactPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotRedirectIfNotContactPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itDoesNotProcessRedirectionsIfNotAuthorized() 
      */
     public function redirectToExternalContactPage()
     {
@@ -540,7 +540,7 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Redirect to site contact page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itRedirectsToExternalContactPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itRedirectsToExternalContactPage()
      */
     protected function redirecToSiteContact()
     {
@@ -550,8 +550,8 @@ class PrimeMoverFreemiusIntegration
     
     /**
      * Output support menu
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itOutputsContactSupportMenuIfCustomer() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itOutputsWordPressForumIfNotCustomer() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itOutputsContactSupportMenuIfCustomer() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itOutputsWordPressForumIfNotCustomer() 
      */
     public function outputSupportMenu() {
         if ( $this->isCustomer()) {
@@ -562,9 +562,9 @@ class PrimeMoverFreemiusIntegration
     /**
      * Check if customer is paying through Freemius
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonCustomer()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsTrueIfHasAnyActiveLicenseOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfDoesNotHaveAnyActiveLicenseOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfNonCustomer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsTrueIfHasAnyActiveLicenseOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itReturnsFalseIfDoesNotHaveAnyActiveLicenseOnMultisite()
      */
     private function isCustomer()
     {        

@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 use WP_Screen;
 use WP_Error;
 
@@ -47,7 +47,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get system checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      */
     public function getSystemChecks()
     {
@@ -74,7 +74,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -83,7 +83,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -92,7 +92,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -101,7 +101,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -110,7 +110,7 @@ class PrimeMoverCompatibility
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -119,8 +119,8 @@ class PrimeMoverCompatibility
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -297,7 +297,7 @@ class PrimeMoverCompatibility
      * Maybe remove maintenance
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itRemovesMainSiteMaintenance() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itRemovesMainSiteMaintenance() 
      */
     public function maybeRemoveMainSiteMaintenance($ret = [])
     {        
@@ -318,7 +318,7 @@ class PrimeMoverCompatibility
      * Maybe put main site to maintenance
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itPutMainSiteMaintenance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itPutMainSiteMaintenance()
      */
     public function maybePutMainSiteToMaintenance($ret = [])
     {
@@ -338,7 +338,7 @@ class PrimeMoverCompatibility
      * @param array $ret
      * @param number $blog_id
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itDeactivatesThemeOnMainSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itDeactivatesThemeOnMainSite()
      */
     public function maybeDeactivateThemeOnMainSite($ret = [], $blog_id = 0)
     {
@@ -403,7 +403,7 @@ class PrimeMoverCompatibility
      * Maybe restore theme on main site
      * @param array $ret
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itMaybeRestoreThemeOnMainSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itMaybeRestoreThemeOnMainSite()
      */
     public function maybeRestoreThemeOnMainSite($ret = [])
     {
@@ -436,7 +436,7 @@ class PrimeMoverCompatibility
      * @param array $plugins
      * @param string $plugin_path_target
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itReactivatesPluginAfterRestore() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itReactivatesPluginAfterRestore() 
      */
     public function reactivatePluginAfterRestore($import_data = [], $plugin = '', $blog_id = 0, $plugins = [], $plugin_path_target = '')
     {
@@ -653,7 +653,7 @@ class PrimeMoverCompatibility
      * @param string $line
      * @param array $ret
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itAdjustLegacyMySql() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itAdjustLegacyMySql() 
      */
     public function legacyMySQLCollateAdjustment($line, $ret = [])
     {
@@ -671,8 +671,8 @@ class PrimeMoverCompatibility
      * @param string $line
      * @param array $ret
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itAddsCompatRootsPersonaColumn()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsFilteringWhenRootsPersonaNotActive()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itAddsCompatRootsPersonaColumn()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsFilteringWhenRootsPersonaNotActive()
      */
     public function rootsPersonaFixedColumnn($line, $ret = [])
     {
@@ -723,9 +723,9 @@ class PrimeMoverCompatibility
      * @param boolean $show
      * @param WP_Screen $screen
      * @return string|string|boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itRemovedInterimLoginScreenOnMigrationTools()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itDoesNotRemoveInterimLoginScreenOtherPages()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsInterimLoginCheckOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itRemovedInterimLoginScreenOnMigrationTools()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itDoesNotRemoveInterimLoginScreenOtherPages()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsInterimLoginCheckOnMultisite()
      */
     public function removeInterimLoginOnMigrationToolsScreen($show = true, WP_Screen $screen = null)
     {
@@ -776,15 +776,15 @@ class PrimeMoverCompatibility
     
     /**
      * Ensure correct scheme is consistent because it can cause AJAX login session issues.
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itEnsuresCorrectSchemeIsUsed()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfNonSSLSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfFrontEnd()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckWhenDoingAjax()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeReplacementWhenDoingImport() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeReplaceDoingExport() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeUpdateIfAlreadyHttps() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itEnsuresCorrectSchemeIsUsed()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfNonSSLSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckIfFrontEnd()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeCheckWhenDoingAjax()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeReplacementWhenDoingImport() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeReplaceDoingExport() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsSchemeUpdateIfAlreadyHttps() 
      */
     public function ensureCorrectSchemeIsUsed()
     {
@@ -821,9 +821,9 @@ class PrimeMoverCompatibility
      * Deactivate Really Simple SSL Plugin if restored on site without SSL working
      * @param array $ret
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itDeactivatesReallySimpleSSLPluginInsecureSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itDoesNotDeactivateReallySimpleSSLSecureSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsReallySimpleSSLDeactivationNotAuthorized()  
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itDeactivatesReallySimpleSSLPluginInsecureSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itDoesNotDeactivateReallySimpleSSLSecureSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCompatibility::itSkipsReallySimpleSSLDeactivationNotAuthorized()  
      */
     public function deactivateReallySimpleSSLNonSecureSite($ret = [], $blog_id = 0)
     {

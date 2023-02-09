@@ -1,6 +1,6 @@
 <?php
 
-namespace Codexonics\PrimeMoverFramework\build\splitbrain\PHPArchive;
+namespace GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive;
 
 /**
  * Class FileInfo

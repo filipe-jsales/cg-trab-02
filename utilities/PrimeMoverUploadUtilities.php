@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -45,7 +45,7 @@ class PrimeMoverUploadUtilities
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -55,8 +55,8 @@ class PrimeMoverUploadUtilities
     /**
      * Init hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks() 
     {
@@ -92,7 +92,7 @@ class PrimeMoverUploadUtilities
      * Set if local
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUploadUtilities::itSetsIfLocal()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUploadUtilities::itSetsIfLocal()
      */
     public function setIfLocal(array $args )
     {
@@ -107,7 +107,7 @@ class PrimeMoverUploadUtilities
      * 
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsMinutesText()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsMinutesText()
      */
     public function setMinutesText(array $args )
     {
@@ -120,7 +120,7 @@ class PrimeMoverUploadUtilities
      * Setup an upload refresh interval
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadRefreshInterval() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadRefreshInterval() 
      */
     public function setUploadRefreshInterval(array $args ) 
     {
@@ -134,7 +134,7 @@ class PrimeMoverUploadUtilities
      * Setup an upload error
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadError()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadError()
      */
     public function setUploadError(array $args )
     {
@@ -148,7 +148,7 @@ class PrimeMoverUploadUtilities
     /**
      * Set restore image as done
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRestoreImageAsDone()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRestoreImageAsDone()
      */
     public function setRestoreImageAsDone(array $args ) 
     {
@@ -159,7 +159,7 @@ class PrimeMoverUploadUtilities
     /**
      * Set restore as done
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRestoreAsDone()
+     * @tested GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRestoreAsDone()
      */
     public function setRestoreAsDone(array $args ) 
     {
@@ -170,7 +170,7 @@ class PrimeMoverUploadUtilities
     /**
      * Set upload error analysis
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadErrorAnalysis()
+     * @tested GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsUploadErrorAnalysis()
      */
     public function setUploadErrorAnalysis(array $args ) 
     {
@@ -181,7 +181,7 @@ class PrimeMoverUploadUtilities
     /**
      * Set Retry limit
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRetryLimit()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsRetryLimit()
      */
     public function setRetryLimit(array $args ) 
     {        
@@ -192,7 +192,7 @@ class PrimeMoverUploadUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -201,7 +201,7 @@ class PrimeMoverUploadUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -210,7 +210,7 @@ class PrimeMoverUploadUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -220,7 +220,7 @@ class PrimeMoverUploadUtilities
     /**
      *
      * Get system checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      * @compatible 5.6
      */
     public function getSystemChecks()
@@ -233,7 +233,7 @@ class PrimeMoverUploadUtilities
      * Get uploaded chunk
      * @return number
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
      */
     public function getChunk()
     {
@@ -245,7 +245,7 @@ class PrimeMoverUploadUtilities
      * Set uploaded chunk
      * @param int $chunk
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
      */
     public function setChunk($chunk = 0)
     {
@@ -258,7 +258,7 @@ class PrimeMoverUploadUtilities
      * @param string $filename
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
      */
     public function identifyChunk($filename = '')
     {
@@ -288,7 +288,7 @@ class PrimeMoverUploadUtilities
      * @param string $filename
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itIdentifiesChunk()
      */
     public function getChunkFilename($current_chunk = 0, $filename = '')
     {
@@ -302,7 +302,7 @@ class PrimeMoverUploadUtilities
      * @param string $method
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itVerifiesChunkUpload() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itVerifiesChunkUpload() 
      */
     public function verifyChunkUpload(array $upload_params, $method = '')
     {
@@ -348,10 +348,10 @@ class PrimeMoverUploadUtilities
     /**
      * Validate chunk upload call
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotReallyUploaded()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotCorrectMimeType()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotReallyUploaded()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsIfNotCorrectMimeType()
      * @param array $uploads_ajax_input
      * @return boolean|array
      */
@@ -411,7 +411,7 @@ class PrimeMoverUploadUtilities
      * Checks if package is now under assembly status
      * @param number $blog_id
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfPackageIsNowUnderAssembly()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfPackageIsNowUnderAssembly()
      */
     public function maybePackageIsUnderAssemblyNow($blog_id = 0)
     {
@@ -425,7 +425,7 @@ class PrimeMoverUploadUtilities
      * Checks if package is now assembled
      * @param number $blog_id
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksMaybePackageIsAssembled() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksMaybePackageIsAssembled() 
      */
     public function maybePackageIsNowAssembled($blog_id = 0)
     {
@@ -440,7 +440,7 @@ class PrimeMoverUploadUtilities
      * @param number $blog_id
      * @param number $chunk
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itGetsActualUploadProgress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itGetsActualUploadProgress()
      */
     public function getActualUploadProgress($blog_id = 0, $chunk = 0)
     {
@@ -476,7 +476,7 @@ class PrimeMoverUploadUtilities
      * @param string $fileName
      * @return string
      * @compatible 5.6
-     * @tested PrimeMoverFramework\classes\PrimeMoverSystemProcessors::primeMoverTempfileDeleteProcessor()
+     * @tested GMMoverFramework\classes\PrimeMoverSystemProcessors::primeMoverTempfileDeleteProcessor()
      */
     public function moveUploadedChunkToUploads(array $uploadedfile, array $upload_overrides, $fileName = '')
     {
@@ -545,7 +545,7 @@ class PrimeMoverUploadUtilities
      * Set specific upload path for chunk
      * @param array $uploads
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsSpecificUploadPathForChunk()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itSetsSpecificUploadPathForChunk()
      */
     public function setSpecificUploadPathForChunk($uploads = [])
     {
@@ -567,8 +567,8 @@ class PrimeMoverUploadUtilities
      * Retrieved uploads ajax input
      * @return mixed
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itDoesNotProcessUploadsWhenNonceFailed() 
      */
     public function getUploadsAjaxInput()
     {
@@ -593,8 +593,8 @@ class PrimeMoverUploadUtilities
      * @param array $uploads_ajax_input
      * @return boolean
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfFixingMissingChunk()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemProcessors::itProcessUploadsWhenAllSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfFixingMissingChunk()
      */
     public function isFixingMissingChunk(array $uploads_ajax_input)
     {
@@ -719,7 +719,7 @@ class PrimeMoverUploadUtilities
      * Checks if retrying merging zip
      * @param array $input
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksRetryingUploadMerging()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksRetryingUploadMerging()
      */
     public function isRetryingZipMerging($input = [])
     {
@@ -750,7 +750,7 @@ class PrimeMoverUploadUtilities
      * Checks if zip type by MIME check
      * @param string $filePath
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfZipByMime() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfZipByMime() 
      */
     public function isZipByMime($filePath = '')
     {        
@@ -763,7 +763,7 @@ class PrimeMoverUploadUtilities
      * @param string $filePath
      * @return boolean
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfReallyZip() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverUploadUtilities::itChecksIfReallyZip() 
      */
     public function isReallyZip($filePath = '')
     {

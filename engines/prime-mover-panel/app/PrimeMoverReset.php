@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -44,7 +44,7 @@ class PrimeMoverReset
     
     /**
      * Get Prime Mover settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
     {
@@ -53,8 +53,8 @@ class PrimeMoverReset
 
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverReset::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverReset::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverReset::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverReset::itChecksIfHooksAreOutdated() 
      */
     public function initHooks() 
     {
@@ -163,7 +163,7 @@ class PrimeMoverReset
         
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

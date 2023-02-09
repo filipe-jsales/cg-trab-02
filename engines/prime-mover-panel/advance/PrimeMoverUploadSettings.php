@@ -1,20 +1,20 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\advance;
+namespace GreenMainframe\GMMoverFramework\advance;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\app\PrimeMoverSettings;
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadSettingMarkup;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\app\PrimeMoverSettings;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadSettingMarkup;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -63,7 +63,7 @@ class PrimeMoverUploadSettings
 
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -72,7 +72,7 @@ class PrimeMoverUploadSettings
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -90,7 +90,7 @@ class PrimeMoverUploadSettings
     
     /**
      * Get upload setting markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadSettingMarkup
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadSettingMarkup
      */
     public function getUploadSettingMarkup()
     {
@@ -99,7 +99,7 @@ class PrimeMoverUploadSettings
     
     /**
      * Get Prime Mover settings
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
     {
@@ -108,8 +108,8 @@ class PrimeMoverUploadSettings
 
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUploadSettings::itChecksIfHooksAreOutdated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverUploadSettings::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUploadSettings::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverUploadSettings::itAddsInitHooks()
      */
     public function initHooks() 
     {
@@ -361,7 +361,7 @@ class PrimeMoverUploadSettings
         
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -41,7 +41,7 @@ class PrimeMoverErrorHandlers
 
     /**
      * Get shutdown utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities
      * @compatible 5.6
      */
     public function getShutDownUtilities() 
@@ -51,7 +51,7 @@ class PrimeMoverErrorHandlers
     
     /**
      * Gets System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -62,7 +62,7 @@ class PrimeMoverErrorHandlers
     /**
      *
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -73,7 +73,7 @@ class PrimeMoverErrorHandlers
     /**
      *
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()
@@ -84,8 +84,8 @@ class PrimeMoverErrorHandlers
     /**
      * Initialize error handling hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itChecksIfHooksAreOutdated() 
      * 
      */
     public function initHooks()
@@ -449,7 +449,7 @@ class PrimeMoverErrorHandlers
      * Error log downloader
      * Hooked to `init`
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
      */
     public function streamError()
     {
@@ -541,10 +541,10 @@ class PrimeMoverErrorHandlers
      * Hooked to `prime_mover_shutdown_actions`
      * @param array $error
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itLogsPrimeMoverErrors()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogMigrationErrorsIfNotAuthorized()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogErrorIfNoError()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogErrorIfIdIsNotSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itLogsPrimeMoverErrors()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogMigrationErrorsIfNotAuthorized()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogErrorIfNoError()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotLogErrorIfIdIsNotSet()
      */
     public function primeMoverLogErrors(array $error)
     {
@@ -635,8 +635,8 @@ class PrimeMoverErrorHandlers
      * Deletes temporary packages in the event of runtime errors to prevent clogging up the server
      * Hooked to `prime_mover_shutdown_actions`
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
      * @param array $error
      */
     public function primeMoverDeletePackagePath($error = [])
@@ -697,8 +697,8 @@ class PrimeMoverErrorHandlers
      * This fires successfully when a fatal error is detected inside Prime Mover plugin
      * Hooked to `shutdown`
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itRunsErrorHandlerWhenItsFatalError() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotRunErrorHandlerWhenErrorIsNotFatal()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itRunsErrorHandlerWhenItsFatalError() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotRunErrorHandlerWhenErrorIsNotFatal()
      */
     public function errorHandler()
     {

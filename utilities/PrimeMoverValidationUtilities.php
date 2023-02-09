@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -60,7 +60,7 @@ class PrimeMoverValidationUtilities
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -86,8 +86,8 @@ class PrimeMoverValidationUtilities
        
     /**
     * Initialize hooks
-    * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itAddsInitHooks()
-    * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationUtilities::itChecksIfHooksAreOutdated()
+    * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itAddsInitHooks()
+    * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationUtilities::itChecksIfHooksAreOutdated()
     */
     public function initHooks()
     {
@@ -175,7 +175,7 @@ class PrimeMoverValidationUtilities
      * Screen option basic validation
      * @return string[]|string[][]
      * @reviewed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationUtilities::itReturnsValidationGearBoxOptions() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationUtilities::itReturnsValidationGearBoxOptions() 
      */
     public function returnValidationGearBoxScreenOption()
     {
@@ -191,7 +191,7 @@ class PrimeMoverValidationUtilities
     /**
      * Return validation backups menu
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationUtilities::itReturnsValidationProtocolBackupsMenu()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationUtilities::itReturnsValidationProtocolBackupsMenu()
      */
     public function returnValidationProtocolBackupsMenu()
     {
@@ -206,7 +206,7 @@ class PrimeMoverValidationUtilities
     /**
      * Return validation ajax actions
      * @return string[][]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsAjaxActionsForValidation()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsAjaxActionsForValidation()
      */
     public function returnValidationAjaxActions()
     {
@@ -219,7 +219,7 @@ class PrimeMoverValidationUtilities
     /**
      * Return validation contact page redirect
      * @return string[][]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationPageContactParameters()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationPageContactParameters()
      */
     public function returnValidationContactPageParameters()
     {
@@ -229,7 +229,7 @@ class PrimeMoverValidationUtilities
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationMaintenanceControlParameters() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationMaintenanceControlParameters() 
      * @return string[]|string[][]
      */
     public function returnValidationMaintenanceControlParameters()
@@ -245,7 +245,7 @@ class PrimeMoverValidationUtilities
      * Delete tmp dir validation
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationControlDecryptVerify()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationControlDecryptVerify()
      */
     public function returnValidationProtocolDecryptVerify()
     {
@@ -262,7 +262,7 @@ class PrimeMoverValidationUtilities
      * Validation protocol for authorization headers
      * @return array
      * @reviewed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationAuthorizationHeaders()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationAuthorizationHeaders()
      */
     public function returnValidationAuthorizationHeaders()
     {
@@ -290,8 +290,8 @@ class PrimeMoverValidationUtilities
     /**
      * Sanitize log
      * @param string $log
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itSanitizesLog() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itDoesNotSanitizeLogWhenNotDbDump()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itSanitizesLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itDoesNotSanitizeLogWhenNotDbDump()
      */
     public function sanitizeLog($log = '', $source = '')
     {        
@@ -313,7 +313,7 @@ class PrimeMoverValidationUtilities
      * Get validation protocol for error log exist check
      * @return string[]
      * @reviewed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationErrorLogExists() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationErrorLogExists() 
      */
     public function returnValidationErrorLogExist()
     {
@@ -325,7 +325,7 @@ class PrimeMoverValidationUtilities
     
     /**
      * Return validation of commmon progress
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationCommonProgress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationCommonProgress()
      * @return string[]
      * @reviewed
      */
@@ -343,7 +343,7 @@ class PrimeMoverValidationUtilities
     /**
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationCommonShutdown()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationCommonShutdown()
      */
     public function returnValidationCommonShutDown()
     {
@@ -358,7 +358,7 @@ class PrimeMoverValidationUtilities
     /**
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationChunkUpload()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationChunkUpload()
      */
     public function returnValidationChunkUpload()
     {
@@ -379,7 +379,7 @@ class PrimeMoverValidationUtilities
     /**
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationDownloadStream()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationDownloadStream()
      */
     public function returnValidationDownloadStream()
     {
@@ -393,7 +393,7 @@ class PrimeMoverValidationUtilities
     /**
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationShutdownErrorLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationShutdownErrorLog()
      */
     public function returnValidationShutdownErrorLog()
     {
@@ -407,7 +407,7 @@ class PrimeMoverValidationUtilities
      * Delete tmp dir validation
      * @reviewed
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDeleteTmpFile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDeleteTmpFile()
      */
     public function returnValidationProtocolDeleteTmpFile()
     {
@@ -424,7 +424,7 @@ class PrimeMoverValidationUtilities
     /**
      * Delete fragment of zip file being download at tmp dir but corrupted
      * @return string[]|string[][]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDeleteZipTmpDir()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDeleteZipTmpDir()
      */
     public function returnValidationProtocolDeleteZipInTmpDir()
     {
@@ -442,7 +442,7 @@ class PrimeMoverValidationUtilities
      * Diff validation protocol
      * @return string[]
      * @reviewed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDiffProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationProtocolDiffProcessor()
      */
     public function returnValidationProtocolDiffImportProcessor()
     {
@@ -459,7 +459,7 @@ class PrimeMoverValidationUtilities
      * Return validation protocol for export processor
      * @return string[]|string[][]
      * @reviewed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationImportProcessor() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationImportProcessor() 
      */
     public function returnValidationProtocolImportProcessor()
     {
@@ -476,7 +476,7 @@ class PrimeMoverValidationUtilities
     * Return validation protocol for export processor
     * @return string[]|string[][]
     * @reviewed
-    * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationExportProcessor()
+    * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverValidationUtilities::itReturnsValidationExportProcessor()
     */
     public function returnValidationProtocolExportProcessor()
     {

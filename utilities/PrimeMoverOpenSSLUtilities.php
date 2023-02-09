@@ -1,16 +1,16 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -47,7 +47,7 @@ class PrimeMoverOpenSSLUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -56,7 +56,7 @@ class PrimeMoverOpenSSLUtilities
 
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {        
@@ -65,8 +65,8 @@ class PrimeMoverOpenSSLUtilities
     
     /**
      * Init hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itChecksIfHooksAreOutdated() 
      */
     public function initHooks()
     {
@@ -115,7 +115,7 @@ class PrimeMoverOpenSSLUtilities
      * @param boolean $enable_media_encryption
      * @param number $blog_id
      * @param array $ret
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsMediaKeySignatureToPackageIfEncrypted()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsMediaKeySignatureToPackageIfEncrypted()
      */
     public function addMediaKeySignature($enable_media_encryption = false, $blog_id = 0, $ret = [])
     {
@@ -129,7 +129,7 @@ class PrimeMoverOpenSSLUtilities
      * @param array $ret
      * @param number $blog_id
      * @param string $filename
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsMediaKeySignatureToPackageIfEncrypted()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itAddsMediaKeySignatureToPackageIfEncrypted()
      */
     protected function keySignatureGenerator($ret = [], $blog_id = 0, $filename = '')
     {
@@ -381,7 +381,7 @@ class PrimeMoverOpenSSLUtilities
      * Checks if OpenSSL customer
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itChecksIfOpenSSLCustomer() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverOpenSSLUtilities::itChecksIfOpenSSLCustomer() 
      */
     protected function isOpenSSLCustomer($blog_id = 0)
     {
@@ -402,7 +402,7 @@ class PrimeMoverOpenSSLUtilities
     /**
      * Get cipher
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
      */
     public function getCipherMethod()
     {
@@ -415,7 +415,7 @@ class PrimeMoverOpenSSLUtilities
      * @param string $key
      * @param boolean $return_null_on_false
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
      */
     public function openSSLDecrypt($ciphertext = '', $key = '', $return_null_on_false = false)
     {
@@ -453,7 +453,7 @@ class PrimeMoverOpenSSLUtilities
      * @param string $plaintext
      * @param string $key
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings()
      */
     public function openSSLEncrypt($plaintext = '', $key = '')
     {
@@ -472,9 +472,9 @@ class PrimeMoverOpenSSLUtilities
      * @param boolean $encrypt
      * @param string $encryption_key
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itDoesNotSaveEncryptedSettingWhenKeyIsNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings()
      */
     public function maybeEncryptSetting($value, $encrypt = false, $encryption_key = '')
     {
@@ -501,7 +501,7 @@ class PrimeMoverOpenSSLUtilities
      * @param array $value
      * @param string $encryption_key
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itSavesEncryptedArraySettings()
      */
     public function encryptArraySetting($value = [], $encryption_key = '')
     {
@@ -513,8 +513,8 @@ class PrimeMoverOpenSSLUtilities
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
      * @param $value
      * @param boolean $decrypt
      * @param string $encryption_key
@@ -545,8 +545,8 @@ class PrimeMoverOpenSSLUtilities
      * @param array $value
      * @param string $encryption_key
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedArraySetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalArraySettingIfNotEncoded()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsEncryptedArraySetting()
      */
     public function decryptArraySetting($value = [], $encryption_key = '')
     {

@@ -11,10 +11,10 @@
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     https://github.com/ifsnop/mysqldump-php
  *
- * Revision by Codexonics Limited
+ * Revision by GreenMainframe Limited
  * For Prime Mover WordPress plugin
  */
-namespace Codexonics\PrimeMoverFramework\build\Ifsnop\Mysqldump;
+namespace GreenMainframe\GMMoverFramework\build\Ifsnop\Mysqldump;
 
 use Exception;
 use PDO;
@@ -23,7 +23,7 @@ use PDOException;
  * Class Mysqldump.
  *
  * @category Library
- * @author   Codexonics Limited <codexonics.com> / Diego Torres <ifsnop@github.com>
+ * @author   GreenMainframe Limited <codexonics.com> / Diego Torres <ifsnop@github.com>
  * @license  http://www.gnu.org/copyleft/gpl.html GNU General Public License
  * @link     https://github.com/codex-m/mysqldump-php
  *

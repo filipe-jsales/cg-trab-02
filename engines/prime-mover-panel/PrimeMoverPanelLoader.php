@@ -5,7 +5,7 @@
 spl_autoload_register(function ($class) {
     
     // project-specific namespace prefix
-    $prefix = 'Codexonics\\PrimeMoverFramework\\';
+    $prefix = 'GreenMainframe\\GMMoverFramework\\';
     
     // base directory for the namespace prefix
     $base_dir = PRIME_MOVER_PANEL_PLUGINPATH;

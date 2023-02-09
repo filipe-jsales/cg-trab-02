@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter;
 use WP_Error;
 
 if (! defined('ABSPATH')) {
@@ -77,7 +77,7 @@ class PrimeMoverExportUtilities
     
     /**
      * Get system check utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities
      */
     public function getSystemCheckUtilities()
     {
@@ -86,7 +86,7 @@ class PrimeMoverExportUtilities
     
     /**
      * Get exporter
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter
      * @compatible 5.6
      */
     public function getExporter()
@@ -96,7 +96,7 @@ class PrimeMoverExportUtilities
     
     /**
      * Gets System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -107,8 +107,8 @@ class PrimeMoverExportUtilities
     /**
      * Init hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -504,7 +504,7 @@ class PrimeMoverExportUtilities
      * Export plugins by whole directory (used in shell mode)
      * @param array $export_data
      * @return string|void|WP_Error|boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itExportsPluginsInShellMode()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itExportsPluginsInShellMode()
      */
     public function primeMoverExportPluginsFunc($export_data = [])
     {
@@ -682,8 +682,8 @@ class PrimeMoverExportUtilities
      * @param array $ret
      * @return number
      * @since 1.0.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itAdjustIdForMultisiteExport() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itReturnsSameIdIfNotExportingToFromMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itAdjustIdForMultisiteExport() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itReturnsSameIdIfNotExportingToFromMultisite()
      */
     public function adjustIdForMultisiteExport($blogid_to_export = 0, $ret = [])
     {

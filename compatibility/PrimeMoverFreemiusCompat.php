@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 use FS_Options;
 use FS_Plugin;
 use WP_Site;
@@ -87,7 +87,7 @@ class PrimeMoverFreemiusCompat
     /**
      * Get core modules
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itGetsCoreModules()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itGetsCoreModules()
      */
     public function getCoreModules()
     {
@@ -106,7 +106,7 @@ class PrimeMoverFreemiusCompat
     /**
      * Get Freemius options
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itGetsFreemiusOptions() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itGetsFreemiusOptions() 
      */
     public function getFreemiusOptions()
     {
@@ -115,9 +115,9 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Register hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRegisterDeactivationHook() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRegistersHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRegisterDeactivationHook() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRegistersHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itChecksIfHooksAreOutdated()
      */
     public function registerHooks()
     {        
@@ -627,7 +627,7 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Deactivation hook
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */
     public function deactivationHook()
     {      
@@ -873,7 +873,7 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -882,8 +882,8 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */
     public function getSystemAuthorization()
     {
@@ -892,8 +892,8 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */
     public function getPrimeMover()
     {
@@ -902,7 +902,7 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {

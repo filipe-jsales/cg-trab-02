@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -43,10 +43,10 @@ class PrimeMoverSystemAuthorization
      * Checks if this user is authorized to use the classes and methods
      * @param WP_User object $user
      * @compatibility 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
      */
     final protected function checksIfUserIsAuthorized($user = null)
     {
@@ -89,10 +89,10 @@ class PrimeMoverSystemAuthorization
     /**
      * Gets user authorization
      * @compatibility 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
      * 
      */
     final public function isUserAuthorized()

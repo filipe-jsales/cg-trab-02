@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
-use Codexonics\PrimeMoverFramework\build\WPConfigTransformer as WPConfigTransformer;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\build\WPConfigTransformer as WPConfigTransformer;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -51,7 +51,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get system utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemUtilities
      */
     public function getSystemUtilities()
     {
@@ -69,7 +69,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -78,7 +78,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -87,8 +87,8 @@ class PrimeMoverConfigUtilities
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAddsInitHooks()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAddsInitHooks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -128,10 +128,10 @@ class PrimeMoverConfigUtilities
      * Append site URL and home URL to WP Config to avoid breaking ajax requests during restoration dB processing.
      * @param number $blog_id
      * @param boolean $import_initiated
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAppendsSiteUrlToWpConfigSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itDoesNotAppendSiteURLWpConfigWhenMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itDoesNotAppendSiteUrlWpConfigWhenImportInitiated() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAddsSiteUrlAndHomeUrlWhenConfigDoesNotExist() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAppendsSiteUrlToWpConfigSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itDoesNotAppendSiteURLWpConfigWhenMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itDoesNotAppendSiteUrlWpConfigWhenImportInitiated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAddsSiteUrlAndHomeUrlWhenConfigDoesNotExist() 
      */
     public function appendSiteURLToWPConfigSiteRestore($blog_id = 0, $import_initiated = false)
     {
@@ -186,7 +186,7 @@ class PrimeMoverConfigUtilities
      * Update site and home URL in wp-config.php helper method
      * @param string $site_url
      * @param string $home_url
-     * @tested Codexonics\PrimeMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAppendsSiteUrlToWpConfigSingleSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TesPrimeMoverPrimeMoverConfigUtilities::itAppendsSiteUrlToWpConfigSingleSite() 
      */
     protected function updateSiteAndHomeUrLWpConfigHelper($site_url = '', $home_url = '')
     {
@@ -630,7 +630,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get import utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverImportUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverImportUtilities
      */
     public function getImportUtilities()
     {
@@ -639,7 +639,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -648,7 +648,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get config transformer instance
-     * @return NULL|\Codexonics\PrimeMoverFramework\build\WPConfigTransformer
+     * @return NULL|\GreenMainframe\GMMoverFramework\build\WPConfigTransformer
      * Note that this returns NULL if wp-config.php path is NOT writable.
      */
     public function getConfigTransformer()

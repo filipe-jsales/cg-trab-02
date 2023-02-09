@@ -118,8 +118,8 @@ class GMMoverRequirementsCheck
      * Do an overall sanity checks if all dependencies required are meet
      * @return boolean
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverRequirements::itChecksCorrectPluginRequirementsMultisite()
      */
     public function passes()
     {

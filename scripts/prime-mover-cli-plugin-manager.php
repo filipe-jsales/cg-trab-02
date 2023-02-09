@@ -1,9 +1,9 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\general;
+namespace GreenMainframe\GMMoverFramework\general;
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -519,7 +519,7 @@ function getPrimeMoverSanitizeStringFilter()
  * @var PrimeMoverMustUsePluginManager $prime_mover_plugin_manager
  */
 global $prime_mover_plugin_manager;
-$prime_mover_plugin_manager = new \Codexonics\PrimeMoverFramework\general\PrimeMoverMustUsePluginManager(filter_input_array(INPUT_POST, getPrimeMoverSanitizeStringFilter()), filter_input_array(INPUT_GET, getPrimeMoverSanitizeStringFilter()));
+$prime_mover_plugin_manager = new \GreenMainframe\GMMoverFramework\general\PrimeMoverMustUsePluginManager(filter_input_array(INPUT_POST, getPrimeMoverSanitizeStringFilter()), filter_input_array(INPUT_GET, getPrimeMoverSanitizeStringFilter()));
 
 $prime_mover_plugin_manager->setConstants();
 $prime_mover_plugin_manager->initPluginsLoadedHook();

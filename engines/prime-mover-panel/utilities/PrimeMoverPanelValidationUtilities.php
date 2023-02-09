@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
-use Codexonics\PrimeMoverFramework\advance\PrimeMoverTroubleshooting;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\advance\PrimeMoverTroubleshooting;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -42,7 +42,7 @@ class PrimeMoverPanelValidationUtilities
     
     /**
      * Get troubleshooting
-     * @return \Codexonics\PrimeMoverFramework\advance\PrimeMoverTroubleshooting
+     * @return \GreenMainframe\GMMoverFramework\advance\PrimeMoverTroubleshooting
      */
     public function getTroubleShooting()
     {
@@ -83,8 +83,8 @@ class PrimeMoverPanelValidationUtilities
        
     /**
     * Initialize hooks
-    * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverPanelValidationUtilities::itChecksIfHooksAreOutdated() 
-    * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverPanelValidationUtilities::itAddsInitHooks()
+    * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverPanelValidationUtilities::itChecksIfHooksAreOutdated() 
+    * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverPanelValidationUtilities::itAddsInitHooks()
     */
     public function initHooks()
     {

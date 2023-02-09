@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -22,12 +22,12 @@ if (! defined('ABSPATH')) {
  * Extended Duplicator Search Replace Class
  * Standalone and removed reporting, logging methods.
  *
- * @package PrimeMoverFramework\utilities
+ * @package GMMoverFramework\utilities
  * @link https://github.com/lifeinthegrid/duplicator Duplicator GitHub Project
  * @link http://www.lifeinthegrid.com/duplicator/
  * @link http://www.snapcreek.com/duplicator/
  * @author Snap Creek
- * @author Codexonics
+ * @author GreenMainframe
  * @copyright 2011-2017  SnapCreek LLC
  * @license GPLv2 or later
 

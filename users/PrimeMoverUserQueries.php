@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\users;
+namespace GreenMainframe\GMMoverFramework\users;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive;
+use GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive;
 use WP_User_Query;
 use wpdb;
 use SplFixedArray;
@@ -68,7 +68,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -446,7 +446,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -455,7 +455,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -464,7 +464,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -473,7 +473,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get cli archiver
-     * @return \Codexonics\PrimeMoverFramework\cli\PrimeMoverCLIArchive
+     * @return \GreenMainframe\GMMoverFramework\cli\PrimeMoverCLIArchive
      */
     public function getCliArchiver()
     {

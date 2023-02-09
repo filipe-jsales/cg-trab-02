@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\app;
+namespace GreenMainframe\GMMoverFramework\app;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -36,7 +36,7 @@ class PrimeMoverDisplaySecuritySettings
     
     /**
      * Settings instance
-     * @return \Codexonics\PrimeMoverFramework\app\PrimeMoverSettings
+     * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings()
     {
@@ -45,7 +45,7 @@ class PrimeMoverDisplaySecuritySettings
         
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -54,7 +54,7 @@ class PrimeMoverDisplaySecuritySettings
     
     /**
      * Get settings markup
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSettingsMarkups
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSettingsMarkups
      */
     public function getSettingsMarkup()
     {
@@ -63,7 +63,7 @@ class PrimeMoverDisplaySecuritySettings
     
     /**
      * Show download security setting
-     * @tested Codexonics\PrimeMoverFramework\helpers\TestPrimeMoverDownloadSecurity::itDoesNotShowDownloadSecuritySettingGearBoxDeactivated() 
+     * @tested GreenMainframe\GMMoverFramework\helpers\TestPrimeMoverDownloadSecurity::itDoesNotShowDownloadSecuritySettingGearBoxDeactivated() 
      */
     public function showDownloadSecuritySetting()
     {
@@ -74,8 +74,8 @@ class PrimeMoverDisplaySecuritySettings
     
     /**
      * Show download security setting
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itDoesNotShowDownloadAuthenticationSettingGearBoxDeactivated()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itDoesNotShowDownloadAuthenticationSettingGearBoxDeactivated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
      */
     public function showDownloadAuthenticationSetting()
     {
@@ -85,7 +85,7 @@ class PrimeMoverDisplaySecuritySettings
     /**
      * Get placeholder
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
      */
     protected function getPlaceHolder()
     {
@@ -113,7 +113,7 @@ class PrimeMoverDisplaySecuritySettings
     
     /**
      * Output markup
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDownloadAuthentication::itRendersOutputMarkup()
      */
     private function outputMarkup()
     {

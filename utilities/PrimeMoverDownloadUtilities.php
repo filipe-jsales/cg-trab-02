@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\streams\PrimeMoverResumableDownloadStream;
+use GreenMainframe\GMMoverFramework\streams\PrimeMoverResumableDownloadStream;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -43,7 +43,7 @@ class PrimeMoverDownloadUtilities
     
     /**
      * Get resume download stream
-     * @return \Codexonics\PrimeMoverFramework\streams\PrimeMoverResumableDownloadStream
+     * @return \GreenMainframe\GMMoverFramework\streams\PrimeMoverResumableDownloadStream
      */
     public function getResumeDownloadStream()
     {
@@ -52,7 +52,7 @@ class PrimeMoverDownloadUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -61,7 +61,7 @@ class PrimeMoverDownloadUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -71,7 +71,7 @@ class PrimeMoverDownloadUtilities
     /**
      *
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()
@@ -82,8 +82,8 @@ class PrimeMoverDownloadUtilities
     /**
      * Init hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverExportUtilities::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverExportUtilities::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itChecksIfHooksAreOutdated() 
      */
     public function initHooks()
     {
@@ -846,8 +846,8 @@ class PrimeMoverDownloadUtilities
     
     /**
      * Generate friendly name of the downloaded package
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itCreatesFriendlyName()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itUsesFilenaNameWhenBlogIdNotSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itCreatesFriendlyName()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverDownloadUtilities::itUsesFilenaNameWhenBlogIdNotSet()
      * @param number $blogid_to_export
      * @param string $download_path
      * @param boolean $is_wprime

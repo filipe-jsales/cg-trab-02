@@ -1,18 +1,18 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\cli;
+namespace GreenMainframe\GMMoverFramework\cli;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks;
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers;
 
 /**
  * ZIP ARCHIVER CLASS FOR COMMAND LINE
@@ -42,7 +42,7 @@ class PrimeMoverCLIArchive
     
     /**
      * Get shutdown utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities
      */
     public function getShutDownUtilities()
     {
@@ -50,7 +50,7 @@ class PrimeMoverCLIArchive
     }
     /**
      * Get system checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      */
     public function getSystemChecks()
     {
@@ -59,7 +59,7 @@ class PrimeMoverCLIArchive
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()    
     {
@@ -68,7 +68,7 @@ class PrimeMoverCLIArchive
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -77,7 +77,7 @@ class PrimeMoverCLIArchive
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -86,7 +86,7 @@ class PrimeMoverCLIArchive
     
     /**
      * Get progress handlers
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverProgressHandlers
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers
      */
     public function getProgressHandlers()
     {
@@ -105,8 +105,8 @@ class PrimeMoverCLIArchive
      * @param string $mode
      * @param string $action
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itGenerateMediaArgumentsForShell() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotGenerateMediaArgumentsForShellIfUnauthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itGenerateMediaArgumentsForShell() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotGenerateMediaArgumentsForShellIfUnauthorized() 
      */
     public function generateMediaArchivingArgumentsForShell($encrypt_media = false, $media_source_path = '', $zippath = '', $exclusion_rules = [], 
         $blogid_to_export = [], $error_log_path = '', $delete_source = false, $mode = '', $action = 'export')
@@ -423,14 +423,14 @@ class PrimeMoverCLIArchive
     /**
      * Checks if we need to process using shell functions
      * @return boolean|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itMaybeArchiveMediaByShell()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaByShellIfUnauthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfFileSystemNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfSlowWebHost()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfWindows()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoExecFunctions()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoPHPExecutables() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoCoreLoadFile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itMaybeArchiveMediaByShell()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaByShellIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfFileSystemNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfSlowWebHost()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfWindows()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoExecFunctions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoPHPExecutables() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIArchive::itDoesNotArchiveMediaShellIfNoCoreLoadFile()
      */
     public function maybeArchiveMediaByShell()
     {

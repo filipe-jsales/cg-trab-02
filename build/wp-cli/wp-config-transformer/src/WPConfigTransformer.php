@@ -1,6 +1,6 @@
 <?php
 
-namespace Codexonics\PrimeMoverFramework\build;
+namespace GreenMainframe\GMMoverFramework\build;
 
 /**
  * Transforms a wp-config.php file.

@@ -1,21 +1,21 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\interfaces\PrimeMoverSystemInitialize;
+use GreenMainframe\GMMoverFramework\interfaces\PrimeMoverSystemInitialize;
 use ZipArchive;
 use DirectoryIterator;
 use WP_Error;
-use Codexonics\PrimeMoverFramework\general\PrimeMoverMustUsePluginManager;
+use GreenMainframe\GMMoverFramework\general\PrimeMoverMustUsePluginManager;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -492,7 +492,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get db dump batch size setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDbDumpBatchSizeSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDbDumpBatchSizeSetting()
      */
     public function getDbDumpBatchSizeSetting()
     {
@@ -502,7 +502,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get search replace batch size setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsSearchReplaceBatchSizeSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsSearchReplaceBatchSizeSetting()
      */
     public function getSearchReplaceBatchSizeSetting()
     {
@@ -512,7 +512,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Default user role meta key
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultUserRole() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultUserRole() 
      */
     public function getDefaultUserRole()
     {
@@ -522,7 +522,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover action link
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverActionLink() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverActionLink() 
      */
     public function getPrimeMoverActionLink()
     {
@@ -532,7 +532,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get is subsite
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsIfSubsite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsIfSubsite()
      */
     public function getIsSubsite()
     {
@@ -542,7 +542,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets Gdrive File ID
      * @param string $gdrive_fileid
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveFileId() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveFileId() 
      */
     public function setsGdriveFileId($gdrive_fileid = '')
     {
@@ -552,7 +552,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets Gdrive FileId
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveFileId() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveFileId() 
      */
     public function gDriveFileId()
     {
@@ -562,7 +562,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets Gdrive service
      * @return object|NULL|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveService()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveService()
      */
     public function getGDriveService()
     {
@@ -571,7 +571,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Sets Gdrive service
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveService()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveService()
      */
     public function setGDriveService($service = null)
     {
@@ -581,7 +581,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets Gdrive Auth URL
      * @param string $authurl
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveAuthUrl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveAuthUrl() 
      */
     public function setGdriveAuthUrl($authurl = '')
     {
@@ -591,7 +591,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets Gdrive auth URL
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveAuthUrl() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGDriveAuthUrl() 
      */
     public function getGdriveAuthUrl()
     {
@@ -600,7 +600,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Sets Google Drive client
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGdriveClient() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGdriveClient() 
      */
     public function setGdriveClient($client = null)
     {
@@ -609,7 +609,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Gets Google Drive Client
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGdriveClient() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsGdriveClient() 
      */
     public function getGDriveClient()
     {
@@ -619,7 +619,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get enc key setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsEncSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsEncSetting()
      */
     public function getEncKeySetting()
     {
@@ -629,7 +629,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get important read msg setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsImportantReadMsgSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsImportantReadMsgSetting()
      */
     public function getImportantReadMsgSetting()
     {
@@ -639,7 +639,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get enc config done setting
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetEncConfigDoneSetting()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetEncConfigDoneSetting()
      */
     public function getEncConfigDoneSetting()
     {
@@ -649,7 +649,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * get CLi master tmp files option
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsCliMasterTmpFilesOptions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsCliMasterTmpFilesOptions()
      */
     public function getCliMasterTmpFilesOptions()
     {
@@ -658,7 +658,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get process methods
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessMethods()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessMethods()
      * @param string $current_function
      * @param string $mode
      * @return array
@@ -686,7 +686,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get prime mover backup version option name
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverBackupMarkupVersion()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverBackupMarkupVersion()
      */
     public function getPrimeMoverBackupMarkupVersion()
     {
@@ -696,7 +696,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Cli progress keys
      * @return array|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCliProgressKeys()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCliProgressKeys()
      */
     public function getCliProgressKeys()
     {
@@ -706,7 +706,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover gearbox backup option
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverGearBoxBackupOption() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverGearBoxBackupOption() 
      */
     public function getPrimeMoverGearBoxBackupOption()
     {
@@ -716,7 +716,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get option name for Prime Mover menu backups
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverMenuBackupOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverMenuBackupOption()
      */
     public function getPrimeMoverMenuBackupsOption()
     {
@@ -726,7 +726,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get option name for Prime Mover validated backups
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverValidatedBackupsOption() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverValidatedBackupsOption() 
      */
     public function getPrimeMoverValidatedBackupsOption()
     {
@@ -736,7 +736,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get media encrypted signature
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsEncryptedMediaSignature() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsEncryptedMediaSignature() 
      */
     public function getMediaEncryptedSignature()
     {
@@ -746,7 +746,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get signature file
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsSignatureFile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsSignatureFile()
      */
     public function getSignatureFile()
     {
@@ -756,7 +756,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover import methods
      * @return array|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportMethods() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportMethods() 
      */
     public function getPrimeMoverImportMethods()
     {
@@ -766,7 +766,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover export methods
      * @return array|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportMethods()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportMethods()
      */
     public function getPrimeMoverExportMethods()
     {
@@ -776,7 +776,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover ajax actions
      * @return array|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsAjaxActions()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsAjaxActions()
      */
     public function getPrimeMoverAjaxActions()
     {
@@ -786,7 +786,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get migration current settings
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationCurrentSettings()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationCurrentSettings()
      */
     public function getMigrationCurrentSettings()
     {
@@ -796,7 +796,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * 
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCurrentGearBoxPackagesMetaKey()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCurrentGearBoxPackagesMetaKey()
      */
     public function getCurrentGearBoxPackagesMetaKey()
     {
@@ -806,7 +806,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get upload tmp path slug
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUploadTmpPathSlug()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUploadTmpPathSlug()
      */
     public function getUploadTmpPathSlug()
     {
@@ -817,7 +817,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get error log file
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesErrorLogFile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesErrorLogFile()
      */
     public function getErrorLogFile($blog_id = 0)
     {
@@ -883,7 +883,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * 
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsControlPanelSettingsName()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsControlPanelSettingsName()
      */
     public function getControlPanelSettingsName()
     {
@@ -893,7 +893,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get base directory path setting name
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseDirectoryPathCustomName()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseDirectoryPathCustomName()
      */
     public function getBaseDirectoryPathSettingName()
     {
@@ -903,7 +903,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets if we are importing encrypted dB
      * @param boolean $ret
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptedDbBoolean() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptedDbBoolean() 
      */
     public function setEncryptedDb($ret = false)
     {
@@ -913,7 +913,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets the encrypted dB import status
      * @return boolean
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptedDbBoolean() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptedDbBoolean() 
      */
     public function getEncryptedDb()
     {
@@ -923,7 +923,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get dB encryption key from wp-config.php
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDbEncryptionKey()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDbEncryptionKey()
      */
     public function getDbEncryptionKey()
     {        
@@ -941,7 +941,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Generate site with backups option name
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBackupSitesOptionName()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBackupSitesOptionName()
      */
     public function getBackupSitesOptionName()
     {
@@ -951,7 +951,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * 
      * @return mixed|NULL|array
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDevArgs() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDevArgs() 
      */
     public function getDevArgs()
     {
@@ -961,7 +961,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets if an import process is using dev args
      * @param boolean $ret
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsIsUsingDevArgs() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsIsUsingDevArgs() 
      */
     public function setIsUsingDevArgs($ret = false)
     {
@@ -971,7 +971,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets is using dev args
      * @return boolean
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsIsUsingDevArgs() 
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsIsUsingDevArgs() 
      */
     public function getIsUsingDevArgs()
     {
@@ -981,9 +981,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * 
      * @param boolean $ret
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
      */
     public function setIsNetworkSites($ret = false)
     {
@@ -992,9 +992,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Returns true if on network sites
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnNetworkSitesPage()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itDoesNotAddBodyClassNotOnNetworkSites()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverHookedMethods::itAddsJsBodyClassOnExistingBodyClass() 
      * @return boolean
      */
     public function isNetworkSites()
@@ -1005,7 +1005,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get js body class
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsJsBodyClass()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsJsBodyClass()
      */
     public function getJsBodyClass()
     {
@@ -1015,7 +1015,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get css body class
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCssBodyClass()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCssBodyClass()
      */
     public function getCssBodyClass()
     {
@@ -1024,8 +1024,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
 
     /**
      * Get main site blog ID of the multisite network
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsOneAsMainSiteIdIfSingleSite()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsOneAsMainSiteIdIfSingleSite()
      * @mainsitesupport_affected
      * In multisite, the main site might not be using 1 as the blog ID
      * Rely on the function to get the correct value.
@@ -1056,7 +1056,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param boolean $return_data
      * @param boolean $return_error
      * @return mixed|NULL|array|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserInput
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserInput
      */
     public function getUserInput($method = 'post', $args = null, $validation_id = '', $mode = '', $blog_id = 0, $return_data = false, $return_error = false)
     {
@@ -1071,7 +1071,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param string $mode
      * @param mixed $args
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserInput
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserInput
      */
     protected function filterInputArray($mode = 'post', $args = null)
     {
@@ -1099,8 +1099,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param string $sanitized_name
      * @param number $blog_id
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests()
      */
     public function generateZipDownloadOptionName($sanitized_name = '', $blog_id = 0)
     {
@@ -1113,10 +1113,10 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param boolean $exist_check
      * @param string $custom_path
      * @return NULL|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportDirectoryPath()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullIfBlogIdIsNotSetOnExportDir()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullIfExportDirDoesNotExists()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportDirectoryPathFromInputCustomPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportDirectoryPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullIfBlogIdIsNotSetOnExportDir()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullIfExportDirDoesNotExists()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportDirectoryPathFromInputCustomPath()
      */
     public function getExportDirectoryPath($blog_id = 0, $exist_check = true, $custom_path = '')
     {
@@ -1138,7 +1138,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Set download zip URL
      * @param string $url
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDownloadZipUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDownloadZipUrl()
      */
     public function setDownloadZipURL($url = '') 
     {
@@ -1148,7 +1148,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get download zip URL
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDownloadZipUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDownloadZipUrl()
      */
     public function getDownloadZipURL()
     {
@@ -1159,7 +1159,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Gets core system functions required
      * @return array
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreSystemFunctions() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreSystemFunctions() 
      */
     public function getCoreSystemFunctions() 
     {
@@ -1168,7 +1168,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -1180,7 +1180,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get import ID
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportId()
      */
     public function getImportId()
     {
@@ -1190,7 +1190,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * @compatible 5.6
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportId()
      */
     public function getExportId()
     {
@@ -1201,7 +1201,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Set import ID
      * @param string $uniqid
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportId()
      */
     public function setImportId($uniqid = '')
     {
@@ -1212,7 +1212,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Set export ID
      * @param string $uniqid
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportId()
      */
     public function setExporttId($uniqid = '')
     {
@@ -1221,7 +1221,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Initialize file system API helper
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesWpFilesystem()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesWpFilesystem()
      */
     protected function initializeFileSystemApi()
     {
@@ -1249,9 +1249,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Initialize WP Filesystem
      * Hooked to `admin_init`
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesWpFilesystem()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeFileSystemOnErrors()
-     * @tested PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeWhenNotUsingDirectMethod()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesWpFilesystem()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeFileSystemOnErrors()
+     * @tested GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeWhenNotUsingDirectMethod()
      */
     public function multisiteInitializeWpFilesystemApi()
     {
@@ -1287,7 +1287,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get default base backup directory
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDefaultBackupDir() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDefaultBackupDir() 
      */
     public function getDefaultBaseBackupDir() 
     {
@@ -1298,7 +1298,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Set if subsite
      * @param boolean $subsite
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsIfSubsite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsIfSubsite()
      */
     public function setIsSubsite($subsite = false)
     {
@@ -1311,7 +1311,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @see PrimeMoverSystemInitialization::primeMoverCreateFolder()
      * Hooked to `init`
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesPrimeMoverFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesPrimeMoverFolder()
      */
     public function primeMoverCreateFolder()
     {
@@ -1330,9 +1330,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Creates folder for storing publicly available symlinks.
      * Easy storage for easy maintenance and deletion after downloads
      * Hooked to `init`
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotCreateTmpDownloadsDirIfNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotCreateTmpDownloadsDirIfNotSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itCreatesTmpDownloadsFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotCreateTmpDownloadsDirIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotCreateTmpDownloadsDirIfNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itCreatesTmpDownloadsFolder()
      */
     public function primeMoverCreateTmpDownloadsFolder()
     {
@@ -1348,7 +1348,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get lock folder created
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesLockFilesFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesLockFilesFolder()
      */
     public function getLockFolderCreated()
     {
@@ -1358,7 +1358,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Create lock files directory
      * Hooked on `init` - priority 1
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesLockFilesFolder() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesLockFilesFolder() 
      */
     public function primeMoverCreateLockFilesFolder()
     {
@@ -1375,7 +1375,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get lock files folder slug
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsLockFilesFolderSlug()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsLockFilesFolderSlug()
      */
     public function getLockFilesFolderSlug()
     {
@@ -1385,7 +1385,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get lock files folder path
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsLockFilesFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsLockFilesFolder()
      */
     public function getLockFilesFolder()
     {
@@ -1410,8 +1410,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
 
     /**
      * Get export folder
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderFromBaseDirectory()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderFromInput() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderFromBaseDirectory()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderFromInput() 
      * @param string $basedir
      * @param boolean $allow_filters
      * @param boolean $force_subsite
@@ -1432,7 +1432,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get tmp downloads folder slug
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsSlug() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsSlug() 
      */
     public function getTmpDownloadsFolderSlug()
     {
@@ -1442,8 +1442,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get tmp downloads folder
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsFolder()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyWhenTmpBaseIsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyWhenTmpBaseIsNotSet() 
      */
     public function getTmpDownloadsFolder()
     {
@@ -1458,8 +1458,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get tmp downloads URL
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsUrl()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyWhenDownloadUrlNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDownloadsUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyWhenDownloadUrlNotSet() 
      */
     public function getTmpDownloadsUrl()
     {        
@@ -1473,9 +1473,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get base backup directory
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryWithAllowFiltersFalse() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryFromWpUploadsDir() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyBaseBackupDirectoryIfNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryWithAllowFiltersFalse() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryFromWpUploadsDir() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyBaseBackupDirectoryIfNotSet()
      * 
      * @param boolean $allow_filters
      * @param boolean $force_subsite_load
@@ -1512,7 +1512,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Returns the TRUE WordPress root wp_uploads_dir information that is compatible to both single-site/multisite 
      * and even non-standard/customized multisite configurations
      * @return array|mixed|string|NULL
-     * @tested Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization::getBackupBaseDirectory()
+     * @tested GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization::getBackupBaseDirectory()
      */
     public function getInitializedWpRootUploads($clear_cache = false)
     {
@@ -1532,7 +1532,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get realpath
      * @param string $path
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryWithAllowFiltersFalse()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsBaseBackupDirectoryWithAllowFiltersFalse()
      */
     public function realPath($path = '')
     {
@@ -1558,8 +1558,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Nginx server should manually add this protection in their config files
      * Hooked to `admin_init` right after WP_FileSystem Initialization
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeDirectoryProtectionNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeDirectoryProtectionNotAuthorized()
      */
     public function initializeExportDirectoryProtection()
     {
@@ -1580,7 +1580,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Return addType mime directive for WPRIME package
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itInitializesExportDirectoryProtection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itInitializesExportDirectoryProtection()
      */
     protected function returnAddTypeWprimeMime()
     {
@@ -1595,7 +1595,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Initialize htaccess
      * @param string $export_folder
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
      */
     protected function initializeHtAccess($export_folder = '', $add_wprime_mime_type = false)
     {
@@ -1617,7 +1617,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Initialize basic index HTML
      * @param string $path
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirectoryProtection()
      */
     protected function initializeIndexHTML($path = '')
     {
@@ -1636,7 +1636,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get multisite export folder slug
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderSlug()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMultisiteExportFolderSlug()
      */
     public function getMultisiteExportFolderSlug()
     {
@@ -1645,8 +1645,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Initialize export dir identity
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirIdentity() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeExportDirIdentityNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesExportDirIdentity() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeExportDirIdentityNotAuthorized()
      */
     public function initializeExportDirIdentity()
     {
@@ -1668,8 +1668,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Initialize troubleshooting log
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesTroubleshootingLog()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeTroubleShootingLogNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesTroubleshootingLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeTroubleShootingLogNotAuthorized()
      */
     public function initializeTroubleShootingLog()
     {
@@ -1678,7 +1678,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Initialize site info log
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesSiteInfoLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesSiteInfoLog() 
      */
     public function initializeSiteInfoLog()
     {
@@ -1686,8 +1686,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesTroubleshootingLog()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeTroubleShootingLogNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itInitializesTroubleshootingLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeTroubleShootingLogNotAuthorized()
      * @param string $logtype
      */
     protected function initializeLogsHelper($logtype = 'migration')
@@ -1726,7 +1726,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get multisite_wp_filesystem_initialized
      * @compatible 5.6
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeWhenNotUsingDirectMethod()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotInitializeWhenNotUsingDirectMethod()
      */
     public function getMultisiteWpFilesystemInitialized()
     {
@@ -1737,7 +1737,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get zip mime types
      * @compatible 5.6
      * @return array
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itShowsCoreImportButton() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itShowsCoreImportButton() 
      */
     public function getZipMimeTypes()
     {
@@ -1748,7 +1748,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get plugin URI
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPluginUri()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPluginUri()
      */
     public function getPluginUri()
     {
@@ -1759,7 +1759,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get plugin file
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPluginFile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPluginFile()
      */
     public function getPluginFile()
     {
@@ -1770,8 +1770,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get WordPress dB connection instance
      * @return NULL|string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsConnectionInstance()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullConnectionInstanceIfNotMySQLi() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsConnectionInstance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsNullConnectionInstanceIfNotMySQLi() 
      */
     public function getConnectionInstance()
     {
@@ -1788,7 +1788,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets temporary import package path
      * @param string $unzipped_directory
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromGetter()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromGetter()
      * @compatible 5.6
      */
     public function setTemporaryImportPackagePath($unzipped_directory ='') 
@@ -1799,7 +1799,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets temporary export package path
      * @param string $temp_folder_path
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromGetter() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromGetter() 
      * @compatible 5.6
      */
     public function setTemporaryExportPackagePath($temp_folder_path = '') 
@@ -1810,8 +1810,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Gets temporary import package path
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromGetter()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromFilter() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromGetter()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryImportPackagePathFromFilter() 
      */
     public function getTemporaryImportPackagePath($import_blogid = 0) 
     {        
@@ -1829,8 +1829,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Gets temporary export package path
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromGetter() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromFilter() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromGetter() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTemporaryExportPackagePathFromFilter() 
      * @compatible 5.6
      */
     public function getTemporaryExportPackagePath($export_blogid = 0) 
@@ -1851,8 +1851,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Sets blog ID under import
      * @param int $blog_id
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
      */
     public function setImportBlogID($blog_id = 0) 
     {
@@ -1865,7 +1865,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Sets blog ID under export
      * @param int $blog_id
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportBlogId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportBlogId()
      */
     public function setExportBlogID($blog_id = 0) 
     {
@@ -1875,7 +1875,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get import blog ID under import
      * @compatible 5.6
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
      */
     public function getImportBlogID() 
     {
@@ -1886,7 +1886,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get export blog ID
      * @compatible 5.6
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportBlogId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportBlogId()
      */
     public function getExportBlogID() 
     {
@@ -1897,8 +1897,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Set import zip path
      * @compatible 5.6
      * @param string $import_zip
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage() 
      */
     public function setImportZipPath($import_zip = '') 
     {
@@ -1909,7 +1909,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get import zip path
      * @compatible 5.6
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError()
      */
     public function getImportZipPath() 
     {
@@ -1920,7 +1920,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Set export zip path
      * @compatible 5.6
      * @param string $import_zip
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportZipPath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportZipPath() 
      */
     public function setExportZipPath($export_zip = '')
     {
@@ -1931,7 +1931,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get export path
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportZipPath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportZipPath() 
      */
     public function getExportZipPath($export_blogid = 0) 
     {
@@ -1952,8 +1952,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Sets legacy multisite status
      * @param bool $legacy
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfLegacyMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotLegacyMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfLegacyMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotLegacyMultisite()
      */
     public function setLegacyMultisite($legacy = false ) 
     {
@@ -1964,8 +1964,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Checks if site is legacy multisite
      * @compatible 5.6
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfLegacyMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotLegacyMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfLegacyMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotLegacyMultisite()
      */
     public function getLegacyMultisite() 
     {
@@ -1976,7 +1976,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get Processing plugin path
      * @compatible 5.6
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessingPluginPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessingPluginPath()
      */
     public function getProcessingPluginPath() 
     {
@@ -1986,7 +1986,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get download URL given parameters
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenAllSet()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverExporter::itGeneratesDownloadURLWhenAllSet()
      * @param array $args
      * @param boolean $admin_mode
      * @return string
@@ -2008,8 +2008,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get error log option of blog
      * @param number $blog_id
      * @return string
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
-     * @tested PrimeMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests() 
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansBackupDirectoryUponRequests()
+     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemUtilities::itCleansAllBackupDirectoryFilesUponRequests() 
      */
     public function getErrorLogOptionOfBlog($blog_id = 0)
     {
@@ -2020,10 +2020,10 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get IP address of user
      * @return string
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnRemoteAddr() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnHttpClientIp()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnHttpForwardIp() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnShell() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnRemoteAddr() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnHttpClientIp()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnHttpForwardIp() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserIpOnShell() 
      */
     public function getUserIp()
     {
@@ -2060,9 +2060,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get user agent
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserAgent() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserAgentFromShell() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfUserAgentIsNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserAgent() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsUserAgentFromShell() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfUserAgentIsNotSet() 
      */
     public function getUserAgent()
     {
@@ -2084,8 +2084,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Generate hash by user
      * @return boolean|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesHashByUser() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseToGenerateHashIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesHashByUser() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseToGenerateHashIfUnauthorized()
      */
     public function generateHashByUser()
     {
@@ -2112,10 +2112,10 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Generate troubleshooting log name
      * @param string $logtype
      * @return boolean|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesMigrationTroubleshootingFilename()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesSiteInformationLogFileName()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGenerateLogFileIfNotAuthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGenerateLogFileIfHashIsFalse()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesMigrationTroubleshootingFilename()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesSiteInformationLogFileName()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGenerateLogFileIfNotAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGenerateLogFileIfHashIsFalse()
      */
     public function generateTroubleShootingLogFileName($logtype = 'migration')
     {
@@ -2136,8 +2136,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Check if we are using core logging mode
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreMigrationTroubleshootingLogPath()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCustomerMigrationTroubleshootingLogPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreMigrationTroubleshootingLogPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCustomerMigrationTroubleshootingLogPath()
      */
     private function coreLoggingMode()
     {
@@ -2153,8 +2153,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get troubleshooting log path
      * @param string $logtype
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreMigrationTroubleshootingLogPath() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCustomerMigrationTroubleshootingLogPath()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreMigrationTroubleshootingLogPath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCustomerMigrationTroubleshootingLogPath()
      */
     public function getTroubleShootingLogPath($logtype = 'migration')
     {        
@@ -2175,9 +2175,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get domain | host
      * @param string $url
      * @return array|false
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDomainOfCurrentSite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyStringOnParseURLError()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDomainOfPassedURL() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDomainOfCurrentSite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyStringOnParseURLError()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDomainOfPassedURL() 
      */
     public function getDomain($url = '')
     {
@@ -2196,7 +2196,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get error hash option
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsErrorHashOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsErrorHashOption()
      */
     public function getErrorHashOption()
     {
@@ -2206,8 +2206,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Checks if uploading chunk
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfUploadingChunk() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotUploadingChunk()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfUploadingChunk() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseIfNotUploadingChunk()
      */
     public function isUploadingChunk()
     {
@@ -2220,10 +2220,10 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Return uploader identity
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsUploaderIdentityIfUploadingInAdmin() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfNotUploadingInAdmin()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUnauthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUploadingIsFalse()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsUploaderIdentityIfUploadingInAdmin() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfNotUploadingInAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUploadingIsFalse()
      */
     public function getUploaderIdentity()
     {
@@ -2233,10 +2233,10 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Set user uploader identity
      * @param boolean $uploading
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsUploaderIdentityIfUploadingInAdmin() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfNotUploadingInAdmin()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUnauthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUploadingIsFalse()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsUploaderIdentityIfUploadingInAdmin() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfNotUploadingInAdmin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEmptyIdentityIfUploadingIsFalse()
      */
     public function setUploaderIdentity($uploading = false)
     {        
@@ -2257,8 +2257,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get core components
      * @return array|mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreComponents()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGetCoreComponentsIfUnAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCoreComponents()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGetCoreComponentsIfUnAuthorized()
      */
     public function getCoreComponents()
     {
@@ -2273,8 +2273,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Set encrypt export data
      * @param boolean $encrypt
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseEncryptionExportDataUnauthorized()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionExportDataIfAuthorized() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsFalseEncryptionExportDataUnauthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionExportDataIfAuthorized() 
      */
     public function setEncryptExportData($encrypt = false)
     {
@@ -2286,8 +2286,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Checks if we need to encrypt export data
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsEncryptedExportDataFromProgress()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionExportDataIfAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsEncryptedExportDataFromProgress()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionExportDataIfAuthorized()
      * @param array $ret
      * @return boolean
      */
@@ -2306,8 +2306,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
 
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itRandomizesDbPrefix()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGetRandomizesDbPrefixIfUnAuthorized()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itRandomizesDbPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotGetRandomizesDbPrefixIfUnAuthorized()
      * Set randomize dB prefix
      * @param boolean $randomize
      */
@@ -2320,8 +2320,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Checks if we need to randomize dB prefix
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itRandomizesDbPrefix()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRandomPrefixFromSavedProgress() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itRandomizesDbPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRandomPrefixFromSavedProgress() 
      * @param array $ret
      * @return boolean
      */
@@ -2342,7 +2342,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Sets random prefix
      * @param string $random_prefix
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsRandomDbPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsRandomDbPrefix()
      */
     public function setRandomDbPrefix($random_prefix = '')
     {
@@ -2351,8 +2351,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Gets random prefix
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsRandomDbPrefix()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRandomPrefixFromActiveFilter()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsRandomDbPrefix()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRandomPrefixFromActiveFilter()
      * @mainsitesupport_affected
      * @param array $ret
      * @return string
@@ -2375,8 +2375,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Set encrypted password for zip
      * @param \ZipArchive $zip
      * @return \\ZipArchive
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionPassword()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotSetEncryptionPasswordKeyNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itSetsEncryptionPassword()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itDoesNotSetEncryptionPasswordKeyNotSet()
      */
     public function setEncryptionPassword(\ZipArchive $zip)
     {
@@ -2390,7 +2390,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Common wrong target site error
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsWrongSiteImportError()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsWrongSiteImportError()
      */
     public function returnCommonWrongTargetSiteError()
     {
@@ -2400,7 +2400,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get common media decryption error
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsCommonMediaDecryptionError()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsCommonMediaDecryptionError()
      */
     public function returnCommonMediaDecryptionError()
     {
@@ -2410,7 +2410,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get prime mover large filesize
      * @return mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverLargeFileSize() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverLargeFileSize() 
      */
     public function getPrimeMoverLargeFileSize()
     {
@@ -2429,8 +2429,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get auth key
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsAuthKeyIfSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfAuthKeyIsNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsAuthKeyIfSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfAuthKeyIsNotSet()
      */
     public function getAuthKey()
     {
@@ -2444,8 +2444,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get http host if defined
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsHttpHostIfSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyHttpHostIfNotSet() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsHttpHostIfSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyHttpHostIfNotSet() 
      */
     public function getHttpHost()
     {
@@ -2459,8 +2459,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get http host if defined
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsRequestMethodIfSet()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfRequestMethodIsNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsRequestMethodIfSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsEmptyIfRequestMethodIsNotSet()
      */
     public function getRequestMethod()
     {
@@ -2474,7 +2474,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Is CLI environment
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfCli() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itReturnsTrueIfCli() 
      */
     public function isCliEnvironment()
     {
@@ -2484,7 +2484,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get start time
      * @return mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsValidStartTime()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsValidStartTime()
      */
     public function getStartTime()
     {
@@ -2494,7 +2494,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get cli must use plugin path
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCliPluginPath() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsCliPluginPath() 
      */
     public function getCliMustUsePluginPath()
     {
@@ -2514,9 +2514,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get migration tools URL
      * @param boolean $relative
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationToolsUrlInSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationToolsUrlInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRelativeMigrationToolsUrl()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationToolsUrlInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMigrationToolsUrlInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsRelativeMigrationToolsUrl()
      */
     public function getMigrationToolsUrl($relative = false)
     {
@@ -2533,7 +2533,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsZipArchiveInstance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsZipArchiveInstance()
      * Get zip archive instance
      * @param boolean $return_wp_error
      * @return \WP_Error|\ZipArchive
@@ -2551,7 +2551,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get directory iterator instance
      * @param string $dir
      * @return \DirectoryIterator
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDirectoryIteratorInstance()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsDirectoryIteratorInstance()
      */
     public function getDirectoryIteratorInstance($dir = '')
     {
@@ -2565,7 +2565,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param string $shell_progress_key
      * @param boolean $forcecreate
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesCliReprocessingTmpName()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGeneratesCliReprocessingTmpName()
      */
     public function generateCliReprocessingTmpName($ret = [], $process_id = '', $shell_progress_key = '', $forcecreate = false)
     {
@@ -2607,7 +2607,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param boolean $forcecreate
      * @param array $ret
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDirFromTmpFile() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsTmpDirFromTmpFile() 
      */
     protected function getTmpDirFromTmpFile($forcecreate = false, $ret = [])
     {
@@ -2637,7 +2637,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get process id based on given action
      * @param string $action
      * @return void|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessIdBasedOnAction() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsProcessIdBasedOnAction() 
      */
     public function getProcessIdBasedOnGivenAction($action = '')
     {
@@ -2655,7 +2655,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get MySQL PHP dump batch size
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMySQLDumpBatchSize()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsMySQLDumpBatchSize()
      */
     public function getMySqlDumpPHPBatchSize()
     {
@@ -2667,7 +2667,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Outputs default 20-seconds interval for remote servers
      * And 5 seconds interval for local servers
      * @return number|string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultUploadRefreshInterval()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultUploadRefreshInterval()
      */
     public function getDefaultUploadRefreshInterval()
     {
@@ -2681,7 +2681,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Checks if local server
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itChecksIfLocalServer()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itChecksIfLocalServer()
      */
     public function isLocalServer()
     {
@@ -2709,7 +2709,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get contact us page
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsContactUsPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsContactUsPage() 
      */
     public function getContactUsPage()
     {
@@ -2723,8 +2723,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get upgrade URL
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsUpgradeUrlInSingleSite()
      */
     public function getUpgradeUrl()
     {
@@ -2740,7 +2740,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get Core Wordpress Tables only
      * @param number $blog_id
      * @return array|string|string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsWpCoreTables()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsWpCoreTables()
      */
     public function getCoreWpTables($blog_id = 0)
     {
@@ -2765,7 +2765,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Default export and restore button class
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultButtonClasses() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsDefaultButtonClasses() 
      */
     public function defaultButtonClasses()
     {
@@ -2780,7 +2780,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * 
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsUserUnderstandMainSiteOnly()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsUserUnderstandMainSiteOnly()
      */
     public function getUserUnderstandMainSiteOnly()
     {
@@ -2790,8 +2790,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Single-site compatible switch to blog
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSwitchesToBlogWhenMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotSwitchBlogWhenSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSwitchesToBlogWhenMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itDoesNotSwitchBlogWhenSingleSite()
      */
     public function switchToBlog($blog_id = 0)
     {
@@ -2804,8 +2804,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Single-site compatible restoreCurrentBlog
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRestoresCurrentBlogOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsCurrentRestoreBlogOnSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRestoresCurrentBlogOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsCurrentRestoreBlogOnSingleSite()
      */
     public function restoreCurrentBlog()
     {
@@ -2821,7 +2821,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * @param string $filename
      * @param string $dir
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itCallsWpTempNam()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itCallsWpTempNam()
      */
     public function wpTempNam($filename = '', $dir = '')
     {        
@@ -2834,8 +2834,8 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get instance of Prime Mover Plugin Manager
-     * @return \Codexonics\PrimeMoverFramework\general\PrimeMoverMustUsePluginManager|NULL
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPluginManagerInstance($instance=null)
+     * @return \GreenMainframe\GMMoverFramework\general\PrimeMoverMustUsePluginManager|NULL
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPluginManagerInstance($instance=null)
      */
     public function getPrimeMoverPluginManagerInstance()
     {
@@ -2850,7 +2850,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get browser file upload size limit
      * Defaults to 2GB for best user experience and cross browser compatibility
      * @return mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsBrowserFileUploadsLimit()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsBrowserFileUploadsLimit()
      */
     public function getBrowserFileUploadSizeLimit()
     {
@@ -2860,7 +2860,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover menu slug
      * @return mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverSlug()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverSlug()
      */
     public function getPrimeMoverMenuSlug()
     {
@@ -2870,7 +2870,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Get Prime Mover plugin title
      * @return mixed|NULL|array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverPluginTitle()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverPluginTitle()
      */
     public function getPrimeMoverPluginTitle()
     {
@@ -2881,7 +2881,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Get all Prime Mover core directories
      * @param boolean $include_export_defaults
      * @return string[]
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverCoreDirectories()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverCoreDirectories()
      */
     public function getPrimeMoverCoreDirectories($include_export_defaults = true)
     {

@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -39,7 +39,7 @@ class PrimeMoverShutdownUtilities
 
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -81,7 +81,7 @@ class PrimeMoverShutdownUtilities
     /**
      * Get parameters
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
      */
     public function getParameters()
     {
@@ -98,7 +98,7 @@ class PrimeMoverShutdownUtilities
      * @param string $hash_option
      * @return boolean|mixed|boolean|NULL|array
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itStreamsErrorLog() 
      */
     public function getErrorHash( $blog_id = 0, $hash_option = '') 
     {
@@ -155,7 +155,7 @@ class PrimeMoverShutdownUtilities
      * Get Processed blog ID
      * @return number
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itGetsProcessedBlogId()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itGetsProcessedBlogId()
      */
     public function primeMoverGetProcessedID() 
     {
@@ -179,8 +179,8 @@ class PrimeMoverShutdownUtilities
      * @param string $error_hash
      * @param string $hash_option
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itLogsErrorHash()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itDoesNotLogErrorHashIfBlogIdIsNotSet()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itLogsErrorHash()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverShutdownUtilities::itDoesNotLogErrorHashIfBlogIdIsNotSet()
      */
     public function logErrorHash( $blog_id = 0, $error_hash = '', $hash_option = '' )
     {
@@ -200,8 +200,8 @@ class PrimeMoverShutdownUtilities
     
     /**
      * Get Processed path
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDeletesPackageOnFatalError() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itDoesNotDeletePackageUserCreatedPackage()
      * @param number $blog_id
      * @return string[]|mixed[]
      * @compatibility 5.6
@@ -235,7 +235,7 @@ class PrimeMoverShutdownUtilities
 
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatibility 5.6
      */
     public function getSystemFunctions()
@@ -245,7 +245,7 @@ class PrimeMoverShutdownUtilities
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

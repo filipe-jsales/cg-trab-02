@@ -1,10 +1,10 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
@@ -43,7 +43,7 @@ class GMMover
     
     /**
      * Gets System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()
@@ -53,7 +53,7 @@ class GMMover
 
     /**
      * Gets hooked methods
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverHookedMethods
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverHookedMethods
      * @compatible 5.6
      */
     public function getHookedMethods()
@@ -63,7 +63,7 @@ class GMMover
     
     /**
      * Gets System Processors
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemProcessors
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemProcessors
      * @compatible 5.6
      */
     public function getSystemProcessors()
@@ -73,7 +73,7 @@ class GMMover
     
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()
@@ -83,7 +83,7 @@ class GMMover
     
     /**
      * Get Importer
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter
      * @compatible 5.6
      */
     public function getImporter()
@@ -93,7 +93,7 @@ class GMMover
 
     /**
      * Get exporter
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverExporter
      * @compatible 5.6
      */
     public function getExporter()
@@ -103,7 +103,7 @@ class GMMover
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      * @compatible 5.6
      */
     public function getSystemFunctions()
@@ -113,7 +113,7 @@ class GMMover
     
     /**
      * Get System checks
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemChecks
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemChecks
      * @compatible 5.6
      */
     public function getSystemChecks()
@@ -124,9 +124,9 @@ class GMMover
     /**
      * Hook in methods
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsInitHooksOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsInitHooksOnSingleSite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsInitHooksOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsInitHooksOnSingleSite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itChecksIfHooksAreOutdated()
      */
     public function primeMoverLoadHooks()
     {        
@@ -190,7 +190,7 @@ class GMMover
     
     /**
      * Load plugin text domain
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itLoadsPluginTextDomain()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itLoadsPluginTextDomain()
      */
     public function loadPluginTextdomain()
     {
@@ -199,7 +199,7 @@ class GMMover
     
     /**
      * Settings page cleanup
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRemovesDistractionOnSettingsPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRemovesDistractionOnSettingsPage()
      */
     public function removeDistractionsOnSettingsPage()
     {
@@ -208,7 +208,7 @@ class GMMover
     
     /**
      * Add menu page
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsMenuPage() :
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsMenuPage() :
      */
     public function addMenuPage()
     {
@@ -222,9 +222,9 @@ class GMMover
     
     /**
      * Add export - import option to single site
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsExportImportSingleSiteOption()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itDoesNotAddExportImportSingleOptionInMultisite() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itDoesNotExportImportSingleOptionIfNotCorrectPage() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsExportImportSingleSiteOption()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itDoesNotAddExportImportSingleOptionInMultisite() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itDoesNotExportImportSingleOptionIfNotCorrectPage() 
      */
     public function addExportImportOptionsSingleSite()
     {
@@ -245,7 +245,7 @@ class GMMover
      * @param array $column_headers
      * @return array|void|string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsNetworkColumns()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsNetworkColumns()
      */
     public function primeMoverAddNetworkColumn($column_headers = [])
     {
@@ -257,7 +257,7 @@ class GMMover
      * @param string $classes
      * @return string
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsJsBodyClassOnNetworkSitesPage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsJsBodyClassOnNetworkSitesPage()
      */
     public function addJsBodyClassOnNetworkSitesPage($classes = '')
     {
@@ -269,7 +269,7 @@ class GMMover
      * @param string $column_name
      * @param number $blog_id
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itShowsPrimeMoverExportSection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itShowsPrimeMoverExportSection()
      */
     public function primeMoverExportSection($column_name = '', $blog_id = 0)
     {
@@ -281,7 +281,7 @@ class GMMover
      * @param string $column_name
      * @param number $blog_id
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itShowsPrimeMoverImportSection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itShowsPrimeMoverImportSection()
      */
     public function primeMoverImportSection($column_name = '', $blog_id = 0)
     {
@@ -292,7 +292,7 @@ class GMMover
      * Enqueue scripts
      * @param string $hook
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itEnqueuesPrimeMoverScripts() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itEnqueuesPrimeMoverScripts() 
      */
     public function primeMoverEnqueueScripts($hook = '')
     {
@@ -302,7 +302,7 @@ class GMMover
     /**
      * Show network admin notice
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itShowsMultisiteNetworkAdminNotice()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itShowsMultisiteNetworkAdminNotice()
      */
     public function multisiteShowNetworkAdminNotice()
     {
@@ -314,7 +314,7 @@ class GMMover
      * *******************
      */
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverExportProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverExportProcessor()
      */
     public function primeMoverExportProcessor()
     {
@@ -322,7 +322,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverImportProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverImportProcessor()
      */
     public function primeMoverImportProcessor()
     {
@@ -330,7 +330,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsImportProgressProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsImportProgressProcessor()
      */
     public function primeMoverImportProgressProcessor()
     {
@@ -338,7 +338,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itProcessesDeleteTmpFileProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itProcessesDeleteTmpFileProcessor()
      */
     public function primeMoverTempfileDeleteProcessor()
     {
@@ -346,7 +346,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverUploadsProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverUploadsProcessor()
      */
     public function primeMoverUploadsProcessor()
     {
@@ -354,7 +354,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsExportProgressProcessor() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsExportProgressProcessor() 
      */
     public function primeMoverExportProgressProcessor()
     {
@@ -362,7 +362,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverShutdownExportProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverShutdownExportProcessor()
      */
     public function primeMoverShutdownExportProcessor()
     {
@@ -370,7 +370,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverShutdownImportProcessor()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itRunsPrimeMoverShutdownImportProcessor()
      */
     public function primeMoverShutdownImportProcessor()
     {
@@ -378,7 +378,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itVerifyEncryptedPackage()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itVerifyEncryptedPackage()
      */
     public function primeMoverVerifyEncryptedPackage()
     {
@@ -390,7 +390,7 @@ class GMMover
      */
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itCreatesFolder()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itCreatesFolder()
      */
     public function primeMoverCreateFolder()
     {
@@ -398,7 +398,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itCreateTmpDownloadsFolder() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itCreateTmpDownloadsFolder() 
      */
     public function primeMoverCreateTmpDownloadsFolder()
     {
@@ -414,7 +414,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesWpFileSystemApi()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesWpFileSystemApi()
      */
     public function multisiteInitializeWpFilesystemApi()
     {
@@ -422,7 +422,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesWpFileSystemApiCli() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesWpFileSystemApiCli() 
      */
     public function multisiteInitializeWpFilesystemApiCli()
     {
@@ -430,7 +430,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesExportSiteDirectory() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesExportSiteDirectory() 
      */
     public function initializeSiteExportDirectory()
     {
@@ -438,7 +438,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesExportDirectoryProtection() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesExportDirectoryProtection() 
      */
     public function initializeExportDirectoryProtection()
     {
@@ -446,7 +446,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesTroubleShootingLog() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesTroubleShootingLog() 
      */
     public function initializeTroubleShootingLog()
     {
@@ -454,7 +454,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesSiteInfoLog()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesSiteInfoLog()
      */
     public function initializeSiteInfoLog()
     {
@@ -462,7 +462,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesExportDirIdentity() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesExportDirIdentity() 
      */
     public function initializeExportDirIdentity()
     {
@@ -470,7 +470,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itInitializesCliMustUsePlugin()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itInitializesCliMustUsePlugin()
      */
     public function initializeCliMustUsePlugin()
     {
@@ -503,7 +503,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsZipFileTypeSupport()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsZipFileTypeSupport()
      * @param string $value
      * @param string $option
      * @param number $network_id
@@ -515,7 +515,7 @@ class GMMover
     }
     
     /**
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMover::itAddsPluginActionLinks()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMover::itAddsPluginActionLinks()
      * @param array $actions
      * @param string $plugin_file
      * @param array $plugin_data

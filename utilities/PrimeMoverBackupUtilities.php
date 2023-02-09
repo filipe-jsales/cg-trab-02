@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -40,7 +40,7 @@ class PrimeMoverBackupUtilities
     /**
      * Is refreshing backup
      * @param boolean $is_refreshing_backup
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfRefreshingbackup() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfRefreshingbackup() 
      */
     public function setIsRefreshingBackup($is_refreshing_backup = false)
     {
@@ -50,7 +50,7 @@ class PrimeMoverBackupUtilities
     /**
      * Checks refresh backup status
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfRefreshingbackup() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfRefreshingbackup() 
      */
     public function isRefreshingBackup()
     {
@@ -59,7 +59,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Maybe Refresh backup data
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itMaybeRefreshBackupsData() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itMaybeRefreshBackupsData() 
      * @param string $backups_hash_db
      * @param string $current_backup_hash
      * @param boolean $markup
@@ -99,7 +99,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -108,7 +108,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -117,7 +117,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Get system initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -126,7 +126,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -138,7 +138,7 @@ class PrimeMoverBackupUtilities
      * @param array $backups
      * @param number $blog_id
      * @return boolean|mixed
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itGetsBackupHashInDb()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itGetsBackupHashInDb()
      */
     public function getBackupsHashInDb($backups = [], $blog_id = 0)
     {
@@ -215,7 +215,7 @@ class PrimeMoverBackupUtilities
      * @param array $backups
      * @param number $blog_id
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itComputesBackupHash() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itComputesBackupHash() 
      */
     public function computeBackupHash($backups = [], $blog_id = 0)
     {
@@ -238,7 +238,7 @@ class PrimeMoverBackupUtilities
      * Checks if blog is usable provided by blog ID
      * @param number $blog_id
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfBlogIdIsUsable()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itChecksIfBlogIdIsUsable()
      * @mainsitesupport_affected
      * 
      * Since 1.2.0, its possible to have blog ID of 1 and that is on a multisite main site.
@@ -252,9 +252,9 @@ class PrimeMoverBackupUtilities
     /**
      * Show delete section
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itAppendsBlogIdOnBackupMenuUrlOnMultisite()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itRendersBackupSectionWhenItsEmpty()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverBackupUtilities::itRendersBackupSection()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itAppendsBlogIdOnBackupMenuUrlOnMultisite()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itRendersBackupSectionWhenItsEmpty()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverBackupUtilities::itRendersBackupSection()
      */
     public function primeMoverManageBackupsSection($blog_id = 0)
     {        

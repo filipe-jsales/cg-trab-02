@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\compatibility;
+namespace GreenMainframe\GMMoverFramework\compatibility;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -58,7 +58,7 @@ class PrimeMoverCachingCompat
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -67,7 +67,7 @@ class PrimeMoverCachingCompat
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -76,7 +76,7 @@ class PrimeMoverCachingCompat
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -85,8 +85,8 @@ class PrimeMoverCachingCompat
         
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -97,7 +97,7 @@ class PrimeMoverCachingCompat
     
     /**
      * Block free restore if caching enabled
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsBlocksRestoreCachingEnabled()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsBlocksRestoreCachingEnabled()
      */
     public function addBlockFreeRestoreCachingEnabled()
     {
@@ -111,7 +111,7 @@ class PrimeMoverCachingCompat
     /**
      * Generate error markup text
      * @return string
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsBlocksRestoreCachingEnabled()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itAddsBlocksRestoreCachingEnabled()
      */
     protected function generateErrorMarkupText()
     {
@@ -137,7 +137,7 @@ class PrimeMoverCachingCompat
      * This is only used when wp-config is not writable.
      * @param array $args
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itMaybeBlockRestoreIfCachingEnabled()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itMaybeBlockRestoreIfCachingEnabled()
      * @deprecated
      */
     public function maybeBlockRestoreIfCacheEnabled(array $args)
@@ -159,7 +159,7 @@ class PrimeMoverCachingCompat
      * @param array $ret
      * @param number $blog_id
      * @return void
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverCachingCompat::itMaybeRestoreWpCacheConstant()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCachingCompat::itMaybeRestoreWpCacheConstant()
      */
     public function maybeRestoreWpCacheConstant($ret = [], $blog_id = 0)
     {

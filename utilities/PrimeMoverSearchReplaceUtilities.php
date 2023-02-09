@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\GMMover;
+use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -218,7 +218,7 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -227,7 +227,7 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Get system authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {
@@ -236,7 +236,7 @@ class PrimeMoverSearchReplaceUtilities
  
     /**
      * Get System Initialization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
      */
     public function getSystemInitialization()
     {
@@ -245,7 +245,7 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Get system check utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities
      */
     public function getSystemCheckUtilities()
     {
@@ -254,7 +254,7 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Get system functions
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemFunctions
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions
      */
     public function getSystemFunctions()
     {
@@ -264,8 +264,8 @@ class PrimeMoverSearchReplaceUtilities
     /**
      * Init hooks
      * @compatible 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itChecksIfHooksAreOutdated() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itChecksIfHooksAreOutdated() 
      */
     public function initHooks()
     {
@@ -1261,7 +1261,7 @@ class PrimeMoverSearchReplaceUtilities
      * @param array $replaceables
      * @param array $basic_parameters
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAdjustsForMixedContent()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAdjustsForMixedContent()
      */
     public function maybeAdjustForMixedContent($upload_phrase = [], $ret = [], $replaceables = [], $basic_parameters = [])
     {
@@ -1356,8 +1356,8 @@ class PrimeMoverSearchReplaceUtilities
      * @param number $blogid_to_import
      * @param array $replaceables
      * @since 1.0.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itSkipsSearchReplaceWhenSiteParametersTheSame()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotSkipSearchReplaceParametersUnequal()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itSkipsSearchReplaceWhenSiteParametersTheSame()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotSkipSearchReplaceParametersUnequal()
      */
     public function skipSearchReplaceWhenSiteParametersSame($return = false, $ret = [], $blogid_to_import = 0, $replaceables = [])
     {
@@ -1418,9 +1418,9 @@ class PrimeMoverSearchReplaceUtilities
      * Adjust https URLs in search and replace for legacy multisites
      * @param array $replaceables
      * @param array $ret
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotAdjustSearchParamsNonHttps()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAdjustLegacyHttpsUrls() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotAdjustSearchParamsIfNotLegacy()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotAdjustSearchParamsNonHttps()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itAdjustLegacyHttpsUrls() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSearchReplaceUtilities::itDoesNotAdjustSearchParamsIfNotLegacy()
      */
     public function adjustLegacySSLReplace($replaceables = [], $ret = [])
     {

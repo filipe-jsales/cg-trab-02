@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\classes;
+namespace GreenMainframe\GMMoverFramework\classes;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\utilities\PrimeMoverValidationUtilities;
+use GreenMainframe\GMMoverFramework\utilities\PrimeMoverValidationUtilities;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -76,7 +76,7 @@ class PrimeMoverValidationHandlers
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getMultisteMigration()
     {
@@ -85,7 +85,7 @@ class PrimeMoverValidationHandlers
     
     /**
      * Get validation utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverValidationUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverValidationUtilities
      */
     public function getValidationUtilities()
     {
@@ -94,8 +94,8 @@ class PrimeMoverValidationHandlers
     
     /**
      * Initialize hooks
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationHandlers::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationHandlers::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationHandlers::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationHandlers::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -470,7 +470,7 @@ class PrimeMoverValidationHandlers
     
     /**
      * Get upload utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverUploadUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadUtilities
      */
     public function getUploadUtilities()
     {
@@ -479,7 +479,7 @@ class PrimeMoverValidationHandlers
     
     /**
      * Get shutdown utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverShutdownUtilities
      */
     public function getShutDownUtilities()
     {
@@ -491,7 +491,7 @@ class PrimeMoverValidationHandlers
      * @param array $sanitized
      * @param number $blog_id
      * @return number
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverValidationHandlers::itAnalyzesBlogID()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverValidationHandlers::itAnalyzesBlogID()
      */
     protected function analyzeBlogId($sanitized = [], $blog_id = 0)
     {

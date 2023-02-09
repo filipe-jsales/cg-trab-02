@@ -1,17 +1,17 @@
 <?php
-namespace Codexonics\PrimeMoverFramework\utilities;
+namespace GreenMainframe\GMMoverFramework\utilities;
 
 /*
- * This file is part of the Codexonics.PrimeMoverFramework package.
+ * This file is part of the GreenMainframe.GMMoverFramework package.
  *
- * (c) Codexonics Ltd
+ * (c) GreenMainframe Ltd
  *
  * This package is Open Source Software. For the full copyright and license
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter;
+use GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter;
 use WP_Error;
 use ZipArchive;
 
@@ -45,7 +45,7 @@ class PrimeMoverImportUtilities
 
     /**
      * Get lock utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverLockUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverLockUtilities
      */
     public function getLockUtilities()
     {
@@ -54,7 +54,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Get importer
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverImporter
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverImporter
      * @compatibility 5.6
      */
     public function getImporter()
@@ -64,7 +64,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Get export utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverExportUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverExportUtilities
      * @compatibility 5.6
      */
     public function getExportUtilities()
@@ -74,7 +74,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Gets System authorization
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
      * @compatibility 5.6
      */
     public function getSystemAuthorization()
@@ -85,8 +85,8 @@ class PrimeMoverImportUtilities
     /**
      * Init hooks
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itAddsInitHooks() 
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfHooksAreOutdated()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itAddsInitHooks() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfHooksAreOutdated()
      */
     public function initHooks()
     {
@@ -207,8 +207,8 @@ class PrimeMoverImportUtilities
     /**
      * Show core import button
      * @param number $blog_id
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itShowsCoreImportButton()
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itLoadsMobileClassOnCoreImportWhenMobile()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itShowsCoreImportButton()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itLoadsMobileClassOnCoreImportWhenMobile()
      */
     public function showCoreImportButton($blog_id = 0) 
     {
@@ -307,7 +307,7 @@ class PrimeMoverImportUtilities
      *
      * @param int $blog_id
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itDisplaysFailedUploadNotice() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itDisplaysFailedUploadNotice() 
      */
     public function genericFailNotice($blog_id = 0)
     {
@@ -699,7 +699,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Get system check utilities
-     * @return \Codexonics\PrimeMoverFramework\utilities\PrimeMoverSystemCheckUtilities
+     * @return \GreenMainframe\GMMoverFramework\utilities\PrimeMoverSystemCheckUtilities
      */
     public function getSystemCheckUtilities()
     {
@@ -710,7 +710,7 @@ class PrimeMoverImportUtilities
      * Checks if we need to restore plugins
      * @param array $import_data
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itMaybeImportPlugins() 
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itMaybeImportPlugins() 
      */
     public function maybeImportPlugins($import_data = [])
     {        
@@ -729,7 +729,7 @@ class PrimeMoverImportUtilities
      * Is doing CLI retry
      * @param string $cli_tmpname
      * @return boolean
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfDoingCliPluginsImportRetry()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfDoingCliPluginsImportRetry()
      */
     protected function isDoingCliRetry($cli_tmpname = '')
     {
@@ -808,7 +808,7 @@ class PrimeMoverImportUtilities
      * @param number $start
      * @param boolean $shell_mode
      * @return array
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itImportPlugins()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itImportPlugins()
      */
     public function primeMoverImportPluginsFunc($import_data = [], $blog_id = 0, $copying_plugins_started = false, $start = 0, $shell_mode = false)
     {          
@@ -1036,7 +1036,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Count and unset
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itCountAndUnsetPlugins()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itCountAndUnsetPlugins()
      * @param array $plugins
      * @param number $count
      * @param number $k
@@ -1179,7 +1179,7 @@ class PrimeMoverImportUtilities
      * @param array $import_data
      * @return string
      * @compatibility 5.6
-     * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfPackageHasPluginsIncluded()
+     * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverImportUtilities::itChecksIfPackageHasPluginsIncluded()
      */
     protected function checkIfPackageIncludePlugins($import_data = [])
     {

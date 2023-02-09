@@ -100,7 +100,7 @@
                     "ajax_key" : 'prime_mover_encryption_ajax_key',
                     "datatype" : "text",
                     "dialog" : true,
-                    "dialog_selector" : "#js-prime-mover-panel-enc-warn-dialog",
+                    "dialog_selector" : "#js-gm-mover-panel-enc-warn-dialog",
                     "dialog_button_text" : prime_mover_control_panel_renderer.prime_mover_update_enc_key_button
                  },
                  { 
@@ -543,7 +543,7 @@
        clearLogs: function() {
 	    $('body').on('click','#js-clear-prime-mover-troubleshooting', function(){ 
 
-                 var dialog_selector = '#js-prime-mover-panel-clearall-dialog';
+                 var dialog_selector = '#js-gm-mover-panel-clearall-dialog';
                  var button_nonce = $(this).attr('data-nonce');
 
                  PrimeMoverControlPanel.showDialogHandler(dialog_selector, button_nonce, prime_mover_control_panel_renderer.prime_mover_clearall_button, 
@@ -556,7 +556,7 @@
         deleteAllBackups: function() {
 	        $('body').on('click','#js-delete_all_backup_zips_network', function(){ 
 
-             var dialog_selector = '#js-prime-mover-panel-deleteall-dialog';
+             var dialog_selector = '#js-gm-mover-panel-deleteall-dialog';
              var button_nonce = $(this).attr('data-nonce');
 
              PrimeMoverControlPanel.showDialogHandler(dialog_selector, button_nonce, prime_mover_control_panel_renderer.prime_mover_delete_continue_button, 
@@ -569,7 +569,7 @@
         resetToDefaults: function() {
 	    $('body').on('click','#js-prime-mover-reset-settings', function(){ 
 
-                 var dialog_selector = '#js-prime-mover-panel-resettodefault-dialog';
+                 var dialog_selector = '#js-gm-mover-panel-resettodefault-dialog';
                  var button_nonce = $(this).attr('data-nonce');
 
                  PrimeMoverControlPanel.showDialogHandler(dialog_selector, button_nonce, prime_mover_control_panel_renderer.prime_mover_delete_continue_button, 

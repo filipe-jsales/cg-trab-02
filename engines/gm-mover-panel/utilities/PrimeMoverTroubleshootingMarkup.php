@@ -372,7 +372,7 @@ class PrimeMoverTroubleshootingMarkup
     public function renderClearLogMarkup()
     {
         ?>
-        <div style="display:none;" id="js-prime-mover-panel-clearall-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
+        <div style="display:none;" id="js-gm-mover-panel-clearall-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
 			<p><?php printf( esc_html__('Are you really sure you want to %s', 'prime-mover'), 
 			    '<strong>' . esc_html__('clear the log', 'prime-mover') . '</strong>'); ?> ? </p>			
 			<p><strong><?php esc_html_e('Once cleared, the process cannot be undone.')?></strong></p>		      	  	

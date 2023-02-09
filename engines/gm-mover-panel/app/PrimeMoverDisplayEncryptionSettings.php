@@ -211,7 +211,7 @@ class PrimeMoverDisplayEncryptionSettings
     private function renderEncWarningDialogMarkup()
     {
         ?>
-        <div style="display:none;" id="js-prime-mover-panel-enc-warn-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
+        <div style="display:none;" id="js-gm-mover-panel-enc-warn-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
 			<p><?php printf( esc_html__('Are you really sure you want to %s', 'prime-mover'), 
 			    '<strong>' . esc_html__('UPDATE ENCRYPTION KEY', 'prime-mover') . '</strong>'); ?> ? </p>
 			<p><?php esc_html_e('If you already created encrypted backups using previous key, you will not be able to restore them with different key.', 'prime-mover')?></p>	      	  	

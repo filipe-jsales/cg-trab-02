@@ -127,7 +127,7 @@ class PrimeMoverDeleteUtilities
     private function renderDeleteDialogMarkup()
     {
     ?>
-        <div style="display:none;" id="js-prime-mover-panel-deleteall-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
+        <div style="display:none;" id="js-gm-mover-panel-deleteall-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
 			<p><?php printf( esc_html__('Are you really sure you want to %s', 'prime-mover'), 
 			    '<strong>' . esc_html__('DELETE ALL BACKUPS', 'prime-mover') . '</strong>'); ?> ? </p>
 			<p><?php esc_html_e('This will delete ALL backup zips and log files in your backup directory.', 'prime-mover')?></p>

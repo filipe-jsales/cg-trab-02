@@ -116,7 +116,7 @@ class PrimeMoverReset
     private function renderResetDialogMarkup()
     {
     ?>
-        <div style="display:none;" id="js-prime-mover-panel-resettodefault-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
+        <div style="display:none;" id="js-gm-mover-panel-resettodefault-dialog" title="<?php esc_attr_e('Warning!', 'prime-mover')?>"> 
 			<p><?php printf( esc_html__('Are you really sure you want to %s', 'prime-mover'), 
 			    '<strong>' . esc_html__('reset all settings', 'prime-mover') . '</strong>'); ?> ? </p>
 			<p><?php esc_html_e('This will delete both basic and advance settings used by this plugin.', 'prime-mover')?></p>

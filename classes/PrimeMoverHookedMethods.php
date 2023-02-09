@@ -364,7 +364,7 @@ class PrimeMoverHookedMethods
         if ($this->getSystemFunctions()->maybeLoadMenuAssets()) {
             wp_enqueue_style(
                 'prime_mover_panel_dashicons',
-                esc_url_raw(plugins_url('res/css/prime-mover-panel-icon.css', dirname(__FILE__))),
+                esc_url_raw(plugins_url('res/css/gm-mover-panel-icon.css', dirname(__FILE__))),
                 [],
                 PRIME_MOVER_VERSION
                 );

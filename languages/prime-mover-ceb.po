@@ -19,7 +19,7 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:174
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:174
 #, php-format
 msgid ""
 "%s : These logs can contain sensitive/private details. Please do not post "
@@ -33,57 +33,57 @@ msgstr ""
 "          Para secure kaau, i move ang imong backup directory pagawas sa "
 "public html para dile ma access sa publiko. Sayon ra kaau ni buhaton sa %s."
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:394
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:394
 #, php-format
 msgid "%s authorization key of this site."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:393
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:393
 #, php-format
 msgid "%s authorization key of this site. This is 64-characters in length."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:311
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:311
 #, php-format
 msgid "%s contains empty resource value."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:154
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:154
 #, php-format
 msgid "%s content seems to be an invalid config file."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:134
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:134
 #, php-format
 msgid "%s does not exist."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:145
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:145
 #, php-format
 msgid "%s does not have an extension."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:260
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:260
 #, php-format
 msgid "%s does not have keys."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:195
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:195
 #, php-format
 msgid "%s does not have resource to be excluded."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:350
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:350
 #, php-format
 msgid "%s extension should not include dot."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:149
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:149
 #, php-format
 msgid "%s file extension is not allowed."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:272
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:272
 #, php-format
 msgid "%s has weak authorization key length. It should be at least %s."
 msgstr ""
@@ -95,59 +95,59 @@ msgid ""
 "make sure they are correct."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:272
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:272
 #, php-format
 msgid "%s input error: Blog ID of %s is not valid for multisite configuration."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:267
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:267
 #, php-format
 msgid ""
 "%s input error: Blog ID of %s is not valid for single-site configuration."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:277
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:277
 #, php-format
 msgid "%s input error: No site exists on the blog ID of %s"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:260
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:260
 #, php-format
 msgid "%s input has an invalid identifier. Accepted values: %s, %s, %s"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:254
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:254
 #, php-format
 msgid "%s input identifier is malformed. It should be in %s format."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:249
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:249
 #, php-format
 msgid "%s input identifier should have ID on it."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:187
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:250
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:187
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:250
 #, php-format
 msgid "%s input is not in correct format. It should be in %s format."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:134
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:134
 #, php-format
 msgid "%s is already used by another domain."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:269
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:269
 #, php-format
 msgid "%s is an invalid domain"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:375
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:375
 #, php-format
 msgid "%s is an invalid relative %s path entry."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:400
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:400
 #, php-format
 msgid "%s is not a %s entity."
 msgstr ""
@@ -177,22 +177,22 @@ msgstr ""
 msgid "%s is not a sha512 string"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:118
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:118
 #, php-format
 msgid "%s is not a valid directory format."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:123
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:123
 #, php-format
 msgid "%s is not a valid directory name."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:129
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:129
 #, php-format
 msgid "%s is not a valid directory name. It should NOT include %s folder name."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:139
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:139
 #, php-format
 msgid "%s is not a valid file."
 msgstr ""
@@ -217,7 +217,7 @@ msgstr ""
 msgid "%s is not boolean"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:129
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:129
 #, php-format
 msgid "%s is not set."
 msgstr ""
@@ -232,7 +232,7 @@ msgstr ""
 msgid "%s of %s array parameter is an invalid data"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:394
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:394
 #, php-format
 msgid "%s path does not seem to exist."
 msgstr ""
@@ -245,7 +245,7 @@ msgid ""
 "features, ask pre-sales questions etc. by clicking the button below."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:273
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:273
 msgid "64 characters in length and alphanumeric format only"
 msgstr ""
 
@@ -259,25 +259,25 @@ msgstr ""
 msgid "Activating plugins"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:213
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:213
 msgid "Advance"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:213
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:213
 msgid "Advance settings"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:247
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:247
 msgid "Advance Settings Panel"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:419
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:419
 msgid ""
 "Always keep these authorization keys confidential and private. Backup these "
 "keys by writing on a paper and put it on a safe location."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:195
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:195
 msgid ""
 "Always wrap each resource in double quotes and separate each of them with a "
 "comma."
@@ -287,15 +287,15 @@ msgstr ""
 msgid "Analyzing zip.."
 msgstr "Examinon nako ang zip.."
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:373
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:373
 msgid ""
 "Any existing backup files will be automatically migrated to the new backup "
 "location and the old backup directory is removed."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:359
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:126
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:114
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:359
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:126
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:114
 #, php-format
 msgid "Are you really sure you want to %s"
 msgstr "Sigurado ka nga mo %s"
@@ -320,18 +320,18 @@ msgstr "Sigurado gud ka na imo ning buhaton?"
 msgid "Are you sure you want to proceed with the import?"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:244
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:244
 #, php-format
 msgid ""
 "As a result, this excluded plugin is %s at the target site after the package "
 "is imported."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:354
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:354
 msgid "Authorization Keys"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:168
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:168
 msgid "Backup management"
 msgstr ""
 
@@ -339,16 +339,16 @@ msgstr ""
 msgid "Backup single site so it can be restored anytime"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:120
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:120
 msgid "Backup stats"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:335
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:210
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:335
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:210
 msgid "Basic settings"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:177
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:177
 msgid "basic settings page"
 msgstr ""
 
@@ -377,19 +377,19 @@ msgstr ""
 msgid "Browse..."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:163
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:163
 msgid ""
 "By default, all files/folders in uploads directory will be included in the "
 "export package. This is when exporting a package that includes media files."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:223
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:223
 msgid ""
 "By default, all plugins that is activated for the exported site will be "
 "included in the export package."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:140
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:140
 msgid ""
 "By default, maintenance mode is enabled when migrating a site that includes "
 "some plugins or themes. \n"
@@ -399,7 +399,7 @@ msgid ""
 "                    "
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:365
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:365
 msgid ""
 "By default, the export directory is located in WordPress uploads directory. "
 "\n"
@@ -407,18 +407,18 @@ msgid ""
 "servers) to prevent any unauthorized access."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:76
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:168
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:76
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:168
 msgid "bytes"
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:382
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:189
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:189
 #: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:454
 msgid "Cancel"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:93
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:93
 msgid ""
 "Careful, there is no way to restore these settings once deleted. Make a copy "
 "of these settings if it is important!"
@@ -430,7 +430,7 @@ msgstr ""
 msgid "Checking import package"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:313
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:313
 msgid "Chunk debug"
 msgstr ""
 
@@ -439,7 +439,7 @@ msgstr ""
 msgid "Chunk upload error."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:188
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:188
 msgid "Clear all"
 msgstr ""
 
@@ -448,36 +448,36 @@ msgstr ""
 msgid "Clear files of blog ID : %d"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:196
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:196
 msgid "Clear Log"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:266
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:266
 msgid "Clear log error fails."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:273
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:273
 msgid "Clear log success."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:200
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:200
 msgid "Clear logs"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:360
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:360
 msgid "clear the log"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:232
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:232
 msgid "Click this button to expand activated plugins."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:193
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:193
 msgid "Click to close"
 msgstr "I click para ma sirado"
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:233
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:192
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:233
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:192
 msgid "Click to expand"
 msgstr ""
 
@@ -494,7 +494,7 @@ msgstr ""
 msgid "Complete full backup (Database + Plugins/Themes + Media files)"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:124
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:124
 msgid "Compute Backup Directory Size"
 msgstr ""
 
@@ -502,11 +502,11 @@ msgstr ""
 msgid "Contact us"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:132
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:132
 msgid "COPIED"
 msgstr "NAKOPYA"
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:409
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:409
 msgid "Copied"
 msgstr "Nakopya"
 
@@ -514,11 +514,11 @@ msgstr "Nakopya"
 msgid "Copied to Clipboard!"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:405
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:405
 msgid "Copy authorization key of this site to clipboard."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:406
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:406
 msgid "Copy site authorization key to clipboard"
 msgstr ""
 
@@ -539,7 +539,7 @@ msgstr ""
 msgid "Corrupt package"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:276
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:276
 msgid "create Dropbox app"
 msgstr ""
 
@@ -551,7 +551,7 @@ msgstr ""
 msgid "Creating temp folder"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:359
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:359
 msgid "Custom backup directory"
 msgstr ""
 
@@ -577,9 +577,9 @@ msgstr ""
 msgid "Database backup only"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:132
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:135
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:245
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:132
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:135
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:245
 msgid "DEACTIVATED"
 msgstr ""
 
@@ -588,30 +588,30 @@ msgstr ""
 msgid "Debugging package"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:304
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:304
 msgid "Debugging Tools"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:75
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:137
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:167
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:201
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:75
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:137
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:167
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:201
 msgid "Default value"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:103
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:103
 msgid "delete all backup zips including logs"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:127
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:127
 msgid "DELETE ALL BACKUPS"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:98
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:98
 msgid "Delete ALL Backups"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:94
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:94
 msgid "Delete ALL backups"
 msgstr ""
 
@@ -647,11 +647,11 @@ msgstr ""
 msgid "Done."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:228
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:228
 msgid "Download Log"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:233
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:233
 msgid "Download log file"
 msgstr ""
 
@@ -659,33 +659,33 @@ msgstr ""
 msgid "Downloading package"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:257
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:257
 msgid "Dropbox access token"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:172
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:172
 msgid "Dropbox access token successfully saved."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:162
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:162
 msgid "Dropbox chunk upload size successfully saved."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:163
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:163
 msgid "Dropbox chunk upload size update failed"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:165
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:165
 msgid ""
 "Dropbox instance is missing. Check that all multisite migration plugin "
 "components are correctly installed."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:68
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:68
 msgid "Dropbox upload chunk"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:72
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:72
 msgid "Dropbox upload chunk size (bytes, integers only)"
 msgstr ""
 
@@ -693,19 +693,19 @@ msgstr ""
 msgid "Dumping database"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:294
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:294
 msgid "Enable migration JavaScript console log"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:170
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:170
 msgid "Enable troubleshooting log"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:320
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:320
 msgid "Enable upload chunk debug log"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
 msgid "ENABLED"
 msgstr ""
 
@@ -731,7 +731,7 @@ msgstr ""
 msgid "Enter multisite target blog ID (integers only)"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:285
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:285
 msgid "Error ! Custom backup directory should be full absolute path."
 msgstr ""
 
@@ -739,31 +739,31 @@ msgstr ""
 msgid "Error ! Export options not set."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:63
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:74
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:142
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:63
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:74
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:142
 msgid "Error ! Invalid request"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:224
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:224
 msgid "Error ! Invalid setting being saved. Please check again."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:68
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:68
 msgid "Error ! There is a problem computing backup dir size."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:228
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:228
 msgid "Error ! This value cannot be negative. Please check again."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:193
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:214
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:219
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:193
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:214
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:219
 msgid "Error ! Unauthorized"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:198
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:198
 msgid "Error ! Undefined settings."
 msgstr ""
 
@@ -771,7 +771,7 @@ msgstr ""
 msgid "Error creating a directory insides plugin export directory."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:81
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:81
 msgid ""
 "Error deleting files. Please check for permission issues in your backup "
 "directory."
@@ -789,34 +789,34 @@ msgstr ""
 msgid "Error putting footprint files."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:154
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:154
 msgid "Error resetting settings. Please try again later."
 msgstr ""
 
 #: utilities/PrimeMoverImportUtilities.php:279
 #: utilities/PrimeMoverImportUtilities.php:313
 #: utilities/PrimeMoverImportUtilities.php:330
-#: engines/prime-mover-panel/app/PrimeMoverSettings.php:243
+#: engines/gm-mover-panel/app/PrimeMoverSettings.php:243
 #: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:271
 #: engines/prime-mover-gearbox/app/PrimeMoverGearBoxImport.php:251
 msgid "Error!"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:289
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:289
 #, php-format
 msgid ""
 "Error! Custom backup directory %s could not be created. Please check for "
 "permissions on this path."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:294
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:294
 #, php-format
 msgid ""
 "Error! Custom backup directory could not be created at %s. Please check for "
 "permissions on this path."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:310
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:310
 #, php-format
 msgid ""
 "Error! Target backup directory could not be created at %s. Please check for "
@@ -836,29 +836,29 @@ msgstr ""
 msgid "Errors or diffs detected, alert user."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:214
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:214
 msgid "Excluded plugins"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:183
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:183
 msgid ""
 "Excluding 2019/03 and 2017/03/very-big-folder of an uploads directory for "
 "multisite blog id 999"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:185
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:185
 msgid ""
 "Excluding avi, zip, mp4 file extensions inside uploads directory of a single-"
 "site configuration"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:180
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:180
 msgid ""
 "Excluding examplebigfile.mp4 and anotherbigfile.wav in 2019/04 uploads "
 "folder in a single-site"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:187
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:187
 msgid ""
 "Excluding huge_surprise.avi in 2018\\10 uploads folder in a single-site "
 "Windows Server (use backlash)"
@@ -901,7 +901,7 @@ msgstr ""
 msgid "Export failed"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:153
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:153
 msgid "Export filters"
 msgstr ""
 
@@ -957,8 +957,8 @@ msgstr ""
 msgid "Export site"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:132
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:146
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:132
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:146
 msgid "Export site info"
 msgstr ""
 
@@ -1007,11 +1007,11 @@ msgstr ""
 msgid "Filepath not set"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:388
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:388
 msgid "Generate"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:376
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:376
 msgid ""
 "Generate download authorization keys for this site using the button below. "
 "It must be ONE LINE PER DOMAIN:AUTHORIZATION_KEYS. \n"
@@ -1050,13 +1050,13 @@ msgstr ""
 msgid "Heads Up!"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:145
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:145
 msgid ""
 "However this maintenance mode might disrupt important operations in all "
 "other subsites. You can choose to disable maintenance mode here."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:167
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:167
 msgid ""
 "However you can exclude files/folders in your uploads directory during "
 "export by adding exclusion rules above. \n"
@@ -1079,26 +1079,26 @@ msgid ""
 "ignored."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:298
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:298
 msgid ""
 "If this setting is checked, it will output logged-events to browser console "
 "when doing migrations."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:324
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:324
 msgid ""
 "If this setting is checked, it will output upload chunk events to browser "
 "console when doing site imports via upload."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:212
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:212
 #, php-format
 msgid ""
 "If you are sure the token is correct. Try this workaround if you are using "
 "%s server."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:369
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:369
 msgid ""
 "If your server is Nginx or any server which does not use .htaccess. \n"
 "                    You can change the Custom backup directory setting by "
@@ -1147,15 +1147,15 @@ msgstr ""
 msgid "Import Site"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:176
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:176
 msgid "Important"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:377
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:377
 msgid "Important: Custom backup directory path should be FULL ABSOLUTE PATH."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:414
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:414
 msgid ""
 "IMPORTANT: Please COPY AND PASTE these DOMAIN:AUTHORIZATION_KEYS to all "
 "sites you manage in GM Mover Control Panel settings. Otherwise the "
@@ -1178,7 +1178,7 @@ msgstr ""
 msgid "Importing themes.."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:104
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:104
 msgid "in a single-site or all sites in this network if multisite"
 msgstr ""
 
@@ -1203,7 +1203,7 @@ msgstr ""
 msgid "Initializing download"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:180
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:180
 #, php-format
 msgid ""
 "Interpreting these logs requires advance knowledge of migration processes. "
@@ -1212,7 +1212,7 @@ msgid ""
 "              The generated logs are stored in your %s."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:193
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:193
 msgid ""
 "Invalid Dropbox access token key provided. Please review if its correct or "
 "check your connection."
@@ -1236,7 +1236,7 @@ msgstr ""
 msgid "Invalid URL provided"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:227
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:227
 #, php-format
 msgid ""
 "It is possible to exclude plugins from being exported by adding the %s in "
@@ -1250,19 +1250,19 @@ msgid ""
 "config.php"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:287
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:287
 msgid "JavaScript Log"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:237
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:237
 msgid "JavaScript troubleshooting disabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:237
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:237
 msgid "JavaScript troubleshooting enabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:238
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:238
 msgid "JavaScript troubleshooting update failed"
 msgstr ""
 
@@ -1270,7 +1270,7 @@ msgstr ""
 msgid "Maintenance Mode"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:130
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:130
 msgid "Maintenance mode"
 msgstr ""
 
@@ -1327,7 +1327,7 @@ msgstr ""
 msgid "Migration Tools"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:138
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:138
 msgid "milliseconds"
 msgstr ""
 
@@ -1348,11 +1348,11 @@ msgstr ""
 msgid "Multisite target blog ID should be an integer greater than 1"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:173
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:173
 msgid "MySQLdump configuration file successfully saved."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:199
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:199
 msgid "MySQLdump security"
 msgstr ""
 
@@ -1366,7 +1366,7 @@ msgstr ""
 msgid "No"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:385
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:385
 msgid "No basedir exist in this server uploads configuration, please check."
 msgstr ""
 
@@ -1382,12 +1382,12 @@ msgstr ""
 msgid "No more files to delete"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:277
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:277
 msgid "No other plugins found"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:144
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:211
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:144
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:211
 msgid "No settings are saved because of validation errors found: "
 msgstr ""
 
@@ -1400,7 +1400,7 @@ msgstr ""
 msgid "NOT"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:135
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:135
 msgid "NOT BE COPIED"
 msgstr ""
 
@@ -1429,7 +1429,7 @@ msgid ""
 "can be restored from the backup directory."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:263
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:263
 msgid ""
 "Note: By default, it only logs events for the current subsite being "
 "processed for either export/import. \n"
@@ -1437,22 +1437,22 @@ msgid ""
 "currently under migration."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:224
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:224
 msgid "Note: Only .cnf and .ini file extension is allowered in this setting"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:137
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:137
 msgid ""
 "Note: This is the export button for site information. This contain the "
 "details of how the site is configured, PHP settings, etc. Developer or "
 "technical support might ask for this info for troubleshooting. "
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:277
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:277
 msgid "Oauth 2 - Generate Access token"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
 msgid "OFF"
 msgstr ""
 
@@ -1460,8 +1460,8 @@ msgstr ""
 msgid "OK"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:228
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:251
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:228
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:251
 msgid ""
 "Ongoing database export processing and maintenance. Settings panel is "
 "temporarily unavailable. Please try again later."
@@ -1480,27 +1480,27 @@ msgstr ""
 msgid "Package URL not set or invalid"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:253
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:253
 msgid "Persist / HTTP API Log"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:259
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:259
 msgid "Persist logs for simultaneous migrations and enable HTTP API debug"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:249
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:249
 msgid "Persist troubleshooting disabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:249
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:249
 msgid "Persist troubleshooting enabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:250
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:250
 msgid "Persist troubleshooting update failed"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:173
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:173
 #, php-format
 msgid ""
 "Please add ONE LINE per excluded file/folder using %s format where %s is the "
@@ -1551,7 +1551,7 @@ msgstr ""
 msgid "Plugin"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:228
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:228
 msgid "plugin basename"
 msgstr ""
 
@@ -1615,7 +1615,7 @@ msgid ""
 "permission to create folder in your uploads directory."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:224
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:224
 msgid "GM Mover Settings"
 msgstr ""
 
@@ -1642,26 +1642,26 @@ msgstr ""
 msgid "Renaming dB prefix with target site."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:192
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:192
 #, php-format
 msgid ""
 "Replace %s with the multisite blog id where this exclusion applies if you "
 "are using multisite. %s."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:89
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:89
 msgid "reset ALL settings"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:115
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:115
 msgid "reset all settings"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:80
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:80
 msgid "Reset settings"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:85
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:85
 msgid "Reset to defaults"
 msgstr ""
 
@@ -1745,7 +1745,7 @@ msgstr ""
 msgid "Runtime error : "
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverSettingsMarkups.php:62
+#: engines/gm-mover-panel/utilities/PrimeMoverSettingsMarkups.php:62
 msgid "Save"
 msgstr ""
 
@@ -1757,7 +1757,7 @@ msgstr ""
 msgid "Search and replace."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadSecurity.php:193
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadSecurity.php:193
 msgid "Security settings"
 msgstr ""
 
@@ -1773,12 +1773,12 @@ msgstr ""
 msgid "Server Error : {{UPLOADSERVERERROR}}"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:177
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:177
 #, php-format
 msgid "Server error found ! Please check WordPress %s for more details."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:175
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:175
 #, php-format
 msgid "Server error found ! Please enable %s to generate %s and try again."
 msgstr ""
@@ -1787,28 +1787,28 @@ msgstr ""
 msgid "Service unavailable, please cancel and try again later."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedUploads.php:194
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedUploads.php:194
 msgid "Set 1 as the blogid if you are in single-site configuration"
 msgstr ""
 
 #: utilities/PrimeMoverFreemiusIntegration.php:191
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:210
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:210
 msgid "Settings"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:65
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:65
 msgid "Settings management"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:371
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:371
 msgid "Show authorization keys"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:267
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:267
 msgid "Show Dropbox access token"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:209
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:209
 msgid "Show MySQLdump config file path"
 msgstr ""
 
@@ -1859,8 +1859,8 @@ msgid ""
 "and do %s proceed if this can adversely affect your site"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:142
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:209
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:142
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:209
 msgid ""
 "Some settings successfully saved except for the validation errors below: "
 msgstr ""
@@ -1894,59 +1894,59 @@ msgstr ""
 msgid "Starting import"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:78
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:78
 msgid "Success! All backups deleted"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:207
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:207
 #, php-format
 msgid "Success! Authorization keys %s"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:304
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:304
 #, php-format
 msgid "Success! Custom backup directory is already set at %s."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:321
+#: engines/gm-mover-panel/helpers/PrimeMoverCustomExportDirectory.php:321
 #, php-format
 msgid ""
 "Success! Custom backup directory is created at %s and old backups are "
 "migrated to this directory"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:134
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:134
 #, php-format
 msgid ""
 "Success! Custom backup directory will %s back to default uploads backup "
 "directory when Control Panel plugin is %s."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverBackupManagement.php:131
+#: engines/gm-mover-panel/helpers/PrimeMoverBackupManagement.php:131
 #, php-format
 msgid ""
 "Success! Custom backup directory will be %s back to default uploads backup "
 "directory when Control Panel plugin is %s."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:140
+#: engines/gm-mover-panel/utilities/PrimeMoverExcludedUploadsUtilities.php:140
 #, php-format
 msgid "Success! Exclude uploads entries %s"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:163
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:163
 #, php-format
 msgid ""
 "Success! Excluded plugin settings are %s Please review the updated list."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
-#: engines/prime-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:103
+#: engines/gm-mover-panel/helpers/PrimeMoverMaintenanceMode.php:105
 #, php-format
 msgid "Success! Maintenance mode during imports will be %s."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:151
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:151
 msgid "Success! Settings resetted."
 msgstr ""
 
@@ -1958,7 +1958,7 @@ msgstr ""
 msgid "System footprint of package is not found"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverExcludedPlugins.php:240
+#: engines/gm-mover-panel/helpers/PrimeMoverExcludedPlugins.php:240
 msgid ""
 "Take note this is a global setting and applies to every export generated in "
 "this site. You can use this setting to exclude plugins that is is not needed "
@@ -2032,7 +2032,7 @@ msgid ""
 "WordPress."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:206
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:206
 msgid ""
 "The client-side script will attempt re-sending the information to the server "
 "in the event of an error. This setting is the number of times Ajax will "
@@ -2047,7 +2047,7 @@ msgid ""
 "install."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:219
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:219
 #, php-format
 msgid ""
 "The MySQLdump will read the credentials from the MySQL config file path you "
@@ -2073,7 +2073,7 @@ msgstr ""
 msgid "There is no technical support with free version"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:401
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:401
 msgid ""
 "These keys will be used to authenticate download request. Only sites you "
 "have authorized will be able to download and migrate package."
@@ -2095,7 +2095,7 @@ msgid ""
 "restore modes "
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:271
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:271
 msgid ""
 "This is an export option support for saving a copy of exported package to "
 "Dropbox file hosting service. You need to enter a valid Dropbox access token "
@@ -2110,7 +2110,7 @@ msgid ""
 "full-site backup. This will create the largest package size."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:142
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:142
 msgid ""
 "This is the JavaScript setTimeout setting for uploading chunks. Setting this "
 "to a very fast setting can overload your server with too many upload ajax "
@@ -2119,7 +2119,7 @@ msgid ""
 "significantly."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:213
+#: engines/gm-mover-panel/helpers/PrimeMoverMySQLDumpSettings.php:213
 msgid ""
 "This is the path to MySQL secure option file which will be used for "
 "MySQLdump command. This setting is OPTIONAL but highly recommended for "
@@ -2143,26 +2143,26 @@ msgid ""
 "work at the target site."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:268
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:268
 msgid ""
 "This setting will also enable WordPress HTTP API debug. This is useful when "
 "troubleshooting remote URL package imports."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:129
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:129
 msgid "This will also delete all the troubleshooting logs."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:128
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:128
 msgid ""
 "This will delete ALL backup zips and log files in your backup directory."
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:116
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:116
 msgid "This will delete both basic and advance settings used by this plugin."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:240
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:240
 msgid ""
 "This will only log events related to migrations, that's all. If you need the "
 "log for PHP errors, you need to use the standard WordPress debug.log for "
@@ -2171,11 +2171,11 @@ msgid ""
 "to clear the log or delete it in your computer after analyzing them."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:202
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:202
 msgid "times"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:178
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:178
 msgid ""
 "Tip: If you want to override this value, please do not put a value that is "
 "beyond your server limits. Know your server upload limits first before "
@@ -2183,7 +2183,7 @@ msgid ""
 "       Please refresh the sites network page after saving this setting."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:209
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:209
 msgid ""
 "Tip: The default setting is 1000 retries. This appears optimal in cases "
 "where a long 503 server header status is expected (e.g. when site is in "
@@ -2192,20 +2192,20 @@ msgid ""
 "the sites network page after saving this setting."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:146
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:146
 msgid ""
 "Tip: The default setting which is 1 second is optimal in most cases. Only "
 "tweak this setting if its highly necessary. Please refresh the sites network "
 "page after saving this setting."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:141
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:141
 msgid ""
 "Tip: The exported information can contain sensitive or private information. "
 "Please do not post this in public or share with anyone."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:83
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:83
 msgid ""
 "Tip: When you set a very small chunk size, the API will log a lot of "
 "requests which counts towards your Dropbox API quota. When you set a very "
@@ -2216,7 +2216,7 @@ msgstr ""
 msgid "To be safe, make sure you have backups ready."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:275
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:275
 #, php-format
 msgid "To get an access token, you need to %s. Then in your app, go to %s."
 msgstr ""
@@ -2232,24 +2232,24 @@ msgstr ""
 msgid "To start creating backups / packages, go to %s"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:70
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:70
 #, php-format
 msgid "Total backup size is %s"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:162
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:162
 msgid "Troubleshooting"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:291
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:291
 msgid "Troubleshooting disabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:291
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:291
 msgid "Troubleshooting enabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:292
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:292
 msgid "Troubleshooting update failed"
 msgstr ""
 
@@ -2399,7 +2399,7 @@ msgstr ""
 msgid "Unzipping package"
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:385
+#: engines/gm-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:385
 msgid "Update"
 msgstr ""
 
@@ -2408,31 +2408,31 @@ msgstr ""
 msgid "Upgrade to Pro Version"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:208
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:208
 msgid "Upload chunk debug disabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:208
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:208
 msgid "Upload chunk debug enabled."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverTroubleshooting.php:209
+#: engines/gm-mover-panel/advance/PrimeMoverTroubleshooting.php:209
 msgid "Upload chunk debug update failed"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:161
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:161
 msgid "Upload chunk size"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:165
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:165
 msgid "Upload chunk size (bytes, integers only)"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:132
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:132
 msgid "Upload chunk size update failed"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:131
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:131
 msgid "Upload chunk size update success"
 msgstr ""
 
@@ -2446,39 +2446,39 @@ msgstr ""
 msgid "Upload package"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:247
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:247
 msgid "Upload parameters"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:130
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:130
 msgid "Upload refresh interval"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:134
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:134
 msgid "Upload refresh interval (milliseconds, integers only)"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:216
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:216
 msgid "Upload refresh interval update failed"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:215
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:215
 msgid "Upload refresh interval update saved."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:195
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:195
 msgid "Upload retry limit"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:199
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:199
 msgid "Upload retry limit (integers only)"
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:195
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:195
 msgid "Upload retry limit successfully saved."
 msgstr ""
 
-#: engines/prime-mover-panel/advance/PrimeMoverUploadSettings.php:196
+#: engines/gm-mover-panel/advance/PrimeMoverUploadSettings.php:196
 msgid "Upload retry limit update failed"
 msgstr ""
 
@@ -2502,7 +2502,7 @@ msgstr ""
 msgid "Uploads directory of this blog does not seem to exist."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:101
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:101
 #, php-format
 msgid ""
 "Using the above button, you can %s created by the plugin in %s. \n"
@@ -2510,14 +2510,14 @@ msgid ""
 "deleted!"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:88
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:88
 #, php-format
 msgid ""
 "Using the above button, you can %s used by this plugin. Take note that this "
 "reset button applies to both basic and advance settings."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:127
+#: engines/gm-mover-panel/utilities/PrimeMoverBackupDirectorySize.php:127
 msgid ""
 "Using the above button, you can compute the total backup directory size. You "
 "can use this information to decide whether its time to clean up or delete "
@@ -2549,18 +2549,18 @@ msgstr ""
 msgid "Warning"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:358
-#: engines/prime-mover-panel/utilities/PrimeMoverDeleteUtilities.php:125
-#: engines/prime-mover-panel/app/PrimeMoverReset.php:113
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:358
+#: engines/gm-mover-panel/utilities/PrimeMoverDeleteUtilities.php:125
+#: engines/gm-mover-panel/app/PrimeMoverReset.php:113
 #: engines/prime-mover-gearbox/app/PrimeMoverGearBox.php:254
 msgid "Warning!"
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:272
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:272
 msgid "Warning: This setting requires troubleshooting to be ENABLED."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:80
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:80
 msgid ""
 "When you export a package to Dropbox, it is broken down into chunks. This "
 "makes it easier to monitor the upload progress using Dropbox API upload "
@@ -2568,7 +2568,7 @@ msgid ""
 "most cases."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:172
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:172
 msgid ""
 "When you restore a site via upload, an upload package is broken down into "
 "slices or chunks. With this method, upload will still work even in servers "
@@ -2600,7 +2600,7 @@ msgstr ""
 msgid "Yes"
 msgstr ""
 
-#: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:187
+#: engines/gm-mover-panel/app/PrimeMoverControlPanel.php:187
 msgid "Yes delete ALL"
 msgstr ""
 
@@ -2611,14 +2611,14 @@ msgid ""
 "        Make sure the target blog ID is available and not used with any site."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:203
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:203
 msgid ""
 "You can clear the migration log using this button. It is recommended you "
 "clear the log and disable the troubleshooting once all migration analysis "
 "are completed."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:236
+#: engines/gm-mover-panel/utilities/PrimeMoverTroubleshootingMarkup.php:236
 msgid ""
 "You can download the troubleshooting log using this button. By default, "
 "there is no data in the log. \n"
@@ -2632,7 +2632,7 @@ msgstr ""
 msgid "You can now paste using GM Mover %s - %s in your target site."
 msgstr ""
 
-#: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:175
+#: engines/gm-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:175
 msgid ""
 "You can override the default upload chunk size here. The default value is "
 "automatically computed based on your server safe upload limits. You do not "
@@ -2650,7 +2650,7 @@ msgstr ""
 msgid "You cancel the import. Nothing is changed on the server."
 msgstr ""
 
-#: engines/prime-mover-panel/helpers/PrimeMoverDropBoxSettings.php:161
+#: engines/gm-mover-panel/helpers/PrimeMoverDropBoxSettings.php:161
 msgid "You have provided an empty access token. Please try again."
 msgstr ""
 

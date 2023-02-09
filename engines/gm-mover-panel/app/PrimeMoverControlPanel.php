@@ -268,7 +268,7 @@ class PrimeMoverControlPanel
      */
     public function exludeControlPanelExtensionInPluginsExport(array $plugin_file)
     {
-        $plugin_file[] = 'prime-mover-panel.php';
+        $plugin_file[] = 'gm-mover-panel.php';
         return $plugin_file;
     }
     
@@ -323,7 +323,7 @@ class PrimeMoverControlPanel
         if ( defined('SCRIPT_DEBUG') && SCRIPT_DEBUG ) {
             $min = '';
         }
-        $js = "prime-mover-panel$min.js";
+        $js = "gm-mover-panel$min.js";
 
         wp_enqueue_style(
             'prime_mover_css_textsecurity',
@@ -334,7 +334,7 @@ class PrimeMoverControlPanel
         
         wp_enqueue_style(
             'prime_mover_css_control_panel',
-            esc_url_raw(plugins_url('res/css/prime-mover-panel.css', dirname(__FILE__))),
+            esc_url_raw(plugins_url('res/css/gm-mover-panel.css', dirname(__FILE__))),
             ['wp-jquery-ui-dialog', 'prime_mover_css_textsecurity'],
             PRIME_MOVER_PANEL_VERSION
         );

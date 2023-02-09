@@ -114,7 +114,7 @@ class GMMoverFileSystemDependencies
         ?>
         <div class="error">        
          <p><?php printf( esc_html__( 'The %s plugin cannot be activated if the following paths were not writable by WordPress', 'prime-mover' ), 
-             '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
+             '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
             <ul>
                 <?php 
                 foreach ( $this->getProblematicPaths() as $path ) {

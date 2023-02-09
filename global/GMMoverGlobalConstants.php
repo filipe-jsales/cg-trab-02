@@ -9,7 +9,7 @@ if (!defined('ABSPATH')) {
 }
 
 define('PRIME_MOVER_VERSION', '1.8.0');
-define('PRIME_MOVER_PLUGIN_CODENAME', 'Prime Mover');
+define('GM_MOVER_PLUGIN_CODENAME', 'Prime Mover');
 define('PRIME_MOVER_PRO_PLUGIN_CODENAME', 'Prime Mover PRO');
 define('PRIME_MOVER_BACKUP_MARKUP_VERSION', '1.1.8');
 define('PRIME_MOVER_PLUGIN_PATH', plugin_dir_path(PRIME_MOVER_MAINPLUGIN_FILE));

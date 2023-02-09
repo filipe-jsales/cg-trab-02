@@ -504,7 +504,7 @@ class PrimeMoverFreemiusCompat
 	        <p><?php echo sprintf(esc_html__('Thank you for using %s. 
         To get started using the free version, you need to %s. Free version works on any number of multisite subsites. 
         If you want to export and restore the multisite main site, you need to %s. Thanks!', 'prime-mover'), 
-	            '<strong>' . PRIME_MOVER_PLUGIN_CODENAME . '</strong>', 
+	            '<strong>' . GM_MOVER_PLUGIN_CODENAME . '</strong>', 
 	            '<a href="' . esc_url($addsites_url) . '">' . esc_html__('add a subsite for testing', 'prime-mover') . '</a>',
 	            '<a href="' . esc_url($upgrade_url) . '">' . esc_html__('upgrade to the PRO version', 'prime-mover') . '</a>'
 	            );

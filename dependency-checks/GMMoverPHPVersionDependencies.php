@@ -75,7 +75,7 @@ class GMMoverPHPVersionDependencies
             <p>
             <?php 
             printf( esc_html__( 'The %s plugin cannot run on PHP versions older than %s. Please contact your host and ask them to upgrade.', 'prime-mover'),
-                '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>', $this->php ); 
+                '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>', $this->php ); 
             ?>
             </p>
         </div>

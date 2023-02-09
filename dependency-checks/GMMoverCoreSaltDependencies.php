@@ -130,7 +130,7 @@ class GMMoverCoreSaltDependencies
             <p>
             <?php 
             printf( esc_html__( 'The %s plugin cannot be activated because it requires %s defined in wp-config.php. Some of your security constants are duplicated which is not advisable for best security.', 
-                'prime-mover'), '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>', 
+                'prime-mover'), '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>', 
                 '<a href="https://wordpress.org/support/article/editing-wp-config-php/#security-keys">' . esc_html__('unique security keys', 'prime-mover') . '</a>'); 
             ?>
             </p>
@@ -152,7 +152,7 @@ class GMMoverCoreSaltDependencies
             <p>
             <?php 
             printf( esc_html__( 'The %s plugin cannot be activated because it requires %s defined in wp-config.php. The following constants are not set or does not have constant values :', 
-                'prime-mover'), '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>', 
+                'prime-mover'), '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>', 
                 '<a href="https://wordpress.org/support/article/editing-wp-config-php/#security-keys">' . esc_html__('complete security keys', 'prime-mover') . '</a>'); 
             ?>
             </p>

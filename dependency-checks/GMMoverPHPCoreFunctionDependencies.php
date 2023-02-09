@@ -189,7 +189,7 @@ class GMMoverPHPCoreFunctionDependencies
         ?>
         <div class="error">        
          <p><?php printf( esc_html__( 'The %s plugin cannot be activated if these following PHP core functions are missing', 'prime-mover' ), 
-             '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
+             '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
             <ul>
                 <?php 
                 foreach ( $this->missing_functions as $function ) {
@@ -217,7 +217,7 @@ class GMMoverPHPCoreFunctionDependencies
         ?>
         <div class="error">        
          <p><?php printf( esc_html__( 'The %s plugin cannot be activated if these following PHP core extensions are missing', 'prime-mover' ), 
-             '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
+             '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>' )?>:</p>
             <ul>
                 <?php 
                 foreach ( $this->missing_extensions as $extension ) {

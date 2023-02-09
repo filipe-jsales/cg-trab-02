@@ -470,7 +470,7 @@ class PrimeMoverBackupMenus
         <?php do_action('prime_mover_package_manager_notices', $blog_id); ?>   
         <div class="prime-mover-backupmenu-notes-div">        
             <p>
-                <?php printf(esc_html__('This page shows all the packages controlled by %s', 'prime-mover'), '<strong>' . PRIME_MOVER_PLUGIN_CODENAME . '</strong>');?>.
+                <?php printf(esc_html__('This page shows all the packages controlled by %s', 'prime-mover'), '<strong>' . GM_MOVER_PLUGIN_CODENAME . '</strong>');?>.
                 <?php if ($export_path_exist) { ?> 
                 <?php esc_html_e('This is the current site package path:', 'prime-mover'); ?> 
                 <tt>

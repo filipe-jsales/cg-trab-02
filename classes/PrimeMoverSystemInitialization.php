@@ -2874,7 +2874,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      */
     public function getPrimeMoverPluginTitle()
     {
-        return apply_filters('prime_mover_plugin_title', PRIME_MOVER_PLUGIN_CODENAME);
+        return apply_filters('prime_mover_plugin_title', GM_MOVER_PLUGIN_CODENAME);
     }
     
     /**

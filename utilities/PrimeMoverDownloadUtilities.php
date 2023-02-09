@@ -773,7 +773,7 @@ class PrimeMoverDownloadUtilities
         if ($header_location_method) { 
             
             do_action('prime_mover_log_processed_events', 'Rendering download by header location method.', $blog_id, 'export', 'renderDownloadHelper', $this);
-            wp_redirect($linkurl, 302, PRIME_MOVER_PLUGIN_CODENAME);            
+            wp_redirect($linkurl, 302, GM_MOVER_PLUGIN_CODENAME);            
         } elseif ($readfile_method) {    
             
             do_action('prime_mover_log_processed_events', 'Rendering download by readfile method.', $blog_id, 'export', 'renderDownloadHelper', $this);

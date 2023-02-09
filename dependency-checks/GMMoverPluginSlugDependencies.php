@@ -70,7 +70,7 @@ class GMMoverPluginSlugDependencies
             <p>
             <?php 
             printf( esc_html__( 'The %s plugin cannot be activated if it is using different plugin folder name other than the defaults. Please rename plugin folder name to :', 
-                'prime-mover'), '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>'); 
+                'prime-mover'), '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>'); 
             ?>
             </p>
             <ul>

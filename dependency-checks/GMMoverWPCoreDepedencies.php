@@ -63,7 +63,7 @@ class GMMoverWPCoreDependencies
         <div class="error">
              <p>
              <?php printf( esc_html__( 'The %s plugin cannot run on WordPress versions older than %s. Please update WordPress.', 'prime-mover' ), 
-                 '<strong>' . esc_html(PRIME_MOVER_PLUGIN_CODENAME) . '</strong>', $this->wp ) ?>
+                 '<strong>' . esc_html(GM_MOVER_PLUGIN_CODENAME) . '</strong>', $this->wp ) ?>
              </p>             
         </div>
         <?php 

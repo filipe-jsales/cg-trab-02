@@ -23,9 +23,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Export Class
+ * GM Mover Export Class
  *
- * The Prime Mover Export Class aims to provide the export facility of this plugin.
+ * The GM Mover Export Class aims to provide the export facility of this plugin.
  *
  */
 

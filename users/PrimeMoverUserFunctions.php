@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover User Functions
+ * GM Mover User Functions
  * Provides very basic functions for user import and export processes.
  */
 class PrimeMoverUserFunctions
@@ -345,7 +345,7 @@ class PrimeMoverUserFunctions
 
     /**
      * Update author via SQL for best performance
-     * We don't need to run any 3rd party hooks as only Prime Mover plugin is activated
+     * We don't need to run any 3rd party hooks as only GM Mover plugin is activated
      * @param number $post_id
      * @param number $new_author
      * @return \WP_Error|number
@@ -595,7 +595,7 @@ class PrimeMoverUserFunctions
         }              
         
         if ($add_user_to_blog) {
-            do_action('prime_mover_log_processed_events', "Adding current Prime Mover user to this multisite blog.", $blog_id, 'import', __FUNCTION__, $this);
+            do_action('prime_mover_log_processed_events', "Adding current GM Mover user to this multisite blog.", $blog_id, 'import', __FUNCTION__, $this);
             $this->updateUserRoleToTargetSite($user_id, $target_cap_prefix, $target_level_prefix, $current_cap_prefix, $current_level_prefix);  
         } else {
             $this->deleteCapUserMetas($user_id, $target_cap_prefix, $target_level_prefix);

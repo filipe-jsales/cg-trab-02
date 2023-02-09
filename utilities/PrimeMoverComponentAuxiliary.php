@@ -16,8 +16,8 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Component Auxiliary
- * Auxiliary component class for interacting with Prime Mover components
+ * GM Mover Component Auxiliary
+ * Auxiliary component class for interacting with GM Mover components
  *
  */
 class PrimeMoverComponentAuxiliary
@@ -275,7 +275,7 @@ class PrimeMoverComponentAuxiliary
     }
     
     /**
-     * Restore all Prime Mover settings
+     * Restore all GM Mover settings
      * @param array $settings
      * @moved
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverComponentAuxiliary::itRestoresAllPrimeMoverSettings()
@@ -380,7 +380,7 @@ class PrimeMoverComponentAuxiliary
     }
     
      /**
-     * Get all Prime Mover settings
+     * Get all GM Mover settings
      * @return mixed|boolean|NULL|array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()

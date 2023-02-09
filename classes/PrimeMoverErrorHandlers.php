@@ -18,9 +18,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Error handling class
+ * GM Mover Error handling class
  *
- * The Prime Mover Error Handling Class handles the fatal runtime errors originated within the plugin and offers a systematic handling and reporting methods.
+ * The GM Mover Error Handling Class handles the fatal runtime errors originated within the plugin and offers a systematic handling and reporting methods.
  *
  */
 class PrimeMoverErrorHandlers
@@ -147,7 +147,7 @@ class PrimeMoverErrorHandlers
     }
     
     /**
-     * Checks if Prime Mover log file filename format
+     * Checks if GM Mover log file filename format
      * @param string $extension
      * @param string $filename
      * @return boolean
@@ -536,7 +536,7 @@ class PrimeMoverErrorHandlers
     }
     
     /**
-     * Prime Mover log errors
+     * GM Mover log errors
      * Designed to work even WP_DEBUG is false
      * Hooked to `prime_mover_shutdown_actions`
      * @param array $error
@@ -569,7 +569,7 @@ class PrimeMoverErrorHandlers
         if (is_multisite()) {
             $source = 'WordPress network admin';
         }
-        $report_instructions = "### Please submit this bug report via $source -> Prime Mover -> Contact us and select bug report. ###";
+        $report_instructions = "### Please submit this bug report via $source -> GM Mover -> Contact us and select bug report. ###";
         $report_instructions .= PHP_EOL;
         $report_instructions .= '### Zip this log and upload to somewhere accessible. ###';
         $report_instructions .= PHP_EOL;
@@ -693,8 +693,8 @@ class PrimeMoverErrorHandlers
     }
     
     /**
-     * Prime Mover error handlers on shutdown
-     * This fires successfully when a fatal error is detected inside Prime Mover plugin
+     * GM Mover error handlers on shutdown
+     * This fires successfully when a fatal error is detected inside GM Mover plugin
      * Hooked to `shutdown`
      * @compatible 5.6
      * @tested GMMoverFramework\Tests\TestPrimeMoverErrorHandlers::itRunsErrorHandlerWhenItsFatalError() 
@@ -741,7 +741,7 @@ class PrimeMoverErrorHandlers
     }
     
     /**
-     /* Prime Mover deletes maintenance file
+     /* GM Mover deletes maintenance file
       * Hooked to `prime_mover_shutdown_actions`
       * @param array $error
       * @compatible 5.6

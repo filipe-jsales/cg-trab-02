@@ -22,9 +22,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover System Initialization Class
+ * GM Mover System Initialization Class
  *
- * The Prime Mover System Initialization Class handles the initialization of properties used in this plugin.
+ * The GM Mover System Initialization Class handles the initialization of properties used in this plugin.
  *
  */
 class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
@@ -520,7 +520,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover action link
+     * Get GM Mover action link
      * @return string
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverActionLink() 
      */
@@ -704,7 +704,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover gearbox backup option
+     * Get GM Mover gearbox backup option
      * @return string
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverGearBoxBackupOption() 
      */
@@ -714,7 +714,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get option name for Prime Mover menu backups
+     * Get option name for GM Mover menu backups
      * @return string
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverMenuBackupOption()
      */
@@ -724,7 +724,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get option name for Prime Mover validated backups
+     * Get option name for GM Mover validated backups
      * @return string
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsPrimeMoverValidatedBackupsOption() 
      */
@@ -754,7 +754,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover import methods
+     * Get GM Mover import methods
      * @return array|string[]
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsImportMethods() 
      */
@@ -764,7 +764,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover export methods
+     * Get GM Mover export methods
      * @return array|string[]
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsExportMethods()
      */
@@ -774,7 +774,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover ajax actions
+     * Get GM Mover ajax actions
      * @return array|string[]
      * @tested GreenMainframe\GMMoverFramework\Tests\TestMigrationSystemInitialization::itGetsAjaxActions()
      */
@@ -2817,7 +2817,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Prime Mover wp_tempnam() version
+     * GM Mover wp_tempnam() version
      * @param string $filename
      * @param string $dir
      * @return string
@@ -2833,7 +2833,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get instance of Prime Mover Plugin Manager
+     * Get instance of GM Mover Plugin Manager
      * @return \GreenMainframe\GMMoverFramework\general\PrimeMoverMustUsePluginManager|NULL
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPluginManagerInstance($instance=null)
      */
@@ -2858,7 +2858,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover menu slug
+     * Get GM Mover menu slug
      * @return mixed|NULL|array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverSlug()
      */
@@ -2868,7 +2868,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover plugin title
+     * Get GM Mover plugin title
      * @return mixed|NULL|array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverPluginTitle()
      */
@@ -2878,7 +2878,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get all Prime Mover core directories
+     * Get all GM Mover core directories
      * @param boolean $include_export_defaults
      * @return string[]
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itGetsPrimeMoverCoreDirectories()
@@ -3074,7 +3074,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     }
     
     /**
-     * Get Prime Mover sanitize string filter
+     * Get GM Mover sanitize string filter
      * @return string
      */
     public function getPrimeMoverSanitizeStringFilter()

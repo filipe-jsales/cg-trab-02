@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Search and Replace
+ * GM Mover Search and Replace
  * Handles edge cases in search and replace functionality
  *
  */
@@ -217,7 +217,7 @@ class PrimeMoverSearchReplaceUtilities
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -301,7 +301,7 @@ class PrimeMoverSearchReplaceUtilities
     }
     
     /**
-     * Skip dB search replace query update on its own Prime Mover progress tracker meta
+     * Skip dB search replace query update on its own GM Mover progress tracker meta
      * @param boolean $update
      * @param array $ret
      * @param string $table

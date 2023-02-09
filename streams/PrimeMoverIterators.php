@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Iterator primarily used
+ * GM Mover Iterator primarily used
  * For sorting files during export as its added to the archive
  */
 class PrimeMoverIterators extends SplHeap

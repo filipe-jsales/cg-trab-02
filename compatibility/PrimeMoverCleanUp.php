@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Cleanup Class
+ * GM Mover Cleanup Class
  * Helper class for cleaning up and doing some maintenance related tasks.
  *
  */
@@ -55,7 +55,7 @@ class PrimeMoverCleanUp
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -294,14 +294,14 @@ class PrimeMoverCleanUp
         $this->getSystemFunctions()->restoreCurrentBlog();
     ?>
         <div class="notice notice-warning is-dismissible">
-           <p><?php echo esc_html__('Prime Mover plugin detected incorrectly placed backup packages for this subsite. 
+           <p><?php echo esc_html__('GM Mover plugin detected incorrectly placed backup packages for this subsite. 
 Please move WPRIME packages FROM: ', 'prime-mover');?></p>
 
            <p><strong><?php echo $incorrect; ?></strong></p>           
            <p><?php echo esc_html__('TO :', 'prime-mover');?></p>           
            <p><strong><?php echo $correct; ?></strong></p>
            <p><?php echo esc_html__('If you do not need these packages, please delete them. 
-Prime Mover plugin will auto-delete this wrong export directory. Thank you!', 'prime-mover'); ?></p> 
+GM Mover plugin will auto-delete this wrong export directory. Thank you!', 'prime-mover'); ?></p> 
         </div>    
     <?php     
     }

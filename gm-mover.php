@@ -7,7 +7,7 @@ Description: The simplest all-around WordPress migration tool/backup plugin. The
 Version: 1.8.0
 Author: GreenMainframe
 Author URI: https://codexonics.com/
-Text Domain: prime-mover
+Text Domain: gm-mover
 Network: True
 */
 // Exit if accessed directly
@@ -47,5 +47,5 @@ if ( function_exists( 'pm_fs' ) ) {
         require_once PRIME_MOVER_PLUGIN_PATH . '/vendor/autoload.php';
     }
     include GM_MOVER_MAINDIR . '/GMMoverFactory.php';
-    include GM_MOVER_MAINDIR . '/engines/prime-mover-panel/prime-mover-panel.php';
+    include GM_MOVER_MAINDIR . '/engines/gm-mover-panel/gm-mover-panel.php';
 }

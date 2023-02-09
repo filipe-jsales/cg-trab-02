@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: Prime Mover\n"
+"Project-Id-Version: GM Mover\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2019-05-28 02:26+0000\n"
 "PO-Revision-Date: 2019-05-28 04:54+0000\n"
@@ -1157,7 +1157,7 @@ msgstr ""
 #: engines/prime-mover-panel/helpers/PrimeMoverDownloadAuthentication.php:414
 msgid ""
 "IMPORTANT: Please COPY AND PASTE these DOMAIN:AUTHORIZATION_KEYS to all "
-"sites you manage in Prime Mover Control Panel settings. Otherwise the "
+"sites you manage in GM Mover Control Panel settings. Otherwise the "
 "download request will be unauthorized - 401 error."
 msgstr ""
 
@@ -1239,7 +1239,7 @@ msgstr ""
 msgid ""
 "It is possible to exclude plugins from being exported by adding the %s in "
 "the above text area. Use the tool below to add or updated excluded plugins "
-"to the text area (Prime Mover is already excluded by default):"
+"to the text area (GM Mover is already excluded by default):"
 msgstr ""
 
 #: utilities/PrimeMoverFreemiusIntegration.php:167
@@ -1568,57 +1568,57 @@ msgstr ""
 #. Name of the plugin
 #: classes/PrimeMoverHookedMethods.php:547
 #: engines/prime-mover-gearbox/helpers/PrimeMoverGearBoxScreenOptions.php:306
-msgid "Prime Mover"
+msgid "GM Mover"
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:547
 #: classes/PrimeMoverHookedMethods.php:560
-msgid "Prime Mover Control Panel"
+msgid "GM Mover Control Panel"
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:441
 #, php-format
-msgid "Prime Mover plugin is activated but not yet ready to use. %s."
+msgid "GM Mover plugin is activated but not yet ready to use. %s."
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:455
 msgid ""
-"Prime Mover plugin is not yet ready to use. Error: Requires at least PHP 5.6."
+"GM Mover plugin is not yet ready to use. Error: Requires at least PHP 5.6."
 "0."
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:465
 msgid ""
-"Prime Mover plugin is not yet ready to use. Error: Requires fileinfo PHP "
+"GM Mover plugin is not yet ready to use. Error: Requires fileinfo PHP "
 "extension. Please enable it."
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:460
 msgid ""
-"Prime Mover plugin is not yet ready to use. Error: Requires mbstring PHP "
+"GM Mover plugin is not yet ready to use. Error: Requires mbstring PHP "
 "extension. Please enable it."
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:450
 msgid ""
-"Prime Mover plugin is not yet ready to use. Error: Requires PHP Zip "
+"GM Mover plugin is not yet ready to use. Error: Requires PHP Zip "
 "extension to be enabled. Please check with you web host."
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:434
 msgid ""
-"Prime Mover plugin is not yet ready to use. Error: Unable to create its own "
+"GM Mover plugin is not yet ready to use. Error: Unable to create its own "
 "export folder. \n"
 "\t\t\t\t\tThis is required to export sites. Please make sure WordPress has "
 "permission to create folder in your uploads directory."
 msgstr ""
 
 #: engines/prime-mover-panel/app/PrimeMoverControlPanel.php:224
-msgid "Prime Mover Settings"
+msgid "GM Mover Settings"
 msgstr ""
 
 #: engines/prime-mover-flywheel/app/CreateBlogSpecificID.php:202
-msgid "Prime Mover Target Blog ID"
+msgid "GM Mover Target Blog ID"
 msgstr ""
 
 #: classes/PrimeMoverHookedMethods.php:390
@@ -2625,7 +2625,7 @@ msgstr ""
 
 #: engines/prime-mover-gearbox/app/PrimeMoverGearBoxExport.php:132
 #, php-format
-msgid "You can now paste using Prime Mover %s - %s in your target site."
+msgid "You can now paste using GM Mover %s - %s in your target site."
 msgstr ""
 
 #: engines/prime-mover-panel/utilities/PrimeMoverUploadSettingMarkup.php:175

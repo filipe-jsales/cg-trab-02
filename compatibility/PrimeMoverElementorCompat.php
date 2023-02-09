@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Elementor Compatibility Class
+ * GM Mover Elementor Compatibility Class
  * Helper class for interacting with Elementor plugin
  *
  */
@@ -52,7 +52,7 @@ class PrimeMoverElementorCompat
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

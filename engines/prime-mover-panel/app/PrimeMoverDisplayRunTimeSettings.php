@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display runtime parameter settings
+ * GM Mover display runtime parameter settings
  *
  */
 class PrimeMoverDisplayRunTimeSettings
@@ -56,7 +56,7 @@ class PrimeMoverDisplayRunTimeSettings
                 'col_heading' => esc_html__('Search-replace batch size', 'prime-mover'),
                 'identifier' => $this->getPrimeMover()->getSystemInitialization()->getSearchReplaceBatchSizeSetting(),                
                 'setting_heading' => esc_html__('Search replace batch size (integers only)', 'prime-mover'),
-                'first_description' => esc_html__('When doing search and replace during import - Prime Mover by default retrieves 25000 rows from database and then process it. This default value should work fine in most environments', 'prime-mover'),
+                'first_description' => esc_html__('When doing search and replace during import - GM Mover by default retrieves 25000 rows from database and then process it. This default value should work fine in most environments', 'prime-mover'),
                 'second_description' => esc_html__('However if you get MySQL timeout/MySQL gone away errors - try lowering down the value to see if it works (e.g. like 5000 or 10000)', 'prime-mover'),
                 'note' => esc_html__('Note: A small batch size can slow down the process but reduces timeout errors. Using a large value can speed up the process but risk of getting MySQL timeout or memory related errors',
                     'prime-mover'),
@@ -69,7 +69,7 @@ class PrimeMoverDisplayRunTimeSettings
                 'col_heading' => esc_html__('MySQLdump batch size', 'prime-mover'),
                 'identifier' => $this->getPrimeMover()->getSystemInitialization()->getDbDumpBatchSizeSetting(),
                 'setting_heading' => esc_html__('MySQLdump batch size (integers only)', 'prime-mover'),
-                'first_description' => esc_html__('When doing export - Prime Mover by default dumps 5000 rows from database at a time. This default value should work fine in most hosting platforms.', 'prime-mover'),
+                'first_description' => esc_html__('When doing export - GM Mover by default dumps 5000 rows from database at a time. This default value should work fine in most hosting platforms.', 'prime-mover'),
                 'second_description' => esc_html__('However if you get MySQL timeout/MySQL gone away errors - try lowering down the value to see if it works (e.g. like 500 or 1000)', 'prime-mover'),
                 'note' => esc_html__('Note: A small batch size can slow down the MySQLdump but reduces timeout errors. Using a large value can speed up the dump process but risk of getting errors. This is not advisable.',
                     'prime-mover'),
@@ -89,7 +89,7 @@ class PrimeMoverDisplayRunTimeSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

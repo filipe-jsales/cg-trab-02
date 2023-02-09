@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Download Utilities
+ * GM Mover Download Utilities
  * Helper functionality for Download
  * Export success triggers a javascript redirect with the URL to download the package
  * This class it's processor.
@@ -175,7 +175,7 @@ class PrimeMoverDownloadUtilities
     }
     
     /**
-     * Fires Prime Mover cron task runner for maintenance reasons.
+     * Fires GM Mover cron task runner for maintenance reasons.
      */
     public function doPrimeMoverDeleteSymlink()
     {
@@ -271,7 +271,7 @@ class PrimeMoverDownloadUtilities
     }
     
     /**
-     * Prime Mover stream download helper
+     * GM Mover stream download helper
      * @compatible 5.6
      */
     public function streamDownload()

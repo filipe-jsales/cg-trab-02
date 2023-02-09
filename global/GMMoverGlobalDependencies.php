@@ -12,7 +12,7 @@ if (!defined('ABSPATH')) {
 class GMMoverGlobalDependencies
 {
     /**
-     * Get Prime Mover requisites check instance
+     * Get GM Mover requisites check instance
      * @return GMMoverRequirementsCheck
      */
     public function primeMoverGetRequisiteCheck()

@@ -19,7 +19,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Lock Utilities
+ * GM Mover Lock Utilities
  * Helper functionality for locking resources during export/import processes
  *
  */
@@ -51,7 +51,7 @@ class PrimeMoverLockUtilities
     }
 
     /**
-     * Disable heartbeat on any Prime Mover page
+     * Disable heartbeat on any GM Mover page
      * This is to prevent it from interring any locked processes.
      */
     public function maybeDisableHeartBeat()
@@ -123,7 +123,7 @@ class PrimeMoverLockUtilities
     }
     
     /**
-     * Checks if we are locking any Prime Mover processses
+     * Checks if we are locking any GM Mover processses
      * @param PrimeMoverMustUsePluginManager $prime_mover_plugin_manager
      * @param boolean $check_lock_file
      * @return boolean
@@ -148,7 +148,7 @@ class PrimeMoverLockUtilities
     }
     
     /**
-     * Check if WP cron action is enabled so we can use this to determine if we running a Prime Mover process
+     * Check if WP cron action is enabled so we can use this to determine if we running a GM Mover process
      */
     protected function hasCronAction()
     {

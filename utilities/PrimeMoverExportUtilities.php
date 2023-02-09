@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Export Utilities
+ * GM Mover Export Utilities
  * Helper functionality for Export.
  *
  */

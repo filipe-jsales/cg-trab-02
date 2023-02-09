@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Hot Fix Class
+ * GM Mover Hot Fix Class
  * Helper class for methods that don't have permanent fixes yet added to core or PHP.
  */
 class PrimeMoverHotFix
@@ -37,7 +37,7 @@ class PrimeMoverHotFix
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

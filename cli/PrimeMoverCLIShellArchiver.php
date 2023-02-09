@@ -100,7 +100,7 @@ class PrimeMoverCLIShellArchiver
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -437,7 +437,7 @@ class PrimeMoverCLIShellArchiver
     }     
     
     /**
-     * Extract Prime Mover main package
+     * Extract GM Mover main package
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverCLIShellArchiver::itDoExtractionWork()
      */
     protected function doExtractionWork()

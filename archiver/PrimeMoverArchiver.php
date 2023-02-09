@@ -21,7 +21,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Archiver
+ * GM Mover Archiver
  * Provides API for WPRIME archive.
  * Supports archive encryption (PRO version).
  */
@@ -462,7 +462,7 @@ class PrimeMoverArchiver
         }
         
         $closed_identifier = wp_normalize_path(trailingslashit($temp_folder_path) . PRIME_MOVER_WPRIME_CLOSED_IDENTIFIER);
-        $wp_filesystem->put_contents($closed_identifier, esc_html__('This is a WPRIME archive created by WordPress Prime Mover Plugin (developer: GreenMainframe Ltd). This is not designed to be read or extracted by any third party software. Attempting to manually read and write this archive will result in data corruption errors.'));
+        $wp_filesystem->put_contents($closed_identifier, esc_html__('This is a WPRIME archive created by WordPress GM Mover Plugin (developer: GreenMainframe Ltd). This is not designed to be read or extracted by any third party software. Attempting to manually read and write this archive will result in data corruption errors.'));
         $ret['wprime_readme_path'] = $closed_identifier;
         
         $local_name = trailingslashit(basename($temp_folder_path)) . PRIME_MOVER_WPRIME_CONFIG;

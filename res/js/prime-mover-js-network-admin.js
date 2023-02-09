@@ -31,7 +31,7 @@
 				PrimeMoverCoreJsObject.prime_mover_track_progress('import', blog_id, false, args);
 			},			
 			/**
-			 * Prime Mover Migration Tools
+			 * GM Mover Migration Tools
 			 */
 			prime_mover_migration_tools: prime_mover_js_ajax_renderer.prime_mover_migration_tools_url,
 			/**

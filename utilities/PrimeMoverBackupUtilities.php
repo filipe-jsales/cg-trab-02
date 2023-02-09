@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Backups Utilities
+ * GM Mover Backups Utilities
  * Helper functionality for backup related tasks
  *
  */
@@ -98,7 +98,7 @@ class PrimeMoverBackupUtilities
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

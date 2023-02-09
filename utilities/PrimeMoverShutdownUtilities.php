@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Shutdown Utilities
+ * GM Mover Shutdown Utilities
  * Helper functionality for anything that needs to be done on WordPress shutdown action related to error handling.
  *
  */
@@ -253,7 +253,7 @@ class PrimeMoverShutdownUtilities
     }
     
     /**
-     * Get Prime Mover error log path
+     * Get GM Mover error log path
      * @param int $blog_id
      * @param string $errorfilename
      * @return string

@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover custom configuration class
+ * GM Mover custom configuration class
  * Helper class for WordPress sites with customized wp-config.php file implementation.
  */
 class PrimeMoverCustomConfig
@@ -58,7 +58,7 @@ class PrimeMoverCustomConfig
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

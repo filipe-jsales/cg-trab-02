@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Page Builders Compatibility Class
+ * GM Mover Page Builders Compatibility Class
  * Helper class for interacting with different page builders encoded data
  * This is a non-user adjustment implementation
  *
@@ -98,7 +98,7 @@ class PrimeMoverPageBuilderCompat
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

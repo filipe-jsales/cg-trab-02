@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display custom backup directory settings
+ * GM Mover display custom backup directory settings
  *
  */
 class PrimeMoverDisplayCustomDirSettings
@@ -42,7 +42,7 @@ class PrimeMoverDisplayCustomDirSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

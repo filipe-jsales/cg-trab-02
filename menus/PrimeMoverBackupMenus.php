@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Backup Menus
+ * GM Mover Backup Menus
  * Handles the backup menu functionality (available in core)
  *
  */
@@ -83,7 +83,7 @@ class PrimeMoverBackupMenus
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -453,7 +453,7 @@ class PrimeMoverBackupMenus
         }
         ?>
       <div class="wrap prime-mover-backup-menu-wrap">
-         <h1 class="wp-heading-inline"><?php echo apply_filters('prime_mover_filter_backuppage_heading', esc_html__('Prime Mover Packages', 'prime-mover'), $blog_id);?></h1>
+         <h1 class="wp-heading-inline"><?php echo apply_filters('prime_mover_filter_backuppage_heading', esc_html__('GM Mover Packages', 'prime-mover'), $blog_id);?></h1>
          <?php echo $this->getAddNewBackupMarkup($blog_id); ?>
          <?php 
          if ($this->getBackupUtilities()->blogIsUsable($blog_id)) {
@@ -474,7 +474,7 @@ class PrimeMoverBackupMenus
                 <?php if ($export_path_exist) { ?> 
                 <?php esc_html_e('This is the current site package path:', 'prime-mover'); ?> 
                 <tt>
-                <code title="<?php esc_attr_e('You can manually add or upload Prime Mover package zip in this path via SFTP.', 'prime-mover');?>"><?php echo $blogexport_path; ?></code></tt>
+                <code title="<?php esc_attr_e('You can manually add or upload GM Mover package zip in this path via SFTP.', 'prime-mover');?>"><?php echo $blogexport_path; ?></code></tt>
                 <?php } ?>
             </p> 
         </div>

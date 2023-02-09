@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Display Prime Mover settings
+ * Display GM Mover settings
  *
  */
 class PrimeMoverDisplaySettings
@@ -67,7 +67,7 @@ class PrimeMoverDisplaySettings
     }
     
     /**
-     * Get Prime Mover runtime settings
+     * Get GM Mover runtime settings
      * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayRunTimeSettings
      */
     public function getPrimeMoverRunTimeSettings()
@@ -112,7 +112,7 @@ class PrimeMoverDisplaySettings
     }
 
     /**
-     * Get Prime Mover exclude uplaods
+     * Get GM Mover exclude uplaods
      * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverDisplayExcludedUploadSettings
      */
     public function getPrimeMoverExcludedUploads()
@@ -148,7 +148,7 @@ class PrimeMoverDisplaySettings
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -157,7 +157,7 @@ class PrimeMoverDisplaySettings
     }
     
     /**
-     * Get Prime Mover settings
+     * Get GM Mover settings
      * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings()

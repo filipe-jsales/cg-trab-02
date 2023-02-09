@@ -337,7 +337,7 @@ class PrimeMoverSettings
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */
@@ -347,7 +347,7 @@ class PrimeMoverSettings
     }
     
     /**
-     * Get a specific Prime Mover setting
+     * Get a specific GM Mover setting
      * 
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsFalseIfSettingDoesNotExists()
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsSettingIfItExists()
@@ -386,7 +386,7 @@ class PrimeMoverSettings
     }
     
     /**
-     * Get all Prime Mover settings
+     * Get all GM Mover settings
      * @return mixed|boolean|NULL|array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itGetsAllPrimeMoverSettings()
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSettings::itReturnsOriginalValueIfEncryptedKeyNotSet()
@@ -406,7 +406,7 @@ class PrimeMoverSettings
     }
     
     /**
-     * Restore all Prime Mover settings
+     * Restore all GM Mover settings
      * @param array $settings
      */
     public function restoreAllPrimeMoverSettings($settings = [])

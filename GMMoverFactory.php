@@ -299,7 +299,7 @@ class GMMoverFactory
     
     /**
      * Uninstall sequence
-     * Only happens when user uninstalls Prime Mover
+     * Only happens when user uninstalls GM Mover
      */
     public function primeMoverCleanUpOnUninstall()
     {
@@ -313,7 +313,7 @@ class GMMoverFactory
     }
     
     /**
-     * Delete Prime Mover option
+     * Delete GM Mover option
      * @param string $option
      * @param number $user_id
      * @param boolean $network
@@ -342,7 +342,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover options in dB
+     * Remove GM Mover options in dB
      */
     private function removePrimeMoverOptionsInDb()
     {
@@ -382,7 +382,7 @@ class GMMoverFactory
     }
     
     /**
-     * Get Prime Mover options for uninstallation/cleanup
+     * Get GM Mover options for uninstallation/cleanup
      * @param string $table
      * @param string $field
      * @param wpdb $wpdb
@@ -432,7 +432,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover directories on uninstall
+     * Remove GM Mover directories on uninstall
      */
     private function removePrimeMoverDirectoriesOnUninstall()
     {        
@@ -455,7 +455,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover import directory on uninstall
+     * Remove GM Mover import directory on uninstall
      * @param string $basedir
      * @param $wp_filesystem
      */
@@ -465,7 +465,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover export dir IF no packages on it.
+     * Remove GM Mover export dir IF no packages on it.
      * @param string $basedir
      * @param $wp_filesystem
      */
@@ -503,7 +503,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover tmp download directory
+     * Remove GM Mover tmp download directory
      * @param string $basedir
      * @param $wp_filesystem
      */
@@ -513,7 +513,7 @@ class GMMoverFactory
     }
     
     /**
-     * Remove Prime Mover lock directory
+     * Remove GM Mover lock directory
      * @param string $basedir
      * @param $wp_filesystem
      */

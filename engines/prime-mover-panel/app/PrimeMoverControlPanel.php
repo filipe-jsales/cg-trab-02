@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
     exit;
 }
 /**
- * Prime Mover Extension to handle core and extension settings.
+ * GM Mover Extension to handle core and extension settings.
  *
  */
 class PrimeMoverControlPanel
@@ -105,7 +105,7 @@ class PrimeMoverControlPanel
         }
         
         if (true === apply_filters('prime_mover_multisite_blog_is_licensed', false, $blog_id)) {
-            return esc_html__('Prime Mover PRO Packages', 'prime-mover');
+            return esc_html__('GM Mover PRO Packages', 'prime-mover');
         }
         
         return $title;
@@ -434,7 +434,7 @@ class PrimeMoverControlPanel
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */

@@ -16,7 +16,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Main Class
+ * GM Mover Main Class
  *
  * The complete migration solution for moving single-site to multisite platform and vice versa. 
  * This can also be used to migrate single-site to another single-site install or multisite subsite to 

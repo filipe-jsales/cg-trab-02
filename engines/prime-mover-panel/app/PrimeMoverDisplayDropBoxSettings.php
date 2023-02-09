@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display DropBox settings
+ * GM Mover display DropBox settings
  *
  */
 class PrimeMoverDisplayDropBoxSettings
@@ -44,7 +44,7 @@ class PrimeMoverDisplayDropBoxSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

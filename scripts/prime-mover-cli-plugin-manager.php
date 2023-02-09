@@ -15,8 +15,8 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * This is automatically added by Prime Mover to the must use plugins directory. 
- * This code will only run when doing export/import process with Prime Mover. This will be deleted automatically when plugin is deactivated.
+ * This is automatically added by GM Mover to the must use plugins directory. 
+ * This code will only run when doing export/import process with GM Mover. This will be deleted automatically when plugin is deactivated.
  */
 final class PrimeMoverMustUsePluginManager
 {
@@ -188,7 +188,7 @@ final class PrimeMoverMustUsePluginManager
     }
     
     /**
-     * Is doing a specific Prime Mover Export/Import Process
+     * Is doing a specific GM Mover Export/Import Process
      * @param array $input_post
      * @param string $target_process
      * @param string $mode
@@ -303,7 +303,7 @@ final class PrimeMoverMustUsePluginManager
         }  
     }
     /**
-     * Disable block hooks from interfering with Prime Mover processes
+     * Disable block hooks from interfering with GM Mover processes
      * These are not needed.
      */
     public function maybeDisableSomeBlockHooks()
@@ -322,7 +322,7 @@ final class PrimeMoverMustUsePluginManager
     }
     
     /**
-     * Disable cron when running Prime Mover backup/migration processes to prevent conflicts and save resources
+     * Disable cron when running GM Mover backup/migration processes to prevent conflicts and save resources
      */
     public function disableCron()
     {
@@ -330,7 +330,7 @@ final class PrimeMoverMustUsePluginManager
     }
     
     /**
-     * Set locale on Prime Mover processes
+     * Set locale on GM Mover processes
      */
     public function setLocale()
     {
@@ -445,7 +445,7 @@ final class PrimeMoverMustUsePluginManager
     }
     
     /**
-     * Disable theme on Prime Mover process
+     * Disable theme on GM Mover process
      * @param mixed $theme
      * @return string
      */
@@ -454,7 +454,7 @@ final class PrimeMoverMustUsePluginManager
     }
 
     /**
-     * Load only Prime Mover plugin + selected third party plugins if required
+     * Load only GM Mover plugin + selected third party plugins if required
      * @param mixed $plugins
      * @return array
      */

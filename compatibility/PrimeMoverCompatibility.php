@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Compatibility Class
+ * GM Mover Compatibility Class
  * Helper class for interacting with third party plugins
  *
  */
@@ -73,7 +73,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -531,7 +531,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Maybe migrate Prime Mover network settings to site meta table
+     * Maybe migrate GM Mover network settings to site meta table
      * Instead of using the main site options table
      * This is in preparation for main site export/import support
      * @since 1.1.9
@@ -563,7 +563,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Main Prime Mover options
+     * Main GM Mover options
      * @return string[]
      */
     protected function mainPrimeMoverOptions()
@@ -689,7 +689,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Log Prime Mover footprint keys
+     * Log GM Mover footprint keys
      * @param array $keys
      * @param array $footprint
      * @return array
@@ -705,7 +705,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Log Prime Mover footprint configuration
+     * Log GM Mover footprint configuration
      * @param boolean $overall_valid
      * @param array $footprint_temp
      * @return string
@@ -742,7 +742,7 @@ class PrimeMoverCompatibility
     }
     
     /**
-     * Destroy incompatible session on Prime Mover Ajax actions
+     * Destroy incompatible session on GM Mover Ajax actions
      */
     public function destroyInCompatibleSessionOnAjax()
     {

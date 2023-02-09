@@ -17,7 +17,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover OpenSSL Utilities
+ * GM Mover OpenSSL Utilities
  * Helper functionality for doing OpenSSL related operations
  * This implementation relies on PHP native OpenSSL library
  * And does not use any command line interface of OpenSSL for maximum compatibility
@@ -359,7 +359,7 @@ class PrimeMoverOpenSSLUtilities
         }
         if (!$this->isOpenSSLCustomer($blog_id)) {
             $ret['error'] = sprintf(esc_html__("Restoring encrypted package is a PRO feature. Please %s to restore this package.", 'prime-mover'), '<a href="' . 
-                esc_url($this->getSystemInitialization()->getUpgradeUrl()) . '">' . esc_html__('upgrade to Prime Mover PRO', 'prime-mover') . '</a>');
+                esc_url($this->getSystemInitialization()->getUpgradeUrl()) . '">' . esc_html__('upgrade to GM Mover PRO', 'prime-mover') . '</a>');
             return $ret;
         }
         $validation_result = $this->verifyKeyHelper($data, $blog_id, true);

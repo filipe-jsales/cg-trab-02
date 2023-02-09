@@ -22,7 +22,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Freemius Compatibility Class
+ * GM Mover Freemius Compatibility Class
  * Helper class for interacting with Freemius
  *
  */
@@ -151,7 +151,7 @@ class PrimeMoverFreemiusCompat
     }
     
     /**
-     * Filter Prime Mover slug in menu
+     * Filter GM Mover slug in menu
      */
     public function filterPrimeMoverSlug()
     {
@@ -243,7 +243,7 @@ class PrimeMoverFreemiusCompat
             return;
         }
     ?>
-        <p><a target="_blank" href="https://users.freemius.com/login" class="button button-hero"><?php esc_html_e('Download Prime Mover PRO', 'prime-mover'); ?></a></p>    
+        <p><a target="_blank" href="https://users.freemius.com/login" class="button button-hero"><?php esc_html_e('Download GM Mover PRO', 'prime-mover'); ?></a></p>    
     <?php      
     }
     
@@ -263,12 +263,12 @@ class PrimeMoverFreemiusCompat
         $message .= '<ol>';
         $message .= '<li>' . sprintf(esc_html__('Login to your %s', 'prime-mover'), 
             '<a target="_blank" class="prime-mover-external-link" href="https://users.freemius.com/login">' . esc_html__('Freemius account', 'prime-mover') . '</a>.</li>');
-        $message .= '<li>' . esc_html__('Download latest Prime Mover PRO.', 'prime-mover') . '</li>';
+        $message .= '<li>' . esc_html__('Download latest GM Mover PRO.', 'prime-mover') . '</li>';
         $message .= '<li>' . sprintf(esc_html__('Inside your Freemius account - %s', 'prime-mover'),
             '<a target="_blank" class="prime-mover-external-link" href="https://codexonics.com/prime_mover/prime-mover/prime-mover-pro-how-to-deactivate-licenses-inside-your-freemius-account/">' . esc_html__('deactivate license', 'prime-mover') . '</a>.</li>');
-        $message .= '<li>' . esc_html__('Upload and install Prime Mover PRO to this site.', 'prime-mover') . '</li>';
-        $message .= '<li>' . esc_html__('Deactivate Prime Mover FREE version.', 'prime-mover') . '</li>';
-        $message .= '<li>' . esc_html__('Activate Prime Mover PRO and enter license key.', 'prime-mover') . '</li>';
+        $message .= '<li>' . esc_html__('Upload and install GM Mover PRO to this site.', 'prime-mover') . '</li>';
+        $message .= '<li>' . esc_html__('Deactivate GM Mover FREE version.', 'prime-mover') . '</li>';
+        $message .= '<li>' . esc_html__('Activate GM Mover PRO and enter license key.', 'prime-mover') . '</li>';
         $message .= '<li>' . esc_html__('Optionally - please confirm your email if you have received confirmation link.', 'prime-mover') . '</li>';
         $message .= '</ol>';
         
@@ -286,7 +286,7 @@ class PrimeMoverFreemiusCompat
             return $header;
         } 
         
-        return '<h2>' . esc_html__('Thank you for upgrading to Prime Mover PRO!', 'prime-mover') . '</h2>';        
+        return '<h2>' . esc_html__('Thank you for upgrading to GM Mover PRO!', 'prime-mover') . '</h2>';        
     }
     
     /**
@@ -714,7 +714,7 @@ class PrimeMoverFreemiusCompat
             $this->getPrimeMover()->getSystemFunctions()->updateSiteOption(self::ON_UPGRADE_USER_VERIFIED, 'yes', true);
         }
         
-        do_action('prime_mover_log_processed_events', "Prime Mover successfully executes Freemius Fixer", 0, 'common', __FUNCTION__ , $this);
+        do_action('prime_mover_log_processed_events', "GM Mover successfully executes Freemius Fixer", 0, 'common', __FUNCTION__ , $this);
     }
     
     /**
@@ -891,7 +891,7 @@ class PrimeMoverFreemiusCompat
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */

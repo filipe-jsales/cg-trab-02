@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover common settings markup
+ * GM Mover common settings markup
  *
  */
 class PrimeMoverSettingsMarkups

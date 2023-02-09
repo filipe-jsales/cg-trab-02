@@ -24,9 +24,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover System Functions Class
+ * GM Mover System Functions Class
  *
- * The Prime Mover System Functions Class aims to provide the system functions for the facility of this plugin.
+ * The GM Mover System Functions Class aims to provide the system functions for the facility of this plugin.
  *
  */
 class PrimeMoverSystemFunctions
@@ -62,7 +62,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Read given Prime Mover directory for packages
+     * Read given GM Mover directory for packages
      * @param number $blog_id
      * @param string $dir
      * @param array $zips
@@ -2309,7 +2309,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Activate Prime Mover Plugin Only (in cases when restoring a site and we are deactivating all plugins)
+     * Activate GM Mover Plugin Only (in cases when restoring a site and we are deactivating all plugins)
      * @param number $blog_id
      * @return void|boolean
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itSkipsPrimeMoverPluginActivationOnMultisite()
@@ -2391,7 +2391,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Add entity to Prime Mover zip package
+     * Add entity to GM Mover zip package
      * @param string $zippath
      * @param boolean $createzip
      * @param string $entity
@@ -2601,7 +2601,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Checks if the download URL is a default Prime Mover download zip URL format
+     * Checks if the download URL is a default GM Mover download zip URL format
      * @param string $url
      * @return boolean
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itReturnsFalseIfNotPrimeMoverDownloadUrl()
@@ -2720,7 +2720,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Checks if the package is really a Prime Mover WPRIME package
+     * Checks if the package is really a GM Mover WPRIME package
      * @param string $filename
      * @param boolean $config_check_only
      * @param boolean $source_is_url
@@ -3357,7 +3357,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Returns TRUE if its a Prime Mover settings page OR migration tools/Sites page
+     * Returns TRUE if its a GM Mover settings page OR migration tools/Sites page
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itChecksIfPrimeMoverPage()
      */
     public function isPrimeMoverPage()
@@ -3817,7 +3817,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover nonce life - default
+     * GM Mover nonce life - default
      * @return string
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itGetsNonceLife() 
      */
@@ -3827,7 +3827,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover nonce salt
+     * GM Mover nonce salt
      * @param string $salt
      * @param string $scheme
      * @return string
@@ -3860,7 +3860,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Remove Prime Mover nonce filters
+     * Remove GM Mover nonce filters
      * @param boolean $skip
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverSystemFunctions::itRemovesPrimeMoverNonceFilters()
      */
@@ -3874,7 +3874,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover nonce URL
+     * GM Mover nonce URL
      * @param mixed $actionurl
      * @param mixed $action
      * @param string $name
@@ -3892,7 +3892,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover nonce field
+     * GM Mover nonce field
      * @param mixed $action
      * @param string $name
      * @param boolean $referer
@@ -3908,7 +3908,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover create nonce
+     * GM Mover create nonce
      * @param mixed $action
      * @param boolean $skip
      * @return string
@@ -3956,7 +3956,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover verify nonce
+     * GM Mover verify nonce
      * @param string $nonce
      * @param mixed $action
      * @param boolean $skip
@@ -3973,7 +3973,7 @@ class PrimeMoverSystemFunctions
     }
     
     /**
-     * Prime Mover check admin referer
+     * GM Mover check admin referer
      * @param mixed $action
      * @param string $query_arg
      * @param boolean $skip

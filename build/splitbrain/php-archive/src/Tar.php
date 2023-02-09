@@ -13,7 +13,7 @@ namespace GreenMainframe\GMMoverFramework\build\splitbrain\PHPArchive;
  * @package splitbrain\PHPArchive
  * @license MIT
  * 
- * Prime Mover WordPress Plugin Integration
+ * GM Mover WordPress Plugin Integration
  * https://github.com/codex-m/php-archive
  * @author Emerson Maningo (emerson@codexonics.com)
  */
@@ -232,10 +232,10 @@ class Tar extends Archive
         return $return;
     }
     /**
-     * Checks if Prime Mover TarBall package
+     * Checks if GM Mover TarBall package
      * File extension should be checked first before using this function
-     * Returns false if not a Prime Mover Tarball
-     * Otherwise returns the Prime Mover tarball configuration
+     * Returns false if not a GM Mover Tarball
+     * Otherwise returns the GM Mover tarball configuration
      * @return boolean|string
      */
     public function isPrimeMoverTarBall()

@@ -18,9 +18,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Validation handling class
+ * GM Mover Validation handling class
  *
- * The Prime Mover Validation Handling Class handles basic input data validation processes.
+ * The GM Mover Validation Handling Class handles basic input data validation processes.
  * The class performs earliest/first validation of sanitized inputs.
  * This is done as soon as user input data is received via POST, GET or HEAD
  * Capability checks SHOULD already be done at this stage.
@@ -75,7 +75,7 @@ class PrimeMoverValidationHandlers
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getMultisteMigration()

@@ -23,7 +23,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover System Utilities
+ * GM Mover System Utilities
  * Helper functionality for System functions
  *
  */
@@ -137,7 +137,7 @@ class PrimeMoverSystemUtilities
     }
     
     /**
-     * Exclude core Prime Mover directories in export media file lists
+     * Exclude core GM Mover directories in export media file lists
      * @param array $excluded_dir
      * @param number $blogid_to_export
      * @return array

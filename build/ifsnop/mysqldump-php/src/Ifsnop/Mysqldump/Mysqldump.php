@@ -12,7 +12,7 @@
  * @link     https://github.com/ifsnop/mysqldump-php
  *
  * Revision by GreenMainframe Limited
- * For Prime Mover WordPress plugin
+ * For GM Mover WordPress plugin
  */
 namespace GreenMainframe\GMMoverFramework\build\Ifsnop\Mysqldump;
 

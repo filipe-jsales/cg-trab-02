@@ -18,8 +18,8 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Freemius Integration
- * Utiliy class for integrating Freemius SDK with Prime Mover
+ * GM Mover Freemius Integration
+ * Utiliy class for integrating Freemius SDK with GM Mover
  *
  */
 class PrimeMoverFreemiusIntegration
@@ -203,7 +203,7 @@ class PrimeMoverFreemiusIntegration
                  <li><a class="prime-mover-external-link" target="_blank" href="<?php echo esc_url(CODEXONICS_LICENSING_GUIDE);?>">
                      <?php esc_html_e('Is there a licensing guide?', 'prime-mover'); ?></a></li>
                  <li><a class="prime-mover-external-link" target="_blank" href="<?php echo esc_url(CODEXONICS_ACTIVATE_PRO_GUIDE);?>">
-                     <?php esc_html_e('How to activate Prime Mover PRO license?', 'prime-mover'); ?></a></li>                    
+                     <?php esc_html_e('How to activate GM Mover PRO license?', 'prime-mover'); ?></a></li>                    
                  </ol>
         </div>    
     <?php     
@@ -317,13 +317,13 @@ class PrimeMoverFreemiusIntegration
         
         $msg['prime_mover_exceeded_browser_limit'] = "<p>" . sprintf(esc_html__('Restoring packages beyond %s using browser uploads is not recommended for best performance.', 'prime-mover'), $human_readable) . "</p>" . 
             "<p>" . sprintf(esc_html__('Please upload this package to this path via FTP: %s', 'prime-mover'), "<em>" . "{{WPRIME_EXPORT_PATH}}" . "</em>") . "</p>" . 
-            "<p>" . sprintf(esc_html__('You can then restore via %s in backend.', 'prime-mover'), "<em>" . esc_html__('Prime Mover - Packages', 'prime-mover') . "</em>") . "</p>";
+            "<p>" . sprintf(esc_html__('You can then restore via %s in backend.', 'prime-mover'), "<em>" . esc_html__('GM Mover - Packages', 'prime-mover') . "</em>") . "</p>";
         
         return $msg;
     }
  
     /**
-     * Always Exclude Prime Mover Plugin in Diffs
+     * Always Exclude GM Mover Plugin in Diffs
      * @param array $ret
      * @return array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusIntegration::itAlwaysExcludePrimeMoverItselfInDiff()
@@ -372,7 +372,7 @@ class PrimeMoverFreemiusIntegration
     }
     
     /**
-     * Activate only one Prime Mover version at 
+     * Activate only one GM Mover version at 
      * restore based on customer information
      * This should work in both single-site and multisite.
      * Since version 1.4.4, blog ID is switched to make sure this is correctly handled on a correct subsite (if multisite).
@@ -424,12 +424,12 @@ class PrimeMoverFreemiusIntegration
         }
 
         if (!$free_active && !$pro_active ) {            
-            do_action('prime_mover_log_processed_events', 'ERROR: Prime Mover encounters fatal error and deactivated.', 0, 'import', __FUNCTION__, $this);
-            do_action( 'prime_mover_shutdown_actions', ['type' => 1, 'message' => esc_html__('Prime Mover encounters fatal error and deactivated.')] );
+            do_action('prime_mover_log_processed_events', 'ERROR: GM Mover encounters fatal error and deactivated.', 0, 'import', __FUNCTION__, $this);
+            do_action( 'prime_mover_shutdown_actions', ['type' => 1, 'message' => esc_html__('GM Mover encounters fatal error and deactivated.')] );
             return wp_die();
         }        
         if (!$do_deactivation ) {
-            do_action('prime_mover_log_processed_events', 'Only one Prime Mover version is active, this is correct.. skipping deactivation.', 0, 'import', __FUNCTION__, $this);
+            do_action('prime_mover_log_processed_events', 'Only one GM Mover version is active, this is correct.. skipping deactivation.', 0, 'import', __FUNCTION__, $this);
             return;
         }
         
@@ -443,7 +443,7 @@ class PrimeMoverFreemiusIntegration
     }
     
     /**
-     * Handle multisite Prime Mover deactivation sequence
+     * Handle multisite GM Mover deactivation sequence
      */
     protected function handleMultisiteDeactivationSequence()
     {
@@ -473,7 +473,7 @@ class PrimeMoverFreemiusIntegration
     }
     
     /**
-     * Handle single site Prime Mover deactivation sequence
+     * Handle single site GM Mover deactivation sequence
      */
     protected function handleSingleSiteDeactivationSequence()
     {
@@ -491,8 +491,8 @@ class PrimeMoverFreemiusIntegration
     }
        
     /**
-     * Add both Prime Mover versions
-     * This is to prevent from running into a situation where no Prime Mover
+     * Add both GM Mover versions
+     * This is to prevent from running into a situation where no GM Mover
      * is activated after import due to differing versions.
      * @param array $export_system_footprint
      * @return void|string
@@ -715,14 +715,14 @@ class PrimeMoverFreemiusIntegration
     public function showGettingStartedOnFreeUsers()
     {
         $pro = false;
-        $plan = "Prime Mover Free version";
+        $plan = "GM Mover Free version";
         
         $support = sprintf( esc_html__( '%s is available with free version', 'prime-mover' ), 
             '<a target="_blank" class="prime-mover-external-link" href="https://wordpress.org/support/plugin/prime-mover/">' . esc_html__('Community support', 'prime-mover') . '</a>');
         $settings = "#";
         
         if ($this->isCustomer()) {
-            $plan = "Prime Mover Pro version";
+            $plan = "GM Mover Pro version";
             $support = esc_html__( 'Technical support is included with Pro version', 'prime-mover' );
             
             $pro = true;
@@ -998,7 +998,7 @@ class PrimeMoverFreemiusIntegration
         }
         $freemius = $this->getFreemius();
         $plugin_name = $freemius->get_plugin_name();
-        $target = ['Prime Mover', 'Prime Mover PRO'];
+        $target = ['GM Mover', 'GM Mover PRO'];
         if (!in_array($plugin_name, $target)) {
             return;
         }

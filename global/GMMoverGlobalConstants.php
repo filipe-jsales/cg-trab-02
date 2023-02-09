@@ -9,8 +9,8 @@ if (!defined('ABSPATH')) {
 }
 
 define('PRIME_MOVER_VERSION', '1.8.0');
-define('GM_MOVER_PLUGIN_CODENAME', 'Prime Mover');
-define('PRIME_MOVER_PRO_PLUGIN_CODENAME', 'Prime Mover PRO');
+define('GM_MOVER_PLUGIN_CODENAME', 'GM Mover');
+define('PRIME_MOVER_PRO_PLUGIN_CODENAME', 'GM Mover PRO');
 define('PRIME_MOVER_BACKUP_MARKUP_VERSION', '1.1.8');
 define('PRIME_MOVER_PLUGIN_PATH', plugin_dir_path(PRIME_MOVER_MAINPLUGIN_FILE));
 define('PRIME_MOVER_SHELL_ARCHIVER_FILENAME', 'prime-mover-shell-archiver.php');

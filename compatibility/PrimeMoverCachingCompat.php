@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Cache Compatibility Class
+ * GM Mover Cache Compatibility Class
  * Helper class for interacting with third party cache plugins
  *
  */
@@ -57,7 +57,7 @@ class PrimeMoverCachingCompat
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover WooCommerce Compatibility Class
+ * GM Mover WooCommerce Compatibility Class
  * Helper class for interacting with WooCommerce plugin
  *
  */
@@ -78,7 +78,7 @@ class PrimeMoverWooCommerceCompat
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

@@ -332,7 +332,7 @@ class PrimeMoverGearBoxScreenOptions
         $current_setting = get_user_option(self::SCREEN_OPTION_SETTING);
         ?>
        <fieldset class="prime-mover-screen-options">            
-           <legend><?php esc_html_e('Prime Mover', 'prime-mover'); ?></legend>
+           <legend><?php esc_html_e('GM Mover', 'prime-mover'); ?></legend>
            <label><input type="checkbox" name="<?php echo esc_attr(self::SCREEN_OPTION_SETTING);?>" <?php checked( $current_setting, 'yes' ); ?> value="yes"> 
            <?php esc_html_e('Show only sites containing backups', 'prime-mover' );?></label>
            <?php $this->getPrimeMover()->getSystemFunctions()->primeMoverNonceField('prime_mover_screen_option_save', 'prime_mover_screen_option_nonce'); ?>
@@ -343,7 +343,7 @@ class PrimeMoverGearBoxScreenOptions
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */

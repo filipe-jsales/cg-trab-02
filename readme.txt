@@ -1,4 +1,4 @@
-=== Migrate WordPress Website & Backups - Prime Mover ===
+=== Migrate WordPress Website & Backups - GM Mover ===
 Contributors: codexonics, freemius
 Donate link: https://codexonics.com
 Tags: migrate wordpress, multisite migration, wordpress backup, multisite, backup, database backup, migration
@@ -54,31 +54,31 @@ https://youtu.be/QAVVXcoQU8g
 
 = Documentation =
 
-*	[Prime Mover Documentation](https://codexonics.com/prime_mover/prime-mover/)
+*	[GM Mover Documentation](https://codexonics.com/prime_mover/prime-mover/)
 
 == Installation ==
 
 1. Upload to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
-3. Optionally, opt in to security & feature updates notification including non-sensitive diagnostic tracking with freemius.com. If you skip this, that's okay! Prime Mover will still work just fine.
-4. You should see the Prime Mover Control Panel. Click "Go to Migration Tools" to start migrating sites.
+3. Optionally, opt in to security & feature updates notification including non-sensitive diagnostic tracking with freemius.com. If you skip this, that's okay! GM Mover will still work just fine.
+4. You should see the GM Mover Control Panel. Click "Go to Migration Tools" to start migrating sites.
 
 == Frequently Asked Questions ==
 
-= What makes Prime Mover unique to other existing migration and backup plugins? =
+= What makes GM Mover unique to other existing migration and backup plugins? =
 	
 * The free version has no restriction on package size, number of websites or mode of migration (single-site or multisite will work). (Note: Exporting/Restoring a multisite main site is a PRO feature)
 * The free version supports WordPress multisite migration on any number of subsites except that exporting/restoring the multisite main site is a PRO feature.
 * It can backup WordPress multisite sub-sites or migrate multisite.
 * No need to delete your WordPress installation, create/delete the database, and all other technical stuff. It will save you a lot of time.
-* This is not hosting-dependent. Prime Mover is designed to work with any hosting companies you want to work with.
+* This is not hosting-dependent. GM Mover is designed to work with any hosting companies you want to work with.
 * The free version has full multisite migration functionality. This feature is usually missing in most migration plugins free version.
 * Full versatility - migrating from your localhost, dev site, or from a live site to another live site.
 * You will be doing the entire migration inside the WordPress admin. Anyone with administrator access can do it. There is no need to hire a freelancer to do the job - saves you money.
 * No messing with complicated migration settings, the free version has built-in settings. Only choose a few options to export and migrate, that's it. 
 * You can save, download, delete, and migrate packages using the management page.
 * No need to worry about PHP configuration and server settings. Compatible with most default PHP server settings even in limited shared hosting. 
-* Prime Mover works with modern PHP versions 5.6 to 8.1+ (Google Drive feature requires at least PHP 7.1).
+* GM Mover works with modern PHP versions 5.6 to 8.1+ (Google Drive feature requires at least PHP 7.1).
 * The code is following PHP-fig coding standards (standard PHP coding guidelines).
 * The free version supports backup and restoration of non-UTF8 sites. However, you need the PRO version to migrate non-UTF8 to the UTF8 (utf8mb4) database charset and vice versa.
 * You don't need to worry about setting up users or changing user passwords after migration. It does not overwrite existing site users after migration.
@@ -93,7 +93,7 @@ For more common questions, please read the [plugin FAQ listed in the developer s
 4. Export to multisite subsite with blog ID of 23 example
 5. Restore package via browser upload
 6. Single-site package manager
-7. Prime Mover network control panel
+7. GM Mover network control panel
 8. Export and restore package from Network Sites
 9. Multisite network package manager
 
@@ -116,7 +116,7 @@ Update now to get all the latest bug fixes, improvements and features!
 = 1.7.2 =
 
 * Fixed: Compatibility issues with ModSecurity module.
-* Fixed: Unable to activate Prime Mover due to hardcoded home/site URL constants in restricted config file.
+* Fixed: Unable to activate GM Mover due to hardcoded home/site URL constants in restricted config file.
 * Fixed: Updated to latest Freemius 2.5.3 SDK.
 * Fixed: Fatal error in Google Drive API when using PHP 5.6/7.0.
 * Fixed: Bumped up PHP version requirement for Google Drive API to PHP 7.1+.

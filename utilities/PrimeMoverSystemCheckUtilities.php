@@ -22,7 +22,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover System Check Utilities
+ * GM Mover System Check Utilities
  * Helper functionality for System check class
  *
  */
@@ -135,7 +135,7 @@ class PrimeMoverSystemCheckUtilities
     }
     
     /**
-     * Set Prime Mover environment
+     * Set GM Mover environment
      * @param array $args
      * @return array
      */

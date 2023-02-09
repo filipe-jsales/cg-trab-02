@@ -2,7 +2,7 @@
 
 /****************************************************
  * PRIME MOVE GLOBAL FUNCTIONS
- * Globally accessible by Prime Mover clases/scripts
+ * Globally accessible by GM Mover clases/scripts
  * **************************************************
  */
 if ( !defined( 'ABSPATH' ) ) {

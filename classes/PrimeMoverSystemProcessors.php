@@ -18,9 +18,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover System Processors Class
+ * GM Mover System Processors Class
  *
- * The Prime Mover System Processor Class aims to provide the AJAX processor facility for exporting,importing and deleting temporary files.
+ * The GM Mover System Processor Class aims to provide the AJAX processor facility for exporting,importing and deleting temporary files.
  */
 class PrimeMoverSystemProcessors implements PrimeMoverSystemProcessor
 {

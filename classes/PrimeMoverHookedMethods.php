@@ -16,9 +16,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Hooked Methods
+ * GM Mover Hooked Methods
  *
- * The Prime Mover Hooked Method Class provides the hooked methods to WordPress core hooks
+ * The GM Mover Hooked Method Class provides the hooked methods to WordPress core hooks
  *
  */
 class PrimeMoverHookedMethods
@@ -497,14 +497,14 @@ class PrimeMoverHookedMethods
             
         if (false === $this->getSystemInitialization()->getMultisiteExportFolderCreated()) {
             ?>				
-			<p><?php echo esc_html__('Prime Mover plugin is not yet ready to use. Error: Unable to create its own export folder. 
+			<p><?php echo esc_html__('GM Mover plugin is not yet ready to use. Error: Unable to create its own export folder. 
 					This is required to export sites. Please make sure WordPress has permission to create folder in your uploads directory.', 'prime-mover'); ?></p>
 				
 			<?php
         }
             if (false === $this->getSystemInitialization()->getMultisiteWpFilesystemInitialized()) {
                 ?>			
-			<p><?php echo sprintf ( esc_html__('Prime Mover plugin is activated but not yet ready to use. %s.', 
+			<p><?php echo sprintf ( esc_html__('GM Mover plugin is activated but not yet ready to use. %s.', 
 			    'prime-mover'), 
 			    '<strong>' . esc_html__('Error: WordPress FileSystem API not set since it requires DIRECT FILE PERMISSIONS', 'prime-mover') . '</strong>'); ?></p>
 			<p><?php echo esc_html__('Make sure WordPress is creating files as the same owner as the WordPress files.', 'prime-mover'); ?></p>
@@ -513,17 +513,17 @@ class PrimeMoverHookedMethods
             }
             if (false === $this->getSystemFunctions()->primeMoverCheckIfZipEnabled()) {
                 ?>
-			<p><?php echo esc_html__('Prime Mover plugin is not yet ready to use. Error: Requires PHP Zip extension to be enabled. Please check with you web host.', 'prime-mover'); ?></p>			
+			<p><?php echo esc_html__('GM Mover plugin is not yet ready to use. Error: Requires PHP Zip extension to be enabled. Please check with you web host.', 'prime-mover'); ?></p>			
 		<?php
             }
             if (false === $this->getSystemFunctions()->compliedMinimumRequirement()) {
                 //Essential PHP version requirements not meet ?>
-			<p><?php echo esc_html__('Prime Mover plugin is not yet ready to use. Error: Requires at least PHP 5.6.0.', 'prime-mover'); ?></p>
+			<p><?php echo esc_html__('GM Mover plugin is not yet ready to use. Error: Requires at least PHP 5.6.0.', 'prime-mover'); ?></p>
 		<?php
             }
             if (false === $this->getSystemChecks()->primeMoverCheckIfMbstringEnabled()) {
                 //No mbstring extension ?>
-			<p><?php echo esc_html__('Prime Mover plugin is not yet ready to use. Error: Requires mbstring PHP extension. Please enable it.', 'prime-mover'); ?></p>
+			<p><?php echo esc_html__('GM Mover plugin is not yet ready to use. Error: Requires mbstring PHP extension. Please enable it.', 'prime-mover'); ?></p>
 		<?php
             }
         ?>

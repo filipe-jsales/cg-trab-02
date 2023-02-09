@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Validation Utilities
+ * GM Mover Validation Utilities
  * Helper functionality for data validation processes
  *
  */
@@ -59,7 +59,7 @@ class PrimeMoverValidationUtilities
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

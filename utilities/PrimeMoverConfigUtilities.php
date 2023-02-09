@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Config Utilities
+ * GM Mover Config Utilities
  * Helper functionality for working with post-site configuration
  *
  */

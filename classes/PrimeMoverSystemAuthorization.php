@@ -16,9 +16,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * The Prime Mover System Authorization Class
+ * The GM Mover System Authorization Class
  *
- * The Prime Mover System Authorization provides authentication layer for the class methods and usage.
+ * The GM Mover System Authorization provides authentication layer for the class methods and usage.
  */
 class PrimeMoverSystemAuthorization
 {
@@ -26,7 +26,7 @@ class PrimeMoverSystemAuthorization
     /** @var boolean is_authorized */
     private $is_authorized;
     
-    /** @var integer Prime Mover user ID */
+    /** @var integer GM Mover user ID */
     private $prime_mover_user_id;
     
     /**
@@ -101,7 +101,7 @@ class PrimeMoverSystemAuthorization
     }
     
     /**
-     * Checks if current user is Prime Mover user
+     * Checks if current user is GM Mover user
      * @param number $user_id
      * @return boolean
      */

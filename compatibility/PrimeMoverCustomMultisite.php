@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Custom Multisite Class
+ * GM Mover Custom Multisite Class
  * Compatibiity class for customized multisite main site implementations
  *
  */
@@ -39,7 +39,7 @@ class PrimeMoverCustomMultisite
    
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

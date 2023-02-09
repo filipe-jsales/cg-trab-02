@@ -18,9 +18,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * The Prime Mover Progress handling class
+ * The GM Mover Progress handling class
  *
- * The Prime Mover Progress Handler Class handles tracking the import and export progress for user tracking migration progress.
+ * The GM Mover Progress Handler Class handles tracking the import and export progress for user tracking migration progress.
  *
  */
 class PrimeMoverProgressHandlers
@@ -641,7 +641,7 @@ class PrimeMoverProgressHandlers
                     '</a>.</p>';
             }
         } else {            
-            $message .= '<p>' . esc_html__('Prime Mover Maintenance Mode is now disabled. PLEASE RELOAD THIS PAGE.', 'prime-mover') . '</p>';
+            $message .= '<p>' . esc_html__('GM Mover Maintenance Mode is now disabled. PLEASE RELOAD THIS PAGE.', 'prime-mover') . '</p>';
         }
         
         wp_die(

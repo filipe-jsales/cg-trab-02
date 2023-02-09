@@ -1,6 +1,6 @@
 == Changelog ==
 
-**This is a list detailing changes for all Prime Mover releases.**
+**This is a list detailing changes for all GM Mover releases.**
 
 = 1.7.0 =
 
@@ -33,8 +33,8 @@
 * Fixed: Canonical upload directory path issues during restore.
 * Fixed: Incomplete migration logs.
 * Fixed: Incorrect plugin paths for adding plugin headers to cache.
-* Fixed: Prime Mover creating wrong export directories during restore.
-* Fixed: Disable heartbeat API only on locked Prime Mover processes.
+* Fixed: GM Mover creating wrong export directories during restore.
+* Fixed: Disable heartbeat API only on locked GM Mover processes.
 * Fixed: Foreign constraint key exceeding 64 character limit.
 
 = 1.6.4 =
@@ -56,7 +56,7 @@
 * Fixed: Incorrect "Visit site" link in page manager due to differing home and site URL.
 * Fixed: Handling corrupted packages during restore for all modes.
 * Fixed: Edge cases on search and replace.
-* Fixed: Prime Mover directories included in WPRIME archiving.
+* Fixed: GM Mover directories included in WPRIME archiving.
 * Fixed: Performance issues on search replace due to redundant replaceables.
 * Fixed: Complete package processed as development package on restore.
 
@@ -102,7 +102,7 @@
 = 1.5.2 =
 
 * Compatibility: Support for third party plugins user adjustment API.
-* Refactoring: Prime Mover plugin manager script to support API use.
+* Refactoring: GM Mover plugin manager script to support API use.
 * Fixed: Deprecation warnings when using PHP 8.0+.
 * Fixed: Runtime error when restoring incomplete objects in PHP 8.0+.
 * Fixed: User taxonomy is not corrected imported.
@@ -164,7 +164,7 @@
 * Fixed: Stuck restoration process due to missing user role on import.
 * Fixed: Search and replace issue when moving site to single-site subdirectory.
 * Fixed: PHP notices on constant already defined.
-* Fixed: Redundant Prime Mover plugin activation during restore.
+* Fixed: Redundant GM Mover plugin activation during restore.
 
 = 1.4.3 =
 
@@ -271,7 +271,7 @@
 
 * Fixed: Export and restore AJAX not working due to cross-site origin issues.
 * Fixed: When a multisite subsite is created, automatically create the export folders.
-* Fixed: Fatal error on Prime Mover account page on multisite.
+* Fixed: Fatal error on GM Mover account page on multisite.
 * Fixed: Deleted redundant export directories inside a multisite subsite uploads directory.
 
 = 1.2.9 =
@@ -350,7 +350,7 @@
 = 1.1.9 =
 
 * Fixed: Moved all multisite-level options to network site meta table.
-* Fixed: Updated Youtube introduction video to Prime Mover.
+* Fixed: Updated Youtube introduction video to GM Mover.
 
 = 1.1.8 =
 
@@ -371,7 +371,7 @@
 * Fixed: Updated Freemius library to latest version 2.4.0.1.
 * Fixed: Cannot modify header information - headers already sent error in network admin pages.
 * Fixed: Import user meta timeout.
-* Fixed: Unable to download Prime Mover packages due to server caching.
+* Fixed: Unable to download GM Mover packages due to server caching.
 * Fixed: No buffer to flush error when downloading logs.
 * Fixed: Slow remote URL restoration.
 * Fixed: Fatal runtime error during theme restore process.
@@ -427,7 +427,7 @@
 * Fixed: Slow upload restoration mode on localhost.
 * Fixed: No MySQLdump error returned when on shell mode.
 * Fixed: Incorrect MySQLdump PHP detection.
-* Feature: Added contact us form in Prime Mover plugin administration pages.
+* Feature: Added contact us form in GM Mover plugin administration pages.
 * Feature: Added documentation link on some settings page.
 * Usability: Simplified migration tools page and improve error text.
 * Usability: Move important server requisite checks on plugin activation stage.
@@ -484,7 +484,7 @@
  * Fixed: Slow down progress ajax request, this is a protection for shared/cheap hosting flagging a rapid ajax import/export progress as DOS attack.
  * Fixed: Upgrade Freemius SDK to latest version.
  * Fixed: Make download resumable for core export.
- * Fixed: Required sites using Prime Mover to have complete WordPress security keys.
+ * Fixed: Required sites using GM Mover to have complete WordPress security keys.
  * Fixed: Enabled migration logs by default.
  * Fixed: If export and restore does not pass validation, returns fatal runtime error.
  * Fixed: Improved support for low memory hosting servers.
@@ -495,7 +495,7 @@
 
 = 1.0.4 =
 * Fixed: Long running exporter ajax issue causing process hang-up.
-* Fixed: Branding names to Prime Mover.
+* Fixed: Branding names to GM Mover.
 * Fixed: Not enough throttle on AJAX upload chunk causing errors on large uploads.
 * Fixed: Issue on server timeout for long running import requests.
 * Fixed: User is not notified on stalled export and import processes.

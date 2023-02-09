@@ -1,7 +1,7 @@
 <?php
 /**
  *
- * This is the requirement for Prime Mover plugin folder name to exactly use /prime-mover/ or /prime-mover-pro/ slug.
+ * This is the requirement for GM Mover plugin folder name to exactly use /prime-mover/ or /prime-mover-pro/ slug.
  * Otherwise it cannot be activated.
  *
  */

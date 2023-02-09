@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Upload Utilities
+ * GM Mover Upload Utilities
  * Helper functionality for Uploads
  *
  */

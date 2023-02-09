@@ -20,9 +20,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * The Prime Mover Import Class
+ * The GM Mover Import Class
  *
- * The Prime Mover Import Class aims to provide the import facility of this plugin.
+ * The GM Mover Import Class aims to provide the import facility of this plugin.
  *
  */
 class PrimeMoverImporter implements PrimeMoverImport
@@ -574,7 +574,7 @@ class PrimeMoverImporter implements PrimeMoverImport
     }
     
     /**
-     * Unzip main Prime Mover Package
+     * Unzip main GM Mover Package
      * {@inheritDoc}
      * @see PrimeMoverImport::unzipImportedZipPackageMigration()
      * @compatible 5.6
@@ -797,7 +797,7 @@ class PrimeMoverImporter implements PrimeMoverImport
             $correct_folder_name = $this->getSystemFunctions()->getCorrectFolderNameFromZip($file_path);
         }       
         if (!$correct_folder_name) {
-            $ret['error'] = esc_html__('Unzip failed. The package is not a Prime Mover site package.', 'prime-mover');
+            $ret['error'] = esc_html__('Unzip failed. The package is not a GM Mover site package.', 'prime-mover');
             return $ret;
         }
 
@@ -1838,7 +1838,7 @@ class PrimeMoverImporter implements PrimeMoverImport
         fclose($handle); 
         
         if ($max_allowed_packet_error && $max_allowed_packet_fix_rejected) {
-            $return['error'] = sprintf(esc_html__('Error: Prime Mover is unable to increase max_allowed_packet due to server restrictions. Please consider increasing this above %d bytes.'), $max_allowed_package_target);
+            $return['error'] = sprintf(esc_html__('Error: GM Mover is unable to increase max_allowed_packet due to server restrictions. Please consider increasing this above %d bytes.'), $max_allowed_package_target);
         } elseif ($max_allowed_packet_error && !$db_super_user) {
             $return['error'] = sprintf(esc_html__('Error: Your MySQL server max_allowed_packet size is insufficient. Please consider increasing this above %d bytes.'), $max_allowed_package_target);
         } else {

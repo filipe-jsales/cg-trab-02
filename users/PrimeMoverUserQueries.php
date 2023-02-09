@@ -22,7 +22,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover User Queries
+ * GM Mover User Queries
  * Provides very basic user queries for user import and export processes.
  * Both single-site and multisite compatible
  */

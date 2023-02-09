@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Migration Options Class
+ * GM Mover Migration Options Class
  * Helper class for displaying advanced migration options
  */
 class PrimeMoverMigrationOptions
@@ -36,7 +36,7 @@ class PrimeMoverMigrationOptions
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

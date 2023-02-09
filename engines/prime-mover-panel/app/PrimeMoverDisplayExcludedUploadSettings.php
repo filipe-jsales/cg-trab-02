@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display excluded uploads
+ * GM Mover display excluded uploads
  *
  */
 class PrimeMoverDisplayExcludedUploadSettings
@@ -44,7 +44,7 @@ class PrimeMoverDisplayExcludedUploadSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

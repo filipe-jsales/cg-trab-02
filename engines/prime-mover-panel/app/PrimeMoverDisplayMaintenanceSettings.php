@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display maintenance settings
+ * GM Mover display maintenance settings
  *
  */
 class PrimeMoverDisplayMaintenanceSettings
@@ -44,7 +44,7 @@ class PrimeMoverDisplayMaintenanceSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

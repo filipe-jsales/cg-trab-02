@@ -65,7 +65,7 @@ class PrimeMoverTroubleshooting
     }
 
     /**
-     * Get Prime Mover settings
+     * Get GM Mover settings
      * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
@@ -465,7 +465,7 @@ class PrimeMoverTroubleshooting
     
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */

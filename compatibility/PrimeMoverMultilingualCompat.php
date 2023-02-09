@@ -18,7 +18,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Multilingual Compatibility Class
+ * GM Mover Multilingual Compatibility Class
  * Internationalization migraton/backup support.
  *
  */
@@ -122,7 +122,7 @@ class PrimeMoverMultilingualCompat
     }
     
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

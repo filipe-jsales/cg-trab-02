@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Class for resetting Prime Mover settings
+ * Class for resetting GM Mover settings
  */
 class PrimeMoverReset
 {
@@ -43,7 +43,7 @@ class PrimeMoverReset
     }
     
     /**
-     * Get Prime Mover settings
+     * Get GM Mover settings
      * @return \GreenMainframe\GMMoverFramework\app\PrimeMoverSettings
      */
     public function getPrimeMoverSettings() 
@@ -162,7 +162,7 @@ class PrimeMoverReset
     }
         
     /**
-     * Get Prime Mover
+     * Get GM Mover
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      * @compatible 5.6
      */

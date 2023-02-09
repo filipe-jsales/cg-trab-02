@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Import Utilities
+ * GM Mover Import Utilities
  * Helper functionality for Import.
  *
  */
@@ -376,7 +376,7 @@ class PrimeMoverImportUtilities
                 <em><?php esc_html_e('Purge all cache if using caching plugin', 'prime-mover'); ?>.</em>
                 </li>
   
-                <li><?php esc_html_e('Optionally', 'prime-mover');?>, <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/prime-mover?rate=5#postform" class="prime-mover-external-link"><?php esc_html_e('review the Prime Mover plugin', 'prime-mover');?></a></li>
+                <li><?php esc_html_e('Optionally', 'prime-mover');?>, <a target="_blank" href="https://wordpress.org/support/view/plugin-reviews/prime-mover?rate=5#postform" class="prime-mover-external-link"><?php esc_html_e('review the GM Mover plugin', 'prime-mover');?></a></li>
             </ul>	  	
         </div>
     <?php
@@ -420,7 +420,7 @@ class PrimeMoverImportUtilities
           <?php
              $backups_menu_url = $this->getSystemCheckUtilities()->getSystemFunctions()->getBackupMenuUrl($blog_id);
              echo sprintf(esc_html__('You can also copy this to %s using FTP and restore in %s.', 'prime-mover'), 
-                 '<a href="' . $backups_menu_url . '">' . esc_html__('Prime Mover package path', 'prime-mover') . '</a>' , '<em>' . esc_html__('Prime Mover -> Packages', 'prime-mover') . '</em>'); 
+                 '<a href="' . $backups_menu_url . '">' . esc_html__('GM Mover package path', 'prime-mover') . '</a>' , '<em>' . esc_html__('GM Mover -> Packages', 'prime-mover') . '</em>'); 
              ?>    
           </p>
           <?php if ( false === apply_filters('prime_mover_is_loggedin_customer', false)) { ?>

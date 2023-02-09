@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Database utility class
+ * GM Mover Database utility class
  * Helper class on database stream processes
  * Responsible for efficient/fast database related processing.
  *
@@ -59,7 +59,7 @@ class PrimeMoverDatabaseUtilities
     }
     
     /**
-     * Get Prime Mover object
+     * Get GM Mover object
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

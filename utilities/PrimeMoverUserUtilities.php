@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover User Utilities
+ * GM Mover User Utilities
  * Helper functionality for user import - export processes
  *
  */

@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover Panel Validation Utilities
+ * GM Mover Panel Validation Utilities
  * Helper functionality for data validation processes
  *
  */

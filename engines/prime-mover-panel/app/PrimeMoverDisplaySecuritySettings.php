@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display security settings
+ * GM Mover display security settings
  *
  */
 class PrimeMoverDisplaySecuritySettings
@@ -44,7 +44,7 @@ class PrimeMoverDisplaySecuritySettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -183,7 +183,7 @@ class PrimeMoverDisplaySecuritySettings
                     </p>                                        
                     <p class="description prime-mover-authentication-instructions"> 
                         <strong>                 
-                        <?php esc_html_e('IMPORTANT: Please COPY AND PASTE these DOMAIN:AUTHORIZATION_KEYS to all sites you manage in Prime Mover Control Panel settings. Otherwise the download request will be unauthorized - 401 error.', 'prime-mover'); ?>
+                        <?php esc_html_e('IMPORTANT: Please COPY AND PASTE these DOMAIN:AUTHORIZATION_KEYS to all sites you manage in GM Mover Control Panel settings. Otherwise the download request will be unauthorized - 401 error.', 'prime-mover'); ?>
                         </strong> 
                     </p>
                     <p class="description"> 

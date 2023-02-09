@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display excluded plugins
+ * GM Mover display excluded plugins
  *
  */
 class PrimeMoverDisplayExcludedPluginsSettings
@@ -44,7 +44,7 @@ class PrimeMoverDisplayExcludedPluginsSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -140,7 +140,7 @@ class PrimeMoverDisplayExcludedPluginsSettings
                     <p class="description">
                     <?php printf( 
                         esc_html__('It is possible to exclude plugins from being exported by adding the %s in the above text area. 
-                  Use the tool below to add or updated excluded plugins to the text area (Prime Mover is already excluded by default):',
+                  Use the tool below to add or updated excluded plugins to the text area (GM Mover is already excluded by default):',
                         'prime-mover'), esc_html__('plugin basename', 'prime-mover')) ?>
                     </p>
                     <p class="description">

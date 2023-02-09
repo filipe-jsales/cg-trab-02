@@ -23,9 +23,9 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * The Prime Mover System Checks Class
+ * The GM Mover System Checks Class
  *
- * The Prime Mover System Check Class aims to provide the system checks for the facility of this plugin.
+ * The GM Mover System Check Class aims to provide the system checks for the facility of this plugin.
  *
  */
 class PrimeMoverSystemChecks implements PrimeMoverSystemCheck

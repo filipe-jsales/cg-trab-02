@@ -19,7 +19,7 @@ if (! defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover User class handle users export and import functionality 
+ * GM Mover User class handle users export and import functionality 
  *
  */
 class PrimeMoverUsers

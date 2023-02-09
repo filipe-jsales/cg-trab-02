@@ -15,7 +15,7 @@ use WP_List_Table;
 use GreenMainframe\GMMoverFramework\classes\GMMover;
 
 /**
- * Prime Mover Backups List Table
+ * GM Mover Backups List Table
  *
  * The class aims to provide backups list for which user has to manage.
  *
@@ -58,7 +58,7 @@ class PrimeMoverBackupMenuListTable extends WP_List_Table
     }
     
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()

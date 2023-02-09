@@ -16,7 +16,7 @@ if (!defined('ABSPATH')) {
 }
 
 /**
- * Prime Mover display encryption settings
+ * GM Mover display encryption settings
  *
  */
 class PrimeMoverDisplayEncryptionSettings
@@ -53,7 +53,7 @@ class PrimeMoverDisplayEncryptionSettings
     }
         
     /**
-     * Get Prime Mover instance
+     * Get GM Mover instance
      * @return \GreenMainframe\GMMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
@@ -162,7 +162,7 @@ class PrimeMoverDisplayEncryptionSettings
                     </label>
                     </p>               
                     <p class="description prime-mover-settings-paragraph">
-                    <?php esc_html_e('Prime Mover automatically generates encryption key after upgrading to PRO version. You can update this default encryption key using this setting. A correct encryption key is required to restore encrypted packages on this site.', 
+                    <?php esc_html_e('GM Mover automatically generates encryption key after upgrading to PRO version. You can update this default encryption key using this setting. A correct encryption key is required to restore encrypted packages on this site.', 
                         'prime-mover'); ?>
                     </p>
                     <p class="description">

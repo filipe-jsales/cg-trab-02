@@ -22,7 +22,7 @@ if (! defined('ABSPATH')) {
  * This can also be used to migrate single-site to another single-site install or multisite subsite to 
  * another multisite subsite install.
  */
-class PrimeMover
+class GMMover
 {
     private $hooked_methods;
     private $system_processors;

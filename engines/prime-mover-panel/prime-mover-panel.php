@@ -1,6 +1,6 @@
 <?php
 
-use  Codexonics\PrimeMoverFramework\classes\PrimeMover ;
+use  Codexonics\PrimeMoverFramework\classes\GMMover ;
 use  Codexonics\PrimeMoverFramework\app\PrimeMoverControlPanel ;
 use  Codexonics\PrimeMoverFramework\app\PrimeMoverSettings ;
 use  Codexonics\PrimeMoverFramework\utilities\PrimeMoverBackupManagement ;
@@ -50,7 +50,7 @@ add_action(
     25,
     2
 );
-function loadPrimeMoverControlPanel( PrimeMover $prime_mover, array $utilities )
+function loadPrimeMoverControlPanel( GMMover $prime_mover, array $utilities )
 {
     if ( empty($utilities['freemius_integration']) ) {
         return;

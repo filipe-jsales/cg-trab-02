@@ -12,7 +12,7 @@ namespace Codexonics\PrimeMoverFramework\menus;
  */
 
 use WP_List_Table;
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 
 /**
  * Prime Mover Backups List Table
@@ -59,7 +59,7 @@ class PrimeMoverBackupMenuListTable extends WP_List_Table
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {
@@ -139,12 +139,12 @@ class PrimeMoverBackupMenuListTable extends WP_List_Table
     
     /**
      * Constructor
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      * @param number $blog_id
      * @param array $sites_with_backups
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [], $blog_id = 0, $sites_with_backups = [])
+    public function __construct(GMMover $prime_mover, $utilities = [], $blog_id = 0, $sites_with_backups = [])
     {        
         $this->prime_mover = $prime_mover;
         $this->component_utilities = $utilities['component_utilities'];

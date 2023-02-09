@@ -54,7 +54,7 @@ return array(
     'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\FileInfoException' => $baseDir . '/build/splitbrain/php-archive/src/FileInfoException.php',
     'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\Tar' => $baseDir . '/build/splitbrain/php-archive/src/Tar.php',
     'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\Zip' => $baseDir . '/build/splitbrain/php-archive/src/Zip.php',
-    'Codexonics\\PrimeMoverFramework\\classes\\PrimeMover' => $baseDir . '/classes/PrimeMover.php',
+    'Codexonics\\PrimeMoverFramework\\classes\\GMMover' => $baseDir . '/classes/GMMover.php',
     'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverErrorHandlers' => $baseDir . '/classes/PrimeMoverErrorHandlers.php',
     'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverExporter' => $baseDir . '/classes/PrimeMoverExporter.php',
     'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverHookedMethods' => $baseDir . '/classes/PrimeMoverHookedMethods.php',

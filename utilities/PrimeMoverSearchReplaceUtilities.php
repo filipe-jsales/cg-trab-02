@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\utilities;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -35,9 +35,9 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Constructor
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      */
-    public function __construct(PrimeMover $prime_mover)
+    public function __construct(GMMover $prime_mover)
     {
         $this->prime_mover = $prime_mover;
         $this->slashed_replaceables = [
@@ -218,7 +218,7 @@ class PrimeMoverSearchReplaceUtilities
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {

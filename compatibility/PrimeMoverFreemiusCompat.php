@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\compatibility;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 use FS_Options;
 use FS_Plugin;
 use WP_Site;
@@ -39,11 +39,11 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Construct
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      * @param Freemius $freemius
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [], Freemius $freemius = null)
+    public function __construct(GMMover $prime_mover, $utilities = [], Freemius $freemius = null)
     {
         $this->prime_mover = $prime_mover;
         $this->freemius_options = [
@@ -892,7 +892,7 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      * @tested Codexonics\PrimeMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */
     public function getPrimeMover()

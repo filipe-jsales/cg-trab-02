@@ -754,7 +754,7 @@ class PrimeMoverDownloadUtilities
             header($content_type);
             header('Content-Disposition: attachment; filename="'. $generatedFilename .'"');
             header('Content-Length: ' . $total_filesize);  
-            header('X-PrimeMover-Size: ' . $total_filesize);
+            header('X-GMMover-Size: ' . $total_filesize);
         }                  
     }
     

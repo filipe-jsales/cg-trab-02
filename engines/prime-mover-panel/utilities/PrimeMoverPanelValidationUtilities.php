@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\utilities;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 use Codexonics\PrimeMoverFramework\advance\PrimeMoverTroubleshooting;
 
 if (! defined('ABSPATH')) {
@@ -30,10 +30,10 @@ class PrimeMoverPanelValidationUtilities
     private $troubleshooting;
     /**
      * Construct
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [], PrimeMoverTroubleshooting $troubleshooting = null)
+    public function __construct(GMMover $prime_mover, $utilities = [], PrimeMoverTroubleshooting $troubleshooting = null)
     {
         $this->prime_mover = $prime_mover;
         $this->import_utilities = $utilities['import_utilities'];

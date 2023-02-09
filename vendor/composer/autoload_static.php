@@ -55,7 +55,7 @@ class ComposerStaticInitbdcf04d85afd14ec6f671635ef2d48dd
         'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\FileInfoException' => __DIR__ . '/../..' . '/build/splitbrain/php-archive/src/FileInfoException.php',
         'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\Tar' => __DIR__ . '/../..' . '/build/splitbrain/php-archive/src/Tar.php',
         'Codexonics\\PrimeMoverFramework\\build\\splitbrain\\PHPArchive\\Zip' => __DIR__ . '/../..' . '/build/splitbrain/php-archive/src/Zip.php',
-        'Codexonics\\PrimeMoverFramework\\classes\\PrimeMover' => __DIR__ . '/../..' . '/classes/PrimeMover.php',
+        'Codexonics\\PrimeMoverFramework\\classes\\GMMover' => __DIR__ . '/../..' . '/classes/GMMover.php',
         'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverErrorHandlers' => __DIR__ . '/../..' . '/classes/PrimeMoverErrorHandlers.php',
         'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverExporter' => __DIR__ . '/../..' . '/classes/PrimeMoverExporter.php',
         'Codexonics\\PrimeMoverFramework\\classes\\PrimeMoverHookedMethods' => __DIR__ . '/../..' . '/classes/PrimeMoverHookedMethods.php',

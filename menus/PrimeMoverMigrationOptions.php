@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\compatibility;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -27,17 +27,17 @@ class PrimeMoverMigrationOptions
     
     /**
      * Construct
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [])
+    public function __construct(GMMover $prime_mover, $utilities = [])
     {
         $this->prime_mover = $prime_mover;
     }
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {

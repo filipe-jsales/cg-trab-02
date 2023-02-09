@@ -24,7 +24,7 @@ use Codexonics\PrimeMoverFramework\classes\PrimeMoverExporter;
 use Codexonics\PrimeMoverFramework\utilities\PrimeMoverExportUtilities;
 use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemProcessors;
 use Codexonics\PrimeMoverFramework\classes\PrimeMoverHookedMethods;
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 use Codexonics\PrimeMoverFramework\utilities\PrimeMoverShutdownUtilities;
 use Codexonics\PrimeMoverFramework\classes\PrimeMoverErrorHandlers;
 use Codexonics\PrimeMoverFramework\utilities\PrimeMoverImportUtilities;
@@ -203,7 +203,7 @@ class PrimeMoverFactory
         $system_processors = new PrimeMoverSystemProcessors($importer, $upload_utilities, $export_utilities);               
         $hooked_methods = new PrimeMoverHookedMethods($system_checks, $progress_handlers);        
         
-        $prime_mover = new PrimeMover($hooked_methods, $system_processors);
+        $prime_mover = new GMMover($hooked_methods, $system_processors);
         $prime_mover->primeMoverLoadHooks();         
               
         $import_utilities = new PrimeMoverImportUtilities($importer, $export_utilities, $lock_utilities);

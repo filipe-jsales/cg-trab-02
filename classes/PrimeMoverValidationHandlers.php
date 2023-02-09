@@ -39,7 +39,7 @@ class PrimeMoverValidationHandlers
      *
      * Constructor
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [], PrimeMoverValidationUtilities $validation_utilities = null) 
+    public function __construct(GMMover $prime_mover, $utilities = [], PrimeMoverValidationUtilities $validation_utilities = null) 
     {
         $this->prime_mover = $prime_mover;
         $this->import_utilities = $utilities['import_utilities'];
@@ -76,7 +76,7 @@ class PrimeMoverValidationHandlers
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getMultisteMigration()
     {

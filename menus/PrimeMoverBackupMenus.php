@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\menus;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -29,10 +29,10 @@ class PrimeMoverBackupMenus
     
     /**
      * Construct
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [])
+    public function __construct(GMMover $prime_mover, $utilities = [])
     {
         $this->prime_mover = $prime_mover;
         $this->utilities = $utilities;         
@@ -84,7 +84,7 @@ class PrimeMoverBackupMenus
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {

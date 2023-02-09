@@ -16,7 +16,7 @@ namespace Codexonics\PrimeMoverFramework\cli;
  * @since 1.0.7
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -44,11 +44,11 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Construct
-     * @param PrimeMover $prime_mover
+     * @param GMMover $prime_mover
      * @param array $utilities
      * @param array $parameters
      */
-    public function __construct(PrimeMover $prime_mover, $utilities = [], $parameters = [])
+    public function __construct(GMMover $prime_mover, $utilities = [], $parameters = [])
     {
         $this->prime_mover = $prime_mover;
         $this->utilities = $utilities;
@@ -101,7 +101,7 @@ class PrimeMoverCLIShellArchiver
     
     /**
      * Get Prime Mover instance
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      */
     public function getPrimeMover()
     {

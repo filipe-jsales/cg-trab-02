@@ -11,7 +11,7 @@ namespace Codexonics\PrimeMoverFramework\utilities;
  * source code.
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 use Codexonics\PrimeMoverFramework\classes\PrimeMoverSystemAuthorization;
 use Codexonics\PrimeMoverFramework\app\PrimeMoverSettings;
 
@@ -32,14 +32,14 @@ class PrimeMoverTroubleshootingMarkup
     
     /**
      * Constructor
-     * @param PrimeMover $PrimeMover
+     * @param GMMover $GMMover
      * @param PrimeMoverSystemAuthorization $system_authorization
      * @param array $utilities
      * @param PrimeMoverSettings $settings
      */
-    public function __construct(PrimeMover $PrimeMover, PrimeMoverSystemAuthorization $system_authorization, array $utilities, PrimeMoverSettings $settings) 
+    public function __construct(GMMover $GMMover, PrimeMoverSystemAuthorization $system_authorization, array $utilities, PrimeMoverSettings $settings) 
     {
-        $this->prime_mover = $PrimeMover;
+        $this->prime_mover = $GMMover;
         $this->system_authorization = $system_authorization;
         $this->settings = $settings;
         $this->freemius_integration = $utilities['freemius_integration'];
@@ -349,7 +349,7 @@ class PrimeMoverTroubleshootingMarkup
     
     /**
      * Get multisite migration
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

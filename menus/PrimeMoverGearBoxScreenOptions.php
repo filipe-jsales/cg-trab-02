@@ -7,7 +7,7 @@ namespace Codexonics\PrimeMoverFramework\menus;
  * (c) Codexonics Ltd
  */
 
-use Codexonics\PrimeMoverFramework\classes\PrimeMover;
+use Codexonics\PrimeMoverFramework\classes\GMMover;
 use Codexonics\PrimeMoverFramework\utilities\PrimeMoverComponentAuxiliary;
 
 if (! defined('ABSPATH')) {
@@ -28,12 +28,12 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * 
-     * @param PrimeMover $PrimeMover
+     * @param GMMover $GMMover
      * @param PrimeMoverComponentAuxiliary $component_utilities
      */
-    public function __construct(PrimeMover $PrimeMover, PrimeMoverComponentAuxiliary $component_utilities)
+    public function __construct(GMMover $GMMover, PrimeMoverComponentAuxiliary $component_utilities)
     {
-        $this->prime_mover = $PrimeMover;
+        $this->prime_mover = $GMMover;
         $this->component_utilities = $component_utilities;
     }
     
@@ -344,7 +344,7 @@ class PrimeMoverGearBoxScreenOptions
     
     /**
      * Get Prime Mover
-     * @return \Codexonics\PrimeMoverFramework\classes\PrimeMover
+     * @return \Codexonics\PrimeMoverFramework\classes\GMMover
      * @compatible 5.6
      */
     public function getPrimeMover()

@@ -11,7 +11,7 @@ namespace GreenMainframe;
  * source code.
  */
 
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization;
 use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization;
 use GreenMainframe\GMMoverFramework\classes\PrimeMoverProgressHandlers;
 use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemFunctions;
@@ -144,7 +144,7 @@ class GMMoverFactory
     public function composeObjects()
     {        
         $prime_mover_user = wp_get_current_user();        
-        $system_authorization = new PrimeMoverSystemAuthorization($prime_mover_user);        
+        $system_authorization = new GMMoverSystemAuthorization($prime_mover_user);        
         $system_initialization = new PrimeMoverSystemInitialization($system_authorization);        
         
         $openssl_utilities = new PrimeMoverOpenSSLUtilities($system_initialization);

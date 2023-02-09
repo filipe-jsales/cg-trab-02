@@ -68,7 +68,7 @@ class PrimeMoverBackupMenuListTable extends WP_List_Table
     
     /**
      * Get system authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {

@@ -108,7 +108,7 @@ class PrimeMoverBackupUtilities
     
     /**
      * Get system authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {

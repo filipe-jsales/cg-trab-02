@@ -882,7 +882,7 @@ class PrimeMoverFreemiusCompat
     
     /**
      * Get system authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverFreemiusCompat::itRunsDeactivationHooks()
      */
     public function getSystemAuthorization()

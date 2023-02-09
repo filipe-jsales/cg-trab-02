@@ -11,7 +11,7 @@ namespace GreenMainframe\GMMoverFramework\utilities;
  * source code.
  */
 
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization;
 use GreenMainframe\GMMoverFramework\build\WPConfigTransformer as WPConfigTransformer;
 
 if (! defined('ABSPATH')) {
@@ -34,7 +34,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Constructor
-     * @param PrimeMoverSystemAuthorization $system_authorization
+     * @param GMMoverSystemAuthorization $system_authorization
      * @param PrimeMoverImportUtilities $import_utilities
      */
     public function __construct(PrimeMoverImportUtilities $import_utilities)
@@ -639,7 +639,7 @@ class PrimeMoverConfigUtilities
     
     /**
      * Get system authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      */
     public function getSystemAuthorization()
     {

@@ -60,7 +60,7 @@ return array(
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverHookedMethods' => $baseDir . '/classes/PrimeMoverHookedMethods.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverImporter' => $baseDir . '/classes/PrimeMoverImporter.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverProgressHandlers' => $baseDir . '/classes/PrimeMoverProgressHandlers.php',
-    'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemAuthorization' => $baseDir . '/classes/PrimeMoverSystemAuthorization.php',
+    'GreenMainframe\\GMMoverFramework\\classes\\GMMoverSystemAuthorization' => $baseDir . '/classes/GMMoverSystemAuthorization.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemChecks' => $baseDir . '/classes/PrimeMoverSystemChecks.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemFunctions' => $baseDir . '/classes/PrimeMoverSystemFunctions.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemInitialization' => $baseDir . '/classes/PrimeMoverSystemInitialization.php',

@@ -75,7 +75,7 @@ class PrimeMoverArchiver
     
     /**
      * Get system authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsInitHooksWhenAuthorized()
      */
     public function getSystemAuthorization()

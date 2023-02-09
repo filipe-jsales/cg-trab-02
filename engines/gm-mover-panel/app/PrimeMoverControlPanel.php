@@ -12,7 +12,7 @@ namespace GreenMainframe\GMMoverFramework\app;
  */
 
 use GreenMainframe\GMMoverFramework\classes\GMMover;
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -29,10 +29,10 @@ class PrimeMoverControlPanel
     /**
      * Constructor
      * @param GMMover $GMMover
-     * @param PrimeMoverSystemAuthorization $system_authorization
+     * @param GMMoverSystemAuthorization $system_authorization
      * @param array $utilities
      */
-    public function __construct(GMMover $GMMover, PrimeMoverSystemAuthorization $system_authorization, array $utilities) 
+    public function __construct(GMMover $GMMover, GMMoverSystemAuthorization $system_authorization, array $utilities) 
     {
         $this->prime_mover = $GMMover;
         $this->system_authorization = $system_authorization;

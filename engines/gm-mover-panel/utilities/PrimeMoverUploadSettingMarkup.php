@@ -12,7 +12,7 @@ namespace GreenMainframe\GMMoverFramework\utilities;
  */
 
 use GreenMainframe\GMMoverFramework\classes\GMMover;
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization;
 use GreenMainframe\GMMoverFramework\app\PrimeMoverSettings;
 
 if (! defined('ABSPATH')) {
@@ -32,11 +32,11 @@ class PrimeMoverUploadSettingMarkup
     /**
      * Constructor
      * @param GMMover $GMMover
-     * @param PrimeMoverSystemAuthorization $system_authorization
+     * @param GMMoverSystemAuthorization $system_authorization
      * @param array $utilities
      * @param PrimeMoverSettings $settings
      */
-    public function __construct(GMMover $GMMover, PrimeMoverSystemAuthorization $system_authorization, array $utilities, PrimeMoverSettings $settings) 
+    public function __construct(GMMover $GMMover, GMMoverSystemAuthorization $system_authorization, array $utilities, PrimeMoverSettings $settings) 
     {
         $this->prime_mover = $GMMover;
         $this->system_authorization = $system_authorization;

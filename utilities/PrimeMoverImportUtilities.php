@@ -74,7 +74,7 @@ class PrimeMoverImportUtilities
     
     /**
      * Gets System authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      * @compatibility 5.6
      */
     public function getSystemAuthorization()

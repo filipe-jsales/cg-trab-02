@@ -12,7 +12,7 @@ namespace GreenMainframe\GMMoverFramework\advance;
  */
 
 use GreenMainframe\GMMoverFramework\classes\GMMover;
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization;
 use GreenMainframe\GMMoverFramework\app\PrimeMoverSettings;
 use GreenMainframe\GMMoverFramework\utilities\PrimeMoverUploadSettingMarkup;
 
@@ -48,11 +48,11 @@ class PrimeMoverUploadSettings
     /**
      * Constructor
      * @param GMMover $GMMover
-     * @param PrimeMoverSystemAuthorization $system_authorization
+     * @param GMMoverSystemAuthorization $system_authorization
      * @param array $utilities
      * @param PrimeMoverSettings $settings
      */
-    public function __construct(GMMover $GMMover, PrimeMoverSystemAuthorization $system_authorization, 
+    public function __construct(GMMover $GMMover, GMMoverSystemAuthorization $system_authorization, 
         array $utilities, PrimeMoverSettings $settings,  PrimeMoverUploadSettingMarkup $upload_setting_markup) 
     {
         $this->prime_mover = $GMMover;

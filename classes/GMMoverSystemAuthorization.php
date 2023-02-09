@@ -20,7 +20,7 @@ if (! defined('ABSPATH')) {
  *
  * The GM Mover System Authorization provides authentication layer for the class methods and usage.
  */
-class PrimeMoverSystemAuthorization
+class GMMoverSystemAuthorization
 {
     
     /** @var boolean is_authorized */
@@ -43,10 +43,10 @@ class PrimeMoverSystemAuthorization
      * Checks if this user is authorized to use the classes and methods
      * @param WP_User object $user
      * @compatibility 5.6
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
      */
     final protected function checksIfUserIsAuthorized($user = null)
     {
@@ -89,10 +89,10 @@ class PrimeMoverSystemAuthorization
     /**
      * Gets user authorization
      * @compatibility 5.6
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
-     * @tested GMMoverFramework\Tests\TestPrimeMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itDoesNotAuthorizeIfNotMultisite() 
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itDoesNotAuthorizeIfNotCurrentUser()
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itReturnsFalseIfUserIsNotSuperAdmin()
+     * @tested GMMoverFramework\Tests\TestGMMoverSystemAuthorization::itChecksIfUserIsAuthorizedSuperAdmin() 
      * 
      */
     final public function isUserAuthorized()

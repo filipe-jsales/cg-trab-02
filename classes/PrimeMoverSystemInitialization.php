@@ -60,7 +60,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /** @var string Export ID */
     private $export_id;
     
-    /** PrimeMoverSystemAuthorization */
+    /** GMMoverSystemAuthorization */
     private $system_authorization;
  
     /** @var string current import package path */
@@ -239,9 +239,9 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Constructor
-     * @param PrimeMoverSystemAuthorization $system_authorization
+     * @param GMMoverSystemAuthorization $system_authorization
      */
-    public function __construct(PrimeMoverSystemAuthorization $system_authorization)
+    public function __construct(GMMoverSystemAuthorization $system_authorization)
     {
         $this->system_authorization = $system_authorization;
         $this->multisite_export_folder = PRIME_MOVER_EXPORT_DIR_SLUG;
@@ -1168,7 +1168,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     
     /**
      * Get System authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()

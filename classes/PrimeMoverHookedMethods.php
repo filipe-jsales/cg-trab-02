@@ -61,7 +61,7 @@ class PrimeMoverHookedMethods
     
     /**
      * Get System authorization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemAuthorization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemAuthorization
      * @compatible 5.6
      */
     public function getSystemAuthorization()

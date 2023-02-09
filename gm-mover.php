@@ -25,7 +25,7 @@ if ( function_exists( 'pm_fs' ) ) {
     pm_fs()->set_basename( true, GM_MOVER_MAINPLUGIN_FILE );
 } else {
     require_once GM_MOVER_MAINDIR . '/global/GMMoverGlobalFunctions.php';
-    if ( defined( 'PRIME_MOVER_PLUGIN_PATH' ) || defined( 'GM_MOVER_PLUGIN_UTILITIES_PATH' ) || defined( 'GM_MOVER_PLUGIN_CORE_PATH' ) || defined( 'GM_MOVER_THEME_CORE_PATH' ) ) {
+    if ( defined( 'GM_MOVER_PLUGIN_PATH' ) || defined( 'GM_MOVER_PLUGIN_UTILITIES_PATH' ) || defined( 'GM_MOVER_PLUGIN_CORE_PATH' ) || defined( 'GM_MOVER_THEME_CORE_PATH' ) ) {
         return;
     }
     include GM_MOVER_MAINDIR . '/global/GMMoverGlobalConstants.php';
@@ -43,8 +43,8 @@ if ( function_exists( 'pm_fs' ) ) {
         return;
     }
     include GM_MOVER_MAINDIR . '/PrimeMoverLoader.php';
-    if ( file_exists( PRIME_MOVER_PLUGIN_PATH . '/vendor/autoload.php' ) ) {
-        require_once PRIME_MOVER_PLUGIN_PATH . '/vendor/autoload.php';
+    if ( file_exists( GM_MOVER_PLUGIN_PATH . '/vendor/autoload.php' ) ) {
+        require_once GM_MOVER_PLUGIN_PATH . '/vendor/autoload.php';
     }
     include GM_MOVER_MAINDIR . '/GMMoverFactory.php';
     include GM_MOVER_MAINDIR . '/engines/gm-mover-panel/gm-mover-panel.php';

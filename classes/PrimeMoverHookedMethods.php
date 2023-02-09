@@ -662,6 +662,6 @@ class PrimeMoverHookedMethods
      */
     public function loadPluginTextdomain()
     {
-        load_plugin_textdomain( 'prime-mover', false, basename(PRIME_MOVER_PLUGIN_PATH) . '/languages/' );
+        load_plugin_textdomain( 'prime-mover', false, basename(GM_MOVER_PLUGIN_PATH) . '/languages/' );
     }
 }

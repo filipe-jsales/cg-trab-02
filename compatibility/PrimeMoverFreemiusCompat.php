@@ -296,7 +296,7 @@ class PrimeMoverFreemiusCompat
      */
     protected function maybeUpgradeComplete($procheck = true)
     {
-        $current =basename(PRIME_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
+        $current =basename(GM_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
         if ($procheck && PRIME_MOVER_DEFAULT_PRO_BASENAME === $current) {
             return false;
         }
@@ -605,7 +605,7 @@ class PrimeMoverFreemiusCompat
         if (wp_doing_ajax()) {
             return;
         }
-        $current =basename(PRIME_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
+        $current =basename(GM_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
         if (PRIME_MOVER_DEFAULT_FREE_BASENAME === $current) {
             return;
         }
@@ -632,7 +632,7 @@ class PrimeMoverFreemiusCompat
     public function deactivationHook()
     {      
         do_action('prime_mover_deactivated');
-        $current =basename(PRIME_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
+        $current =basename(GM_MOVER_PLUGIN_PATH) . '/' . PRIME_MOVER_PLUGIN_FILE;
         if (PRIME_MOVER_DEFAULT_PRO_BASENAME === $current) {
             return;
         }

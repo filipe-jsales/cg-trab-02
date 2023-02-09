@@ -8,7 +8,7 @@ spl_autoload_register(function ($class) {
     $prefix = 'GreenMainframe\\GMMoverFramework\\';
     
     // base directory for the namespace prefix
-    $base_dir = PRIME_MOVER_PLUGIN_PATH;
+    $base_dir = GM_MOVER_PLUGIN_PATH;
     
     // does the class use the namespace prefix?
     $len = strlen($prefix);

@@ -496,7 +496,7 @@ class GMMoverFactory
         }
         
         $output = array_filter($files, function($filename) {            
-            return ('wprime' === strtolower(pathinfo($filename, PATHINFO_EXTENSION)));
+            return ('gm' === strtolower(pathinfo($filename, PATHINFO_EXTENSION)));
         });
         
         return (count($output) > 0);        

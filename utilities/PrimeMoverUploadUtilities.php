@@ -400,7 +400,7 @@ class PrimeMoverUploadUtilities
             $valid_extension = true;
         }
         if ( ! $valid_extension) {
-            do_action('prime_mover_log_processed_events', "This file does not have zip or wprime file extension: $validated_chunk", $blog_id, 'import', 'validateChunkUploadCall', $this); 
+            do_action('prime_mover_log_processed_events', "This file does not have zip or gm file extension: $validated_chunk", $blog_id, 'import', 'validateChunkUploadCall', $this); 
             return false;
         }
         do_action('prime_mover_log_processed_events', "Successfully validated uploaded chunk $validated_chunk", $blog_id, 'import', 'validateChunkUploadCall', $this);

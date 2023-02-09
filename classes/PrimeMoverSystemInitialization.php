@@ -1586,7 +1586,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     {
         $directive = '';
         $directive .= '<IfModule mod_mime.c>' . PHP_EOL;
-        $directive .= 'AddType application/x-tar .wprime' . PHP_EOL;
+        $directive .= 'AddType application/x-tar .gm' . PHP_EOL;
         $directive .= '</IfModule>';        
         
         return $directive;

@@ -149,14 +149,14 @@
 						var uploaderror_selector = PrimeMoverCoreJsObject.getGenericFailSelector(blog_id);
 						PrimeMoverCoreJsObject.initializeDialogMonitor(uploaderror_selector, true);
 						var ext = $(this).val().split('.').pop().toLowerCase();    				
-						if($.inArray(ext, ['zip', 'wprime']) == -1) {
+						if($.inArray(ext, ['zip', 'gm']) == -1) {
 							PrimeMoverCoreJsObject.user_notices( "#js-prime-mover-wrong-filetype-" + blog_id, 0, '', false, prime_mover_js_ajax_renderer.prime_mover_invalid_package); 
 						} else if (prime_mover_js_ajax_renderer.prime_mover_phpuploads_misconfigured) {
 							PrimeMoverCoreJsObject.user_notices( "#js-prime-mover-wrong-filetype-" + blog_id, blog_id, 'import', true, prime_mover_js_ajax_renderer.prime_mover_upload_misconfiguration_error);   				    	
 						} else if ('readonly' === prime_mover_js_ajax_renderer.prime_mover_config_writable) {
 							PrimeMoverCoreJsObject.user_notices( "#js-prime-mover-wrong-filetype-" + blog_id, blog_id, 'import', true, prime_mover_js_ajax_renderer.prime_mover_caching_enabled_error);
 							
-						} else if ($.inArray(ext, ['wprime']) !== -1) {	
+						} else if ($.inArray(ext, ['gm']) !== -1) {	
 							PrimeMoverCoreJsObject.initiateSpinner(blog_id, 'zip_analysis');	
 							var the_import_package = $(this)[0].files[0];
 							var package_size = the_import_package.size;
@@ -215,7 +215,7 @@
 				return restore_mode;   		
 			},
 			/**
-			 * Read footprint from .wprime archive
+			 * Read footprint from .gm archive
 			 */
 			readFootPrintFromTar: function(archive, blog_id, the_import_package) {				
 				let entries = [];				
@@ -252,7 +252,7 @@
 											encrypted_media: 'true',
 											prime_mover_decryption_check_nonce: prime_mover_js_ajax_renderer.prime_mover_decryption_check_nonce,
 											blog_id: blog_id,
-											package_ext: 'wprime'
+											package_ext: 'gm'
 									};
 
 									$.post(ajaxurl, data, function(response) {
@@ -430,7 +430,7 @@
 			},			
 			/**
 			 * Trigger after package check
-			 * used for both wprime and zip packages
+			 * used for both gm and zip packages
 			 * @param text
 			 * @param blog_id
 			 * @param zipfoldername
@@ -654,7 +654,7 @@
 				var restoration_source_origin = target_selector + ' .js-prime-mover-warning-source-of-origin';
 
 				var restoration_encrypted_status = target_selector + ' .js-prime-mover-warning-restoring-encrypted';
-				var restoration_encrypted_wprime = target_selector + ' .js-prime-mover-encrypted-wprime';
+				var restoration_encrypted_wprime = target_selector + ' .js-prime-mover-encrypted-gm';
 				var restoration_encrypted_note = target_selector + ' .js-prime-mover-encrypted-package-note';
 				var exported_texts_selector = target_selector + ' .js-prime-mover-warning-scope-mode';
 
@@ -665,7 +665,7 @@
 
 				var prime_mover_uploadtime_selector = target_selector + ' .js-prime-mover-upload-option-selected';
 				var prime_mover_uploadtime_span = target_selector + ' #js-prime-mover-computed-uploadtime';
-                var wprime_li = target_selector + ' #js-restoration-encrypted-wprime';				
+                var wprime_li = target_selector + ' #js-restoration-encrypted-gm';				
                 var restorationzip_db_selector = target_selector + ' #js-restoration-encrypted-database-prime-mover';
                 
 				var uploadspeed = PrimeMoverCoreJsObject.measuredUploadSpeed(blog_id);            
@@ -858,7 +858,7 @@
 					filename = source;
 				}				
 				var ext = filename.split('.').pop().toLowerCase();  
-				return ('wprime' === ext);				
+				return ('gm' === ext);				
 			},
 			/**
 			 * Do when import warning is cancelled

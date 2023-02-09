@@ -903,8 +903,8 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
                 $supported_filetypes[] = 'zip';
                 $value = implode(" ", $supported_filetypes);
             }
-            if (!in_array('wprime', $supported_filetypes)) {
-                $supported_filetypes[] = 'wprime';
+            if (!in_array('gm', $supported_filetypes)) {
+                $supported_filetypes[] = 'gm';
                 $value = implode(" ", $supported_filetypes);
             }
         }

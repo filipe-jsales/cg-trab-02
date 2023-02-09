@@ -17,8 +17,8 @@ define('PRIME_MOVER_SHELL_ARCHIVER_FILENAME', 'prime-mover-shell-archiver.php');
 define('PRIME_MOVER_MUST_USE_PLUGIN_FILENAME', 'prime-mover-cli-plugin-manager.php');
 define('PRIME_MOVER_MUST_USE_PLUGIN_CONSTANT_SCRIPT', '000-prime-mover-constants.php');
 define('GM_MOVER_PLUGIN_CORE_PATH', dirname(GM_MOVER_PLUGIN_PATH) . DIRECTORY_SEPARATOR);
-define('PRIME_MOVER_WPRIME_CONFIG', 'wprime-config.json');
-define('PRIME_MOVER_WPRIME_CLOSED_IDENTIFIER', 'wprime-readme.txt');
+define('PRIME_MOVER_WPRIME_CONFIG', 'gm-config.json');
+define('PRIME_MOVER_WPRIME_CLOSED_IDENTIFIER', 'gm-readme.txt');
 define('GM_MOVER_PLUGIN_UTILITIES_PATH', GM_MOVER_PLUGIN_PATH. 'utilities' . DIRECTORY_SEPARATOR);
 define('GM_MOVER_THEME_CORE_PATH', get_theme_root());
 define('PRIME_MOVER_EXPORT_DIR_SLUG', 'prime-mover-export-files');
@@ -60,7 +60,7 @@ if (!defined('CODEXONICS_PACKAGE_MANAGER_RESTORE_GUIDE')) {
 }
 
 if (!defined('CODEXONICS_CORRUPT_WPRIME_DOC')) {
-    define('CODEXONICS_CORRUPT_WPRIME_DOC', 'https://codexonics.com/prime_mover/prime-mover/corrupted-wprime-packages-troubleshooting/');
+    define('CODEXONICS_CORRUPT_WPRIME_DOC', 'https://codexonics.com/prime_mover/prime-mover/corrupted-gm-packages-troubleshooting/');
 }
 
 if (!defined('CODEXONICS_CUSTOM_CONSTANTS_MU_PLUGINS')) {

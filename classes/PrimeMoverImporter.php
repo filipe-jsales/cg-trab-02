@@ -1066,7 +1066,7 @@ class PrimeMoverImporter implements PrimeMoverImport
         }   
         $ret = apply_filters('prime_mover_after_user_diff_confirmation', $ret, $blogid_to_import);
         if ($is_extracting_tar) {
-            $media_path = $unzipped_directory . 'media.wprime';
+            $media_path = $unzipped_directory . 'media.gm';
         } else {
             $media_path = $unzipped_directory . 'media.zip';
         }        

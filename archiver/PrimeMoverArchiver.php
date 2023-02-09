@@ -31,7 +31,7 @@ class PrimeMoverArchiver
     private $users;
     private $openssl_utilities;
    
-    const WPRIME_EXTENSION = 'wprime';
+    const WPRIME_EXTENSION = 'gm';
     
     /**
      * Constructor
@@ -130,7 +130,7 @@ class PrimeMoverArchiver
     public function excludeWprimeFromAnyArchive($ext = [])
     {
         if (!in_array(self::WPRIME_EXTENSION, $ext)) {
-            $ext[] = 'wprime';
+            $ext[] = 'gm';
         }        
         return $ext;
     }
@@ -153,7 +153,7 @@ class PrimeMoverArchiver
     }
     
     /**
-     * Formulate wprime export paths to JS usage
+     * Formulate gm export paths to JS usage
      * @param array $args
      * @return array
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverArchiver::itAddsWprimeToExportPathJs()
@@ -276,12 +276,12 @@ class PrimeMoverArchiver
     public function extractTar($ret = [], $blog_id = 0, $tar_path = '', $extraction_path = '', $base_read_offset = 0, $start = 0, $offset = 0, $index = 0, $key = '', $iv = '')
     {
         if (!is_array($ret) || !$blog_id || !$tar_path || !$extraction_path) {
-            $ret['error'] = esc_html__('Incomplete wprime archive extraction parameters.', 'prime-mover');
+            $ret['error'] = esc_html__('Incomplete gm archive extraction parameters.', 'prime-mover');
             return $ret;
         }
         $tar = $this->openTar($tar_path, $base_read_offset);
         if (!$tar) {
-            $ret['error'] = esc_html__('Unable to open wprime, please check if WPRIME file exists.', 'prime-mover');
+            $ret['error'] = esc_html__('Unable to open gm, please check if WPRIME file exists.', 'prime-mover');
             return $ret;
         }
         do_action('prime_mover_log_processed_events', "Extraction task started.", $blog_id, 'export', __FUNCTION__, $this, true);
@@ -411,11 +411,11 @@ class PrimeMoverArchiver
             return $ret;
         }
         if ( !is_array($ret) || empty($ret) || ! $blogid_to_export) {
-            $ret['error'] = esc_html__('Insufficient parameters to add wprime package configuration.', 'prime-mover');
+            $ret['error'] = esc_html__('Insufficient parameters to add gm package configuration.', 'prime-mover');
             return $ret;
         }
         if (!$blogid_to_export) {
-            $ret['error'] = esc_html__('Blog Id is not set for wprime package configuration.', 'prime-mover');
+            $ret['error'] = esc_html__('Blog Id is not set for gm package configuration.', 'prime-mover');
             return $ret;
         }
         $temp_folder_path = '';

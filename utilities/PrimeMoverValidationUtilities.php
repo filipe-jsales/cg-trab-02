@@ -254,7 +254,7 @@ class PrimeMoverValidationUtilities
             'stringtocheck' => 'prime_mover_signature',
             'blog_id' => 'positive_int',
             'encrypted_media' => ['true', 'false'],
-            'package_ext' => ['wprime', 'zip']
+            'package_ext' => ['gm', 'zip']
         ];
     }
     

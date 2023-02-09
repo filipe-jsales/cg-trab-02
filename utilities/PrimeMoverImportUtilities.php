@@ -234,7 +234,7 @@ class PrimeMoverImportUtilities
 	    	<input name ="prime_mover_importbrowsefile" 
 	    			type ="file"
 	    			class = "prime_mover_importbrowsefile js-prime_mover_importbrowsefile <?php echo esc_attr($mobile_class);?>"
-	    			accept =".wprime, .zip"
+	    			accept =".gm, .zip"
 	    			id ="js-prime_mover_importing_blog_<?php echo esc_attr($blog_id) ; ?>"
 	    			data-multisiteblogid = "<?php echo esc_attr($blog_id); ?>" />    
     <?php       
@@ -442,7 +442,7 @@ class PrimeMoverImportUtilities
     	      <li class="restoration-site-title-prime-mover-li" id="js-restoration-site-title-prime-mover"><strong><?php esc_html_e('Site title', 'prime-mover');?></strong>: <span class="js-prime-mover-warning-target-site-title"></span></li>
     	      <li class="restoration-encrypted-database-prime-mover-li" id="js-restoration-encrypted-database-prime-mover"><strong><?php esc_html_e('Encrypted database', 'prime-mover');?></strong>: <span class="js-prime-mover-warning-restoring-encrypted"></span></li>
     	      <li class="restoration-encrypted-mediafiles-prime-mover-li" id="js-restoration-encrypted-mediafiles-prime-mover"><strong><?php esc_html_e('Encrypted media files', 'prime-mover');?></strong>: <span class="js-prime-mover-encrypted-media"></span></li>    	      
-    	      <li class="restoration-encrypted-wprime-prime-mover-li" id="js-restoration-encrypted-wprime"><strong><?php esc_html_e('Encrypted package', 'prime-mover');?></strong>: <span class="js-prime-mover-encrypted-wprime"></span></li>   	      
+    	      <li class="restoration-encrypted-gm-prime-mover-li" id="js-restoration-encrypted-gm"><strong><?php esc_html_e('Encrypted package', 'prime-mover');?></strong>: <span class="js-prime-mover-encrypted-gm"></span></li>   	      
     	      <li class="restoration-description-prime-mover-li" id="js-restoration-description-prime-mover"><strong><?php esc_html_e('Description', 'prime-mover');?></strong>: <span class="js-prime-mover-warning-scope-mode"></span></li>
     	  </ul>    	  
     	  <p><span class="js-prime-mover-encrypted-package-note prime-mover-encrypted-package-note"></span> <?php esc_html_e('To be safe, make sure you have backups ready. For best results, please disable any active caching.', 'prime-mover'); ?> <strong><?php  esc_html_e('Are you sure you want to proceed?', 'prime-mover'); ?></strong></p>   	  	

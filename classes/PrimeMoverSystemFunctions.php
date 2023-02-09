@@ -100,7 +100,7 @@ class PrimeMoverSystemFunctions
             return $ret;
         }
         $extension = strtolower(pathinfo($filename, PATHINFO_EXTENSION));
-        if ('wprime' === $extension) {
+        if ('gm' === $extension) {
             $ret = true;
         }
         return $ret;
@@ -2546,7 +2546,7 @@ class PrimeMoverSystemFunctions
         $sanitized_site_name = mb_strimwidth(sanitize_key($blog_name), 0, 20, '');
         $ext = ".zip";
         if ($is_wprime) {
-            $ext = ".wprime";
+            $ext = ".gm";
         }
         $file_name = $sanitized_site_name . '_' . date('m-d-Y_hia') . '_export_package' . $ext;
         

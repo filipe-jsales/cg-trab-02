@@ -768,7 +768,7 @@ class PrimeMoverExporter implements PrimeMoverExport
             $this->getSystemInitialization()->setTemporaryExportPackagePath($ret['temp_folder_path']);
         }
         
-        $tarfile = "$folder_name.wprime";              
+        $tarfile = "$folder_name.gm";              
         $tarpath = $main_site_export_folder . $tarfile;        
         $ret = apply_filters('prime_mover_add_file_to_tar_archive', $ret, $tarpath, 'wb', $ret['temp_folder_path'], basename($ret['temp_folder_path']), 0, 0, $blogid_to_export, false, false);            
 

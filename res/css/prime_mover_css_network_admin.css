@@ -102,7 +102,7 @@ h3.prime-mover-free {
 	margin-left: 5px;
 	cursor: pointer;
 }
-.restoration-encrypted-mediafiles-prime-mover-li, .restoration-encrypted-wprime-prime-mover-li, .restoration-encrypted-database-prime-mover-li {
+.restoration-encrypted-mediafiles-prime-mover-li, .restoration-encrypted-gm-prime-mover-li, .restoration-encrypted-database-prime-mover-li {
 	display: none;
 }
 ul.prime-mover-ul-dialog {

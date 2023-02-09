@@ -116,7 +116,7 @@ if ( !function_exists( 'primeMoverAutoDeactivatePlugin' ) ) {
     function primeMoverAutoDeactivatePlugin()
     {
         
-        if ( defined( 'PRIME_MOVER_MAINPLUGIN_FILE' ) ) {
+        if ( defined( 'GM_MOVER_MAINPLUGIN_FILE' ) ) {
             $input_get = filter_input_array( INPUT_GET, array(
                 'activate' => FILTER_VALIDATE_BOOLEAN,
             ) );
@@ -126,7 +126,7 @@ if ( !function_exists( 'primeMoverAutoDeactivatePlugin' ) ) {
                 $_GET['deactivate'] = true;
             }
             
-            $plugin_basename = plugin_basename( PRIME_MOVER_MAINPLUGIN_FILE );
+            $plugin_basename = plugin_basename( GM_MOVER_MAINPLUGIN_FILE );
             deactivate_plugins( $plugin_basename );
         }
     

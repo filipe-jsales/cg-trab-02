@@ -2266,7 +2266,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
         if ( ! $this->getSystemAuthorization()->isUserAuthorized()) {
             return $corecomponents;
         }         
-        $corecomponents[] = plugin_basename(PRIME_MOVER_MAINPLUGIN_FILE);
+        $corecomponents[] = plugin_basename(GM_MOVER_MAINPLUGIN_FILE);
         return apply_filters('prime_mover_get_core_components', $corecomponents);
     }
     

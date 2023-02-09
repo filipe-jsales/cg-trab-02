@@ -121,7 +121,7 @@ class PrimeMoverFreemiusCompat
      */
     public function registerHooks()
     {        
-        register_deactivation_hook(PRIME_MOVER_MAINPLUGIN_FILE, [$this, 'deactivationHook']);
+        register_deactivation_hook(GM_MOVER_MAINPLUGIN_FILE, [$this, 'deactivationHook']);
         add_action('admin_init', [$this, 'activationHook'], 0);
         
         add_filter('network_admin_plugin_action_links_' . PRIME_MOVER_DEFAULT_PRO_BASENAME , [$this, 'userFriendlyActionLinks'], PHP_INT_MAX, 1);

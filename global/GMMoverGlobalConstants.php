@@ -12,7 +12,7 @@ define('PRIME_MOVER_VERSION', '1.8.0');
 define('GM_MOVER_PLUGIN_CODENAME', 'GM Mover');
 define('PRIME_MOVER_PRO_PLUGIN_CODENAME', 'GM Mover PRO');
 define('PRIME_MOVER_BACKUP_MARKUP_VERSION', '1.1.8');
-define('PRIME_MOVER_PLUGIN_PATH', plugin_dir_path(PRIME_MOVER_MAINPLUGIN_FILE));
+define('PRIME_MOVER_PLUGIN_PATH', plugin_dir_path(GM_MOVER_MAINPLUGIN_FILE));
 define('PRIME_MOVER_SHELL_ARCHIVER_FILENAME', 'prime-mover-shell-archiver.php');
 define('PRIME_MOVER_MUST_USE_PLUGIN_FILENAME', 'prime-mover-cli-plugin-manager.php');
 define('PRIME_MOVER_MUST_USE_PLUGIN_CONSTANT_SCRIPT', '000-prime-mover-constants.php');
@@ -68,7 +68,7 @@ if (!defined('CODEXONICS_CUSTOM_CONSTANTS_MU_PLUGINS')) {
 }
 
 if (!defined('PRIME_MOVER_PLUGIN_FILE')) {
-    define('PRIME_MOVER_PLUGIN_FILE', basename(PRIME_MOVER_MAINPLUGIN_FILE));
+    define('PRIME_MOVER_PLUGIN_FILE', basename(GM_MOVER_MAINPLUGIN_FILE));
 }
 
 if (!defined('PRIME_MOVER_SECURE_PROTOCOL')) {

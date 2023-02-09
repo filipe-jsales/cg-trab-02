@@ -14,15 +14,15 @@ Network: True
 if ( !defined( 'ABSPATH' ) ) {
     exit;
 }
-if ( !defined( 'PRIME_MOVER_MAINPLUGIN_FILE' ) ) {
-    define( 'PRIME_MOVER_MAINPLUGIN_FILE', __FILE__ );
+if ( !defined( 'GM_MOVER_MAINPLUGIN_FILE' ) ) {
+    define( 'GM_MOVER_MAINPLUGIN_FILE', __FILE__ );
 }
 if ( !defined( 'GM_MOVER_MAINDIR' ) ) {
-    define( 'GM_MOVER_MAINDIR', dirname( PRIME_MOVER_MAINPLUGIN_FILE ) );
+    define( 'GM_MOVER_MAINDIR', dirname( GM_MOVER_MAINPLUGIN_FILE ) );
 }
 
 if ( function_exists( 'pm_fs' ) ) {
-    pm_fs()->set_basename( true, PRIME_MOVER_MAINPLUGIN_FILE );
+    pm_fs()->set_basename( true, GM_MOVER_MAINPLUGIN_FILE );
 } else {
     require_once GM_MOVER_MAINDIR . '/global/GMMoverGlobalFunctions.php';
     if ( defined( 'PRIME_MOVER_PLUGIN_PATH' ) || defined( 'PRIME_MOVER_PLUGIN_UTILITIES_PATH' ) || defined( 'PRIME_MOVER_PLUGIN_CORE_PATH' ) || defined( 'PRIME_MOVER_THEME_CORE_PATH' ) ) {

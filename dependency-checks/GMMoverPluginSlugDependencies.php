@@ -40,7 +40,7 @@ class GMMoverPluginSlugDependencies
     public function slugPasses()
     {
         //Get plugin foldername currently being used now
-        $plugin_basename = plugin_basename(PRIME_MOVER_MAINPLUGIN_FILE);
+        $plugin_basename = plugin_basename(GM_MOVER_MAINPLUGIN_FILE);
         
         //Get the only allowed plugin slugs
         $allowed_slugs = $this->getAllowedPluginSlugs();

@@ -568,7 +568,7 @@ class PrimeMoverFreemiusIntegration
      */
     private function isCustomer()
     {        
-        if (plugin_basename(PRIME_MOVER_MAINPLUGIN_FILE) !== PRIME_MOVER_DEFAULT_PRO_BASENAME) {
+        if (plugin_basename(GM_MOVER_MAINPLUGIN_FILE) !== PRIME_MOVER_DEFAULT_PRO_BASENAME) {
             return false;
         }        
         

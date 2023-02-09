@@ -71,7 +71,7 @@ class PrimeMoverDownloadUtilities
     /**
      *
      * Get System Initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()

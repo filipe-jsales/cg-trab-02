@@ -63,7 +63,7 @@ return array(
     'GreenMainframe\\GMMoverFramework\\classes\\GMMoverSystemAuthorization' => $baseDir . '/classes/GMMoverSystemAuthorization.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemChecks' => $baseDir . '/classes/PrimeMoverSystemChecks.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemFunctions' => $baseDir . '/classes/PrimeMoverSystemFunctions.php',
-    'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemInitialization' => $baseDir . '/classes/PrimeMoverSystemInitialization.php',
+    'GreenMainframe\\GMMoverFramework\\classes\\GMMoverSystemInitialization' => $baseDir . '/classes/GMMoverSystemInitialization.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemProcessors' => $baseDir . '/classes/PrimeMoverSystemProcessors.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverUsers' => $baseDir . '/classes/PrimeMoverUsers.php',
     'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverValidationHandlers' => $baseDir . '/classes/PrimeMoverValidationHandlers.php',

@@ -245,7 +245,7 @@ class PrimeMoverShutdownUtilities
     
     /**
      * Get System Initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

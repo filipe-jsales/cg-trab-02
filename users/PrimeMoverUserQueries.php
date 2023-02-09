@@ -455,7 +455,7 @@ class PrimeMoverUserQueries
     
     /**
      * Get system initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

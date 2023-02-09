@@ -35,9 +35,9 @@ class PrimeMoverSystemFunctions
     
     /**
      * Constructor
-     * @param PrimeMoverSystemInitialization $system_initialization
+     * @param GMMoverSystemInitialization $system_initialization
      */
-    public function __construct(PrimeMoverSystemInitialization $system_initialization)
+    public function __construct(GMMoverSystemInitialization $system_initialization)
     {
         $this->system_initialization = $system_initialization;
     }
@@ -235,7 +235,7 @@ class PrimeMoverSystemFunctions
     
     /**
      * Get System Initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      * @compatible 5.6
      */
     public function getSystemInitialization()

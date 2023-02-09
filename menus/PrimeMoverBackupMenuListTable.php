@@ -86,7 +86,7 @@ class PrimeMoverBackupMenuListTable extends WP_List_Table
     
     /**
      * Get system initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

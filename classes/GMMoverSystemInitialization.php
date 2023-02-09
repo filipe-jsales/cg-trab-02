@@ -27,7 +27,7 @@ if (! defined('ABSPATH')) {
  * The GM Mover System Initialization Class handles the initialization of properties used in this plugin.
  *
  */
-class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
+class GMMoverSystemInitialization implements PrimeMoverSystemInitialize
 {
 
     /** @var boolean export folder created */
@@ -1308,7 +1308,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
     /**
      * Creates folder for storing exported sites
      * {@inheritDoc}
-     * @see PrimeMoverSystemInitialization::primeMoverCreateFolder()
+     * @see GMMoverSystemInitialization::primeMoverCreateFolder()
      * Hooked to `init`
      * @compatible 5.6
      * @tested GreenMainframe\GMMoverFramework\Tests\TestPrimeMoverInitialization::itCreatesPrimeMoverFolder()
@@ -1512,7 +1512,7 @@ class PrimeMoverSystemInitialization implements PrimeMoverSystemInitialize
      * Returns the TRUE WordPress root wp_uploads_dir information that is compatible to both single-site/multisite 
      * and even non-standard/customized multisite configurations
      * @return array|mixed|string|NULL
-     * @tested GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization::getBackupBaseDirectory()
+     * @tested GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization::getBackupBaseDirectory()
      */
     public function getInitializedWpRootUploads($clear_cache = false)
     {

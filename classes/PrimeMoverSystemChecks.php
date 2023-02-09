@@ -65,7 +65,7 @@ class PrimeMoverSystemChecks implements PrimeMoverSystemCheck
     /**
      * Get System Initialization
      * @compatible 5.6
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      */
     public function getSystemInitialization()
     {

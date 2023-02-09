@@ -200,7 +200,7 @@ class PrimeMoverSystemUtilities
     }
     
     /**
-     * Delete tmp files in tmp directory created by PrimeMoverSystemInitialization::wpTempNam()
+     * Delete tmp files in tmp directory created by GMMoverSystemInitialization::wpTempNam()
      * @param string $results
      * @param string $hash
      * @param number $blogid_to_export

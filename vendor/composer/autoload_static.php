@@ -64,7 +64,7 @@ class ComposerStaticInitbdcf04d85afd14ec6f671635ef2d48dd
         'GreenMainframe\\GMMoverFramework\\classes\\GMMoverSystemAuthorization' => __DIR__ . '/../..' . '/classes/GMMoverSystemAuthorization.php',
         'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemChecks' => __DIR__ . '/../..' . '/classes/PrimeMoverSystemChecks.php',
         'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemFunctions' => __DIR__ . '/../..' . '/classes/PrimeMoverSystemFunctions.php',
-        'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemInitialization' => __DIR__ . '/../..' . '/classes/PrimeMoverSystemInitialization.php',
+        'GreenMainframe\\GMMoverFramework\\classes\\GMMoverSystemInitialization' => __DIR__ . '/../..' . '/classes/GMMoverSystemInitialization.php',
         'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverSystemProcessors' => __DIR__ . '/../..' . '/classes/PrimeMoverSystemProcessors.php',
         'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverUsers' => __DIR__ . '/../..' . '/classes/PrimeMoverUsers.php',
         'GreenMainframe\\GMMoverFramework\\classes\\PrimeMoverValidationHandlers' => __DIR__ . '/../..' . '/classes/PrimeMoverValidationHandlers.php',

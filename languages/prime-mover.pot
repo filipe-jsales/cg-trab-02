@@ -770,13 +770,13 @@ msgstr ""
 msgid "Runtime Error : "
 msgstr ""
 
-#: classes/PrimeMoverSystemInitialization.php:1237
+#: classes/GMMoverSystemInitialization.php:1237
 msgid ""
 "Wrong import site package! Please check that the import zip package is "
 "correct for this site."
 msgstr ""
 
-#: classes/PrimeMoverSystemInitialization.php:1246
+#: classes/GMMoverSystemInitialization.php:1246
 msgid ""
 "This package cannot be restored because of media decryption error. To fix "
 "this, please upgrade Libzip version to 1.2.0 or higher."

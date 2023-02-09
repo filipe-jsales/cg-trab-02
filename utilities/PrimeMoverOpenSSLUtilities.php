@@ -10,7 +10,7 @@ namespace GreenMainframe\GMMoverFramework\utilities;
  * information, please view the LICENSE file which was distributed with this
  * source code.
  */
-use GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization;
+use GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization;
 
 if (! defined('ABSPATH')) {
     exit;
@@ -38,9 +38,9 @@ class PrimeMoverOpenSSLUtilities
     
     /**
      * Constructor
-     * @param PrimeMoverSystemInitialization $system_initialization
+     * @param GMMoverSystemInitialization $system_initialization
      */
-    public function __construct(PrimeMoverSystemInitialization $system_initialization)
+    public function __construct(GMMoverSystemInitialization $system_initialization)
     {
         $this->system_initialization = $system_initialization;        
     }
@@ -56,7 +56,7 @@ class PrimeMoverOpenSSLUtilities
 
     /**
      * Get system initialization
-     * @return \GreenMainframe\GMMoverFramework\classes\PrimeMoverSystemInitialization
+     * @return \GreenMainframe\GMMoverFramework\classes\GMMoverSystemInitialization
      */
     public function getSystemInitialization()
     {        

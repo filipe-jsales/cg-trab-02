@@ -72,7 +72,7 @@ if (! defined('ABSPATH')) {
 /**
  *  Instantiate new plugin object and uninstallation methods.
  */
-class PrimeMoverFactory
+class GMMoverFactory
 {
 
     /**
@@ -540,7 +540,7 @@ class PrimeMoverFactory
 
 /**
  * Instantiate
- * @var \GMMoverFramework\PrimeMoverFactory $loaded_instance
+ * @var \GMMoverFramework\GMMoverFactory $loaded_instance
  */
 $cli = false;
 $parameters = [];
@@ -553,7 +553,7 @@ if ("cli" === php_sapi_name()) {
     $parameters = $argv;
 }
 
-$loaded_instance = new PrimeMoverFactory($cli, $parameters);
+$loaded_instance = new GMMoverFactory($cli, $parameters);
 $loaded_instance->initHook();
 
 pm_fs()->add_action('after_uninstall', [$loaded_instance, 'primeMoverCleanUpOnUninstall']);

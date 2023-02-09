@@ -46,6 +46,6 @@ if ( function_exists( 'pm_fs' ) ) {
     if ( file_exists( PRIME_MOVER_PLUGIN_PATH . '/vendor/autoload.php' ) ) {
         require_once PRIME_MOVER_PLUGIN_PATH . '/vendor/autoload.php';
     }
-    include GM_MOVER_MAINDIR . '/PrimeMoverFactory.php';
+    include GM_MOVER_MAINDIR . '/GMMoverFactory.php';
     include GM_MOVER_MAINDIR . '/engines/prime-mover-panel/prime-mover-panel.php';
 }

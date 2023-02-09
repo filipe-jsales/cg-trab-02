@@ -19,7 +19,7 @@ define('PRIME_MOVER_MUST_USE_PLUGIN_CONSTANT_SCRIPT', '000-prime-mover-constants
 define('GM_MOVER_PLUGIN_CORE_PATH', dirname(PRIME_MOVER_PLUGIN_PATH) . DIRECTORY_SEPARATOR);
 define('PRIME_MOVER_WPRIME_CONFIG', 'wprime-config.json');
 define('PRIME_MOVER_WPRIME_CLOSED_IDENTIFIER', 'wprime-readme.txt');
-define('PRIME_MOVER_PLUGIN_UTILITIES_PATH', PRIME_MOVER_PLUGIN_PATH. 'utilities' . DIRECTORY_SEPARATOR);
+define('GM_MOVER_PLUGIN_UTILITIES_PATH', PRIME_MOVER_PLUGIN_PATH. 'utilities' . DIRECTORY_SEPARATOR);
 define('PRIME_MOVER_THEME_CORE_PATH', get_theme_root());
 define('PRIME_MOVER_EXPORT_DIR_SLUG', 'prime-mover-export-files');
 define('PRIME_MOVER_TMP_DIR_SLUG', 'prime-mover-tmp-downloads');

@@ -78,7 +78,7 @@ class ComposerStaticInitbdcf04d85afd14ec6f671635ef2d48dd
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverElementorCompat' => __DIR__ . '/../..' . '/compatibility/PrimeMoverElementorCompat.php',
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverFreemiusCompat' => __DIR__ . '/../..' . '/compatibility/PrimeMoverFreemiusCompat.php',
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverHotFix' => __DIR__ . '/../..' . '/compatibility/PrimeMoverHotFix.php',
-        'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverMigrationOptions' => __DIR__ . '/../..' . '/menus/PrimeMoverMigrationOptions.php',
+        'GreenMainframe\\GMMoverFramework\\compatibility\\GMMoverMigrationOptions' => __DIR__ . '/../..' . '/menus/GMMoverMigrationOptions.php',
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverMultilingualCompat' => __DIR__ . '/../..' . '/compatibility/PrimeMoverMultilingualCompat.php',
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverPageBuilderCompat' => __DIR__ . '/../..' . '/compatibility/PrimeMoverPageBuilderCompat.php',
         'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverWooCommerceCompat' => __DIR__ . '/../..' . '/compatibility/PrimeMoverWooCommerceCompat.php',

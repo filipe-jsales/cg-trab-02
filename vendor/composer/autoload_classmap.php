@@ -77,7 +77,7 @@ return array(
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverElementorCompat' => $baseDir . '/compatibility/PrimeMoverElementorCompat.php',
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverFreemiusCompat' => $baseDir . '/compatibility/PrimeMoverFreemiusCompat.php',
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverHotFix' => $baseDir . '/compatibility/PrimeMoverHotFix.php',
-    'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverMigrationOptions' => $baseDir . '/menus/PrimeMoverMigrationOptions.php',
+    'GreenMainframe\\GMMoverFramework\\compatibility\\GMMoverMigrationOptions' => $baseDir . '/menus/GMMoverMigrationOptions.php',
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverMultilingualCompat' => $baseDir . '/compatibility/PrimeMoverMultilingualCompat.php',
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverPageBuilderCompat' => $baseDir . '/compatibility/PrimeMoverPageBuilderCompat.php',
     'GreenMainframe\\GMMoverFramework\\compatibility\\PrimeMoverWooCommerceCompat' => $baseDir . '/compatibility/PrimeMoverWooCommerceCompat.php',

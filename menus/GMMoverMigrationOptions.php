@@ -21,7 +21,7 @@ if (! defined('ABSPATH')) {
  * GM Mover Migration Options Class
  * Helper class for displaying advanced migration options
  */
-class PrimeMoverMigrationOptions
+class GMMoverMigrationOptions
 {     
     private $prime_mover;
     

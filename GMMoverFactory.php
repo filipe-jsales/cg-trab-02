@@ -60,7 +60,7 @@ use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCustomMultisite;
 use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverWooCommerceCompat;
 use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverMultilingualCompat;
 use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverHotFix;
-use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverMigrationOptions;
+use GreenMainframe\GMMoverFramework\compatibility\GMMoverMigrationOptions;
 use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverPageBuilderCompat;
 use GreenMainframe\GMMoverFramework\compatibility\PrimeMoverCustomConfig;
 use wpdb;
@@ -276,7 +276,7 @@ class GMMoverFactory
         $customconfig = new PrimeMoverCustomConfig($prime_mover, $utilities);
         $customconfig->initHooks();
         
-        $migration_options = new PrimeMoverMigrationOptions($prime_mover, $utilities);
+        $migration_options = new GMMoverMigrationOptions($prime_mover, $utilities);
         $migration_options->initHooks();
         
         $db_utilities = new PrimeMoverDatabaseUtilities($prime_mover, $utilities);

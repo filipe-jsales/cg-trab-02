@@ -1,0 +1,482 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 3278,
+      "max": [
+        3.2806661128997803,
+        2.9687559604644775,
+        6.1991853713989258
+      ],
+      "min": [
+        -3.0697376728057861,
+        -2.9643213748931885,
+        -0.51310485601425171
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 39336,
+      "componentType": 5126,
+      "count": 3278,
+      "max": [
+        0.99289852380752563,
+        0.99953639507293701,
+        0.99525433778762817
+      ],
+      "min": [
+        -0.99979805946350098,
+        -0.99545323848724365,
+        -0.99961984157562256
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 3,
+      "componentType": 5126,
+      "count": 3278,
+      "max": [
+        0.99791133403778076,
+        0.99772006273269653,
+        0.99933737516403198,
+        1
+      ],
+      "min": [
+        -0.99791145324707031,
+        -0.99988067150115967,
+        -0.99912667274475098,
+        -1
+      ],
+      "type": "VEC4"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 3278,
+      "max": [
+        0.99638485908508301,
+        0.98798394203186035
+      ],
+      "min": [
+        0.012589067220687866,
+        0.0093215405941009521
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 3414,
+      "max": [
+        3277
+      ],
+      "min": [
+        0
+      ],
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "nenjo (https://sketchfab.com/nenjo)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/models/f1a5baa9d2e24f27a98be75f23f38f35",
+      "title": "Laurel Tree - Low Poly"
+    },
+    "generator": "Sketchfab-3.20.7",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 13656,
+      "byteOffset": 0,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 26224,
+      "byteOffset": 13656,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 78672,
+      "byteOffset": 39880,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 52448,
+      "byteOffset": 118552,
+      "byteStride": 16,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 171000,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/mat.tree-laurel_metallicRoughness.png"
+    },
+    {
+      "uri": "textures/mat.tree-laurel_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "emissiveFactor": [
+        0,
+        0,
+        0
+      ],
+      "name": "mat.tree-laurel",
+      "occlusionTexture": {
+        "index": 0,
+        "strength": 1,
+        "texCoord": 0
+      },
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "baseColorTexture": {
+          "index": 1,
+          "texCoord": 0
+        },
+        "metallicFactor": 0,
+        "roughnessFactor": 0.80659298779999999
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Icosphere.000_mat.tree-laurel_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TANGENT": 2,
+            "TEXCOORD_0": 3
+          },
+          "indices": 4,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "name": "RootNode (gltf orientation matrix)",
+      "rotation": [
+        -0.70710678118654746,
+        -0,
+        -0,
+        0.70710678118654757
+      ]
+    },
+    {
+      "children": [
+        2
+      ],
+      "name": "RootNode (model correction matrix)"
+    },
+    {
+      "children": [
+        3
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "880cba9cab124b0f9f5f331c4d234a91.fbx"
+    },
+    {
+      "children": [
+        4,
+        7,
+        10,
+        12,
+        15
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        -71.473826192468607,
+        69.564196511566223,
+        -7.2328924441738964,
+        0,
+        53.846412483950836,
+        48.133211473321438,
+        -69.164715107291102,
+        0,
+        -44.632454918108799,
+        -53.329321362311703,
+        -71.860472104059212,
+        0,
+        -1173.2431640625,
+        290.94888305664062,
+        573.64691162109375,
+        1
+      ],
+      "name": "Sun.002"
+    },
+    {
+      "children": [
+        6
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": ""
+    },
+    {
+      "name": ""
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        60.422308622341589,
+        11.6543982891151,
+        -78.824613042279992,
+        0,
+        56.07400089687917,
+        64.063857042280944,
+        52.455015434970399,
+        0,
+        56.611399515838301,
+        -75.894639748002405,
+        32.173771561634283,
+        0,
+        -1173.2431640625,
+        290.94888305664062,
+        573.64691162109375,
+        1
+      ],
+      "name": "Sun.001"
+    },
+    {
+      "children": [
+        9
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": ""
+    },
+    {
+      "name": ""
+    },
+    {
+      "children": [
+        11
+      ],
+      "matrix": [
+        100,
+        0,
+        0,
+        0,
+        0,
+        -1.6292067939183141e-05,
+        -99.999999999998678,
+        0,
+        0,
+        99.999999999998678,
+        -1.6292067939183141e-05,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Icosphere.000"
+    },
+    {
+      "mesh": 0,
+      "name": "Icosphere.000_mat.tree-laurel_0"
+    },
+    {
+      "children": [
+        13
+      ],
+      "matrix": [
+        8.274826192454622,
+        99.633386271688892,
+        -2.1711899139082824,
+        0,
+        -89.74708659072958,
+        6.5030678993173305,
+        -43.625325563187623,
+        0,
+        -43.324201787076284,
+        5.5585004064905297,
+        89.956192742599669,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": "Sun"
+    },
+    {
+      "children": [
+        14
+      ],
+      "matrix": [
+        1,
+        0,
+        0,
+        0,
+        0,
+        2.2204460492503131e-16,
+        1,
+        0,
+        0,
+        -1,
+        2.2204460492503131e-16,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      "name": ""
+    },
+    {
+      "name": ""
+    },
+    {
+      "children": [
+        16
+      ],
+      "matrix": [
+        -65.48615898796433,
+        -44.524533257868029,
+        -61.066594134371599,
+        0,
+        -31.737007733719864,
+        89.53432833071254,
+        -31.246862090103878,
+        0,
+        68.588084396000383,
+        -1.0816600839305441,
+        -72.763347162908659,
+        0,
+        748.1131591796875,
+        534.36651611328125,
+        650.76397705078125,
+        1
+      ],
+      "name": "Camera"
+    },
+    {
+      "name": ""
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9728,
+      "minFilter": 9728,
+      "wrapS": 10497,
+      "wrapT": 10497
+    },
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "OSG_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    },
+    {
+      "sampler": 1,
+      "source": 1
+    }
+  ]
+}
+

@@ -1,0 +1,432 @@
+{
+  "accessors": [
+    {
+      "bufferView": 2,
+      "componentType": 5126,
+      "count": 2454,
+      "max": [
+        -2.2247610092163086,
+        0.23648005723953247,
+        3.3567848205566406
+      ],
+      "min": [
+        -8.101760864257813,
+        0.2364799976348877,
+        2.386284828186035
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 29448,
+      "componentType": 5126,
+      "count": 2454,
+      "max": [
+        2.2215942863113014e-06,
+        -1.0,
+        8.460594835923985e-05
+      ],
+      "min": [
+        -2.1701184778066818e-06,
+        -1.0,
+        -0.0002515090745873749
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "componentType": 5126,
+      "count": 2454,
+      "max": [
+        0.9962694048881531,
+        0.9962694048881531
+      ],
+      "min": [
+        0.024942703545093536,
+        0.001400560257025063
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "componentType": 5125,
+      "count": 2454,
+      "type": "SCALAR"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 58896,
+      "componentType": 5126,
+      "count": 25912,
+      "max": [
+        2.7282090187072754,
+        4.1836323738098145,
+        13.354864120483398
+      ],
+      "min": [
+        -8.26253890991211,
+        -2.3973476886749268,
+        -1.4726576805114746
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 2,
+      "byteOffset": 369840,
+      "componentType": 5126,
+      "count": 25912,
+      "max": [
+        1.0,
+        1.0,
+        1.0
+      ],
+      "min": [
+        -1.0,
+        -1.0,
+        -1.0
+      ],
+      "type": "VEC3"
+    },
+    {
+      "bufferView": 1,
+      "byteOffset": 19632,
+      "componentType": 5126,
+      "count": 25912,
+      "max": [
+        0.9992997050285339,
+        0.9992997050285339
+      ],
+      "min": [
+        0.0007002801285125315,
+        0.0007002801285125315
+      ],
+      "type": "VEC2"
+    },
+    {
+      "bufferView": 0,
+      "byteOffset": 9816,
+      "componentType": 5125,
+      "count": 36492,
+      "type": "SCALAR"
+    }
+  ],
+  "asset": {
+    "extras": {
+      "author": "Alan Zimmerman (https://sketchfab.com/nenjo)",
+      "license": "CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)",
+      "source": "https://sketchfab.com/3d-models/low-poly-ristorante-745a6b88712040c3a2f76da84be68f80",
+      "title": "Low Poly Ristorante"
+    },
+    "generator": "Sketchfab-12.67.0",
+    "version": "2.0"
+  },
+  "bufferViews": [
+    {
+      "buffer": 0,
+      "byteLength": 155784,
+      "name": "floatBufferViews",
+      "target": 34963
+    },
+    {
+      "buffer": 0,
+      "byteLength": 226928,
+      "byteOffset": 155784,
+      "byteStride": 8,
+      "name": "floatBufferViews",
+      "target": 34962
+    },
+    {
+      "buffer": 0,
+      "byteLength": 680784,
+      "byteOffset": 382712,
+      "byteStride": 12,
+      "name": "floatBufferViews",
+      "target": 34962
+    }
+  ],
+  "buffers": [
+    {
+      "byteLength": 1063496,
+      "uri": "scene.bin"
+    }
+  ],
+  "images": [
+    {
+      "uri": "textures/bake_baseColor.jpeg"
+    }
+  ],
+  "materials": [
+    {
+      "doubleSided": true,
+      "name": "mat.orangey",
+      "pbrMetallicRoughness": {
+        "baseColorFactor": [
+          0.8,
+          0.0861083,
+          0.0224227,
+          1.0
+        ],
+        "metallicFactor": 0.0,
+        "roughnessFactor": 0.6
+      }
+    },
+    {
+      "doubleSided": true,
+      "name": "bake",
+      "pbrMetallicRoughness": {
+        "baseColorTexture": {
+          "index": 0
+        },
+        "metallicFactor": 0.0
+      }
+    }
+  ],
+  "meshes": [
+    {
+      "name": "Text_mat.orangey_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 1,
+            "POSITION": 0,
+            "TEXCOORD_0": 2
+          },
+          "indices": 3,
+          "material": 0,
+          "mode": 4
+        }
+      ]
+    },
+    {
+      "name": "Text_bake_0",
+      "primitives": [
+        {
+          "attributes": {
+            "NORMAL": 5,
+            "POSITION": 4,
+            "TEXCOORD_0": 6
+          },
+          "indices": 7,
+          "material": 1,
+          "mode": 4
+        }
+      ]
+    }
+  ],
+  "nodes": [
+    {
+      "children": [
+        1
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        -1.0,
+        0.0,
+        0.0,
+        1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Sketchfab_model"
+    },
+    {
+      "children": [
+        2
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "0048ca89a348485387598ac78cfcad3a.fbx"
+    },
+    {
+      "children": [
+        3,
+        6,
+        9
+      ],
+      "name": "RootNode"
+    },
+    {
+      "children": [
+        4
+      ],
+      "matrix": [
+        85.4452132529502,
+        -51.95301273417996,
+        2.1668805492425106e-13,
+        0.0,
+        51.95301273417981,
+        85.44521325294994,
+        -7.54979012640433e-06,
+        0.0,
+        3.922343240625133e-06,
+        6.450934386232332e-06,
+        99.99999999999972,
+        0.0,
+        -614.3110961914063,
+        52.527366638183594,
+        -218.0920867919922,
+        1.0
+      ],
+      "name": "Sun.001"
+    },
+    {
+      "children": [
+        5
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Object_4"
+    },
+    {
+      "name": "Object_5"
+    },
+    {
+      "children": [
+        7
+      ],
+      "matrix": [
+        96.55010603518434,
+        21.55974357988295,
+        14.603183060056063,
+        0.0,
+        -25.23154866035967,
+        63.592788384584075,
+        72.93372158029766,
+        0.0,
+        6.437752055183084,
+        -74.10219476094339,
+        66.83876180845364,
+        0.0,
+        -614.3110961914063,
+        52.527366638183594,
+        -218.0920867919922,
+        1.0
+      ],
+      "name": "Sun"
+    },
+    {
+      "children": [
+        8
+      ],
+      "matrix": [
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        2.220446049250313e-16,
+        1.0,
+        0.0,
+        0.0,
+        -1.0,
+        2.220446049250313e-16,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ],
+      "name": "Object_7"
+    },
+    {
+      "name": "Object_8"
+    },
+    {
+      "children": [
+        10,
+        11
+      ],
+      "matrix": [
+        99.92118491292786,
+        3.9692920927578546,
+        0.0,
+        0.0,
+        1.7350328777865354e-07,
+        -4.36769422851313e-06,
+        -99.99999999999991,
+        0.0,
+        -3.9692920927578506,
+        99.92118491292779,
+        -4.3711386728180365e-06,
+        0.0,
+        -536.6517333984375,
+        -218.2020721435547,
+        -146.63552856445313,
+        1.0
+      ],
+      "name": "Text"
+    },
+    {
+      "mesh": 0,
+      "name": "Text_mat.orangey_0"
+    },
+    {
+      "mesh": 1,
+      "name": "Text_bake_0"
+    }
+  ],
+  "samplers": [
+    {
+      "magFilter": 9729,
+      "minFilter": 9987,
+      "wrapS": 10497,
+      "wrapT": 10497
+    }
+  ],
+  "scene": 0,
+  "scenes": [
+    {
+      "name": "Sketchfab_Scene",
+      "nodes": [
+        0
+      ]
+    }
+  ],
+  "textures": [
+    {
+      "sampler": 0,
+      "source": 0
+    }
+  ]
+}

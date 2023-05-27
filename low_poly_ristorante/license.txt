@@ -1,0 +1,11 @@
+Model Information:
+* title:	Low Poly Ristorante
+* source:	https://sketchfab.com/3d-models/low-poly-ristorante-745a6b88712040c3a2f76da84be68f80
+* author:	Alan Zimmerman (https://sketchfab.com/nenjo)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Low Poly Ristorante" (https://sketchfab.com/3d-models/low-poly-ristorante-745a6b88712040c3a2f76da84be68f80) by Alan Zimmerman (https://sketchfab.com/nenjo) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

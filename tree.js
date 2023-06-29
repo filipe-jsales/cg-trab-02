@@ -249,8 +249,8 @@ CreatePyramid(110, 130, 140, -130);
 
 CreatePyramid(110, 130, 140, -130);
 
-// Creating a house using primitives
-function createHouse(casaX, casaZ, rotação){
+// Creating a tower using primitives
+function createTower(casaX, casaZ, rotação){
     
     var cubeSize = 24;
     var cubeWidth = 5;
@@ -308,62 +308,24 @@ function createHouse(casaX, casaZ, rotação){
     window2.position.set(cubeX-cubeWidth/2, cubeY, cubeZ);
     window2.rotation.z = Math.PI * 2;
 
-    var house = new THREE.Group();
-    house.add(cube);
-    house.add(window);
-    house.add(door);
-    house.add(ceiling);
-    house.add(window2);
+    var tower = new THREE.Group();
+    tower.add(cube);
+    tower.add(window);
+    tower.add(door);
+    tower.add(ceiling);
+    tower.add(window2);
 
-    house.scale.set(2, 2, 2);
-    house.position.set(casaX, -0.8, casaZ);
-    house.rotation.y= rotação;
-    scene.add(house);
+    tower.scale.set(2, 2, 2);
+    tower.position.set(casaX, -0.8, casaZ);
+    tower.rotation.y= rotação;
+    scene.add(tower);
 }
 var xCasas = lake.position.x;
 var zCasas = lake.position.z;
 var raioCasa = lakeRadius+30;
 for (let i = 30; i < 150; i+=20) {
-    createHouse(circleX(raioCasa, i)+xCasas, circleY(raioCasa, i)+zCasas, (180 + i)*Math.PI/180);
+    createTower(circleX(raioCasa, i)+xCasas, circleY(raioCasa, i)+zCasas, (180 + i)*Math.PI/180);
 }
-
-// Creating a bridge using primitives
-function bridge(ponteX, ponteZ){
-    
-    var geometry = new THREE.BoxGeometry( 3, 0.2, 5);
-    var material = new THREE.MeshBasicMaterial( {map: loader.load('https://raw.githubusercontent.com/filipe-jsales/cg-trab-02/master/lightwood.jpg')});
-    var wood = new THREE.Mesh( geometry, material );
-    wood.position.set(0, 1, 0);
-    scene.add( wood );
-
-    var geometry = new THREE.CylinderGeometry( 0.3, 0.3, 4, 14);
-    var material = new THREE.MeshBasicMaterial( {map: loader.load('https://media.istockphoto.com/photos/closeup-of-brown-tree-bark-texture-picture-id466135044?b=1&k=20&m=466135044&s=170667a&w=0&h=nz3u8epwayYVgpmOB1CBJ0Bx782_jCYrFf0RnUNcnD4=')});
-    var stem = new THREE.Mesh( geometry, material );
-    stem.position.set(1.5, 0, 0);
-    scene.add( stem );
-
-    var tronco2 = stem.clone();
-    tronco2.position.set(-1.5, 0, 0);
-    scene.add( tronco2 );
-
-    var bridge = new THREE.Group();
-    bridge.add(wood);
-    bridge.add(stem);
-    bridge.add(tronco2);
-
-    bridge.position.set(ponteX, 0, ponteZ);
-    bridge.rotation.y = Math.PI/2;
-    
-    return bridge;
-}
-
-var fullBridge = new THREE.Group();
-for(let i=0; i<= 10; i++){
-    fullBridge.add(bridge(-90-(i*5), 50));
-}
-
-fullBridge.rotation.y = -4*Math.PI/180;
-scene.add(fullBridge);
 
 // Floor
 function createFloor() {
